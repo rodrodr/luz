@@ -9,7 +9,7 @@ export const DOI = {
 } as const;
 
 export const ENLACES = {
-  /** Página del DOI: los botones van a la página del conjunto, nunca a archivos sueltos (la API da 400 sin formulario). */
+  /** Página del DOI: los botones van a la página del conjunto, nunca a archivos sueltos (08-11-2026: Dataverse ya no pide formulario, para que funcione el conector `luz-mcp`). */
   thqcmi: `https://doi.org/${DOI.thqcmi}`,
   cgocus: `https://doi.org/${DOI.cgocus}`,
   explorador: 'https://rodrodr.github.io/luz_explorer/',
@@ -17,6 +17,9 @@ export const ENLACES = {
   afinidades: 'https://rodrodr.github.io/afinidades/',
   afinidadesRed: 'https://rodrodr.github.io/afinidades/#red',
   afinidadesDiputados: 'https://rodrodr.github.io/afinidades/#diputados',
+  /** El conector MCP (`luz-mcp`): su código y su paquete. Página «Preguntar con IA» (08-11-2026). */
+  luzTools: 'https://github.com/rodrodr/luz-tools',
+  luzMcpPypi: 'https://pypi.org/project/luz-mcp/',
   /** Proyecto hermano, distinto (pie). */
   parlaibero: 'https://rodrodr.github.io/parlaibero/',
   /** D-21 (decidida, 23-09-2026): repositorio `luz` → rodrodr.github.io/luz/. Lo crea y lo publica el investigador. */
@@ -40,7 +43,7 @@ export const enlaceProfundo = (consulta: string) => `${ENLACES.explorador}#q=${e
 /**
  * Lo que solo puede dar o decidir el investigador (contrato de construcción, 22-09-2026). Mientras un valor sea `null`,
  * el sitio lo pinta como pendiente en la vista previa (`data-pendiente`) y la compilación de publicación (STRICT=1) FALLA.
- * Las claves con texto para el lector (el motivo del formulario, D-20) NO van aquí: van en el copy, que se traduce.
+ * Las claves con texto para el lector NO van aquí: van en el copy, que se traduce.
  * 23-09-2026: todas decididas (docs/DECISIONES_23-09.md). El valor dice la decisión, para quien lea el código; no se
  * pinta en ninguna página (ningún copy cita `{{D-…}}`).
  */

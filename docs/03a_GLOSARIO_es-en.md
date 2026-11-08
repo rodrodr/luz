@@ -257,8 +257,7 @@ Se escriben una vez en `docs/copy_en/comun.md` y se repiten con `<!-- ↺ clave 
 | `comun.sello.v3` (↺ 2) | Explorer edition (v3, not deposited) |
 | `comun.sello.proyecto` (↺ 2) | Project metadata (not deposited; not shown in the explorer) |
 | `comun.sello.afin` (↺ 2) | Afinidades Elegidas (CGOCUS V1.1, deposited) |
-| `comun.fija.formulario` (↺ 3) | Before you download, Harvard Dataverse will ask for your name, email address and institution. |
-| `comun.fija.formulario.motivo` (D-20) | We use these details to learn who uses the dataset and for what, so that we can improve it and announce updates. |
+| `comun.fija.formulario` (↺ 3) | Harvard Dataverse asks for no registration or form before you download. |
 | `comun.fija.ids` (↺ 4) | Row identifiers differ between the deposited edition (V2) and the explorer edition (v3); the session – date and number – is the same in both. |
 | `comun.fija.enlace` (↺ 5, apagado) | The explorer cannot open a search from a link: copy the query and paste it into its search box (/ key). |
 | ↺ 5, encendido (por aprobar) | This button opens the explorer with the search already typed in. |

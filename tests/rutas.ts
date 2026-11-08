@@ -4,7 +4,7 @@ const ETAPAS = ['1931', '1933', '1936', 'guerra', 'mexico'];
 const PUERTAS = ['sufragio-1931', 'cuestion-religiosa-1931', 'estatuto-1932', 'casas-viejas-1933', 'pistola-1934', 'antesala-1936', 'figueres-1939', 'mexico-1945'];
 export const RUTAS = [
   '', 'cortes/', ...ETAPAS.map((e) => `cortes/${e}/`), 'cortes/sesiones/', ...PUERTAS.map((p) => `cortes/sesiones/${p}/`),
-  'diario/', 'metodo/', 'datos/', 'explorador/', 'afinidades/',
+  'diario/', 'metodo/', 'datos/', 'explorador/', 'afinidades/', 'asistente/',
 ];
 /**
  * Presupuestos de `peso.spec` (plan § Cómo se evita el amontonamiento, regla 6): palabras de copy en <main> y KB del HTML

@@ -140,11 +140,20 @@ Afinidades Elegidas: quién firmó con quién cada proposición, enmienda, ruego
 <!-- datos.empezar.s4.accion -->
 [Ver Afinidades Elegidas]
 
+<!-- datos.empezar.s5.titulo -->
+Con un asistente de IA
+
+<!-- datos.empezar.s5.texto -->
+Pregunte con sus palabras a Claude u otro asistente. Un conector abierto busca y cuenta por usted en las dos bases, sin programar.
+
+<!-- datos.empezar.s5.accion -->
+[Ver cómo preguntar con IA]
+
 <!-- datos.empezar.cierre -->
 Dos personas con la misma base pueden llegar a resultados distintos sin que ninguna se haya equivocado. Las decisiones de análisis son suyas, y esta página las enseña.
 
 <!-- ↺ comun.fija.formulario -->
-Antes de descargar, Harvard Dataverse le pedirá nombre, correo e institución.
+Harvard Dataverse no pide registro ni formulario para descargar.
 
 > [nota de diseño] La escalera va en registro de calendario, sin tarjetas: cuatro peldaños a dos columnas desde 64 rem.
 > Peldaño 1: `s1.*` + ↺ 12 (`comun.fija.sin_formulario`); [Ver los datos de cada figura] → `datos/versiones/#bases`
@@ -167,9 +176,6 @@ El camino hasta el archivo
 
 <!-- datos.camino.entrada -->
 Tres pasos: la página del DOI, un solo archivo y una lectura con los parámetros correctos.
-
-<!-- ↺ comun.fija.formulario.motivo -->
-Con esos datos queremos saber quién usa la base y con qué fin, para poder mejorarla y comunicar novedades.
 
 > [nota de diseño] Encima de todo, ↺ 3 (`comun.fija.formulario`). Debajo, `comun.fija.formulario.motivo`: el motivo
 > del formulario que dio el investigador (D-20, cerrada el 23-09-2026), en una sola frase. El formulario **no se nombra
@@ -618,7 +624,7 @@ También reproducen febrero de 1933, el mes de Casas Viejas: {{mes.1933-02.sesio
 Sus filas reúnen {{mes.1933-02.palabras}} palabras.
 
 <!-- datos.codigo.archivos -->
-Necesitan dos archivos en la misma carpeta: `2REP_Diaries.csv`, de THQCMI, y `representative_metadata.tab`, de CGOCUS. Los dos piden el formulario de Dataverse.
+Necesitan dos archivos en la misma carpeta: `2REP_Diaries.csv`, de THQCMI, y `representative_metadata.tab`, de CGOCUS.
 
 <!-- datos.codigo.r.rotulo -->
 R, sin paquetes

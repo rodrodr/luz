@@ -508,7 +508,7 @@ Harvard Dataverse · doi:10.7910/DVN/CGOCUS · {{dv.cgocus.archivos}} archivos
 Los datos
 
 <!-- afinidades.datos.entrada -->
-Afinidades Elegidas se descarga en Harvard Dataverse, con el mismo formulario que Luz y Taquígrafos. Son {{dv.cgocus.archivos|letra}} archivos.
+Afinidades Elegidas se descarga en Harvard Dataverse, como Luz y Taquígrafos. Son {{dv.cgocus.archivos|letra}} archivos.
 
 <!-- afinidades.datos.tabla.col.archivo -->
 Archivo
@@ -567,7 +567,7 @@ El archivo de firmas trae el texto de cada medida: sirve para leer qué se firm�
 Al unir, tenga en cuenta que `2REP_cosponsorship` llama «1933-1935» a la segunda legislatura, y los demás archivos, «1933-1936».
 
 <!-- ↺ comun.fija.formulario -->
-Antes de descargar, Harvard Dataverse le pedirá nombre, correo e institución.
+Harvard Dataverse no pide registro ni formulario para descargar.
 
 <!-- afinidades.datos.descargar -->
 [Descargar en Dataverse ↗]

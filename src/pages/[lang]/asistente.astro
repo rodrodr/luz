@@ -1,0 +1,171 @@
+---
+/**
+ * Preguntar con IA (08-11-2026). El conector MCP `luz-mcp`: consultar las dos bases depositadas (Luz y Taquígrafos y
+ * Afinidades Elegidas) desde un asistente de IA. Sigue la página «Herramientas» de ParlaIbero, sin los skills.
+ * Copy: `asistente.*` (docs/copy_es/asistente.md). Ninguna cifra: los ejemplos dan la pregunta, lo que hace el
+ * asistente y la herramienta, no el resultado (un resultado sería una cifra sin base del exportador).
+ *  · Anclas estables: #pedir · #ejemplos · #instalar · #limites · #citar.
+ *  · Los bloques de código reciben el foco del teclado (se desplazan en horizontal) y no se traducen.
+ *  · La página termina en el explorador y en la descarga (principio 1 de PRODUCT.md).
+ */
+import Base from '../../layouts/Base.astro';
+import CabezaPagina from '../../components/CabezaPagina.astro';
+import IndiceLateral from '../../components/IndiceLateral.astro';
+import VolverIndice from '../../components/VolverIndice.astro';
+import { meta } from '../../lib/pagina';
+import { t, tBloques, rotulo, existe } from '../../lib/i18n';
+import { marcaPendiente } from '../../lib/cifras';
+import { remata } from '../../lib/remata';
+import { conDestinos } from '../../lib/lectura';
+import { url, PAGINAS } from '../../lib/rutas';
+import { ENLACES } from '../../config/enlaces';
+import { rutasPorIdioma, type Lang } from '../../lib/idiomas';
+
+export const getStaticPaths = rutasPorIdioma;
+const lang = Astro.params.lang as Lang;
+const { titulo, descripcion } = meta(lang, 'asistente');
+const A = (k: string) => `asistente.${k}`;
+const L = (k: string) => (existe(A(k)) ? t(lang, A(k)) : marcaPendiente(A(k), 'copy'));
+const B = (k: string) => remata(existe(A(k)) ? tBloques(lang, A(k)) : `<p>${marcaPendiente(A(k), 'copy')}</p>`);
+/** Un bloque de código del copy: enfocable con el teclado y sin traducir. */
+const C = (k: string) => B(k).replace('<pre>', '<pre translate="no" tabindex="0">');
+const botones = (k: string, destinos: string[]) => conDestinos(lang, A(k), {}, destinos);
+const R = (k: string) => rotulo(lang, k);
+const ext = (href: string, clave: string, primario = false) =>
+  remata(`<a class="boton${primario ? '' : ' sec'}" href="${href}"${/^https?:/.test(href) ? ' rel="noopener external"' : ''}>${R(clave)}</a>`);
+
+const S = ['pedir', 'ejemplos', 'instalar', 'limites', 'citar'];
+const GRUPOS = ['discurso', 'red', 'llevar'];
+const EJEMPLOS = [1, 2, 3, 4, 5, 6];
+const INSTALAR = ['claude', 'codex', 'json'];
+---
+<Base lang={lang} ruta={PAGINAS.asistente} titulo={titulo} descripcion={descripcion}>
+  <CabezaPagina lang={lang} prefijo="asistente">
+    <div class="cabeza-margen cabeza-instalar">
+      <p class="asiento" set:html={L('cabeza.rotulo')} />
+      <Fragment set:html={C('cabeza.codigo')} />
+      <p class="botones" set:html={botones('cabeza.accion', [url(lang, `${PAGINAS.asistente}#instalar`)])} />
+    </div>
+  </CabezaPagina>
+
+  <div class="contenedor con-indice asistente" style={`timeline-scope: ${S.map((s) => `--${s}`).join(', ')}`}>
+    <IndiceLateral lang={lang} titulo={t(lang, 'comun.indice.titulo')} entradas={S.map((s) => ({ id: s, rotulo: L(`indice.${s}`) }))} />
+    <div class="lectura">
+
+      <!-- 1 · Lo que puede pedirle: tres grupos, a tres columnas en escritorio -->
+      <section class="seccion" id="pedir" aria-labelledby="pedir-titulo" style="view-timeline-name: --pedir">
+        <div class="seccion-cuerpo">
+          <h2 id="pedir-titulo" set:html={L('pedir.titulo')} />
+          <p class="lede" set:html={L('pedir.entrada')} />
+          <div class="grupos">
+            {GRUPOS.map((g) => (
+              <div class="grupo">
+                <h3 set:html={L(`pedir.${g}.titulo`)} />
+                <Fragment set:html={B(`pedir.${g}`)} />
+              </div>
+            ))}
+          </div>
+          <VolverIndice lang={lang} />
+        </div>
+      </section>
+
+      <!-- 2 · Preguntas de ejemplo: la pregunta, lo que hace el asistente y la herramienta; sin resultados -->
+      <section class="seccion" id="ejemplos" aria-labelledby="ejemplos-titulo" style="view-timeline-name: --ejemplos">
+        <div class="seccion-cuerpo">
+          <h2 id="ejemplos-titulo" set:html={L('ejemplos.titulo')} />
+          <p class="lede" set:html={L('ejemplos.entrada')} />
+          <ol class="ejemplos" role="list">
+            {EJEMPLOS.map((n) => (
+              <li class="ejemplo">
+                <p class="pregunta" set:html={L(`ej${n}.pregunta`)} />
+                <p class="hace" set:html={L(`ej${n}.hace`)} />
+                <p class="herramienta" translate="no" set:html={L(`ej${n}.herramienta`)} />
+              </li>
+            ))}
+          </ol>
+          <VolverIndice lang={lang} />
+        </div>
+      </section>
+
+      <!-- 3 · Instalarlo: una línea para Claude Code; los demás programas; los datos -->
+      <section class="seccion" id="instalar" aria-labelledby="instalar-titulo" style="view-timeline-name: --instalar">
+        <div class="seccion-cuerpo">
+          <h2 id="instalar-titulo" set:html={L('instalar.titulo')} />
+          <p class="lede" set:html={L('instalar.entrada')} />
+          <div class="instalar">
+            {INSTALAR.map((k) => (
+              <div class="programa">
+                <h3 set:html={L(`instalar.${k}.rotulo`)} />
+                <Fragment set:html={C(`instalar.${k}`)} />
+              </div>
+            ))}
+          </div>
+          <p set:html={L('instalar.reiniciar')} />
+          <aside class="al-margen"><p set:html={L('instalar.web')} /></aside>
+          <p set:html={L('instalar.datos')} />
+          <p set:html={L('instalar.otros')} />
+          <p class="botones" set:html={botones('instalar.accion', [ENLACES.luzTools, ENLACES.luzMcpPypi])} />
+          <VolverIndice lang={lang} />
+        </div>
+      </section>
+
+      <!-- 4 · Lo que conviene saber: los límites que más cambian una respuesta -->
+      <section class="seccion" id="limites" aria-labelledby="limites-titulo" style="view-timeline-name: --limites">
+        <div class="seccion-cuerpo">
+          <h2 id="limites-titulo" set:html={L('limites.titulo')} />
+          <p class="lede" set:html={L('limites.entrada')} />
+          <div class="limites" set:html={B('limites.lista')} />
+          <aside class="al-margen"><p set:html={L('limites.privacidad')} /></aside>
+          <VolverIndice lang={lang} />
+        </div>
+      </section>
+
+      <!-- 5 · Licencia y cita; la página termina en el explorador y en la descarga -->
+      <section class="seccion" id="citar" aria-labelledby="citar-titulo" style="view-timeline-name: --citar">
+        <div class="seccion-cuerpo">
+          <h2 id="citar-titulo" set:html={L('citar.titulo')} />
+          <p class="lede" set:html={L('citar.entrada')} />
+          <p set:html={L('citar.cierre')} />
+          <p class="botones">
+            <Fragment set:html={ext(ENLACES.explorador, 'comun.boton.explorador', true)} />
+            <a class="boton sec" href={url(lang, `${PAGINAS.datos}#empezar`)} set:html={R('comun.boton.descargar')} />
+          </p>
+        </div>
+      </section>
+    </div>
+  </div>
+</Base>
+
+<style>
+  .cabeza-instalar :global(pre) { margin: 0 0 var(--e3); font-size: .8rem; white-space: pre; }
+  .cabeza-instalar .asiento { margin-bottom: .45rem; }
+  .cabeza-instalar .botones { margin: 0; }
+  @media (max-width: 63.99rem) { .cabeza-instalar { margin-top: var(--e5); max-width: 34rem; } }
+
+  .grupos, .instalar { display: grid; gap: var(--e5) var(--col-gap); margin: var(--e4) 0 var(--e5); }
+  .grupo, .programa { min-width: 0; border-top: 1px solid var(--ink-2); padding-top: var(--e4); }
+  .grupo h3, .programa h3 { margin: 0 0 .6rem; font-size: var(--fs-h3); }
+  .grupo :global(ul) { margin: 0; padding-left: 1.1rem; }
+  .grupo :global(li) { margin-bottom: .45em; }
+  .programa :global(pre) { margin: 0; white-space: pre; }
+  @media (min-width: 64rem) {
+    .asistente .seccion-cuerpo > :is(.grupos, .ejemplos) { grid-column: 1 / -1; }
+    .grupos { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .asistente .seccion-cuerpo > .instalar { grid-column: 1 / span 9; }
+  }
+
+  .ejemplos { list-style: none; margin: var(--e4) 0 var(--e5); padding: 0; display: grid; gap: var(--e5) var(--col-gap); }
+  @media (min-width: 48rem) { .ejemplos { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (min-width: 80rem) { .ejemplos { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  .ejemplo { border-top: 1px solid var(--ink-2); padding-top: var(--e4); display: flex; flex-direction: column; gap: .55rem; min-width: 0; }
+  .ejemplo p { margin: 0; max-width: none; }
+  .pregunta { font: italic 500 1.12rem/1.35 var(--display); color: var(--ink); }
+  .hace { font-size: var(--fs-small); color: var(--ink-2); }
+  .hace::before { content: '→ '; color: var(--mute); }
+  .herramienta { margin-top: auto !important; padding-top: .3rem; font: 400 var(--fs-mono-s)/1.5 var(--mono); color: var(--mute); }
+
+  .limites :global(ul) { list-style: none; padding: 0; margin: 0 0 var(--e5); max-width: var(--measure); }
+  .limites :global(li) { padding: .7rem 0; border-bottom: 1px solid var(--hair); }
+  .limites :global(li:first-child) { border-top: 1px solid var(--hair); }
+  .limites :global(strong) { color: var(--ink); }
+</style>

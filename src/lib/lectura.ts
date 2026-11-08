@@ -46,6 +46,7 @@ export function destinoBoton(lang: Lang, clave: string, contexto = ''): string |
     'comun.boton.ver_columnas': url(lang, `${PAGINAS.datos}#columnas`),
     'comun.boton.ver_explorador': url(lang, PAGINAS.explorador),
     'comun.boton.ver_afinidades': url(lang, PAGINAS.afinidades),
+    'comun.boton.ver_asistente': url(lang, PAGINAS.asistente),
     'comun.boton.ir_inicio': url(lang),
     'comun.boton.errata': ENLACES.erratas,
     'comun.boton.escribirnos': hrefContacto(),
