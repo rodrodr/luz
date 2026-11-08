@@ -13,7 +13,7 @@
 The explorer
 
 <!-- explorador.meta.descripcion -->
-Search, read and cite what was said in the Cortes of the Republic, without programming: what the explorer does, with real screenshots, and what it does not do.
+Search, read and cite what was said in the Cortes of the Republic without programming: what the explorer does, in real screenshots, and what it does not.
 
 ## 8.1 Header
 

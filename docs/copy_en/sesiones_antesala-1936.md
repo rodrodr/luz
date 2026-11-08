@@ -92,7 +92,7 @@ The ready-made debate «Orden público en la primavera de 1936» (public order i
 ## What is not there
 
 <!-- sesiones.antesala-1936.no_esta.texto -->
-The phrase sometimes attributed to Dolores Ibárruri on 16 June does not appear in any row: «Este hombre ha hablado por última vez» (‘This man has spoken for the last time’). She did speak that day.
+No row contains the phrase sometimes attributed to Dolores Ibárruri on 16 June. It is «Este hombre ha hablado por última vez» (‘This man has spoken for the last time’). She did speak that day.
 
 <!-- sesiones.antesala-1936.no_esta.pie -->
 Dolores Ibárruri, 16 June

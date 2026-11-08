@@ -12,7 +12,7 @@
 Method
 
 <!-- metodo.meta.descripcion -->
-How the printed Diario became {{filas.V2}} rows, what went wrong, what counts as speech and what does not, and what the dataset does not claim. Each section can be checked.
+How the printed Diario became {{filas.V2}} rows, what went wrong, what counts as speech and what the dataset does not claim. Each section can be checked.
 
 ## Side index
 
@@ -642,6 +642,9 @@ The text continues; only its beginning is shown here.
 <!-- fig.F20.salvedad -->
 Campoamor's ideology is C because it is that of her party, the Radical Party.
 
+<!-- fig.F20.leame.denominador -->
+There is no denominator: these are two rows of the deposited CSV, not aggregated.
+
 <!-- fig.F20.alt -->
 Two rows of the CSV laid out in their columns: the Chair asks for silence in {{fila.presidencia.nwords|letra}} words and Clara Campoamor begins her speech, of {{fila.campoamor.nwords}} words.
 
@@ -715,6 +718,12 @@ After reviewing all rows by hand and correcting {{vinculo.corregidas}} assignmen
 
 <!-- fig.F19.salvedad -->
 The difference of {{etiquetas.diferencia|letra}} between tags and rows is not documented. The pages are not deposited.
+
+<!-- fig.F19.leame.que_mide -->
+The figure for each step, from the numbers of the Diario to the rows with a deputy, with its unit, its basis and its source. One row per figure in pasos.csv.
+
+<!-- fig.F19.leame.denominador -->
+There is no denominator: these are separate counts, one or two per step. The base column says whether the figure comes from the deposited CSV or from the project's files.
 
 <!-- fig.F19.alt -->
 Five steps in a line: the issues of the Diario, the pages read, the speaker headings, the rows and the rows with an identified deputy, each with its number.

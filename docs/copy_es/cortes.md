@@ -578,7 +578,13 @@ Barras horizontales con los diez diputados que más palabras de habla suman en l
 Palabras de habla en el explorador, sin la Presidencia, sin sumarios ni documentos. Hablar mucho no es pesar mucho.
 
 <!-- fig.F05.datos -->
-Los datos de la figura traen a los {{diputados.V2}} diputados que intervienen, etapa a etapa.
+Los datos de la figura traen a los {{oradores.diputados}} diputados que intervienen, etapa a etapa.
+
+<!-- fig.F05.leame.que_mide -->
+Las palabras de habla de cada diputado en cada etapa, sin la Presidencia, con su puesto. Una fila por diputado y etapa en oradores_etapa.csv; la figura enseña los diez primeros.
+
+<!-- fig.F05.leame.denominador -->
+Las palabras de habla de la etapa sin la Presidencia, incluidas las filas sin diputado. pct_etapa es palabras_habla_v3 dividido por ese total.
 
 > [nota de diseño] F05 va en la v3, así que la sección lleva NotaBases (↺ 13). El orden es fijo, por palabras; sin
 > conmutador. Los nombres, de la tabla de grafías (nunca el `rep_name` crudo).
@@ -608,6 +614,12 @@ Una tira al cien por cien, dividida por familias políticas, con la parte de las
 
 <!-- fig.F09.salvedad -->
 «Republicanos» mezcla posiciones de izquierda, centro y derecha. La ideología y la familia son las del partido.
+
+<!-- fig.F09.leame.que_mide -->
+Las palabras y las filas de cada familia política en cada etapa, sin la Presidencia, con los diputados que las suman. Una fila por familia y etapa en familias_etapa.csv.
+
+<!-- fig.F09.leame.denominador -->
+Las palabras, o las filas, de la etapa sin la Presidencia, incluidas las que no tienen familia. pct_palabras y pct_filas dividen por esos totales.
 
 <!-- fig.F09.salvedad.normalizacion -->
 Las familias siguen la normalización del explorador; la fusión de «Liberal» con «Liberales» está pendiente de revisión.

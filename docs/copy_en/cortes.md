@@ -483,7 +483,13 @@ Horizontal bars with the ten deputies with the most spoken words in the stage, l
 Spoken words in the explorer, leaving out the Chair, summaries and documents. Speaking a lot is not the same as carrying weight.
 
 <!-- fig.F05.datos -->
-The figure data include all {{diputados.V2}} deputies who speak, stage by stage.
+The figure data include all {{oradores.diputados}} deputies who speak, stage by stage.
+
+<!-- fig.F05.leame.que_mide -->
+The spoken words of each deputy in each stage, leaving out the Chair, with their rank. One row per deputy and stage in oradores_etapa.csv; the figure shows the top ten.
+
+<!-- fig.F05.leame.denominador -->
+The spoken words of the stage without the Chair, including rows with no deputy. pct_etapa is palabras_habla_v3 divided by that total.
 
 ### F09 · Which political families take the floor
 
@@ -510,6 +516,12 @@ A strip at one hundred per cent, divided by political family, with each family's
 
 <!-- fig.F09.salvedad -->
 «Republicanos» (Republicans) mixes positions of the left, the centre and the right. Ideology and family are those of the party.
+
+<!-- fig.F09.leame.que_mide -->
+The words and rows of each political family in each stage, leaving out the Chair, with the deputies who make them up. One row per family and stage in familias_etapa.csv.
+
+<!-- fig.F09.leame.denominador -->
+The words, or the rows, of the stage without the Chair, including those with no family. pct_palabras and pct_filas divide by those totals.
 
 <!-- fig.F09.salvedad.normalizacion -->
 The families follow the explorer's normalisation; the merging of «Liberal» into «Liberales» is pending review.

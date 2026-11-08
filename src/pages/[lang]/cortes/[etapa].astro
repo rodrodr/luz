@@ -86,8 +86,8 @@ function puertaHtml(slug: string): string {
   if (!publicadas.has(slug)) return '';
   const tit = existe(`sesiones.lista.${slug}.titulo`) ? t(lang, `sesiones.lista.${slug}.titulo`) : slug;
   const fecha = existe(`sesiones.lista.${slug}.fecha`) ? `<span class="puerta-fecha">${t(lang, `sesiones.lista.${slug}.fecha`)}</span>` : '';
-  return `<p class="puerta-enlace"><a href="${url(lang, `${PAGINAS.sesiones}/${slug}`)}">${fecha}<span class="puerta-titulo">${tit}</span>`
-    + `<span class="puerta-rotulo">${conIcono(t(lang, `${F}.contexto.puerta`))}</span></a></p>`;
+  return `<p class="puerta-enlace"><a href="${url(lang, `${PAGINAS.sesiones}/${slug}`)}">${fecha ? fecha + ' ' : ''}<span class="puerta-titulo">${tit}</span>`
+    + ` <span class="puerta-rotulo">${conIcono(t(lang, `${F}.contexto.puerta`))}</span></a></p>`;
 }
 const numeros = [...new Set(claves(k('contexto.'), true).map((x) => x.slice(k('contexto.').length).split('.')[0]).filter((x) => /^\d+$/.test(x)))];
 const apartados = numeros.map((n) => {

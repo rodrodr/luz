@@ -12,7 +12,7 @@
 Afinidades Elegidas
 
 <!-- afinidades.meta.descripcion -->
-Who signed with whom in the Congress of the Republic, 1931–1939: three co-authorship networks, two ways of measuring crossing and what a signature does not tell you.
+Who signed with whom in the Congress of the Republic, 1931–1939: three co-authorship networks, two measures of crossing and what a signature does not say.
 
 ## Header
 

@@ -106,7 +106,7 @@ Roll-call votes
 What was voted aloud
 
 <!-- sesiones.votos.entrada -->
-In a roll-call vote, the Diario prints two lists, «Señores que dijeron sí» and «Señores que dijeron no» (‘Members who said yes’ and ‘Members who said no’), each with its total.
+In a roll-call vote, the Diario prints two lists, each with its total. They are «Señores que dijeron sí» and «Señores que dijeron no» (‘Members who said yes’ and ‘Members who said no’).
 
 <!-- sesiones.votos.cuantas -->
 There are lists of this kind in at least {{voto.listas.sesiones}} of the {{sesiones.n}} sessions of the dataset.

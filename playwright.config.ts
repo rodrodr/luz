@@ -23,7 +23,9 @@ export default defineConfig({
   use: { baseURL: RAIZ, trace: 'retain-on-failure' },
   projects: [{ name: 'chromium', use: { ...devices['Desktop Chrome'], ...(CANAL ? { channel: CANAL } : {}) } }],
   webServer: {
-    command: `npm run preview -- --port ${PUERTO}`,
+    // --ignore-lock: Astro 7 guarda un bloqueo del servidor de vista previa; si una ejecución anterior lo dejó, `astro preview`
+    // salía diciendo «ya en marcha» y Playwright fallaba con «exited early» (08-11-2026).
+    command: `npm run preview -- --ignore-lock --port ${PUERTO}`,
     url: RAIZ,
     reuseExistingServer: !process.env.CI,
     timeout: 60_000,

@@ -8,7 +8,7 @@
 ## Header
 
 <!-- cortes.guerra.meta.titulo --> The Cortes at war, 1936–1939
-<!-- cortes.guerra.meta.descripcion --> The sessions of the Cortes during the Civil War, from Madrid to Figueres: where they met, what they voted on and what the official extract itself says about them.
+<!-- cortes.guerra.meta.descripcion --> The Cortes during the Civil War, from Madrid to Figueres: where they met, what they voted on and what the official extract itself says about them.
 <!-- cortes.guerra.miga --> The Cortes / IV
 <!-- cortes.guerra.titulo --> The Cortes at war
 

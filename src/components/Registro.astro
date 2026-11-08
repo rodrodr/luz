@@ -16,8 +16,9 @@ const { entradas, transicion = true } = Astro.props;
   {entradas.map((e) => (
     <li>
       <a href={e.href} data-transicion={transicion ? 'titulo' : undefined}>
-        <span class="fecha" set:html={e.fecha} />
-        <span class="que"><span class="titulo" data-vt-titulo set:html={e.titulo} />{e.linea && <span class="resumen" set:html={e.linea} />}</span>
+        {/* Los espacios entre las piezas son texto: sin ellos, sin CSS o en un lector de pantalla se leía «1933Otra mayoría». */}
+        <span class="fecha" set:html={e.fecha} />{' '}
+        <span class="que"><span class="titulo" data-vt-titulo set:html={e.titulo} />{e.linea && <>{' '}<span class="resumen" set:html={e.linea} /></>}</span>{' '}
         {e.recuento && <span class="filas" set:html={e.recuento} />}
       </a>
     </li>
