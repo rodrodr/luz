@@ -8,7 +8,7 @@
 Figueres · 1 February 1939
 
 <!-- sesiones.figueres-1939.meta.descripcion -->
-The last session of the Cortes in Spain, in the castle of Figueres, according to the official summary: Negrín, Martínez Barrio and two notes that contradict each other.
+The last session of the Cortes in Spain, in Figueres castle, from the official summary: Negrín, Martínez Barrio and two notes that contradict each other.
 
 <!-- sesiones.figueres-1939.antetitulo -->
 1 February 1939 · Session no. {{sesion.1939-02-01-69.num|id}} · War · Official summary, pages unverified (project metadata)
@@ -60,7 +60,7 @@ Diego Martínez Barrio, inside the summary row
 At the foot of the motion
 
 <!-- sesiones.figueres-1939.diario.cita.horas -->
-The summary does not agree with itself on the time: the summary row opens the session «a las veintidos horas treinta minutos» (at 22.30), and the text «a las 22 horas 39» (at 22.39).
+The summary does not agree with itself on the time. The summary row opens the session «a las veintidos horas treinta minutos» (at 22.30), and the text «a las 22 horas 39» (at 22.39).
 
 ## The session, turn by turn
 

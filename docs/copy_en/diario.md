@@ -12,7 +12,7 @@
 The Diario de Sesiones
 
 <!-- diario.meta.descripcion -->
-What the Diario de Sesiones of the Cortes of the Republic records, what it leaves out and how to cite a passage: the source of Luz y Taquígrafos, set out with its limits.
+What the Diario de Sesiones of the Cortes of the Republic records and leaves out, and how to cite a passage: the source of Luz y Taquígrafos.
 
 <!-- diario.antetitulo -->
 The source
@@ -414,10 +414,10 @@ Bracketed notes in Calvo Sotelo's row
 What the Diario does not record does not exist for any count in the dataset.
 
 <!-- diario.calla.ausencias.ibarruri -->
-The phrase sometimes attributed to Dolores Ibárruri on 16 June 1936, «Este hombre ha hablado por última vez» (‘This man has spoken for the last time’), does not appear in any row.
+No row contains the phrase sometimes attributed to Dolores Ibárruri on 16 June 1936. It is «Este hombre ha hablado por última vez» (‘This man has spoken for the last time’).
 
 <!-- diario.calla.ausencias.barriga -->
-Searched for in the corpus, «tiros a la barriga» (‘shots to the belly’) does not appear in 1933: the first row to contain it is a shout of 31 May 1934.
+Searched for in the corpus, «tiros a la barriga» (‘shots to the belly’) does not appear in 1933. The first row to contain it is a shout of 31 May 1934.
 
 <!-- ↺ comun.fija.contar -->
 Counting a word does not tell you who defends it or in what tone.
@@ -454,7 +454,7 @@ Closing note of the summary of 1 February 1939
 The first note also speaks of the «LIBERACION DE BARCELONA» (‘liberation of Barcelona’) of 26 January 1939. Who wrote it, and when, has yet to be checked against the printed volume.
 
 <!-- diario.habla.mexico -->
-The cover of the Mexico volume warns of what is missing: of the meetings of the Standing Committee (Diputación Permanente) there, «no se dispone de los textos ni en forma de fotocopia» (‘the texts are not available, not even as photocopies’).
+The cover of the Mexico volume warns of what is missing. Of the meetings of the Standing Committee (Diputación Permanente) there, «no se dispone de los textos ni en forma de fotocopia» (‘the texts are not available, not even as photocopies’).
 
 <!-- diario.habla.mexico.pie -->
 Cover of the Mexico volume

@@ -722,6 +722,9 @@ El texto sigue; aquí va solo su comienzo.
 <!-- fig.F20.salvedad -->
 La ideología de Campoamor es C porque es la de su partido, el radical.
 
+<!-- fig.F20.leame.denominador -->
+No hay denominador: son dos filas del CSV depositado, sin agregar.
+
 > [nota de diseño] F20 es una tabla ARIA clave–valor, dos columnas de datos (5423 · 5424). La definición de cada
 > columna **no se redacta aquí**: se reutiliza `datos.columnas.<columna>.definicion` (F32), para que las dos figuras
 > digan lo mismo. `fig.F20.nota.columna` es la plantilla de la nota (`{{columna}}`, `{{definicion}}` los pone la
@@ -806,6 +809,12 @@ Tras revisar a mano todas las filas y corregir {{vinculo.corregidas}} asignacion
 
 <!-- fig.F19.salvedad -->
 La diferencia de {{etiquetas.diferencia|letra}} entre etiquetas y filas no está documentada. Las páginas no están depositadas.
+
+<!-- fig.F19.leame.que_mide -->
+La cifra de cada paso, de los números del Diario a las filas con diputado, con su unidad, su base y su fuente. Una fila por cifra en pasos.csv.
+
+<!-- fig.F19.leame.denominador -->
+No hay denominador: son recuentos sueltos, uno o dos por paso. La columna base dice si la cifra sale del CSV depositado o de los archivos del proyecto.
 
 <!-- fig.F19.alt -->
 Cinco pasos en fila: los números del Diario, las páginas leídas, las fórmulas de orador, las filas y las filas con diputado identificado, cada uno con su cifra.

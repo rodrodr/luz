@@ -1,5 +1,17 @@
 # Cambios · Luz y Taquígrafos (sitio)
 
+## 08-11-2026 · La compilación de publicación, en verde
+
+- `npm run publicar` pasa entero. Faltaban: el LÉAME de F05, F09 y F19 (qué mide y denominador) y el denominador de F20;
+  siete frases inglesas de más de 30 palabras, partidas sin tocar las citas; seis descripciones inglesas de más de 155
+  caracteres, acortadas.
+- F05: sus datos traen {{oradores.diputados}} diputados (los de `oradores_etapa.csv`), no `diputados.V2`, que cuenta
+  también a la Presidencia.
+- Registro y el enlace a la puerta de cada ficha: espacios de texto entre sus piezas. Sin ellos, sin CSS o en un lector
+  de pantalla se leía «1933Otra mayoría» (y la auditoría lo daba como cifra sin procedencia en inglés).
+- `playwright.config.ts`: la vista previa arranca con `--ignore-lock`. Astro 7 deja un bloqueo y la segunda ejecución
+  fallaba con «exited early».
+
 ## 08-11-2026 · «Preguntar con IA»: el conector `luz-mcp`
 
 - Página nueva, `/[lang]/asistente/` (pestaña «Preguntar con IA» en el grupo de la base): cómo consultar Luz y
