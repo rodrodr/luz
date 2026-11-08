@@ -1,0 +1,49 @@
+# Publica el sitio en GitHub Pages (rodrodr.github.io/luz/, D-21) en cada empuje a `main`, o a mano desde la pestaña
+# Actions. Compila como la publicación (STRICT=1: sin el catálogo de componentes y sin ningún pendiente) con los datos
+# ya exportados que están en el repositorio: el exportador y el corpus local no hacen falta aquí.
+name: Publicar en GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Un despliegue a la vez; uno nuevo no cancela el que ya está en marcha.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  compilar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Compilar (publicación)
+        run: npm run build
+        env:
+          STRICT: '1'
+          SITE_URL: https://rodrodr.github.io
+          BASE_PATH: /luz
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  desplegar:
+    needs: compilar
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.despliegue.outputs.page_url }}
+    steps:
+      - id: despliegue
+        uses: actions/deploy-pages@v4

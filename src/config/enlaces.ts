@@ -22,7 +22,8 @@ export const ENLACES = {
   luzMcpPypi: 'https://pypi.org/project/luz-mcp/',
   /** Proyecto hermano, distinto (pie). */
   parlaibero: 'https://rodrodr.github.io/parlaibero/',
-  /** D-21 (decidida, 23-09-2026): repositorio `luz` → rodrodr.github.io/luz/. Lo crea y lo publica el investigador. */
+  /** D-21 (decidida, 23-09-2026): repositorio `luz` → rodrodr.github.io/luz/. El 08-11-2026 `luz_site` pasó a llamarse `luz` y
+   *  se publica con GitHub Actions (.github/workflows/pages.yml). */
   repositorio: 'https://github.com/rodrodr/luz',
   erratas: 'https://github.com/rodrodr/luz/issues',
   licenciaDatos: 'https://creativecommons.org/licenses/by/4.0/',

@@ -1,5 +1,12 @@
 # Cambios · Luz y Taquígrafos (sitio)
 
+## 08-11-2026 · Publicado en GitHub Pages
+
+- El repositorio `luz_site` pasa a llamarse `luz` (D-21): el sitio vive en `rodrodr.github.io/luz/`, la dirección que ya
+  dan el código, las citas y el mapa del sitio, y los enlaces al repositorio y a sus incidencias (erratas) funcionan.
+- `.github/workflows/pages.yml`: en cada empuje a `main` compila como la publicación (`STRICT=1`, con `SITE_URL` y
+  `BASE_PATH`) y despliega `dist/` con GitHub Actions. Usa los datos ya exportados del repositorio.
+
 ## 08-11-2026 · La compilación de publicación, en verde
 
 - `npm run publicar` pasa entero. Faltaban: el LÉAME de F05, F09 y F19 (qué mide y denominador) y el denominador de F20;
