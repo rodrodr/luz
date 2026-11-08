@@ -32,6 +32,7 @@
 <!-- comun.nav.datos --> [Datos]
 <!-- comun.nav.explorador --> [Explorador]
 <!-- comun.nav.afinidades --> [Afinidades]
+<!-- comun.nav.asistente --> [Preguntar con IA]
 <!-- comun.idioma.aria --> Lengua
 <!-- comun.idioma.es --> [Español]
 <!-- comun.idioma.en --> [English]
@@ -39,8 +40,9 @@
 <!-- comun.nav.tema.claro --> Tema claro
 
 > [nota de diseño] El descriptor va en cuerpo pequeño junto a la marca y no lleva cifra: los años son el título del
-> conjunto depositado. Seis pestañas en dos grupos separados por un filete: `comun.nav.historia.aria` nombra el grupo
-> de Las Cortes y El Diario; `comun.nav.base.aria`, el de Método, Datos, Explorador y Afinidades. La pestaña
+> conjunto depositado. Siete pestañas en dos grupos separados por un filete: `comun.nav.historia.aria` nombra el grupo
+> de Las Cortes y El Diario; `comun.nav.base.aria`, el de Método, Datos, Explorador, Afinidades y Preguntar con IA
+> (la página del conector `luz-mcp`, 08-11-2026). La pestaña
 > «Explorador» lleva a la página del sitio; la herramienta se abre con [Abrir el explorador ↗]. Sin botones de acción en
 > la cabecera. ES · EN se pintan en mayúsculas visibles; `comun.idioma.*` es su nombre accesible.
 
@@ -70,12 +72,11 @@ Metadatos del proyecto (no depositados; el explorador no los muestra)
 Afinidades Elegidas (CGOCUS)
 
 <!-- comun.fija.formulario -->
-Antes de descargar, Harvard Dataverse le pedirá nombre, correo e institución.
+Harvard Dataverse no pide registro ni formulario para descargar.
 
-<!-- comun.fija.formulario.motivo -->
-Con esos datos queremos saber quién usa la base y con qué fin, para poder mejorarla y comunicar novedades.
-
-> [nota de diseño] ↺ 3 va SIEMPRE encima del botón que lleva a Dataverse, nunca en una nota emergente. El motivo
+> [nota de diseño] **08-11-2026:** Dataverse ya no pide formulario (lo retiró el investigador para que funcione el
+> conector `luz-mcp`). ↺ 3 dice ahora que la descarga es libre; el motivo del formulario (D-20) se retira. Lo que sigue es
+> la nota anterior. ↺ 3 va SIEMPRE encima del botón que lleva a Dataverse, nunca en una nota emergente. El motivo
 > (D-20) lo dio el investigador el 23-09-2026: «conocer a los usuarios y los usos de la base para poder mejorarla y
 > comunicar novedades»; esta es su redacción final, una sola frase que no promete más (ni boletín, ni respuesta, ni
 > plazo). Es texto para el lector y se traduce. El formulario no se nombra por su título (lleva una errata).
@@ -149,6 +150,7 @@ Se abre en su navegador; lo que busca y guarda se queda en su equipo.
 > | `comun.boton.ver_versiones` | [Ver por qué hay dos ediciones] | `/{lang}/datos/versiones/` |
 > | `comun.boton.ver_explorador` | [Ver qué hace el explorador] | `/{lang}/explorador/` |
 > | `comun.boton.ver_afinidades` | [Ver Afinidades Elegidas] | `/{lang}/afinidades/` |
+> | `comun.boton.ver_asistente` | [Ver cómo preguntar con IA] | `/{lang}/asistente/` |
 > | `comun.boton.unir` | [Unir con THQCMI] | `/{lang}/datos/#unir` |
 > | `comun.boton.ir_inicio` | [Ir a Inicio] | `/{lang}/` |
 > | `comun.boton.errata` | [Avisar de una errata] | incidencias del repositorio (D-21) |
@@ -205,6 +207,7 @@ Se abre en su navegador; lo que busca y guarda se queda en su equipo.
 <!-- comun.boton.ver_columnas --> [Ver qué trae cada columna]
 <!-- comun.boton.ver_explorador --> [Ver qué hace el explorador]
 <!-- comun.boton.ver_afinidades --> [Ver Afinidades Elegidas]
+<!-- comun.boton.ver_asistente --> [Ver cómo preguntar con IA]
 <!-- comun.boton.unir --> [Unir con THQCMI]
 <!-- comun.boton.ir_inicio --> [Ir a Inicio]
 <!-- comun.boton.errata --> [Avisar de una errata]
@@ -238,7 +241,7 @@ Datos, [CC BY 4.0]. Código del sitio, [MIT].
 Página, ed. {{edicion_pagina}} · Datos: Luz y Taquígrafos, en Harvard Dataverse
 
 <!-- comun.pie.privacidad -->
-Este sitio no usa cookies ni analítica; Dataverse pide datos al descargar, y se lo avisamos antes.
+Este sitio no usa cookies ni analítica, y Harvard Dataverse no pide datos para descargar.
 
 <!-- comun.pie.enlaces -->
 [Cómo citar] [De dónde sale cada cifra] [Avisar de una errata] [Escribirnos] [ParlaIbero], proyecto hermano y distinto

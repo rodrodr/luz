@@ -1,5 +1,22 @@
 # Cambios · Luz y Taquígrafos (sitio)
 
+## 08-11-2026 · «Preguntar con IA»: el conector `luz-mcp`
+
+- Página nueva, `/[lang]/asistente/` (pestaña «Preguntar con IA» en el grupo de la base): cómo consultar Luz y
+  Taquígrafos y Afinidades Elegidas desde un asistente de IA con el conector abierto `luz-mcp` (PyPI;
+  `github.com/rodrodr/luz-tools`). Qué puede pedirle, seis preguntas de ejemplo con su herramienta, la instalación
+  (Claude Code, Codex y ChatGPT de escritorio, el bloque JSON del resto), lo que conviene saber y la cita. Termina en
+  el explorador y en la descarga. Sigue la página «Herramientas» de ParlaIbero, sin los skills.
+- Sin cifras: los ejemplos dan la pregunta, lo que hace el asistente y la herramienta, no el resultado.
+- Datos › Por dónde empezar: quinto peldaño, «Con un asistente de IA», debajo de la escalera y a todo el ancho.
+- Rótulo único nuevo `comun.boton.ver_asistente` [Ver cómo preguntar con IA]; enlaces `luzTools` y `luzMcpPypi` en
+  `src/config/enlaces.ts`; la ruta, en `tests/rutas.ts`. Copy: `docs/copy_es/asistente.md` y `docs/copy_en/asistente.md`.
+- Dataverse ya no pide formulario (lo retiró el investigador para que funcione el conector). ↺ 3 (`comun.fija.formulario`)
+  dice ahora «Harvard Dataverse no pide registro ni formulario para descargar.»; el pie (`comun.pie.privacidad`), que la
+  descarga no pide datos. Se retira el motivo del formulario (`comun.fija.formulario.motivo`, D-20) de Datos y de la
+  banda fija, y las dos frases que nombraban el formulario (Afinidades › descarga; Datos › fragmentos). Glosario y lista
+  de frases fijas de `copy2i18n.py`, al día. `humo.spec.ts` cuenta siete pestañas.
+
 ## 24-09-2026 · «¿Izquierda o derecha?» en Método 07
 
 - Nuevo juego en «¿Qué significan partido, familia e ideología?»: una palabra («patria», «Iglesia», «Cataluña»,

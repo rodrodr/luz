@@ -20,6 +20,7 @@
 <!-- comun.nav.datos --> [Data]
 <!-- comun.nav.explorador --> [Explorer]
 <!-- comun.nav.afinidades --> [Afinidades]
+<!-- comun.nav.asistente --> [Ask with AI]
 <!-- comun.idioma.aria --> Language
 <!-- comun.idioma.es --> [Español]
 <!-- comun.idioma.en --> [English]
@@ -47,10 +48,7 @@ Project metadata (not deposited; not shown in the explorer)
 Afinidades Elegidas (CGOCUS)
 
 <!-- comun.fija.formulario -->
-Before you download, Harvard Dataverse will ask for your name, email address and institution.
-
-<!-- comun.fija.formulario.motivo -->
-We use these details to learn who uses the dataset and for what, so that we can improve it and announce updates.
+Harvard Dataverse asks for no registration or form before you download.
 
 <!-- comun.fija.enlace -->
 The explorer cannot open a search from a link: copy the query and paste it into its search box (/ key).
@@ -104,6 +102,7 @@ It opens in your browser; what you search for and save stays on your device.
 <!-- comun.boton.ver_columnas --> [See what each column holds]
 <!-- comun.boton.ver_explorador --> [See what the explorer does]
 <!-- comun.boton.ver_afinidades --> [See Afinidades Elegidas]
+<!-- comun.boton.ver_asistente --> [See how to ask with AI]
 <!-- comun.boton.unir --> [Join with THQCMI]
 <!-- comun.boton.ir_inicio --> [Go to Home]
 <!-- comun.boton.errata --> [Report an error]
@@ -130,7 +129,7 @@ Data, [CC BY 4.0]. Site code, [MIT].
 Page, ed. {{edicion_pagina}} · Data: Luz y Taquígrafos, on Harvard Dataverse
 
 <!-- comun.pie.privacidad -->
-This site uses no cookies and no analytics; Dataverse asks for details when you download, and we tell you before you get there.
+This site uses no cookies and no analytics, and Harvard Dataverse asks for no details when you download.
 
 <!-- comun.pie.enlaces -->
 [How to cite] [Where each number comes from] [Report an error] [Contact us] [ParlaIbero], a sister project, separate from this one

@@ -7,16 +7,14 @@
  * Los dos avisos van siempre pegados a su botón, nunca en una nota emergente. Va FIJA (no pegajosa) y reserva su
  * hueco al final del documento (`:has`) para no tapar el pie ni el elemento con el foco (WCAG 2.4.11).
  */
-import { t, rotulo, plano, existe } from '../lib/i18n';
-import { faltaDelInvestigador } from '../lib/cifras';
+import { t, rotulo, plano } from '../lib/i18n';
 import { url, PAGINAS } from '../lib/rutas';
 import { ENLACES } from '../config/enlaces';
 import type { Lang } from '../lib/idiomas';
 
 interface Props { lang: Lang }
 const { lang } = Astro.props;
-// D-20: el motivo del formulario lo redacta el investigador. Mientras falte, la vista previa lo enseña como pendiente.
-const MOTIVO = 'comun.fija.formulario.motivo';
+// ↺ 3: la descarga en Dataverse es libre (08-11-2026: ya no pide formulario; el motivo, D-20, se retiró).
 ---
 <aside class="banda-cta no-imprimir" aria-label={plano(lang, 'comun.banda.aria')}>
   <div class="contenedor banda-fila">
@@ -31,7 +29,6 @@ const MOTIVO = 'comun.fija.formulario.motivo';
       <a class="boton sec" href={url(lang, `${PAGINAS.datos}#empezar`)} aria-describedby="banda-aviso-formulario" set:html={rotulo(lang, 'comun.boton.descargar')} />
       <p class="banda-aviso" id="banda-aviso-formulario">
         <span set:html={t(lang, 'comun.fija.formulario')} />
-        {existe(MOTIVO) ? <span set:html={' ' + t(lang, MOTIVO)} /> : <span set:html={' ' + faltaDelInvestigador('D-20', 'motivo del formulario')} />}
       </p>
     </div>
   </div>

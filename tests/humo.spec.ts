@@ -53,8 +53,8 @@ for (const { w, tema } of ANCHOS) {
         test(`humo · /${lang}/${ruta}`, async ({ page }) => {
           await revisa(page, `${lang}/${ruta}`, lang);
           if (ruta === '') {
-            // La cabecera en dos filas y sin hamburguesa: las seis pestañas están a la vista.
-            await expect(page.locator('.nav-sitio a')).toHaveCount(6);
+            // La cabecera sin hamburguesa: las siete pestañas están a la vista (la séptima, «Preguntar con IA», 08-11-2026).
+            await expect(page.locator('.nav-sitio a')).toHaveCount(7);
             for (const a of await page.locator('.nav-sitio a').all()) await expect(a).toBeVisible();
             await expect(page.locator('header [aria-expanded]')).toHaveCount(0);
           }

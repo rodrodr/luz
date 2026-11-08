@@ -30,6 +30,7 @@ export const PAGINAS = {
   datos: 'datos',
   explorador: 'explorador',
   afinidades: 'afinidades',
+  asistente: 'asistente',
 } as const;
 export type Pagina = keyof typeof PAGINAS;
 
@@ -89,5 +90,6 @@ export function todasLasRutas(): string[] {
     PAGINAS.datos,
     PAGINAS.explorador,
     PAGINAS.afinidades,
+    PAGINAS.asistente,
   ];
 }

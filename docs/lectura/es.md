@@ -36,6 +36,7 @@
 <!-- comun.nav.datos --> [Datos]
 <!-- comun.nav.explorador --> [Explorador]
 <!-- comun.nav.afinidades --> [Afinidades]
+<!-- comun.nav.asistente --> [Preguntar con IA]
 <!-- comun.idioma.aria --> Lengua
 <!-- comun.idioma.es --> [Español]
 <!-- comun.idioma.en --> [English]
@@ -43,8 +44,9 @@
 <!-- comun.nav.tema.claro --> Tema claro
 
 > [nota de diseño] El descriptor va en cuerpo pequeño junto a la marca y no lleva cifra: los años son el título del
-> conjunto depositado. Seis pestañas en dos grupos separados por un filete: `comun.nav.historia.aria` nombra el grupo
-> de Las Cortes y El Diario; `comun.nav.base.aria`, el de Método, Datos, Explorador y Afinidades. La pestaña
+> conjunto depositado. Siete pestañas en dos grupos separados por un filete: `comun.nav.historia.aria` nombra el grupo
+> de Las Cortes y El Diario; `comun.nav.base.aria`, el de Método, Datos, Explorador, Afinidades y Preguntar con IA
+> (la página del conector `luz-mcp`, 08-11-2026). La pestaña
 > «Explorador» lleva a la página del sitio; la herramienta se abre con [Abrir el explorador ↗]. Sin botones de acción en
 > la cabecera. ES · EN se pintan en mayúsculas visibles; `comun.idioma.*` es su nombre accesible.
 
@@ -55,8 +57,6 @@
 <!-- comun.subnav.cortes.sesiones --> [Sesiones y votaciones]
 <!-- comun.subnav.datos.aria --> Datos, por secciones
 <!-- comun.subnav.datos.usar --> [Usar los datos]
-<!-- comun.subnav.datos.versiones --> [Versiones]
-
 ---
 
 ## 2. Frases fijas ↺
@@ -69,31 +69,21 @@
 <!-- comun.fija.diario -->
 Edición derivada para investigación: ante cualquier discrepancia, vale el Diario de Sesiones.
 
-<!-- comun.sello.V2 -->
-Edición depositada (V2)
-
-<!-- comun.sello.v3 -->
-Edición del explorador (v3, sin depositar)
-
 <!-- comun.sello.proyecto -->
 Metadatos del proyecto (no depositados; el explorador no los muestra)
 
 <!-- comun.sello.afin -->
-Afinidades Elegidas (CGOCUS V1.1, depositada)
+Afinidades Elegidas (CGOCUS)
 
 <!-- comun.fija.formulario -->
-Antes de descargar, Harvard Dataverse le pedirá nombre, correo e institución.
+Harvard Dataverse no pide registro ni formulario para descargar.
 
-<!-- comun.fija.formulario.motivo -->
-Con esos datos queremos saber quién usa la base y con qué fin, para poder mejorarla y comunicar novedades.
-
-> [nota de diseño] ↺ 3 va SIEMPRE encima del botón que lleva a Dataverse, nunca en una nota emergente. El motivo
+> [nota de diseño] **08-11-2026:** Dataverse ya no pide formulario (lo retiró el investigador para que funcione el
+> conector `luz-mcp`). ↺ 3 dice ahora que la descarga es libre; el motivo del formulario (D-20) se retira. Lo que sigue es
+> la nota anterior. ↺ 3 va SIEMPRE encima del botón que lleva a Dataverse, nunca en una nota emergente. El motivo
 > (D-20) lo dio el investigador el 23-09-2026: «conocer a los usuarios y los usos de la base para poder mejorarla y
 > comunicar novedades»; esta es su redacción final, una sola frase que no promete más (ni boletín, ni respuesta, ni
 > plazo). Es texto para el lector y se traduce. El formulario no se nombra por su título (lleva una errata).
-
-<!-- comun.fija.ids -->
-Los identificadores de fila cambian entre la edición depositada (V2) y la del explorador (v3); la sesión —fecha y número— es la misma en las dos.
 
 <!-- comun.fija.enlace -->
 El explorador no abre una búsqueda desde un enlace: cópiela y péguela en su buscador (tecla /).
@@ -113,17 +103,8 @@ Que estén no valida su contenido.
 <!-- comun.fija.legislatura -->
 El censo y las relaciones de Afinidades Elegidas llaman 1933-1936 a la legislatura que esta base llama 1933-1935; las sesiones del Diario terminan el 10 de diciembre de 1935.
 
-<!-- comun.fija.readme -->
-El README depositado describe la primera versión; las diferencias, aquí.
-
 <!-- comun.fija.sin_formulario -->
 Sin formulario: son datos agregados.
-
-<!-- comun.fija.notabases -->
-Esta cifra sale de la edición del explorador (v3, 121.700 filas, sin depositar); la depositada es la V2 (107.551 filas). Por qué hay dos →
-
-<!-- comun.fija.notabases.ids -->
-Los números v3 de estas citas son filas de la edición del explorador (v3, 121.700 filas, sin depositar); los V2 son de la depositada (107.551 filas). Por qué hay dos →
 
 > [nota de diseño] ↺ 11 y ↺ 13 van tal cual el plan, sin corchetes, porque así las repiten ya las demás páginas. El
 > enlace lo pone el componente: en ↺ 13 (`NotaBases`), «Por qué hay dos →» lleva a `/{lang}/datos/versiones/`; en
@@ -142,7 +123,7 @@ Los números v3 de estas citas son filas de la edición del explorador (v3, 121.
 El tono dice cuántas palabras se imprimieron, no cuánto importó.
 
 <!-- comun.fija.explorador -->
-Sirve la edición v3, sin depositar; pide un ordenador.
+Funciona en el navegador de un ordenador.
 
 <!-- comun.fija.local -->
 Se abre en su navegador; lo que busca y guarda se queda en su equipo.
@@ -173,6 +154,7 @@ Se abre en su navegador; lo que busca y guarda se queda en su equipo.
 > | `comun.boton.ver_versiones` | [Ver por qué hay dos ediciones] | `/{lang}/datos/versiones/` |
 > | `comun.boton.ver_explorador` | [Ver qué hace el explorador] | `/{lang}/explorador/` |
 > | `comun.boton.ver_afinidades` | [Ver Afinidades Elegidas] | `/{lang}/afinidades/` |
+> | `comun.boton.ver_asistente` | [Ver cómo preguntar con IA] | `/{lang}/asistente/` |
 > | `comun.boton.unir` | [Unir con THQCMI] | `/{lang}/datos/#unir` |
 > | `comun.boton.ir_inicio` | [Ir a Inicio] | `/{lang}/` |
 > | `comun.boton.errata` | [Avisar de una errata] | incidencias del repositorio (D-21) |
@@ -227,9 +209,9 @@ Se abre en su navegador; lo que busca y guarda se queda en su equipo.
 <!-- comun.boton.ver_diario --> [Ver qué recoge el Diario]
 <!-- comun.boton.ver_metodo --> [Ver cómo se hizo]
 <!-- comun.boton.ver_columnas --> [Ver qué trae cada columna]
-<!-- comun.boton.ver_versiones --> [Ver por qué hay dos ediciones]
 <!-- comun.boton.ver_explorador --> [Ver qué hace el explorador]
 <!-- comun.boton.ver_afinidades --> [Ver Afinidades Elegidas]
+<!-- comun.boton.ver_asistente --> [Ver cómo preguntar con IA]
 <!-- comun.boton.unir --> [Unir con THQCMI]
 <!-- comun.boton.ir_inicio --> [Ir a Inicio]
 <!-- comun.boton.errata --> [Avisar de una errata]
@@ -251,7 +233,7 @@ Se abre en su navegador; lo que busca y guarda se queda en su equipo.
 Rodrigues-Silveira, Rodrigo; García-Díez, Fátima; Llamazares, Iván; Martínez-Barahona, Elena; Barreto Martín, Eduardo · [Universidad de Salamanca]
 
 <!-- comun.pie.depositos -->
-Depositados en Harvard Dataverse: Luz y Taquígrafos, THQCMI V2.0 ([doi:10.7910/DVN/THQCMI]), y Afinidades Elegidas, CGOCUS V1.1 ([doi:10.7910/DVN/CGOCUS]).
+Depositados en Harvard Dataverse: Luz y Taquígrafos ([doi:10.7910/DVN/THQCMI]) y Afinidades Elegidas ([doi:10.7910/DVN/CGOCUS]).
 
 <!-- ↺ comun.fija.diario -->
 Edición derivada para investigación: ante cualquier discrepancia, vale el Diario de Sesiones.
@@ -260,10 +242,10 @@ Edición derivada para investigación: ante cualquier discrepancia, vale el Diar
 Datos, [CC BY 4.0]. Código del sitio, [MIT].
 
 <!-- comun.pie.ediciones -->
-Página, ed. ⟦edicion_pagina⟧ · Datos: V2.0 depositada (107.551 filas) · Explorador: v3 sin depositar (121.700 filas)
+Página, ed. ⟦edicion_pagina⟧ · Datos: Luz y Taquígrafos, en Harvard Dataverse
 
 <!-- comun.pie.privacidad -->
-Este sitio no usa cookies ni analítica; Dataverse pide datos al descargar, y se lo avisamos antes.
+Este sitio no usa cookies ni analítica, y Harvard Dataverse no pide datos para descargar.
 
 <!-- comun.pie.enlaces -->
 [Cómo citar] [De dónde sale cada cifra] [Avisar de una errata] [Escribirnos] [ParlaIbero], proyecto hermano y distinto
@@ -296,8 +278,8 @@ Vista previa. Pendiente de decisión del investigador:
 
 <!-- comun.consulta.etiqueta --> Consulta para el buscador del explorador
 <!-- comun.consulta.filtros --> Filtros
-<!-- comun.consulta.recuento --> Recuento del ⟦fecha⟧: ⟦n⟧ intervenciones en la edición del explorador (v3).
-<!-- comun.consulta.recuento.una --> Recuento del ⟦fecha⟧: una intervención en la edición del explorador (v3).
+<!-- comun.consulta.recuento --> Recuento del ⟦fecha⟧: ⟦n⟧ intervenciones en el explorador.
+<!-- comun.consulta.recuento.una --> Recuento del ⟦fecha⟧: una intervención en el explorador.
 <!-- comun.consulta.copiada --> Consulta copiada. En el explorador, pulse / y péguela.
 <!-- comun.consulta.sinjs --> Seleccione la consulta y cópiela.
 
@@ -311,6 +293,7 @@ Vista previa. Pendiente de decisión del investigador:
 ### 5.4 Sello de base
 
 <!-- comun.sello.titulo --> Base
+<!-- comun.sello.base --> Luz y Taquígrafos
 <!-- comun.sello.huella --> Huella
 <!-- comun.sello.exportado --> Cifras exportadas el ⟦fecha⟧
 <!-- comun.sello.dv --> Metadatos de Harvard Dataverse, leídos en su API
@@ -329,17 +312,17 @@ Vista previa. Pendiente de decisión del investigador:
 <!-- comun.cita.ris --> RIS
 <!-- comun.cita.copiada --> Cita copiada.
 <!-- comun.cita.dataverse --> Tal como la da Harvard Dataverse.
-<!-- comun.cita.cgocus.nota --> Harvard Dataverse cita la versión mayor, «V1»; la vigente es la V1.1.
+<!-- comun.cita.cgocus.nota --> Cítela tal como la da Harvard Dataverse.
 
 <!-- comun.cita.figura -->
 Rodrigues-Silveira, Rodrigo; García-Díez, Fátima; Llamazares, Iván; Martínez-Barahona, Elena; Barreto Martín, Eduardo. «⟦titulo⟧». Figura de Luz y Taquígrafos. ⟦url⟧. Base: ⟦base⟧. Exportada el ⟦fecha⟧.
 
 <!-- comun.cita.pasaje -->
-⟦diario⟧, núm. ⟦numero⟧, ⟦fecha⟧, pp. ⟦paginas⟧ (metadatos del proyecto). Luz y Taquígrafos, ⟦edicion⟧, fila ⟦id⟧.
+⟦diario⟧, núm. ⟦numero⟧, ⟦fecha⟧, pp. ⟦paginas⟧ (metadatos del proyecto). Luz y Taquígrafos, fila ⟦id⟧.
 
-> [nota de diseño] `comun.cita.figura` y `comun.cita.pasaje` las rellena `lib/cita.ts`. En el pasaje, `⟦edicion⟧`
-> es `comun.sello.V2` o `comun.sello.v3` en minúscula inicial («edición depositada (V2)»); los otros cuatro valores son
-> metadatos del proyecto y van rotulados como tales. La cita del conjunto se copia tal como la da Dataverse
+> [nota de diseño] `comun.cita.figura` y `comun.cita.pasaje` las rellena `lib/cita.ts`. La base de una figura es
+> `comun.sello.base` («Luz y Taquígrafos») o el sello de su otra fuente; el sitio no nombra ediciones (24-09-2026). En
+> el pasaje, los cuatro primeros valores son metadatos del proyecto y van rotulados como tales. La cita del conjunto se copia tal como la da Dataverse
 > (`Rodrigues-Silveira, Rodrigo; García-Díez, Fátima; Llamazares, Iván; Martínez-Barahona, Elena; Barreto Martín, Eduardo, 2026, "Luz y Taquígrafos: Parliamentary Debates in the Second Spanish Republic, 1931–1945", https://doi.org/10.7910/DVN/THQCMI, Harvard Dataverse, V2`, `Rodrigues-Silveira, Rodrigo; García-Díez, Fátima; Llamazares, Iván; Martínez-Barahona, Elena; Barreto Martín, Eduardo, 2026, "Afinidades Elegidas: Parliamentary Cosponsorship Networks of the Spanish Second Republic (1931-1939)", https://doi.org/10.7910/DVN/CGOCUS, Harvard Dataverse, V1, UNF:6:CMFrKjuOq5l9fBChyzsMsQ== [fileUNF]`), sin retocar su «V2» ni su «V1». Los tres formatos van en `<details>`.
 
 ### 5.6 Captura del explorador
@@ -498,13 +481,13 @@ Plano: Congreso de los Diputados, planta del hemiciclo (propuesta de accesibilid
 **Diario.** El Diario de Sesiones impreso de las Cortes. Va con mayúscula y manda sobre la base.
 
 <!-- comun.glosario.fila -->
-**Fila.** Una línea del CSV depositado (V2). Empieza donde el etiquetado reconoce la fórmula impresa de un orador y acaba en la siguiente que reconoce. A veces lleva dentro un documento leído o la réplica de otro orador.
+**Fila.** Una línea del CSV. La mayoría son turnos de palabra, de una fórmula impresa de orador a la siguiente. Las demás guardan lo que el Diario imprime sin que nadie lo diga: el sumario, las listas, los documentos.
 
 <!-- comun.glosario.intervencion -->
-**Intervención.** El nombre que da el explorador a cada una de sus filas (v3). Aquí solo se usa al hablar del explorador, y con su base.
+**Intervención.** El nombre que da el explorador a cada una de sus filas. Aquí solo se usa al hablar del explorador.
 
 <!-- comun.glosario.sesion -->
-**Sesión.** Una reunión del pleno, con su fecha y su número. Fecha y número son la clave común de las dos ediciones.
+**Sesión.** Una reunión del pleno, con su fecha y su número. Fecha y número, juntos, la identifican.
 
 <!-- comun.glosario.etapa -->
 **Etapa.** Cada tramo en que este sitio parte las Cortes: las Constituyentes, la legislatura de 1933-1935, las Cortes de 1936 hasta la guerra, la guerra y México.
@@ -514,12 +497,6 @@ Plano: Congreso de los Diputados, planta del hemiciclo (propuesta de accesibilid
 
 <!-- comun.glosario.presidencia -->
 **Presidencia.** El cargo que modera la sesión, lo ocupe el Presidente de las Cortes o un vicepresidente. Quien preside es diputado, y en la base lleva su partido.
-
-<!-- comun.glosario.edicion_depositada -->
-**Edición depositada.** La V2 de Luz y Taquígrafos en Harvard Dataverse: el CSV que se descarga y se cita.
-
-<!-- comun.glosario.edicion_explorador -->
-**Edición del explorador.** La v3 que sirve el explorador: las mismas sesiones, partidas en más filas y con otros identificadores. No está depositada.
 
 <!-- comun.glosario.metadatos -->
 **Metadatos del proyecto.** El Diario, el número, las páginas, el presidente titular y el Gobierno de cada sesión. Los reunió el proyecto; no están depositados y el explorador no los muestra.
@@ -534,7 +511,7 @@ Plano: Congreso de los Diputados, planta del hemiciclo (propuesta de accesibilid
 **Debate preparado.** Una biblioteca que el explorador ofrece ya hecha, con el nombre de un debate y sus sesiones.
 
 <!-- comun.glosario.palabras -->
-**Palabras.** Lo que cuenta la columna `nwords` de la V2. Otras maneras de contar dan otras cifras; cada figura dice la suya.
+**Palabras.** Lo que cuenta la columna `nwords`. Otras maneras de contar dan otras cifras; cada figura dice la suya.
 
 <!-- comun.glosario.diputados -->
 **Diputados que intervienen.** Los `rep_id` distintos con al menos una fila en el periodo. Incluyen a quien preside.
@@ -639,7 +616,7 @@ Quién firmó con quién en el Congreso de la República, 1931–1939: tres rede
 ## Cabecera
 
 <!-- afinidades.antetitulo -->
-doi:10.7910/DVN/CGOCUS · V1.1 · 6-V-2026
+doi:10.7910/DVN/CGOCUS · 6-V-2026
 
 <!-- afinidades.titulo -->
 ¿Con quién estaban dispuestos a firmar?
@@ -648,10 +625,10 @@ doi:10.7910/DVN/CGOCUS · V1.1 · 6-V-2026
 Hablar en contra es público y barato; firmar una medida con otro exige un acuerdo previo, casi siempre fuera del acta.
 
 <!-- ↺ comun.sello.afin -->
-Afinidades Elegidas (CGOCUS V1.1, depositada)
+Afinidades Elegidas (CGOCUS)
 
 <!-- afinidades.que_es -->
-Afinidades Elegidas es una base derivada de Luz y Taquígrafos, con su propio depósito. Reúne quién firmó con quién en el Congreso, de 1931 a 1939. Las cifras de esta página son de la V1.1 depositada; hay una versión corregida en preparación.
+Afinidades Elegidas es una base derivada de Luz y Taquígrafos, con su propio depósito. Reúne quién firmó con quién en el Congreso, de 1931 a 1939. Las cifras de esta página son las de su depósito.
 
 <!-- afinidades.nombre -->
 El nombre viene de la afinidad electiva de Goethe, que Max Weber llevó a la sociología. «Elegidas», y no «electivas», subraya la decisión de quien firma. Y deja oír otra lectura: las afinidades de los electos.
@@ -687,7 +664,7 @@ Los datos
 ## 2. Firmar no es hablar
 
 <!-- afinidades.firmar.antetitulo -->
-CGOCUS V1.1 · 63.507 relaciones par-medida · 1.530 medidas
+CGOCUS · 63.507 relaciones par-medida · 1.530 medidas
 
 <!-- afinidades.firmar.titulo -->
 Firmar no es hablar
@@ -713,7 +690,7 @@ Cubre las tres legislaturas de la República, de 1931 a 1939. Las sesiones de M�
 ## 3. Tres legislaturas en cifras
 
 <!-- afinidades.cifras.antetitulo -->
-CGOCUS V1.1 · 1.026 personas · 78 en las tres legislaturas
+CGOCUS · 1.026 personas · 78 en las tres legislaturas
 
 <!-- afinidades.cifras.titulo -->
 Tres legislaturas en cifras
@@ -775,7 +752,7 @@ El censo y las relaciones de Afinidades Elegidas llaman 1933-1936 a la legislatu
 ## 4. ¿Se cruzaba de bloque?
 
 <!-- afinidades.cruce.antetitulo -->
-CGOCUS V1.1 · denominador: las filas del edgelist de cada legislatura
+CGOCUS · denominador: las filas del edgelist de cada legislatura
 
 <!-- afinidades.cruce.titulo -->
 ¿Se cruzaba de bloque?
@@ -874,7 +851,7 @@ Una barra por legislatura: la parte de las relaciones que cruza de bloque, con s
 ## 5. Tres redes
 
 <!-- afinidades.redes.antetitulo -->
-CGOCUS V1.1 · 475 · 470 · 501 diputados en el censo
+CGOCUS · 475 · 470 · 501 diputados en el censo
 
 <!-- afinidades.redes.titulo -->
 Tres redes
@@ -1027,7 +1004,7 @@ Tres redes de coautoría, una por legislatura: cada punto es un diputado del cen
 ## 6. Personas: los puentes
 
 <!-- afinidades.puentes.antetitulo -->
-CGOCUS V1.1 · índice de transversalidad, por legislatura
+CGOCUS · índice de transversalidad, por legislatura
 
 <!-- afinidades.puentes.titulo -->
 Personas: los puentes
@@ -1065,7 +1042,7 @@ Su vista Diputados busca a cada uno por su nombre y filtra por familia, partido,
 ## 7. Lo que no mide
 
 <!-- afinidades.limites.antetitulo -->
-CGOCUS V1.1 · 175 de 1.530 medidas con la lista de firmas cortada
+CGOCUS · 175 de 1.530 medidas con la lista de firmas cortada
 
 <!-- afinidades.limites.titulo -->
 Lo que no mide, y cómo se mide
@@ -1100,7 +1077,7 @@ Harvard Dataverse · doi:10.7910/DVN/CGOCUS · 8 archivos
 Los datos
 
 <!-- afinidades.datos.entrada -->
-Afinidades Elegidas se descarga en Harvard Dataverse, con el mismo formulario que Luz y Taquígrafos. Son ocho archivos.
+Afinidades Elegidas se descarga en Harvard Dataverse, como Luz y Taquígrafos. Son ocho archivos.
 
 <!-- afinidades.datos.tabla.col.archivo -->
 Archivo
@@ -1156,10 +1133,10 @@ La descripción de cada campo.
 El archivo de firmas trae el texto de cada medida: sirve para leer qué se firmó, no solo quién.
 
 <!-- afinidades.datos.trampa -->
-Una trampa al unir: `2REP_cosponsorship` llama «1933-1935» a la segunda legislatura, y los demás archivos, «1933-1936».
+Al unir, tenga en cuenta que `2REP_cosponsorship` llama «1933-1935» a la segunda legislatura, y los demás archivos, «1933-1936».
 
 <!-- ↺ comun.fija.formulario -->
-Antes de descargar, Harvard Dataverse le pedirá nombre, correo e institución.
+Harvard Dataverse no pide registro ni formulario para descargar.
 
 <!-- afinidades.datos.descargar -->
 [Descargar en Dataverse ↗]
@@ -1175,6 +1152,260 @@ Para unirla con las filas de Luz y Taquígrafos, la clave es el diputado y la le
 > La cita la pone el componente `Cita` con `Rodrigues-Silveira, Rodrigo; García-Díez, Fátima; Llamazares, Iván; Martínez-Barahona, Elena; Barreto Martín, Eduardo, 2026, "Afinidades Elegidas: Parliamentary Cosponsorship Networks of the Spanish Second Republic (1931-1939)", https://doi.org/10.7910/DVN/CGOCUS, Harvard Dataverse, V1, UNF:6:CMFrKjuOq5l9fBChyzsMsQ== [fileUNF]` tal cual, `comun.cita.dataverse` y
 > `comun.cita.cgocus.nota` (texto; BibTeX y RIS en `<details>`). [Unir con THQCMI] va a `/{lang}/datos/#unir`: es el
 > único corchete de la sección sin rótulo único, así que los `destinos` de la plantilla deben ser solo ese.
+
+
+<!-- ═══ asistente.md ═══ -->
+
+# Copy ES · Preguntar con IA (`/[lang]/asistente/`)
+
+> **Estado (08-11-2026).** Página nueva, pedida por el investigador: el sitio no presentaba el conector MCP de la base.
+> Sigue la página «Herramientas» de ParlaIbero (`parlaibero_site/src/pages/[lang]/herramientas.astro`, copy §9) y el
+> LÉAME de `luz-tools` (`2REP/luz_tools/README.md`, paquete `luz-mcp` 0.5.0 en PyPI). Cada herramienta que se nombra
+> existe en el servidor (`src/luz_mcp/server.py`).
+>
+> **Cómo se lee.** Formato de ParlaIbero: `<!-- clave -->` abre cada texto; `<!-- ↺ clave -->` repite una frase fija o
+> un rótulo de `comun.md`; `> [nota de diseño]` no es texto para el lector.
+>
+> **Lo que no dice, y por qué.** Ninguna cifra del LÉAME (filas, sesiones, firmas, MB de la descarga): no salen del
+> exportador. Los ejemplos dan la pregunta, lo que hace el asistente y la herramienta, sin resultados: un resultado
+> sería una cifra sin base. No habla de ediciones (principio 7), así que omite la advertencia del LÉAME sobre los
+> números de fila de las bibliotecas. Dataverse ya no pide formulario (08-11-2026), y por eso el conector descarga por su API. Las preguntas no pasan por el proyecto, pero sí por el proveedor del
+> asistente: el copy dice lo primero y no afirma que «no salen de su equipo».
+
+---
+
+## Metadatos
+
+<!-- asistente.meta.titulo -->
+Preguntar con IA
+
+<!-- asistente.meta.descripcion -->
+Consulte los debates y las firmas de las Cortes desde un asistente de IA, con un conector abierto: qué pedirle, cómo instalarlo y qué no hace.
+
+## Índice lateral
+
+<!-- asistente.indice.pedir -->
+Lo que puede pedirle
+
+<!-- asistente.indice.ejemplos -->
+Preguntas de ejemplo
+
+<!-- asistente.indice.instalar -->
+Instalarlo
+
+<!-- asistente.indice.limites -->
+Lo que conviene saber
+
+<!-- asistente.indice.citar -->
+Licencia y cita
+
+## Cabecera
+
+<!-- asistente.antetitulo -->
+`luz-mcp` · código abierto · licencia MIT
+
+<!-- asistente.titulo -->
+¿Y si se lo pregunta a un asistente de IA?
+
+<!-- asistente.entrada -->
+Un asistente de IA, como Claude, puede consultar la base por usted. Escriba la pregunta con sus palabras: el asistente busca, cuenta y le devuelve cifras, pasajes y gráficos.
+
+<!-- asistente.entrada.2 -->
+Lo hace con un conector abierto, `luz-mcp`. MCP es el estándar con el que los asistentes usan herramientas externas. Funciona con Claude, ChatGPT de escritorio, Cursor, Antigravity, OpenCode y otros.
+
+> [nota de diseño] Cabecera a dos columnas: al margen, el bloque de instalación en una línea (`asistente.cabeza.*`) con
+> [Ver cómo instalarlo] → `#instalar`.
+
+<!-- asistente.cabeza.rotulo -->
+En Claude Code, una línea
+
+<!-- asistente.cabeza.codigo -->
+```bash
+claude mcp add luz -s user -- uvx luz-mcp
+```
+
+<!-- asistente.cabeza.accion -->
+[Ver cómo instalarlo]
+
+## 1 · Lo que puede pedirle (`#pedir`)
+
+<!-- asistente.pedir.titulo -->
+Lo que puede pedirle
+
+<!-- asistente.pedir.entrada -->
+El conector trabaja con las dos bases depositadas, Luz y Taquígrafos y Afinidades Elegidas, y las cruza: de una iniciativa salta al debate en que se defendió.
+
+<!-- asistente.pedir.discurso.titulo -->
+Sobre lo que se dijo
+
+<!-- asistente.pedir.discurso -->
+- Cuántas veces se dice una palabra o una frase, año a año, por legislatura o por familia política.
+- Qué palabras distinguen a dos grupos, con la Presidencia o sin ella.
+- Cuánto habla cada familia política frente a sus escaños.
+- Los pasajes en su contexto, la intervención entera y la sesión de la que sale.
+
+<!-- asistente.pedir.red.titulo -->
+Sobre quién firmó con quién
+
+<!-- asistente.pedir.red -->
+- Las iniciativas firmadas en común, quién las firmó y el debate en que se leyeron.
+- La red de coautorías de cada legislatura: quién firma con quién y quién hace de puente entre partidos.
+- Cuánto se cierra cada partido, familia o distrito sobre sí mismo.
+- Si los diputados que articulan la red hablan distinto en el pleno.
+
+<!-- asistente.pedir.llevar.titulo -->
+Para llevárselo
+
+<!-- asistente.pedir.llevar -->
+- Redes de palabras, de personas mencionadas y de quién nombra a quién, sobre los debates que usted elija.
+- La serie lista para R o Python, su gráfico y la cita de cada conjunto con su DOI.
+- Una nota de métodos con todo lo que el asistente ha ejecutado.
+
+## 2 · Preguntas de ejemplo (`#ejemplos`)
+
+<!-- asistente.ejemplos.titulo -->
+Preguntas de ejemplo
+
+<!-- asistente.ejemplos.entrada -->
+Escritas como las escribiría usted. Debajo de cada una, lo que hace el asistente y la herramienta del conector que usa.
+
+<!-- asistente.ej1.pregunta -->
+«¿Cómo evoluciona “reforma agraria” frente a “orden público” entre 1931 y 1936?»
+
+<!-- asistente.ej1.hace -->
+Cuenta las dos expresiones año a año, en proporción a todo lo que se dijo, y dibuja una línea para cada una.
+
+<!-- asistente.ej1.herramienta -->
+`ngram_viewer`
+
+<!-- asistente.ej2.pregunta -->
+«¿Qué familias políticas hablan más de lo que les corresponde por escaños en las Constituyentes?»
+
+<!-- asistente.ej2.hace -->
+Compara la parte de las palabras que dice cada familia con su parte de los escaños.
+
+<!-- asistente.ej2.herramienta -->
+`share_of_voice`
+
+<!-- asistente.ej3.pregunta -->
+«¿Qué palabras distinguen a los socialistas de los conservadores, sin la Presidencia?»
+
+<!-- asistente.ej3.hace -->
+Compara el vocabulario de los dos grupos y deja fuera los turnos de quien preside, que darían la palabra y nada más.
+
+<!-- asistente.ej3.herramienta -->
+`distinctive_words`
+
+<!-- asistente.ej4.pregunta -->
+«Busca las enmiendas de tema agrario defendidas en el pleno y enséñame el debate.»
+
+<!-- asistente.ej4.hace -->
+Encuentra las iniciativas por su tema y abre cada una con la sesión en que se leyó y se defendió.
+
+<!-- asistente.ej4.herramienta -->
+`search_measures` · `get_measure`
+
+<!-- asistente.ej5.pregunta -->
+«¿Quién hace de puente entre partidos al firmar iniciativas, en cada legislatura?»
+
+<!-- asistente.ej5.hace -->
+Calcula desde las firmas los papeles de intermediario y la parte de las cofirmas que cruza de partido.
+
+<!-- asistente.ej5.herramienta -->
+`brokerage_roles` · `transpartisan_cosigning`
+
+<!-- asistente.ej6.pregunta -->
+«¿Hablan distinto en el pleno los diputados que articulan la red y los que se quedan en su partido?»
+
+<!-- asistente.ej6.hace -->
+Reúne los discursos de cada papel en la red y compara su vocabulario.
+
+<!-- asistente.ej6.herramienta -->
+`speech_by_network` · `distinctive_words`
+
+## 3 · Instalarlo (`#instalar`)
+
+<!-- asistente.instalar.titulo -->
+Instalarlo
+
+<!-- asistente.instalar.entrada -->
+Necesita `uv`, un instalador gratuito de Python. No hace falta descargar el código: el conector está en PyPI.
+
+<!-- asistente.instalar.claude.rotulo -->
+Claude Code
+
+<!-- asistente.instalar.claude -->
+```bash
+claude mcp add luz -s user -- uvx luz-mcp
+```
+
+<!-- asistente.instalar.codex.rotulo -->
+ChatGPT de escritorio y Codex
+
+<!-- asistente.instalar.codex -->
+```bash
+codex mcp add luz -- uvx luz-mcp
+```
+
+<!-- asistente.instalar.json.rotulo -->
+Claude Desktop, Cursor, Antigravity, Gemini CLI y la mayoría de los demás
+
+<!-- asistente.instalar.json -->
+```json
+{
+  "mcpServers": {
+    "luz": { "command": "uvx", "args": ["luz-mcp"] }
+  }
+}
+```
+
+<!-- asistente.instalar.reiniciar -->
+Reinicie el programa después de cambiar su configuración. Si el conector no arranca, cambie `uvx` por la ruta completa que da `which uvx`.
+
+<!-- asistente.instalar.web -->
+ChatGPT en la web solo admite conectores remotos, y este se ejecuta en su equipo: allí no funciona.
+
+<!-- asistente.instalar.datos -->
+La primera vez, pida al asistente que descargue los datos. Vienen de Harvard Dataverse, se comprueban archivo a archivo y se guardan en su equipo.
+
+<!-- asistente.instalar.otros -->
+El LÉAME del repositorio trae la configuración de cada programa, OpenCode incluido.
+
+<!-- asistente.instalar.accion -->
+[Ver el repositorio ↗] [Ver el paquete en PyPI ↗]
+
+## 4 · Lo que conviene saber (`#limites`)
+
+<!-- asistente.limites.titulo -->
+Lo que conviene saber
+
+<!-- asistente.limites.entrada -->
+El conector conoce los límites de las dos bases y los dice. Estos son los que más cambian una respuesta.
+
+<!-- asistente.limites.lista -->
+- **Cuenta y busca; no interpreta.** La lectura de cada resultado es de quien pregunta.
+- **No todo es discurso.** El sumario de cada sesión, los documentos leídos y las votaciones se apartan para estudiar lo que se dijo.
+- **No hay variable de sexo** en ninguna de las dos bases: nada se puede desglosar por sexo.
+- **Dos juegos de etiquetas de partido.** Para comparar voz y escaños, el conector usa las del registro de Afinidades, que comparte la lista de diputados.
+- **Las métricas de red son las publicadas.** Cuando calcula una medida desde las firmas, lo dice y explica cómo.
+- **Algunas listas de firmas están truncadas en el Diario**, y a esas iniciativas les faltan vínculos.
+
+<!-- asistente.limites.privacidad -->
+Sus preguntas no pasan por nosotros: las procesa el asistente que usted use, con sus condiciones. Los datos se consultan en su equipo.
+
+## 5 · Licencia y cita (`#citar`)
+
+<!-- asistente.citar.titulo -->
+Licencia y cita
+
+<!-- asistente.citar.entrada -->
+El código es abierto, con licencia MIT. Si usa una respuesta en un trabajo, cite cada base con su DOI; el asistente le da la cita con la herramienta `how_to_cite`.
+
+<!-- asistente.citar.cierre -->
+Cada cifra que le devuelva se puede comprobar contra el Diario. Lea el pasaje en el explorador o descargue la base y repita la cuenta.
+
+> [nota de diseño] La página termina en el Diario, el explorador o el depósito (principio 1): tras el cierre,
+> [Abrir el explorador ↗] y [Descargar los datos] (rótulos únicos de `comun.md` § 3).
 
 
 <!-- ═══ cortes.md ═══ -->
@@ -1208,12 +1439,114 @@ Para unirla con las filas de Luz y Taquígrafos, la clave es el diputado y la le
 
 ---
 
+## 3 bis. ¿Esta o esta? (juego)
+
+> [nota de diseño] Juego de la petición del investigador (24-09-2026): `components/cortes/EstaOEsta.astro`. Las doce parejas aprobadas (docs/juegos/ESTA_O_ESTA_candidatas.md) salen de `src/data/esta.json` (exportador/modulos/esta.py), letra a letra de su fila; cada partida saca diez y baraja los lados. Sin JS, una tabla.
+
+<!-- cortes.esta.titulo -->
+¿Esta o esta?
+
+<!-- cortes.esta.entrada -->
+Dos frases dichas en el pleno sobre el mismo asunto, sin su autor. Elija la que firmaría. Al final verá con qué familia de partidos coincide.
+
+<!-- cortes.esta.juego.tema.iglesia -->
+La Iglesia y el Estado, octubre de 1931
+
+<!-- cortes.esta.juego.tema.ordenes -->
+Las órdenes religiosas y la escuela, octubre de 1931
+
+<!-- cortes.esta.juego.tema.mujer -->
+El voto de la mujer, 1 de octubre de 1931
+
+<!-- cortes.esta.juego.tema.divorcio -->
+El divorcio, 1931
+
+<!-- cortes.esta.juego.tema.renta -->
+La tierra: ¿trabajo o renta?
+
+<!-- cortes.esta.juego.tema.tierra -->
+La tierra: ¿para quién?
+
+<!-- cortes.esta.juego.tema.cataluna -->
+Cataluña y su Estatuto, 1932
+
+<!-- cortes.esta.juego.tema.parlamento -->
+El Parlamento y el voto
+
+<!-- cortes.esta.juego.tema.clases -->
+Las clases
+
+<!-- cortes.esta.juego.tema.espana -->
+«España roja, España rota», diciembre de 1935
+
+<!-- cortes.esta.juego.tema.octubre -->
+Después de octubre de 1934
+
+<!-- cortes.esta.juego.tema.orden -->
+El orden público, primavera de 1936
+
+<!-- cortes.esta.juego.cuenta -->
+Pareja ⟦i⟧ de ⟦n⟧
+
+<!-- cortes.esta.juego.firmo -->
+[Firmo esta]
+
+<!-- cortes.esta.juego.su_firma -->
+Su firma
+
+<!-- cortes.esta.juego.quien -->
+⟦orador⟧ · ⟦partido⟧ · ⟦familia⟧ · ⟦ideologia⟧ · ⟦fecha⟧
+
+<!-- cortes.esta.juego.fila -->
+Fila ⟦id⟧
+
+<!-- cortes.esta.juego.siguiente -->
+[Siguiente]
+
+<!-- cortes.esta.juego.ver -->
+[Ver mi escaño]
+
+<!-- cortes.esta.juego.perfil.titulo -->
+Su escaño
+
+<!-- cortes.esta.juego.perfil.familia -->
+Su familia de partidos: ⟦familia⟧.
+
+<!-- cortes.esta.juego.perfil.eje -->
+Su lugar en el eje: ⟦ideologia⟧.
+
+<!-- cortes.esta.juego.perfil.companero -->
+Su compañero de escaño: ⟦diputado⟧.
+
+<!-- cortes.esta.juego.perfil.firmo -->
+Firmó frases de: ⟦lista⟧.
+
+<!-- cortes.esta.juego.perfil.salvedad -->
+Familia e ideología son las del partido de cada orador en la base, no las de usted ni las de ellos: es un juego, no un test.
+
+<!-- cortes.esta.juego.otra -->
+[Otra partida]
+
+<!-- cortes.esta.juego.tabla -->
+Las parejas del juego
+
+<!-- cortes.esta.juego.tabla.col.tema -->
+Asunto
+
+<!-- cortes.esta.juego.tabla.col.a -->
+Una frase
+
+<!-- cortes.esta.juego.tabla.col.b -->
+La otra
+
+---
+
 ## 1. Las Cortes · índice (`/[lang]/cortes/`)
 
 <!-- cortes.meta.titulo --> Las Cortes, 1931–1945
 <!-- cortes.meta.descripcion --> Las 755 sesiones del Congreso entre 1931 y 1945, mes a mes, y las etapas de sus legislaturas: lo que tiene y lo que le falta cada una.
 
-<!-- cortes.antetitulo --> V2 · 755 sesiones · 14-VII-1931 → 9-XI-1945
+<!-- cortes.antetitulo --> 755 sesiones · 14-VII-1931 → 9-XI-1945
 <!-- cortes.titulo --> ¿Qué Cortes están aquí, y cuándo se reunieron?
 
 <!-- cortes.entrada -->
@@ -1303,20 +1636,17 @@ De la guerra y de México no hay Diario íntegro, sino extractos oficiales. Lo d
 <!-- cortes.etapas.tabla.col.sesiones --> Sesiones
 <!-- cortes.etapas.tabla.col.fechas --> Fechas
 <!-- cortes.etapas.tabla.col.serie --> Serie del Diario
-<!-- cortes.etapas.tabla.col.filas --> Filas (V2)
-<!-- cortes.etapas.tabla.col.palabras --> Palabras (V2)
+<!-- cortes.etapas.tabla.col.filas --> Filas
+<!-- cortes.etapas.tabla.col.palabras --> Palabras
 <!-- cortes.etapas.tabla.col.pct --> Del corpus
 <!-- cortes.etapas.tabla.col.diputados --> Diputados que intervienen
-<!-- cortes.etapas.tabla.col.filas_v3 --> Filas (v3)
+<!-- cortes.etapas.tabla.col.filas_v3 --> Filas
 
 <!-- cortes.etapas.tabla.pie -->
 «Diputados que intervienen» cuenta identificadores de diputado distintos, incluido el de quien preside. En todo el corpus son 773.
 
 <!-- cortes.etapas.tabla.pie_leg -->
 Por legislatura del CSV son 417, 390 y 253: la suma por etapas cuenta dos veces a quien habla en más de una.
-
-<!-- ↺ comun.fija.notabases -->
-Esta cifra sale de la edición del explorador (v3, 121.700 filas, sin depositar); la depositada es la V2 (107.551 filas). Por qué hay dos →
 
 ### 1.4 Lo que no está aquí
 
@@ -1332,7 +1662,7 @@ Sus reuniones no están en el corpus.
 La carátula del volumen de México enumera las que celebró allí, de 1939 a 1943. Y añade: «sólo tenemos noticia de ellas por citas bibliográficas pero no se dispone de los textos ni en forma de fotocopia».
 
 <!-- cortes.ausente.caratula_fila -->
-Esa carátula abre el sumario del 10 de enero de 1945, y solo está en la edición del explorador (v3 121466).
+Esa carátula abre el sumario del 10 de enero de 1945, y solo está en el explorador.
 
 <!-- cortes.ausente.discursos -->
 Tampoco están los discursos pronunciados fuera del Parlamento.
@@ -1414,12 +1744,6 @@ El explorador no abre una búsqueda desde un enlace: cópiela y péguela en su b
 <!-- cortes.ficha.cifras.titulo --> Cifras
 <!-- cortes.ficha.contexto.titulo --> Lo que pasó en la Cámara
 
-<!-- cortes.ficha.contexto.ids -->
-Cada hecho de la Cámara lleva su fila: «V2» es el identificador en la edición depositada; «v3», en la del explorador.
-
-<!-- ↺ comun.fija.ids -->
-Los identificadores de fila cambian entre la edición depositada (V2) y la del explorador (v3); la sesión —fecha y número— es la misma en las dos.
-
 <!-- cortes.ficha.contexto.externas --> Fuentes externas de este apartado
 <!-- cortes.ficha.contexto.puerta --> Tiene su puerta de lectura →
 
@@ -1490,9 +1814,9 @@ Calendario de 755 sesiones, de julio de 1931 a noviembre de 1945, agrupado por e
 <!-- fig.F01.leyenda.puerta --> Sesión con puerta de lectura
 <!-- fig.F01.leyenda.doble --> Dos sesiones el mismo día
 <!-- fig.F01.leyenda.salto --> Salto: ningún mes con sesión entre 1939 y 1944
-<!-- fig.F01.leyenda.tono --> Palabras impresas en el mes (V2), en cinco clases de doce o trece meses con sesión
-<!-- fig.F01.leyenda.altura --> Altura de la barra: palabras de la sesión (V2). La más alta, 97.055.
-<!-- fig.F01.leyenda.altura_dip --> Altura de la barra: diputados que intervienen, con quien preside (V2). La más alta, 61.
+<!-- fig.F01.leyenda.tono --> Palabras impresas en el mes, en cinco clases de doce o trece meses con sesión
+<!-- fig.F01.leyenda.altura --> Altura de la barra: palabras de la sesión. La más alta, 97.055.
+<!-- fig.F01.leyenda.altura_dip --> Altura de la barra: diputados que intervienen, con quien preside. La más alta, 61.
 <!-- fig.F01.leyenda.barra --> Una sesión
 
 <!-- fig.F01.salto -->
@@ -1517,19 +1841,19 @@ una sesión · ⟦filas⟧ filas · ⟦palabras⟧ palabras · ⟦diputados⟧ d
 ninguna sesión en el corpus, dentro de su etapa
 
 <!-- fig.F01.nota.base -->
-V2 · 2REP_Diaries.csv · los diputados cuentan a quien preside
+2REP_Diaries.csv · los diputados cuentan a quien preside
 
 <!-- fig.F01.nota.base_vacio -->
-V2 · 2REP_Diaries.csv · la causa no sale del corpus
+2REP_Diaries.csv · la causa no sale del corpus
 
 <!-- fig.F01.nota.sesion -->
 sesión ⟦num⟧ · ⟦filas⟧ filas · ⟦palabras⟧ palabras · ⟦diputados⟧ diputados intervienen
 
 <!-- fig.F01.nota.sesion.base -->
-V2 · ⟦sigla⟧ núm. ⟦diario⟧, pp. ⟦p1⟧–⟦p2⟧ (metadatos del proyecto)
+⟦sigla⟧ núm. ⟦diario⟧, pp. ⟦p1⟧–⟦p2⟧ (metadatos del proyecto)
 
 <!-- fig.F01.nota.sesion_sin_paginas.base -->
-V2 · ⟦sigla⟧ núm. ⟦diario⟧, páginas sin verificar (metadatos del proyecto)
+⟦sigla⟧ núm. ⟦diario⟧, páginas sin verificar (metadatos del proyecto)
 
 <!-- fig.F01.nota.puerta --> Tiene puerta de lectura: pulse para abrirla.
 
@@ -1549,9 +1873,9 @@ Para abrirla en el explorador, ponga esa fecha en Desde y en Hasta, abra una int
 <!-- fig.F01.tabla.col.mes --> Mes
 <!-- fig.F01.tabla.col.etapa --> Etapa
 <!-- fig.F01.tabla.col.sesiones --> Sesiones
-<!-- fig.F01.tabla.col.filas --> Filas (V2)
-<!-- fig.F01.tabla.col.palabras --> Palabras (V2)
-<!-- fig.F01.tabla.col.diputados --> Diputados que intervienen (V2)
+<!-- fig.F01.tabla.col.filas --> Filas
+<!-- fig.F01.tabla.col.palabras --> Palabras
+<!-- fig.F01.tabla.col.diputados --> Diputados que intervienen
 <!-- fig.F01.tabla.hueco --> ⟦desde⟧ → ⟦hasta⟧ · ⟦n⟧ meses sin sesión
 <!-- fig.F01.tabla.hueco_uno --> ⟦mes⟧ · sin sesión
 <!-- fig.F01.tabla.sesiones.resumen --> Las sesiones de esta etapa, una a una
@@ -1579,7 +1903,7 @@ El tono dice cuántas palabras se imprimieron, no cuánto importó. Las causas d
 <!-- fig.F01.breve.mes --> Las sesiones de ⟦mes⟧
 
 <!-- fig.F01.leame.que_mide -->
-Las sesiones del Congreso de 1931 a 1945, una por fila en sesiones.csv, y los meses con su estado en meses.csv. Cuentan filas, palabras y diputados de la edición depositada (V2).
+Las sesiones del Congreso de 1931 a 1945, una por fila en sesiones.csv, y los meses con su estado en meses.csv. Cuentan filas, palabras y diputados de la base.
 
 <!-- fig.F01.leame.denominador -->
 Son recuentos, sin denominador: filas, suma de nwords y rep_id distintos por sesión o por mes. La clase del tono reparte los 64 meses con sesión en cinco grupos por cuantiles.
@@ -1639,7 +1963,7 @@ Metadatos del proyecto · por verificar
 <!-- fig.F16.tabla.col.sesiones --> Sesiones
 
 <!-- fig.F16.salvedad -->
-La banda da el presidente titular de la sesión (metadatos del proyecto). En 586 de 755 sesiones un vicepresidente presidió algún tramo (V2). Los días de cambio de Gobierno cuentan para el entrante.
+La banda da el presidente titular de la sesión (metadatos del proyecto). En 586 de 755 sesiones un vicepresidente presidió algún tramo. Los días de cambio de Gobierno cuentan para el entrante.
 
 > [nota de diseño] La salvedad pasa de 30 palabras en dos frases: la primera tiene 26. `pres.vice_ses` es V2 (analizador
 > de etiquetas del explorador) y lleva `data-base="V2"`; el resto de la banda es «proyecto».
@@ -1649,21 +1973,21 @@ La banda da el presidente titular de la sesión (metadatos del proyecto). En 586
 <!-- fig.F05.titulo --> Los diez que más hablaron
 <!-- fig.F05.pregunta --> ¿Quién habló más en esta etapa, sin contar la Presidencia?
 <!-- fig.F05.alt -->
-Barras horizontales con los diez diputados que más palabras de habla suman en la etapa, sin la Presidencia, en la edición del explorador.
+Barras horizontales con los diez diputados que más palabras de habla suman en la etapa, sin la Presidencia, en el explorador.
 
 <!-- fig.F05.nota -->
-⟦nombre⟧ · ⟦n⟧ de ⟦den⟧ palabras de habla de la etapa, sin la Presidencia (v3)
+⟦nombre⟧ · ⟦n⟧ de ⟦den⟧ palabras de habla de la etapa, sin la Presidencia
 
 <!-- fig.F05.nota_partido --> ⟦partido⟧ · ⟦familia⟧
 
 <!-- fig.F05.tabla.col.puesto --> Puesto
 <!-- fig.F05.tabla.col.nombre --> Diputado
 <!-- fig.F05.tabla.col.partido --> Partido
-<!-- fig.F05.tabla.col.palabras --> Palabras de habla (v3)
+<!-- fig.F05.tabla.col.palabras --> Palabras de habla
 <!-- fig.F05.tabla.col.pct --> De la etapa
 
 <!-- fig.F05.salvedad -->
-Palabras de habla en la edición del explorador, sin la Presidencia, sin sumarios ni documentos. Hablar mucho no es pesar mucho.
+Palabras de habla en el explorador, sin la Presidencia, sin sumarios ni documentos. Hablar mucho no es pesar mucho.
 
 <!-- fig.F05.datos -->
 Los datos de la figura traen a los 773 diputados que intervienen, etapa a etapa.
@@ -1683,15 +2007,15 @@ Una tira al cien por cien, dividida por familias políticas, con la parte de las
 <!-- fig.F09.conmuta.filas --> Filas
 
 <!-- fig.F09.nota.palabras -->
-⟦familia⟧ · ⟦pct⟧ · ⟦n⟧ de ⟦den⟧ palabras sin Presidencia (V2)
+⟦familia⟧ · ⟦pct⟧ · ⟦n⟧ de ⟦den⟧ palabras sin Presidencia
 
 <!-- fig.F09.nota.filas -->
-⟦familia⟧ · ⟦pct⟧ · ⟦n⟧ de ⟦den⟧ filas sin Presidencia (V2)
+⟦familia⟧ · ⟦pct⟧ · ⟦n⟧ de ⟦den⟧ filas sin Presidencia
 
 <!-- fig.F09.tabla.col.familia --> Familia
-<!-- fig.F09.tabla.col.palabras --> Palabras sin la Presidencia (V2)
+<!-- fig.F09.tabla.col.palabras --> Palabras sin la Presidencia
 <!-- fig.F09.tabla.col.pct_palabras --> De las palabras sin la Presidencia
-<!-- fig.F09.tabla.col.filas --> Filas sin la Presidencia (V2)
+<!-- fig.F09.tabla.col.filas --> Filas sin la Presidencia
 <!-- fig.F09.tabla.col.pct_filas --> De las filas sin la Presidencia
 
 <!-- fig.F09.salvedad -->
@@ -1761,13 +2085,13 @@ Entre julio y diciembre de 1931 escribió la Constitución; hasta octubre de 193
 <!-- cortes.1931.hoy.buscar.consulta --> divorcio
 
 <!-- cortes.1931.hoy.buscar.recuento -->
-Con esa faceta, «divorcio» da 485 intervenciones (v3), contando todas las filas. Recuento del 23 de septiembre de 2026.
+Con esa faceta, «divorcio» da 485 intervenciones, contando todas las filas. Recuento del 23 de septiembre de 2026.
 
 <!-- cortes.1931.hoy.sesion -->
 **Abrir una sesión.** Ponga el 1 de octubre de 1931 en Desde y en Hasta, abra una intervención y pulse `s`: tendrá la sesión corrida.
 
 <!-- cortes.1931.hoy.debate -->
-**Añadir un debate preparado.** En Mis bibliotecas, pulse «Añadir bibliotecas del proyecto…» y elija «Sufragio femenino»: 770 intervenciones (v3).
+**Añadir un debate preparado.** En Mis bibliotecas, pulse «Añadir bibliotecas del proyecto…» y elija «Sufragio femenino»: 770 intervenciones.
 
 <!-- cortes.1931.hoy.tendencia -->
 **Seguir una palabra en el tiempo.** Busque «divorcio» (la consulta de la primera tarea), pulse `t` para abrir Tendencia y elija el periodo «Constituyentes».
@@ -1785,7 +2109,7 @@ Con esa faceta, «divorcio» da 485 intervenciones (v3), contando todas las fila
 405 sesiones, numeradas de la 1 a la 405 sin que falte ningún número.
 
 <!-- cortes.1931.cifras.palabras -->
-12.966.290 palabras en la edición depositada: el 53,28 % del corpus.
+12.966.290 palabras en la base: el 53,28 % del corpus.
 
 <!-- cortes.1931.cifras.diputados -->
 417 diputados intervienen, contando a quien preside.
@@ -1800,13 +2124,13 @@ Con esa faceta, «divorcio» da 485 intervenciones (v3), contando todas las fila
 El 14 de abril de 1931, el comité de las fuerzas políticas coaligadas designó a Niceto Alcalá-Zamora Presidente del Gobierno provisional de la República. Ese Gobierno convocó unas Cortes Constituyentes de una sola Cámara, elegida por sufragio directo, para el 14 de julio. Las elecciones se celebrarían el 28 de junio.
 
 <!-- cortes.1931.contexto.1.b -->
-La primera sesión la abre una Mesa de edad, que preside Narciso Vázquez Lemus (V2 1 · v3 2). Alcalá-Zamora toma la palabra como Presidente del Gobierno provisional; su discurso ocupa 3.715 palabras.
+La primera sesión la abre una Mesa de edad, que preside Narciso Vázquez Lemus. Alcalá-Zamora toma la palabra como Presidente del Gobierno provisional; su discurso ocupa 3.715 palabras.
 
 <!-- cortes.1931.contexto.1.c -->
-Viene a «resignar sus Poderes en fecha próxima» ante la Cámara (V2 2 · v3 3).
+Viene a «resignar sus Poderes en fecha próxima» ante la Cámara.
 
 <!-- cortes.1931.contexto.1.d -->
-Esa misma sesión elige Presidente interino a Julián Besteiro, con 363 votos de 371 (V2 5 · v3 9). El Diario anota que ocupa su sitial «acogido con una gran ovación» (V2 10 · v3 18).
+Esa misma sesión elige Presidente interino a Julián Besteiro, con 363 votos de 371. El Diario anota que ocupa su sitial «acogido con una gran ovación».
 
 <!-- cortes.1931.contexto.1.fuentes -->
 [I] Decreto del Comité político, Madrid, 14 de abril de 1931. *Gaceta de Madrid*, núm. 105, 15 de abril de 1931, pp. 193–194. · [I] Decretos del Gobierno provisional sobre las Cortes Constituyentes y las elecciones. *Gaceta de Madrid*, núm. 155, 4 de junio de 1931, pp. 1174–1175 y 1181.
@@ -1816,25 +2140,25 @@ Esa misma sesión elige Presidente interino a Julián Besteiro, con 363 votos de
 <!-- cortes.1931.contexto.2.titulo --> La Constitución (agosto–diciembre de 1931)
 
 <!-- cortes.1931.contexto.2.a -->
-El 27 de agosto, Luis Jiménez de Asúa presenta el proyecto «en nombre de la Comisión», en 5.188 palabras (V2 2725 · v3 3006). Lo define así: «es una Constitución de izquierda».
+El 27 de agosto, Luis Jiménez de Asúa presenta el proyecto «en nombre de la Comisión», en 5.188 palabras. Lo define así: «es una Constitución de izquierda».
 
 <!-- cortes.1931.contexto.2.b -->
 El 1 de octubre, la Cámara aprueba el voto de las mujeres.
 
 <!-- cortes.1931.contexto.2.c -->
-El 13 de octubre, tras el debate de la cuestión religiosa, el artículo 24 del proyecto sale por 178 votos contra 59 (V2 6994 · v3 7800).
+El 13 de octubre, tras el debate de la cuestión religiosa, el artículo 24 del proyecto sale por 178 votos contra 59.
 
 <!-- cortes.1931.contexto.2.d -->
 La lista de los que votan no empieza por dos apellidos: Alcalá-Zamora y Maura. Eran el Presidente y el ministro de la Gobernación del Gobierno provisional.
 
 <!-- cortes.1931.contexto.2.e -->
-Al día siguiente, Manuel Azaña habla ya como Presidente del Gobierno. Lamenta «la sensible baja que nos ha forzado hoy a este cambio ministerial» (V2 7022 · v3 7833).
+Al día siguiente, Manuel Azaña habla ya como Presidente del Gobierno. Lamenta «la sensible baja que nos ha forzado hoy a este cambio ministerial».
 
 <!-- cortes.1931.contexto.2.f -->
-El 9 de diciembre se aprueba la Constitución. De los 466 diputados que habían prometido el cargo, votan 368, y todos dicen sí (V2 13531 · v3 15043).
+El 9 de diciembre se aprueba la Constitución. De los 466 diputados que habían prometido el cargo, votan 368, y todos dicen sí.
 
 <!-- cortes.1931.contexto.2.g -->
-Al día siguiente, la Cámara elige Presidente de la República a Niceto Alcalá-Zamora, con 362 votos de 410 (V2 13613 · v3 15140).
+Al día siguiente, la Cámara elige Presidente de la República a Niceto Alcalá-Zamora, con 362 votos de 410.
 
 > [nota de diseño] `2.b` enlaza con `cortes.ficha.contexto.puerta` a `/es/cortes/sesiones/sufragio-1931/`; `2.c`, a
 > `cuestion-religiosa-1931/`. En `2.d`, la lista del Diario da solo apellidos: «Alcalá-Zamora» y «Maura» son los dos
@@ -1849,28 +2173,28 @@ Al día siguiente, la Cámara elige Presidente de la República a Niceto Alcalá
 <!-- cortes.1931.contexto.3.titulo --> Gobernar con la Constitución (1932)
 
 <!-- cortes.1931.contexto.3.a -->
-El 9 de marzo de 1932 habla Azaña, ya Presidente del Consejo de Ministros (V2 20689 · v3 23023). Dice: «El centro de gravedad de la política de la República española está en el Parlamento, aquí en este salón».
+El 9 de marzo de 1932 habla Azaña, ya Presidente del Consejo de Ministros. Dice: «El centro de gravedad de la política de la República española está en el Parlamento, aquí en este salón».
 
 <!-- cortes.1931.contexto.3.b -->
-El 13 de mayo, José Ortega y Gasset dice del problema catalán que «es un problema que no se puede resolver, que sólo se puede conllevar» (V2 25527 · v3 28500).
+El 13 de mayo, José Ortega y Gasset dice del problema catalán que «es un problema que no se puede resolver, que sólo se puede conllevar».
 
 <!-- cortes.1931.contexto.3.c -->
-En la misma sesión le contesta Rafael Campaláns, que pide la palabra «después de hacerlo el ilustre maestro de todos» (V2 25529 · v3 28502).
+En la misma sesión le contesta Rafael Campaláns, que pide la palabra «después de hacerlo el ilustre maestro de todos».
 
 <!-- cortes.1931.contexto.3.d -->
 El 27 de mayo, Azaña defiende el Estatuto de Cataluña en un discurso que tiene su propia puerta de lectura.
 
 <!-- cortes.1931.contexto.3.e -->
-El 10 de agosto, Azaña acude a la Cámara por «los sucesos acaecidos esta madrugada en Madrid» (V2 32910 · v3 36780). Cuenta cómo supo que el general Sanjurjo se había presentado en Sevilla.
+El 10 de agosto, Azaña acude a la Cámara por «los sucesos acaecidos esta madrugada en Madrid». Cuenta cómo supo que el general Sanjurjo se había presentado en Sevilla.
 
 <!-- cortes.1931.contexto.3.f -->
-El 9 de septiembre, en votación nominal, la Reforma agraria sale por 318 votos contra 19 (V2 37177 · v3 41627).
+El 9 de septiembre, en votación nominal, la Reforma agraria sale por 318 votos contra 19.
 
 <!-- cortes.1931.contexto.3.g -->
-El mismo día, el Estatuto de Cataluña sale por 314 votos contra 24 (V2 37178 · v3 41629).
+El mismo día, el Estatuto de Cataluña sale por 314 votos contra 24.
 
 <!-- cortes.1931.contexto.3.h -->
-No son excepciones: en esta etapa, al menos 532 filas de la edición depositada traen una lista de votación nominal, nombre por nombre.
+No son excepciones: en esta etapa, al menos 532 filas de la base traen una lista de votación nominal, nombre por nombre.
 
 <!-- cortes.1931.contexto.3.i -->
 Esas listas están en 206 sesiones. Van dentro del texto de las filas, no en una columna de la base.
@@ -1888,7 +2212,7 @@ Esas listas están en 206 sesiones. Van dentro del texto de las filas, no en una
 En enero de 1933 no hubo sesión. El debate sobre Casas Viejas llega el 1 de febrero, en la primera sesión del mes.
 
 <!-- cortes.1931.contexto.4.b -->
-El debate preparado del explorador lo sigue durante nueve sesiones, hasta el 16 de marzo (v3).
+El debate preparado del explorador lo sigue durante nueve sesiones, hasta el 16 de marzo.
 
 <!-- cortes.1931.contexto.4.c -->
 Del 4 al 6 de julio, la Cámara discute la nueva ley electoral; es el debate preparado «Ley Electoral de 1933».
@@ -1905,19 +2229,19 @@ Cuando las Cortes vuelven a reunirse, el 2 de octubre, gobierna Alejandro Lerrou
 <!-- cortes.1931.contexto.5.titulo --> El final (octubre de 1933)
 
 <!-- cortes.1931.contexto.5.a -->
-El 2 de octubre, Lerroux presenta su Gobierno a la Cámara (V2 61223 · v3 68793). Azaña le contesta en 12.127 palabras (V2 61237 · v3 68809).
+El 2 de octubre, Lerroux presenta su Gobierno a la Cámara. Azaña le contesta en 12.127 palabras.
 
 <!-- cortes.1931.contexto.5.b -->
-Al día siguiente, Lerroux abre su réplica así: «Señores Diputados, los que van a morir os saludan.» (V2 61277 · v3 68855).
+Al día siguiente, Lerroux abre su réplica así: «Señores Diputados, los que van a morir os saludan.».
 
 <!-- cortes.1931.contexto.5.c -->
-La minoría socialista mantiene su proposición, defendida por Indalecio Prieto. El Gobierno abandona el banco azul antes de que se vote (V2 61309 · v3 68887).
+La minoría socialista mantiene su proposición, defendida por Indalecio Prieto. El Gobierno abandona el banco azul antes de que se vote.
 
 <!-- cortes.1931.contexto.5.d -->
-La proposición sale por 187 votos contra 91, en votación nominal (V2 61320 · v3 68900).
+La proposición sale por 187 votos contra 91, en votación nominal.
 
 <!-- cortes.1931.contexto.5.e -->
-Besteiro cierra: «En vista de la declaración del Gobierno, se suspenden las sesiones de Cortes» (V2 61355 · v3 68942).
+Besteiro cierra: «En vista de la declaración del Gobierno, se suspenden las sesiones de Cortes».
 
 <!-- cortes.1931.contexto.5.f -->
 Fue la última sesión de las Constituyentes. Un decreto del 9 de octubre, firmado por Alcalá-Zamora y Diego Martínez Barrio, las declaró disueltas.
@@ -1944,7 +2268,7 @@ Bajo el calendario van dos bandas de los metadatos del proyecto. Julián Besteir
 Francisco Barnés lo es de tres y Antonio Lara, de una.
 
 <!-- cortes.1931.calendario.vice -->
-Aun así, un vicepresidente ocupó la Presidencia algún tramo en 322 sesiones de la etapa (V2).
+Aun así, un vicepresidente ocupó la Presidencia algún tramo en 322 sesiones de la etapa.
 
 <!-- cortes.1931.calendario.gobiernos -->
 La banda de Gobiernos va del Provisional a Lerroux I, con Azaña I, II y III entre medias.
@@ -1952,13 +2276,13 @@ La banda de Gobiernos va del Provisional a Lerroux I, con Azaña I, II y III ent
 ## Quién tomó la palabra
 
 <!-- cortes.1931.palabra.f05 -->
-Sin contar la Presidencia, Manuel Azaña encabeza la palabra de la etapa: 426.392 palabras de habla (v3).
+Sin contar la Presidencia, Manuel Azaña encabeza la palabra de la etapa: 426.392 palabras de habla.
 
 <!-- cortes.1931.palabra.f05_siguen -->
 Le siguen Antonio Royo Villanova, Indalecio Prieto, José Antonio Balbontín y Eduardo Ortega y Gasset.
 
 <!-- cortes.1931.palabra.f09 -->
-Por familias, los republicanos se llevan el 51,3 % de las palabras sin Presidencia (V2).
+Por familias, los republicanos se llevan el 51,3 % de las palabras sin Presidencia.
 
 > [nota de diseño] F05 (v3) lleva NotaBases (↺ 13) al pie; F09 (V2), no. Los cinco nombres de `f05_siguen` deben
 > coincidir con los puestos 2 a 5 de `oradores_etapa.json` (el exportador lo comprueba). Aquí está Royo Villanova
@@ -1968,7 +2292,7 @@ Por familias, los republicanos se llevan el 51,3 % de las palabras sin Presiden
 
 <!-- cortes.1931.puertas.sufragio --> 1-X-1931 · El voto de las mujeres
 <!-- cortes.1931.puertas.religiosa --> 13 y 14-X-1931 · «España ha dejado de ser católica»
-<!-- cortes.1931.puertas.estatuto --> 27-V-1932 · El discurso de Azaña, a nombre de otro
+<!-- cortes.1931.puertas.estatuto --> 27-V-1932 · El Estatuto de Cataluña
 <!-- cortes.1931.puertas.casas_viejas --> 2-II-1933 · Casas Viejas
 
 > [nota de diseño] Registro de calendario, fecha en mono, cada línea enlazada a su puerta. Los títulos son los H1 de
@@ -1978,7 +2302,7 @@ Por familias, los republicanos se llevan el 51,3 % de las palabras sin Presiden
 ## Debates preparados en el explorador
 
 <!-- cortes.1931.debates.entrada -->
-El explorador trae 13 debates preparados de esta etapa (v3):
+El explorador trae 13 debates preparados de esta etapa:
 
 <!-- cortes.1931.debates.lista -->
 - La Cámara se constituye (1931)
@@ -2005,13 +2329,7 @@ El explorador trae 13 debates preparados de esta etapa (v3):
 La sesión 48 tal como está en el corpus: el final del acta digitalizada se perdió en el reconocimiento óptico.
 
 <!-- cortes.1931.antes.bucle -->
-La sesión 9 repite una y otra vez el mismo par de nombres, por un bucle del reconocimiento óptico (V2 976 · v3 1081).
-
-<!-- cortes.1931.antes.fechas -->
-De las siete fechas de sesión que corrigió la V2, seis son de esta etapa.
-
-<!-- cortes.1931.antes.estatuto -->
-En la V2, el discurso de Azaña del 27 de mayo de 1932 va dentro de una fila de la Presidencia (V2 25979). La v3 lo separa (v3 29042).
+La sesión 9 repite una y otra vez el mismo par de nombres, por un bucle del reconocimiento óptico.
 
 <!-- cortes.1931.antes.listas -->
 Las listas de votación dan solo apellidos: para saber quién votó, hay que cotejarlos con el censo de diputados.
@@ -2046,7 +2364,7 @@ El partido de Diego Martínez Barrio figura como AR en esta legislatura, y está
 ## Cómo citar
 
 <!-- cortes.1931.citar.sesion -->
-*Diario de Sesiones de las Cortes Constituyentes de la República Española*, núm. 88, 9 de diciembre de 1931, pp. 2895–2913. En Luz y Taquígrafos (V2), filas 13471 a 13554.
+*Diario de Sesiones de las Cortes Constituyentes de la República Española*, núm. 88, 9 de diciembre de 1931, pp. 2895–2913. En Luz y Taquígrafos, filas 13471 a 13554.
 
 > [nota de diseño] Debajo, `cortes.ficha.citar.paginas` (el número de Diario y las páginas son del proyecto), ↺ 4, la
 > cita del conjunto y [Copiar la cita]. Vecinas: sin anterior; siguiente, la ficha II; en el centro, Todas las etapas.
@@ -2106,13 +2424,13 @@ El censo y las relaciones de Afinidades Elegidas llaman 1933-1936 a la legislatu
 <!-- cortes.1933.hoy.buscar.consulta --> amnistía
 
 <!-- cortes.1933.hoy.buscar.recuento -->
-Con esa faceta, «amnistía» da 351 intervenciones (v3), contando todas las filas. Recuento del 23 de septiembre de 2026.
+Con esa faceta, «amnistía» da 351 intervenciones, contando todas las filas. Recuento del 23 de septiembre de 2026.
 
 <!-- cortes.1933.hoy.sesion -->
 **Abrir una sesión.** Ponga el 4 de julio de 1934 en Desde y en Hasta, abra una intervención y pulse `s`.
 
 <!-- cortes.1933.hoy.debate -->
-**Añadir un debate preparado.** En Mis bibliotecas, «Añadir bibliotecas del proyecto…» y elija «Amnistía de 1934»: 1.085 intervenciones (v3).
+**Añadir un debate preparado.** En Mis bibliotecas, «Añadir bibliotecas del proyecto…» y elija «Amnistía de 1934»: 1.085 intervenciones.
 
 <!-- cortes.1933.hoy.tendencia -->
 **Seguir una palabra en el tiempo.** Busque «Strauss», pulse `t` y elija el periodo «1933–35». En el Diario, el estraperlo se nombra más por ese apellido que por el aparato.
@@ -2132,7 +2450,7 @@ Con esa faceta, «amnistía» da 351 intervenciones (v3), contando todas las fil
 276 sesiones, numeradas de la 1 a la 276 sin que falte ningún número.
 
 <!-- cortes.1933.cifras.palabras -->
-9.476.120 palabras en la edición depositada: el 38,94 % del corpus.
+9.476.120 palabras en la base: el 38,94 % del corpus.
 
 <!-- cortes.1933.cifras.diputados -->
 390 diputados intervienen, contando a quien preside.
@@ -2147,16 +2465,16 @@ Con esa faceta, «amnistía» da 351 intervenciones (v3), contando todas las fil
 Las elecciones se celebraron el 19 de noviembre de 1933, con segunda vuelta el 3 de diciembre. Fueron las primeras elecciones generales con el artículo 36 de la Constitución, que igualaba el voto de mujeres y hombres.
 
 <!-- cortes.1933.contexto.1.b -->
-El 8 de diciembre abre la sesión un Presidente de edad, Honorio Riesgo (V2 61356 · v3 68945).
+El 8 de diciembre abre la sesión un Presidente de edad, Honorio Riesgo.
 
 <!-- cortes.1933.contexto.1.c -->
-Santiago Alba sale elegido Presidente interino con 234 votos de 248 (V2 61358 · v3 68949). El 28 de diciembre queda proclamado Presidente de la Cámara (V2 62053 · v3 69744).
+Santiago Alba sale elegido Presidente interino con 234 votos de 248. El 28 de diciembre queda proclamado Presidente de la Cámara.
 
 <!-- cortes.1933.contexto.1.d -->
-El 19 de diciembre, Alejandro Lerroux lee la declaración de su Gobierno. Le contesta primero José María Gil Robles, en nombre de «la fracción numéricamente más importante de la Cámara» (V2 61598 · v3 69230).
+El 19 de diciembre, Alejandro Lerroux lee la declaración de su Gobierno. Le contesta primero José María Gil Robles, en nombre de «la fracción numéricamente más importante de la Cámara».
 
 <!-- cortes.1933.contexto.1.e -->
-Cambia quién habla. Sin la Presidencia, la derecha y la extrema derecha pasan del 6,1 % de las palabras en 1931-1933 al 30,0 % en esta legislatura (V2).
+Cambia quién habla. Sin la Presidencia, la derecha y la extrema derecha pasan del 6,1 % de las palabras en 1931-1933 al 30,0 % en esta legislatura.
 
 > [nota de diseño] «Derecha» y «extrema derecha» son las posiciones D y ED de la columna `ideology`, que es la del
 > partido. `1.a`: la fecha de la segunda vuelta y la de reunión de las Cortes (8-XII) están en el decreto de
@@ -2172,31 +2490,31 @@ Cambia quién habla. Sin la Presidencia, la derecha y la extrema derecha pasan d
 <!-- cortes.1933.contexto.2.titulo --> De la amnistía al verano (1934)
 
 <!-- cortes.1933.contexto.2.a -->
-En abril, la Cámara debate la amnistía; el debate preparado del explorador reúne seis sesiones, del 11 al 19 de abril (v3).
+En abril, la Cámara debate la amnistía; el debate preparado del explorador reúne seis sesiones, del 11 al 19 de abril.
 
 <!-- cortes.1933.contexto.2.b -->
-El 20 de abril, Indalecio Prieto pregunta: «¿Por qué es inicuo el acto que van a realizar las Cortes al aprobar este proyecto de ley?» (V2 68270 · v3 76798).
+El 20 de abril, Indalecio Prieto pregunta: «¿Por qué es inicuo el acto que van a realizar las Cortes al aprobar este proyecto de ley?».
 
 <!-- cortes.1933.contexto.2.c -->
-Ese mismo día la amnistía sale por 265 votos contra 45, en votación nominal (V2 68299 · v3 76829).
+Ese mismo día la amnistía sale por 265 votos contra 45, en votación nominal.
 
 <!-- cortes.1933.contexto.2.d -->
-El 2 de mayo, Ricardo Samper habla ya como Presidente del Consejo de Ministros (V2 68466 · v3 77029).
+El 2 de mayo, Ricardo Samper habla ya como Presidente del Consejo de Ministros.
 
 <!-- cortes.1933.contexto.2.e -->
-El 31 de mayo, en pleno turno de José Tomás y Piera, varios diputados gritan: «Casas Viejas! Casas Viejas! Tiros a la barriga, a la barriga!» (V2 70714 · v3 79606).
+El 31 de mayo, en pleno turno de José Tomás y Piera, varios diputados gritan: «Casas Viejas! Casas Viejas! Tiros a la barriga, a la barriga!».
 
 <!-- cortes.1933.contexto.2.f -->
-El 8 de junio, Alba recuerda que los suplicatorios «han de tratarse en sesión secreta» (V2 71329 · v3 80305). La fila siguiente dice solo: «Luz y taquigrafos.» (V2 71330 · v3 80306).
+El 8 de junio, Alba recuerda que los suplicatorios «han de tratarse en sesión secreta». La fila siguiente dice solo: «Luz y taquigrafos.».
 
 <!-- cortes.1933.contexto.2.g -->
-El Diario lo pone a nombre de «JIMÉNEZ FERNÁNDEZ»; la base lo identifica con Manuel Giménez Fernández. La Presidencia dice no haber visto quién interrumpió (V2 71331 · v3 80307). La página El Diario reúne todas las veces que se oyó la fórmula en la Cámara.
+El Diario lo pone a nombre de «JIMÉNEZ FERNÁNDEZ»; la base lo identifica con Manuel Giménez Fernández. La Presidencia dice no haber visto quién interrumpió. La página El Diario reúne todas las veces que se oyó la fórmula en la Cámara.
 
 <!-- cortes.1933.contexto.2.h -->
-El 12 de junio, la minoría de la Esquerra lee su posición y se retira de la Cámara (V2 71609 · v3 80615). Samper pregunta: «¿por qué se retiran los Sres. Diputados de la Esquerra catalana?» (V2 71611 · v3 80617).
+El 12 de junio, la minoría de la Esquerra lee su posición y se retira de la Cámara. Samper pregunta: «¿por qué se retiran los Sres. Diputados de la Esquerra catalana?».
 
 <!-- cortes.1933.contexto.2.i -->
-Tras el turno de José Antonio Aguirre, el Diario anota: «La minoría vasca se retira del salón» (V2 71613 · v3 80619).
+Tras el turno de José Antonio Aguirre, el Diario anota: «La minoría vasca se retira del salón».
 
 <!-- cortes.1933.contexto.2.j -->
 El 4 de julio llega la sesión de la pistola de Prieto. Después, la Cámara no vuelve a reunirse hasta el 1 de octubre.
@@ -2211,22 +2529,22 @@ El 4 de julio llega la sesión de la pistola de Prieto. Después, la Cámara no 
 <!-- cortes.1933.contexto.3.titulo --> Octubre de 1934
 
 <!-- cortes.1933.contexto.3.a -->
-El 1 de octubre habla Samper: «dijerase que acaba de transcurrir la noche del 4 de Julio en que el Parlamento acordó suspender sus tareas» (V2 74646 · v3 84075).
+El 1 de octubre habla Samper: «dijerase que acaba de transcurrir la noche del 4 de Julio en que el Parlamento acordó suspender sus tareas».
 
 <!-- cortes.1933.contexto.3.b -->
-Gil Robles pide «una rectificación»: Samper, dice, «ha puesto de relieve que no es posible seguir por ese camino» (V2 74648 · v3 84079).
+Gil Robles pide «una rectificación»: Samper, dice, «ha puesto de relieve que no es posible seguir por ese camino».
 
 <!-- cortes.1933.contexto.3.c -->
 La sesión siguiente, el 9 de octubre, ya es del Gobierno Lerroux IV, según los metadatos del proyecto.
 
 <!-- cortes.1933.contexto.3.d -->
-Esa tarde, una proposición de Gil Robles pide suspender las sesiones «hasta completar la pacificación y el imperio de la Ley, interrumpida por la huelga revolucionaria» (V2 74669 · v3 84109).
+Esa tarde, una proposición de Gil Robles pide suspender las sesiones «hasta completar la pacificación y el imperio de la Ley, interrumpida por la huelga revolucionaria».
 
 <!-- cortes.1933.contexto.3.e -->
-Gil Robles evoca a «nuestros compañeros Diputados por Asturias» (V2 74673 · v3 84113). La Cámara aprueba la proposición por aclamación.
+Gil Robles evoca a «nuestros compañeros Diputados por Asturias». La Cámara aprueba la proposición por aclamación.
 
 <!-- cortes.1933.contexto.3.f -->
-Al final, Lerroux da vivas a España y a la República. El Diario anota que «son contestados con unánimes aplausos y aclamaciones» (V2 74703 · v3 84145).
+Al final, Lerroux da vivas a España y a la República. El Diario anota que «son contestados con unánimes aplausos y aclamaciones».
 
 <!-- cortes.1933.contexto.3.g -->
 En noviembre, la Cámara vuelve sobre los sucesos de octubre y debate la reforma de su Reglamento. Los dos debates están preparados en el explorador.
@@ -2240,31 +2558,31 @@ En noviembre, la Cámara vuelve sobre los sucesos de octubre y debate la reforma
 <!-- cortes.1933.contexto.4.titulo --> 1935: acusaciones y escándalos
 
 <!-- cortes.1933.contexto.4.a -->
-El 20 de marzo, ante la propuesta de acusarle, habla Azaña. Se presenta como «un presunto acusado y culpable» (V2 85330 · v3 96282).
+El 20 de marzo, ante la propuesta de acusarle, habla Azaña. Se presenta como «un presunto acusado y culpable».
 
 <!-- cortes.1933.contexto.4.b -->
-En las dos ediciones, ese discurso es una sola fila de 14.131 palabras.
+Ese discurso es una sola fila de 14.131 palabras.
 
 <!-- cortes.1933.contexto.4.c -->
 En abril de 1935 no hay sesión. En agosto, tampoco.
 
 <!-- cortes.1933.contexto.4.d -->
-El 28 de octubre, la comisión que investigó la denuncia de Strauss da cuenta a la Cámara (V2 97387 · v3 110040).
+El 28 de octubre, la comisión que investigó la denuncia de Strauss da cuenta a la Cámara.
 
 <!-- cortes.1933.contexto.4.e -->
 Todo gira en torno a un «aparato de juego de salón que ha motivado todo este asunto», llamado «Straperlo».
 
 <!-- cortes.1933.contexto.4.f -->
-Ese día responde Rafael Salazar Alonso: «vengo apesadumbrado por una grave acusación» (V2 97391 · v3 110044).
+Ese día responde Rafael Salazar Alonso: «vengo apesadumbrado por una grave acusación».
 
 <!-- cortes.1933.contexto.4.g -->
-De octubre a diciembre de 1935, «Strauss» sale en 32 intervenciones y «straperlo», en 11 (v3).
+De octubre a diciembre de 1935, «Strauss» sale en 32 intervenciones y «straperlo», en 11.
 
 <!-- cortes.1933.contexto.4.h -->
-El 7 de diciembre se discute el dictamen sobre la denuncia de Nombela (V2 101450 · v3 114599). La sesión suma 89.870 palabras; solo la del 1 de julio de 1936 imprime más.
+El 7 de diciembre se discute el dictamen sobre la denuncia de Nombela. La sesión suma 89.870 palabras; solo la del 1 de julio de 1936 imprime más.
 
 <!-- cortes.1933.contexto.4.i -->
-El 10 de diciembre se lee la crisis del Gobierno Chapaprieta, y Alba suspende «las sesiones hasta nuevo aviso» (V2 101697 · v3 114872).
+El 10 de diciembre se lee la crisis del Gobierno Chapaprieta, y Alba suspende «las sesiones hasta nuevo aviso».
 
 <!-- cortes.1933.contexto.4.j -->
 No volvieron a reunirse. El 7 de enero de 1936, un decreto disolvió «las primeras Cortes ordinarias de la República» y convocó elecciones para el 16 de febrero.
@@ -2292,7 +2610,7 @@ Santiago Alba es el presidente titular de 274 de sus 276 sesiones, según los me
 Cándido Casanueva y Manuel Giménez Fernández lo son de una sesión cada uno.
 
 <!-- cortes.1933.calendario.vice -->
-Un vicepresidente ocupó la Presidencia algún tramo en 218 sesiones de la etapa (V2).
+Un vicepresidente ocupó la Presidencia algún tramo en 218 sesiones de la etapa.
 
 <!-- cortes.1933.calendario.gobiernos -->
 La banda de Gobiernos cuenta ocho: Martínez Barrio, Lerroux II, III, IV y VI, Samper, y Chapaprieta I y II.
@@ -2304,13 +2622,13 @@ La banda de Gobiernos cuenta ocho: Martínez Barrio, Lerroux II, III, IV y VI, S
 ## Quién tomó la palabra
 
 <!-- cortes.1933.palabra.f05 -->
-Sin contar la Presidencia, Augusto Barcia encabeza la palabra de la etapa: 233.136 palabras de habla (v3).
+Sin contar la Presidencia, Augusto Barcia encabeza la palabra de la etapa: 233.136 palabras de habla.
 
 <!-- cortes.1933.palabra.f05_siguen -->
 Le siguen Indalecio Prieto, José Calvo Sotelo, Joaquín Chapaprieta y Manuel Giménez Fernández.
 
 <!-- cortes.1933.palabra.f09 -->
-Por familias, los conservadores pasan a ser la primera en palabras sin Presidencia: el 27,7 % (V2).
+Por familias, los conservadores pasan a ser la primera en palabras sin Presidencia: el 27,7 %.
 
 ## Puertas de esta etapa
 
@@ -2321,7 +2639,7 @@ Por familias, los conservadores pasan a ser la primera en palabras sin Presidenc
 ## Debates preparados en el explorador
 
 <!-- cortes.1933.debates.entrada -->
-El explorador trae 7 debates preparados de esta etapa (v3):
+El explorador trae 7 debates preparados de esta etapa:
 
 <!-- cortes.1933.debates.lista -->
 - Las Cortes de 1933 se estrenan
@@ -2334,14 +2652,11 @@ El explorador trae 7 debates preparados de esta etapa (v3):
 
 ## Antes de usarla
 
-<!-- cortes.1933.antes.sesion77 -->
-La sesión 77 cambió de fecha y de legislatura en la V2. La V1 la ponía el 1 de junio de 1933, en las Constituyentes; es del 4 de mayo de 1934. Son 91 filas.
-
 <!-- cortes.1933.antes.dobles -->
 Hay tres fechas con dos sesiones: el 19 de diciembre de 1934 y el 8 de octubre y el 13 de noviembre de 1935.
 
 <!-- cortes.1933.antes.declaracion -->
-La declaración ministerial de Lerroux del 19 de diciembre de 1933 va, en las dos ediciones, dentro de una fila de la Presidencia (V2 61596 · v3 69228).
+La declaración ministerial de Lerroux del 19 de diciembre de 1933 va dentro de una fila de la Presidencia.
 
 <!-- cortes.1933.antes.afinidades -->
 Si une esta etapa con el censo de Afinidades Elegidas, recodifique la legislatura: allí se llama 1933-1936.
@@ -2369,7 +2684,7 @@ Si une esta etapa con el censo de Afinidades Elegidas, recodifique la legislatur
 ## Cómo citar
 
 <!-- cortes.1933.citar.sesion -->
-*Diario de las Sesiones de Cortes. Congreso de los Diputados*, núm. 72, 20 de abril de 1934, pp. 2435–2473. En Luz y Taquígrafos (V2), filas 68253 a 68346.
+*Diario de las Sesiones de Cortes. Congreso de los Diputados*, núm. 72, 20 de abril de 1934, pp. 2435–2473. En Luz y Taquígrafos, filas 68253 a 68346.
 
 > [nota de diseño] Debajo, `cortes.ficha.citar.paginas`, ↺ 4, la cita del conjunto y [Copiar la cita]. Vecinas:
 > anterior, la ficha I; siguiente, la ficha III; en el centro, Todas las etapas.
@@ -2439,7 +2754,7 @@ Es la etapa que más se cita, y la que más se ha contado con frases que no est�
 <!-- cortes.1936.hoy.buscar.consulta --> "orden público"
 
 <!-- cortes.1936.hoy.buscar.recuento -->
-Con esos filtros, «orden público» da 160 intervenciones (v3), contando todas las filas. Salen en 44 de las 60 sesiones.
+Con esos filtros, «orden público» da 160 intervenciones, contando todas las filas. Salen en 44 de las 60 sesiones.
 
 <!-- cortes.1936.hoy.sesion -->
 **Abrir una sesión.** Ponga el 1 de julio de 1936 en Desde y en Hasta, abra una intervención y pulse `s`: tendrá la sesión corrida.
@@ -2465,7 +2780,7 @@ Con esos filtros, «orden público» da 160 intervenciones (v3), contando todas 
 60 sesiones, del 16 de marzo al 10 de julio de 1936, sin que falte ningún número de la serie.
 
 <!-- cortes.1936.cifras.palabras -->
-1.690.319 palabras en la edición depositada: el 6,95 % del corpus.
+1.690.319 palabras en la base: el 6,95 % del corpus.
 
 <!-- cortes.1936.cifras.diputados -->
 243 diputados toman la palabra, contando a quien preside.
@@ -2480,29 +2795,29 @@ Con esos filtros, «orden público» da 160 intervenciones (v3), contando todas 
 <!-- cortes.1936.contexto.1.titulo --> La apertura (15 a 17 de marzo)
 
 <!-- cortes.1936.contexto.1.a -->
-El decreto de convocatoria, leído el 17 de marzo, fijó las elecciones el 16 de febrero y la reunión de las Cortes el 16 de marzo. Está solo en la v3 (v3 114890).
+El decreto de convocatoria, leído el 17 de marzo, fijó las elecciones el 16 de febrero y la reunión de las Cortes el 16 de marzo.
 
 <!-- cortes.1936.contexto.1.b -->
-La víspera de la apertura, en la junta preparatoria, preside Ramón de Carranza, el diputado de más edad. El acta cuenta que Fernández-Osorio y Tafall «solicitó de la Presidencia un viva a la República, negándose el Sr. Presidente» (v3 114890, solo en la v3).
+La víspera de la apertura, en la junta preparatoria, preside Ramón de Carranza, el diputado de más edad. El acta cuenta que Fernández-Osorio y Tafall «solicitó de la Presidencia un viva a la República, negándose el Sr. Presidente».
 
 <!-- cortes.1936.contexto.1.c -->
-El 16 de marzo, Martínez Barrio sale elegido Presidente interino del Congreso con 386 votos (V2 101701 · v3 114881). Cierra la sesión con «¡Viva la República! ¡Viva España!» (V2 101705 · v3 114888).
+El 16 de marzo, Martínez Barrio sale elegido Presidente interino del Congreso con 386 votos. Cierra la sesión con «¡Viva la República! ¡Viva España!».
 
 ### Las actas (marzo y abril)
 
 <!-- cortes.1936.contexto.2.titulo --> Las actas (marzo y abril)
 
 <!-- cortes.1936.contexto.2.a -->
-Hasta el 3 de abril, la Cámara examina las actas de su propia elección (V2 102250 · v3 115551). El 31 de marzo se discute el dictamen que propone anular las de Granada.
+Hasta el 3 de abril, la Cámara examina las actas de su propia elección. El 31 de marzo se discute el dictamen que propone anular las de Granada.
 
 <!-- cortes.1936.contexto.2.b -->
-Giménez Fernández anuncia que su minoría se retira: «dejamos en vuestras manos, señores de la mayoría, la suerte del sistema parlamentario» (V2 101915 · v3 115160).
+Giménez Fernández anuncia que su minoría se retira: «dejamos en vuestras manos, señores de la mayoría, la suerte del sistema parlamentario».
 
 <!-- cortes.1936.contexto.2.c -->
-Goicoechea y Lamamié de Clairac se retiran con las suyas (V2 101921 · v3 115167; V2 101931 · v3 115177).
+Goicoechea y Lamamié de Clairac se retiran con las suyas.
 
 <!-- cortes.1936.contexto.2.d -->
-El explorador reúne este debate en «Comisión de Actas (Cuenca y Granada)», con 371 intervenciones (v3).
+El explorador reúne este debate en «Comisión de Actas (Cuenca y Granada)», con 371 intervenciones.
 
 <!-- cortes.1936.contexto.2.e -->
 Cómo juzgar esa revisión sigue en discusión. Álvarez Tardío y Villa García sostienen que la nueva mayoría la usó para quitar escaños a la oposición, aunque escriben que no fabricó esa mayoría [A]. González Calleja y Sánchez Pérez discuten su tesis del fraude [A]. Este sitio no toma partido.
@@ -2519,25 +2834,25 @@ Cómo juzgar esa revisión sigue en discusión. Álvarez Tardío y Villa García
 <!-- cortes.1936.contexto.3.titulo --> La destitución (3 y 7 de abril)
 
 <!-- cortes.1936.contexto.3.a -->
-El 3 de abril, recién constituida la Cámara, el grupo socialista presenta una proposición que invoca el artículo 81 de la Constitución (V2 102247 · v3 115547).
+El 3 de abril, recién constituida la Cámara, el grupo socialista presenta una proposición que invoca el artículo 81 de la Constitución.
 
 <!-- cortes.1936.contexto.3.b -->
-Se lee el artículo: en una segunda disolución, «el primer acto de las nuevas Cortes será examinar y resolver sobre la necesidad del decreto» (V2 102249 · v3 115549).
+Se lee el artículo: en una segunda disolución, «el primer acto de las nuevas Cortes será examinar y resolver sobre la necesidad del decreto».
 
 <!-- cortes.1936.contexto.3.c -->
-La proposición sale en votación nominal, por 181 votos contra 88 (V2 102287 · v3 115595).
+La proposición sale en votación nominal, por 181 votos contra 88.
 
 <!-- cortes.1936.contexto.3.d -->
-El 7 de abril se vota que «no era necesario el decreto de disolución de Cortes de 7 de Enero de 1936» (V2 102304 · v3 115618). Prieto defiende la proposición en 4.796 palabras (V2 102323 · v3 115638).
+El 7 de abril se vota que «no era necesario el decreto de disolución de Cortes de 7 de Enero de 1936». Prieto defiende la proposición en 4.796 palabras.
 
 <!-- cortes.1936.contexto.3.e -->
-«El Reglamento dispone que se haga nominalmente»: 238 votos contra 5 (V2 102358 · v3 115674).
+«El Reglamento dispone que se haga nominalmente»: 238 votos contra 5.
 
 <!-- cortes.1936.contexto.3.f -->
-Esa noche, la Mesa no puede notificar el acuerdo en casa de Alcalá-Zamora: le responden que «se hallaba descansando» (V2 102365 · v3 115686).
+Esa noche, la Mesa no puede notificar el acuerdo en casa de Alcalá-Zamora: le responden que «se hallaba descansando».
 
 <!-- cortes.1936.contexto.3.g -->
-De vuelta en la Cámara se lee el artículo 74, y el Presidente de las Cortes «pasa a ser Presidente de la República» (V2 102368 · v3 115690).
+De vuelta en la Cámara se lee el artículo 74, y el Presidente de las Cortes «pasa a ser Presidente de la República».
 
 > [nota de diseño] `voto.238-5.*` son las claves de F26 (dueño: sesiones); aquí solo se consumen. El 238–5 enlaza con su
 > línea de F26 en Sesiones y votaciones; la puerta 0.2 `destitucion-1936` queda oculta mientras no exista.
@@ -2550,10 +2865,10 @@ De vuelta en la Cámara se lee el artículo 74, y el Presidente de las Cortes «
 Mientras Martínez Barrio ejerce la Presidencia de la República, la cabecera del Diario pone la de la Cámara a nombre de Jiménez de Asúa, vicepresidente.
 
 <!-- cortes.1936.contexto.4.b -->
-El 8 de mayo se acuerda una sesión solemne «para que el Presidente electo preste la promesa» (V2 103342 · v3 116810). Se celebra el 11 de mayo, y su acta se lee al día siguiente (v3 116860, solo en la v3).
+El 8 de mayo se acuerda una sesión solemne «para que el Presidente electo preste la promesa». Se celebra el 11 de mayo, y su acta se lee al día siguiente.
 
 <!-- cortes.1936.contexto.4.c -->
-Ese 12 de mayo, Martínez Barrio vuelve a presidir la Cámara. Llega la crisis del Gobierno de Barcia: «Encontrándose el Gobierno en crisis se suspenden las sesiones de Cortes» (V2 103383 · v3 116863).
+Ese 12 de mayo, Martínez Barrio vuelve a presidir la Cámara. Llega la crisis del Gobierno de Barcia: «Encontrándose el Gobierno en crisis se suspenden las sesiones de Cortes».
 
 > [nota de diseño] «La cabecera del Diario» es la del sumario de las sesiones 17 a 27 (15 de abril a 8 de mayo), que
 > solo está en la v3. Quién ganó la elección presidencial del 10 de mayo no se dice: no está en ninguna fila de esta
@@ -2564,16 +2879,16 @@ Ese 12 de mayo, Martínez Barrio vuelve a presidir la Cámara. Llega la crisis d
 <!-- cortes.1936.contexto.5.titulo --> Lo que el Diario borra (abril a julio)
 
 <!-- cortes.1936.contexto.5.a -->
-El 15 de abril, Calvo Sotelo protesta: «Se acaba de hacer una incitación al asesinato». La Presidencia contesta: «Esas palabras no constarán en el Diario de Sesiones» (V2 102483–102484 · v3 115827–115828).
+El 15 de abril, Calvo Sotelo protesta: «Se acaba de hacer una incitación al asesinato». La Presidencia contesta: «Esas palabras no constarán en el Diario de Sesiones».
 
 <!-- cortes.1936.contexto.5.b -->
-La orden se repite el 6 de mayo y el 1 de julio (V2 103251 · v3 116698; V2 106290 · v3 120222).
+La orden se repite el 6 de mayo y el 1 de julio.
 
 <!-- cortes.1936.contexto.5.c -->
-Otras veces es el taquígrafo quien anota palabras que «no se consignan por orden» de la Presidencia (V2 103182 · v3 116626; V2 105324 · v3 119098; V2 106289 · v3 120221).
+Otras veces es el taquígrafo quien anota palabras que «no se consignan por orden» de la Presidencia.
 
 <!-- cortes.1936.contexto.5.d -->
-El 3 de junio es Calvo Sotelo quien pide que no consten unas palabras sobre las Hermanas de la Caridad (V2 104406 · v3 118058). [Ver qué recoge el Diario]
+El 3 de junio es Calvo Sotelo quien pide que no consten unas palabras sobre las Hermanas de la Caridad. [Ver qué recoge el Diario]
 
 > [nota de diseño] [Ver qué recoge el Diario] (`comun.boton.ver_diario`) lleva a El Diario, donde F28 recorre todas las
 > órdenes del corpus. Aquí no se cuentan: el recuento es de F28 y lo fija su dueño (discrepancia 21 del plan). El 15 de
@@ -2587,10 +2902,10 @@ El 3 de junio es Calvo Sotelo quien pide que no consten unas palabras sobre las 
 El 16 de junio y el 1 de julio, la Cámara debate el orden público. Ambas sesiones tienen su puerta de lectura.
 
 <!-- cortes.1936.contexto.6.b -->
-La del 1 de julio es la más larga del corpus: 97.055 palabras en la edición depositada.
+La del 1 de julio es la más larga del corpus: 97.055 palabras en la base.
 
 <!-- cortes.1936.contexto.6.c -->
-La del 10 de julio termina con el «Orden del día para el martes» (V2 107065 · v3 121108). La sesión siguiente del corpus es la del 1 de octubre, cuando Martínez Barrio condena «ese movimiento sedicioso» (V2 107066 · v3 121111).
+La del 10 de julio termina con el «Orden del día para el martes». La sesión siguiente del corpus es la del 1 de octubre, cuando Martínez Barrio condena «ese movimiento sedicioso».
 
 > [nota de diseño] Debajo, `cortes.ficha.contexto.puerta` → `antesala-1936`. El asesinato de Calvo Sotelo y la
 > sublevación no se cuentan aquí: el Diario de esta etapa no los recoge. La frase «Este hombre ha hablado por última
@@ -2608,7 +2923,7 @@ Bajo el calendario van dos bandas de los metadatos del proyecto. Diego Martínez
 Luis Jiménez de Asúa, vicepresidente, lo es de las otras 11, del 15 de abril al 8 de mayo. El 7 de abril, el Presidente de las Cortes había pasado a ser Presidente de la República.
 
 <!-- cortes.1936.calendario.vice -->
-Además, un vicepresidente ocupó la Presidencia algún tramo en 44 sesiones de la etapa (V2).
+Además, un vicepresidente ocupó la Presidencia algún tramo en 44 sesiones de la etapa.
 
 <!-- cortes.1936.calendario.gobiernos -->
 La banda de Gobiernos pasa de Azaña a Barcia, interino, y de este a Casares Quiroga.
@@ -2616,13 +2931,13 @@ La banda de Gobiernos pasa de Azaña a Barcia, interino, y de este a Casares Qui
 ## Quién tomó la palabra
 
 <!-- cortes.1936.palabra.f05 -->
-Sin contar la Presidencia, José Calvo Sotelo encabeza la palabra de la etapa: 67.874 palabras de habla (v3).
+Sin contar la Presidencia, José Calvo Sotelo encabeza la palabra de la etapa: 67.874 palabras de habla.
 
 <!-- cortes.1936.palabra.f05_siguen -->
 Le siguen Manuel Giménez Fernández, Juan Bautista Guerra García, Antonio Bermúdez Cañete y Juan Ventosa Calvell. Los cinco son de partidos que la base codifica en la extrema derecha (RE), la derecha (CEDA) o la centro-derecha (Lliga).
 
 <!-- cortes.1936.palabra.f09 -->
-Por familias, los republicanos se llevan el 28,4 % de las palabras sin Presidencia (V2), y los conservadores, el 26,1 %.
+Por familias, los republicanos se llevan el 28,4 % de las palabras sin Presidencia, y los conservadores, el 26,1 %.
 
 > [nota de diseño] F05 (v3) lleva NotaBases (↺ 13); F09 (V2), no. Los cinco nombres deben coincidir con los puestos 1
 > a 5 de `oradores_etapa.json`: guardas `oradores.etapa.III.1…5.rep_id` en `docs/marcadores/cortes_1936.md`. La
@@ -2636,7 +2951,7 @@ Por familias, los republicanos se llevan el 28,4 % de las palabras sin Presiden
 ## Debates preparados en el explorador
 
 <!-- cortes.1936.debates.entrada -->
-El explorador trae cuatro debates preparados de esta etapa (v3):
+El explorador trae cuatro debates preparados de esta etapa:
 
 <!-- cortes.1936.debates.lista -->
 - Las Cortes de 1936 se constituyen
@@ -2650,13 +2965,13 @@ El explorador trae cuatro debates preparados de esta etapa (v3):
 ## Antes de usarla
 
 <!-- cortes.1936.antes.listas -->
-El voto no es una columna. En esta etapa, 81 filas de la V2 traen una lista de votación nominal, en 32 sesiones.
+El voto no es una columna. En esta etapa, 81 filas traen una lista de votación nominal, en 32 sesiones.
 
 <!-- cortes.1936.antes.listas_donde -->
-En la V2, cada lista va pegada a la fila de quien habló antes de votar: solo 27 de esas filas son de la Presidencia. En la v3, cada lista tiene su propia fila.
+Cada lista tiene su propia fila, de comentarios del Diario.
 
 <!-- cortes.1936.antes.sumario -->
-La junta preparatoria, el decreto de convocatoria y la cabecera de cada sesión solo están en la v3, dentro de la fila del sumario. El filtro «Solo lo que se habla» los oculta.
+La junta preparatoria, el decreto de convocatoria y la cabecera de cada sesión van en la fila del sumario. El filtro «Solo lo que se habla» los oculta.
 
 <!-- ↺ comun.fija.ocr -->
 El texto sale del reconocimiento óptico y no está corregido a mano.
@@ -2684,7 +2999,7 @@ El texto sale del reconocimiento óptico y no está corregido a mano.
 ## Cómo citar
 
 <!-- cortes.1936.citar.sesion -->
-*Diario de las Sesiones de Cortes. Congreso de los Diputados*, núm. 15, 7 de abril de 1936, pp. 237–272. En Luz y Taquígrafos (V2), filas 102289 a 102374.
+*Diario de las Sesiones de Cortes. Congreso de los Diputados*, núm. 15, 7 de abril de 1936, pp. 237–272. En Luz y Taquígrafos, filas 102289 a 102374.
 
 > [nota de diseño] Mismo formato que `cortes.1933.citar.sesion`. Debajo, `cortes.ficha.citar.paginas`, ↺ 4, la cita
 > del conjunto y [Copiar la cita]. Vecinas: anterior, la ficha II; siguiente, la ficha IV; en el centro, Todas las
@@ -2710,17 +3025,17 @@ El texto sale del reconocimiento óptico y no está corregido a mano.
 > («Fila 3»). El número es el orden de la llamada en la página, no una cifra.
 
 <!-- cortes.ficha.cifras.base -->
-Las tres cifras son de la edición depositada, la que se descarga.
+Las tres cifras son de la base, la que se descarga.
 
 <!-- cortes.ficha.sesiones.entrada -->
 Cada línea es una sesión: su fecha, dónde se reunió la Cámara si el texto lo dice, y qué pasó.
 
-<!-- cortes.ficha.sesiones.filas --> filas V2
+<!-- cortes.ficha.sesiones.filas --> filas
 
 ## F05 · Quién tomó la palabra
 
 <!-- fig.F05.leyenda -->
-Cada barra, las palabras de habla de un diputado en la edición del explorador. Cuenta palabras: no es una medida de importancia.
+Cada barra, las palabras de habla de un diputado en el explorador. Cuenta palabras: no es una medida de importancia.
 
 <!-- fig.F05.anotacion -->
 Los diez primeros suman el ⟦oradores.etapa.<etapa>.diez.pct⟧ de las palabras de habla de la etapa, sin la Presidencia.
@@ -2813,7 +3128,7 @@ Quedan extractos oficiales, no el Diario íntegro. Aquí están todas sus sesion
 <!-- cortes.guerra.hoy.buscar.consulta --> confianza
 
 <!-- cortes.guerra.hoy.buscar.recuento -->
-Con esos filtros, «confianza» da 55 intervenciones (v3), contando todas las filas. Sale en 9 de las 9 sesiones.
+Con esos filtros, «confianza» da 55 intervenciones, contando todas las filas. Sale en 9 de las 9 sesiones.
 
 <!-- cortes.guerra.hoy.sesion -->
 **Abrir una sesión.** Ponga el 30 de septiembre de 1938 en Desde y en Hasta, abra una intervención y pulse `s`: tendrá la sesión corrida.
@@ -2833,7 +3148,7 @@ Con esos filtros, «confianza» da 55 intervenciones (v3), contando todas las fi
 9 sesiones, de octubre de 1936 a febrero de 1939.
 
 <!-- cortes.guerra.cifras.palabras -->
-127.709 palabras en la edición depositada: el 0,52 % del corpus.
+127.709 palabras en la base: el 0,52 % del corpus.
 
 <!-- cortes.guerra.cifras.diputados -->
 44 diputados toman la palabra, contando a quien preside.
@@ -2845,22 +3160,22 @@ Con esos filtros, «confianza» da 55 intervenciones (v3), contando todas las fi
 <!-- cortes.guerra.contexto.1.titulo --> Dónde se reunieron: lo dice el texto
 
 <!-- cortes.guerra.contexto.1.a -->
-El volumen se abre con una nota: reúne los extractos de las sesiones «CON POSTERIORIDAD AL 18 DE JULIO» (v3 121110, solo en la v3). Los lugares no los da la nota: los nombra el propio texto.
+El volumen se abre con una nota: reúne los extractos de las sesiones «CON POSTERIORIDAD AL 18 DE JULIO». Los lugares no los da la nota: los nombra el propio texto.
 
 <!-- cortes.guerra.contexto.1.b -->
-El 1 de octubre de 1936, una proposición va fechada en el «Palacio del Congreso» (V2 107093 · v3 121143). En diciembre, Albornoz recordará que ese día «nos reunimos en Madrid» (V2 107114 · v3 121167).
+El 1 de octubre de 1936, una proposición va fechada en el «Palacio del Congreso». En diciembre, Albornoz recordará que ese día «nos reunimos en Madrid».
 
 <!-- cortes.guerra.contexto.1.c -->
-El 1 de diciembre, Martínez Barrio da las gracias «al pueblo de Valencia» (V2 107095 · v3 121147). Una proposición de ese día se firma en el «Palacio del Ayuntamiento de Valencia» (V2 107116 · v3 121170).
+El 1 de diciembre, Martínez Barrio da las gracias «al pueblo de Valencia». Una proposición de ese día se firma en el «Palacio del Ayuntamiento de Valencia».
 
 <!-- cortes.guerra.contexto.1.d -->
-En octubre de 1937, Negrín agradece al municipio de Valencia que les haya permitido «congregarnos en la histórica Lonja» (V2 107148 · v3 121219). El 1 de febrero de 1938, una proposición va fechada en «Monserrat», así escrito (V2 107248 · v3 121345).
+En octubre de 1937, Negrín agradece al municipio de Valencia que les haya permitido «congregarnos en la histórica Lonja». El 1 de febrero de 1938, una proposición va fechada en «Monserrat», así escrito.
 
 <!-- cortes.guerra.contexto.1.e -->
-El 30 de septiembre de 1938, Trabal habla «del antiguo monasterio de San Cugat del Vallés» (V2 107303 · v3 121412). Ese día, Irujo recuerda «las Cortes de Montserrat» (V2 107276 · v3 121384). Al día siguiente, la proposición que suspende las sesiones va fechada en «Sabadell» (V2 107319 · v3 121437).
+El 30 de septiembre de 1938, Trabal habla «del antiguo monasterio de San Cugat del Vallés». Ese día, Irujo recuerda «las Cortes de Montserrat». Al día siguiente, la proposición que suspende las sesiones va fechada en «Sabadell».
 
 <!-- cortes.guerra.contexto.1.f -->
-La última proposición de la guerra se firma en el «Castillo de Figueras» (V2 107337 · v3 121459).
+La última proposición de la guerra se firma en el «Castillo de Figueras».
 
 > [nota de diseño] Las citas conservan la grafía impresa: «San Cugat del Vallés», «Castillo de Figueras», «Monserrat»
 > (el 1-II-1938) y «Montserrat» (Irujo); el texto del sitio dice Sant Cugat, Figueres y Montserrat. «Así escrito»
@@ -2873,39 +3188,39 @@ La última proposición de la guerra se firma en el «Castillo de Figueras» (V2
 <!-- cortes.guerra.contexto.2.titulo --> La confianza, sesión tras sesión
 
 <!-- cortes.guerra.contexto.2.a -->
-El 1 de octubre de 1936, Martínez Barrio abre con la condena de «ese movimiento sedicioso» (V2 107066 · v3 121111). Largo Caballero presenta su Gobierno (V2 107068 · v3 121113).
+El 1 de octubre de 1936, Martínez Barrio abre con la condena de «ese movimiento sedicioso». Largo Caballero presenta su Gobierno.
 
 <!-- cortes.guerra.contexto.2.b -->
-La proposición de adhesión al Gobierno se aprueba «por aclamación» (V2 107088 · v3 121135). Ese mismo día se aprueba definitivamente el Estatuto del País Vasco (V2 107091 · v3 121140).
+La proposición de adhesión al Gobierno se aprueba «por aclamación». Ese mismo día se aprueba definitivamente el Estatuto del País Vasco.
 
 <!-- cortes.guerra.contexto.2.c -->
-Algunas sesiones votan con nombre y apellido. El 1 de octubre de 1938, la convalidación de los decretos del Gobierno sale por 168 votos a favor y ninguno en contra (V2 107312 · v3 121427).
+Algunas sesiones votan con nombre y apellido. El 1 de octubre de 1938, la convalidación de los decretos del Gobierno sale por 168 votos a favor y ninguno en contra.
 
 ### La palabra vigilada (1937 y 1938)
 
 <!-- cortes.guerra.contexto.3.titulo --> La palabra vigilada (1937 y 1938)
 
 <!-- cortes.guerra.contexto.3.a -->
-El 2 de octubre de 1937, Pestaña denuncia la falta de armas de algunas brigadas (V2 107193 · v3 121275). La Presidencia le advierte que «de ciertas cosas no se puede hablar en la Cámara» (V2 107196 · v3 121278).
+El 2 de octubre de 1937, Pestaña denuncia la falta de armas de algunas brigadas. La Presidencia le advierte que «de ciertas cosas no se puede hablar en la Cámara».
 
 <!-- cortes.guerra.contexto.3.b -->
-Albornoz replica: «Pero si el Parlamento no es eso, no será nada» (V2 107197 · v3 121279).
+Albornoz replica: «Pero si el Parlamento no es eso, no será nada».
 
 <!-- cortes.guerra.contexto.3.c -->
-Un año después, Negrín avisa: «El Gobierno no acepta, ni admite votos de confianza condicionados y con reservas» (V2 107288 · v3 121397).
+Un año después, Negrín avisa: «El Gobierno no acepta, ni admite votos de confianza condicionados y con reservas».
 
 ### Figueres (1 de febrero de 1939)
 
 <!-- cortes.guerra.contexto.4.titulo --> Figueres (1 de febrero de 1939)
 
 <!-- cortes.guerra.contexto.4.a -->
-Según el sumario, la sesión se abre «a las veintidos horas treinta minutos» (v3 121446, solo en la v3). Negrín empieza: «Señores Diputados, se reúne hoy la Cámara en un severo ambiente de guerra» (V2 107326 · v3 121447).
+Según el sumario, la sesión se abre «a las veintidos horas treinta minutos». Negrín empieza: «Señores Diputados, se reúne hoy la Cámara en un severo ambiente de guerra».
 
 <!-- cortes.guerra.contexto.4.b -->
-La proposición final se vota nominalmente. El extracto cierra: «Han votado afirmativamente los sesenta y dos señores Diputados» (V2 107340–107341 · v3 121462–121464).
+La proposición final se vota nominalmente. El extracto cierra: «Han votado afirmativamente los sesenta y dos señores Diputados».
 
 <!-- cortes.guerra.contexto.4.c -->
-La nota que abre el volumen dice que de esta sesión «NO EXISTE DATO ALGUNO» (v3 121110, solo en la v3). Otra nota, al final, explica que después «se ha podido obtener fotocopia del ejemplar del Extracto de dicha sesión» (V2 107341 · v3 121465).
+La nota que abre el volumen dice que de esta sesión «NO EXISTE DATO ALGUNO». Otra nota, al final, explica que después «se ha podido obtener fotocopia del ejemplar del Extracto de dicha sesión».
 
 > [nota de diseño] «veintidos» va sin tilde, como en la fila. Debajo, `cortes.ficha.contexto.puerta` →
 > `figueres-1939`. La misma nota inicial llama «liberación de Barcelona» a su caída: eso lo trata El Diario («La fuente
@@ -2951,16 +3266,13 @@ La banda de Gobiernos va de Largo Caballero a Negrín.
 ## Quién tomó la palabra
 
 <!-- cortes.guerra.palabra.f05 -->
-Sin contar la Presidencia, Juan Negrín encabeza la palabra de la etapa: 31.794 palabras de habla (v3).
-
-<!-- cortes.guerra.palabra.f05_v3 -->
-Aquí la edición del explorador es imprescindible. En la V2, sus discursos del 1 de octubre de 1937 y del 1 de febrero de 1938 van dentro de filas de la Presidencia. Son las filas V2 107148 y 107232 (v3 121219 y 121328).
+Sin contar la Presidencia, Juan Negrín encabeza la palabra de la etapa: 31.794 palabras de habla.
 
 <!-- cortes.guerra.palabra.f09 -->
-Por familias, los socialistas se llevan el 41,4 % de las palabras sin Presidencia (V2).
+Por familias, los socialistas se llevan el 41,4 % de las palabras sin Presidencia.
 
 <!-- cortes.guerra.palabra.f09_salvedad -->
-Esa cuenta deja fuera los dos discursos de Negrín que la V2 atribuye a la Presidencia. La Presidencia se queda aquí con el 26,1 % de las palabras.
+La Presidencia se lleva aquí el 26,1 % de las palabras.
 
 > [nota de diseño] F05 (v3) lleva NotaBases (↺ 13). Guarda del nombre: `oradores.etapa.IV.1.rep_id`.
 
@@ -2972,7 +3284,7 @@ Esa cuenta deja fuera los dos discursos de Negrín que la V2 atribuye a la Presi
 ## Debates preparados en el explorador
 
 <!-- cortes.guerra.debates.entrada -->
-El explorador trae un debate preparado de esta etapa (v3):
+El explorador trae un debate preparado de esta etapa:
 
 <!-- cortes.guerra.debates.lista -->
 Las Cortes en guerra
@@ -2988,7 +3300,7 @@ Son extractos oficiales, no el Diario íntegro: parte de cada sesión se cuenta 
 Las páginas de estas sesiones no están verificadas en los metadatos del proyecto.
 
 <!-- cortes.guerra.antes.sumario -->
-La nota del volumen y el sumario de cada extracto solo están en la v3. El filtro «Solo lo que se habla» los oculta.
+La nota del volumen y el sumario de cada extracto van en filas propias. El filtro «Solo lo que se habla» los oculta.
 
 <!-- ↺ comun.fija.ocr -->
 El texto sale del reconocimiento óptico y no está corregido a mano.
@@ -3013,7 +3325,7 @@ El texto sale del reconocimiento óptico y no está corregido a mano.
 ## Cómo citar
 
 <!-- cortes.guerra.citar.sesion -->
-*Extracto oficial de las sesiones. Congreso de los Diputados*, núm. 69, 1 de febrero de 1939. En Luz y Taquígrafos (V2), filas 107326 a 107341.
+*Extracto oficial de las sesiones. Congreso de los Diputados*, núm. 69, 1 de febrero de 1939. En Luz y Taquígrafos, filas 107326 a 107341.
 
 <!-- cortes.guerra.citar.sin_paginas -->
 Estos extractos no tienen páginas verificadas: cítelos por su número y su fecha.
@@ -3079,7 +3391,7 @@ Una promesa, un Gobierno y la lista de quienes ya no estaban, dichos con las pal
 <!-- cortes.mexico.hoy.buscar.consulta --> "Diputación Permanente"
 
 <!-- cortes.mexico.hoy.buscar.recuento -->
-Con esos filtros, la consulta da 16 intervenciones (v3), contando todas las filas. Salen en tres de las cinco sesiones.
+Con esos filtros, la consulta da 16 intervenciones, contando todas las filas. Salen en tres de las cinco sesiones.
 
 <!-- cortes.mexico.hoy.sesion -->
 **Abrir una sesión.** Ponga el 17 de agosto de 1945 en Desde y en Hasta, abra una intervención y pulse `s`: tendrá la sesión de la promesa entera.
@@ -3099,7 +3411,7 @@ Con esos filtros, la consulta da 16 intervenciones (v3), contando todas las fila
 5 sesiones, de enero a noviembre de 1945, en la Ciudad de México.
 
 <!-- cortes.mexico.cifras.palabras -->
-75.458 palabras en la edición depositada: el 0,31 % del corpus.
+75.458 palabras en la base: el 0,31 % del corpus.
 
 <!-- cortes.mexico.cifras.diputados -->
 29 diputados toman la palabra, contando a quien preside.
@@ -3114,16 +3426,16 @@ Con esos filtros, la consulta da 16 intervenciones (v3), contando todas las fila
 <!-- cortes.mexico.contexto.1.titulo --> Volver a reunirse (10 de enero)
 
 <!-- cortes.mexico.contexto.1.a -->
-La primera sesión escucha la relación de acuerdos de la Diputación Permanente «de 2 de febrero de 1939 a 9 de enero de 1945». Son 32 acuerdos, de París a México (v3 121466, solo en la v3).
+La primera sesión escucha la relación de acuerdos de la Diputación Permanente «de 2 de febrero de 1939 a 9 de enero de 1945». Son 32 acuerdos, de París a México.
 
 <!-- cortes.mexico.contexto.1.b -->
-En el primero, la Diputación se da «por enterada» de la dimisión de Azaña como Presidente de la República (v3 121466, solo en la v3).
+En el primero, la Diputación se da «por enterada» de la dimisión de Azaña como Presidente de la República.
 
 <!-- cortes.mexico.contexto.1.c -->
-Después se lee la lista de diputados fallecidos desde julio de 1936: 127 nombres. El primero es el de Azaña (V2 107342 · v3 121467).
+Después se lee la lista de diputados fallecidos desde julio de 1936: 127 nombres. El primero es el de Azaña.
 
 <!-- cortes.mexico.contexto.1.d -->
-Martínez Barrio recuerda la noche de Figueres: «celebrábamos las exequias temporales de la República Española» (V2 107344 · v3 121470).
+Martínez Barrio recuerda la noche de Figueres: «celebrábamos las exequias temporales de la República Española».
 
 > [nota de diseño] El primer acuerdo dice «Darse por enterada de la dimisión del Excelentísimo señor Presidente de la
 > República, don Manuel Azaña Díaz» (París, 3 de marzo de 1939): el copy cita solo «por enterada». Los acuerdos se
@@ -3134,10 +3446,10 @@ Martínez Barrio recuerda la noche de Figueres: «celebrábamos las exequias tem
 <!-- cortes.mexico.contexto.2.titulo --> Una promesa (17 de agosto)
 
 <!-- cortes.mexico.contexto.2.a -->
-Preside Fernández Clérigo. El orden del día dice: «Promesa del Excmo. señor don Diego Martínez Barrio, Presidente de las Cortes, como Presidente interino de la República Española» (V2 107371 · v3 121500).
+Preside Fernández Clérigo. El orden del día dice: «Promesa del Excmo. señor don Diego Martínez Barrio, Presidente de las Cortes, como Presidente interino de la República Española».
 
 <!-- cortes.mexico.contexto.2.b -->
-A la fórmula de la promesa, Martínez Barrio responde: «Si, prometo» (V2 107372 · v3 121502).
+A la fórmula de la promesa, Martínez Barrio responde: «Si, prometo».
 
 > [nota de diseño] Nunca «elección»: el Diario dice «promesa … como Presidente interino» (discrepancia 31 del plan).
 > «Si, prometo» va sin tilde, como en las dos filas. Debajo, `cortes.ficha.contexto.puerta` → `mexico-1945`.
@@ -3147,16 +3459,16 @@ A la fórmula de la promesa, Martínez Barrio responde: «Si, prometo» (V2 1073
 <!-- cortes.mexico.contexto.3.titulo --> Un Gobierno (7 y 8 de noviembre)
 
 <!-- cortes.mexico.contexto.3.a -->
-Giral presenta «el primer Gobierno de la República que ha sido posible instrumentar constitucionalmente» desde que salieron de España. Habla 7.446 palabras (V2 107375 · v3 121507).
+Giral presenta «el primer Gobierno de la República que ha sido posible instrumentar constitucionalmente» desde que salieron de España. Habla 7.446 palabras.
 
 <!-- cortes.mexico.contexto.3.b -->
-Lamoneda anuncia su voto contrario: «No otorgaremos, pues, la confianza al Gobierno» (V2 107402 · v3 121535). La confianza se aprueba «por aclamación» (V2 107425 · v3 121560).
+Lamoneda anuncia su voto contrario: «No otorgaremos, pues, la confianza al Gobierno». La confianza se aprueba «por aclamación».
 
 <!-- cortes.mexico.contexto.3.c -->
-Al día siguiente se debate el segundo punto del orden del día: «las circunstancias que impiden con carácter de fuerza mayor la convocatoria de elecciones» presidenciales (V2 107429 · v3 121567).
+Al día siguiente se debate el segundo punto del orden del día: «las circunstancias que impiden con carácter de fuerza mayor la convocatoria de elecciones» presidenciales.
 
 <!-- cortes.mexico.contexto.3.d -->
-La propuesta que aprueba la declaración del Gobierno sobre ese punto sale por 106 votos a favor y ninguno en contra, en votación ordinaria (V2 107442 · v3 121582).
+La propuesta que aprueba la declaración del Gobierno sobre ese punto sale por 106 votos a favor y ninguno en contra, en votación ordinaria.
 
 > [nota de diseño] «Desde que salieron de España» resume la frase de Giral en la misma fila: «desde el día en que el
 > infortunio nos hizo cruzar la frontera de nuestra patria amada».
@@ -3166,13 +3478,13 @@ La propuesta que aprueba la declaración del Gobierno sobre ese punto sale por 1
 <!-- cortes.mexico.contexto.4.titulo --> El Estatuto gallego y el cierre (9 de noviembre)
 
 <!-- cortes.mexico.contexto.4.a -->
-La última sesión discute si se forma una comisión para el Estatuto de Galicia (V2 107466 · v3 121614). Suárez Picallo cuenta que salió «de Santiago de Chile para asistir a estas sesiones» (V2 107485 · v3 121633).
+La última sesión discute si se forma una comisión para el Estatuto de Galicia. Suárez Picallo cuenta que salió «de Santiago de Chile para asistir a estas sesiones».
 
 <!-- cortes.mexico.contexto.4.b -->
-Prieto se opone a formarla. Al final, Giral pide dar «esta satisfacción moral a nuestros compañeros los Diputados gallegos», y la minoría socialista accede (V2 107540 · v3 121688; V2 107543 · v3 121691).
+Prieto se opone a formarla. Al final, Giral pide dar «esta satisfacción moral a nuestros compañeros los Diputados gallegos», y la minoría socialista accede.
 
 <!-- cortes.mexico.contexto.4.c -->
-Jiménez de Asúa cierra agradeciendo «a México, a su Gobierno, a su Prensa y a su pueblo» (V2 107551 · v3 121699).
+Jiménez de Asúa cierra agradeciendo «a México, a su Gobierno, a su Prensa y a su pueblo».
 
 > [nota de diseño] La comisión: «una Comisión especial para dictamar [sic] sobre el Estatuto autónómico de la Región
 > gallega» (V2 107466); el copy la resume. Quien cierra es la Presidencia de la sesión, que el sumario da a Jiménez de
@@ -3212,13 +3524,13 @@ La banda de Gobiernos pasa del de Negrín al de Giral. El corpus solo dice que G
 ## Quién tomó la palabra
 
 <!-- cortes.mexico.palabra.f05 -->
-Sin contar la Presidencia, José Giral encabeza la palabra de la etapa: 9.792 palabras de habla (v3).
+Sin contar la Presidencia, José Giral encabeza la palabra de la etapa: 9.792 palabras de habla.
 
 <!-- cortes.mexico.palabra.f05_siguen -->
 Le siguen Indalecio Prieto y Luis Fernández Clérigo.
 
 <!-- cortes.mexico.palabra.f09 -->
-Por familias, los republicanos se llevan el 45,9 % de las palabras sin Presidencia (V2), y los socialistas, el 34,4 %.
+Por familias, los republicanos se llevan el 45,9 % de las palabras sin Presidencia, y los socialistas, el 34,4 %.
 
 > [nota de diseño] F05 (v3) lleva NotaBases (↺ 13). Guardas: `oradores.etapa.V.1…3.rep_id`.
 
@@ -3229,7 +3541,7 @@ Por familias, los republicanos se llevan el 45,9 % de las palabras sin Presiden
 ## Debates preparados en el explorador
 
 <!-- cortes.mexico.debates.entrada -->
-El explorador trae un debate preparado de esta etapa (v3):
+El explorador trae un debate preparado de esta etapa:
 
 <!-- cortes.mexico.debates.lista -->
 Las Cortes en el exilio
@@ -3239,16 +3551,13 @@ Las Cortes en el exilio
 ## Antes de usarla
 
 <!-- cortes.mexico.antes.cuadernillos -->
-Son extractos oficiales, impresos en cuadernillos en México por «B. Costa i Amic», según la carátula del volumen (v3 121466, solo en la v3). Sus páginas no están verificadas.
-
-<!-- cortes.mexico.antes.prieto -->
-El discurso de Prieto del 8 de noviembre es una sola fila en la V2, con 5.622 palabras. La v3 lo parte en dos (V2 107446 · v3 121586 y 121588).
+Son extractos oficiales, impresos en cuadernillos en México por «B. Costa i Amic», según la carátula del volumen. Sus páginas no están verificadas.
 
 <!-- cortes.mexico.antes.no_esta -->
-Lo que no está: la carátula enumera reuniones de la Diputación Permanente en México. Avisa de que «no se dispone de los textos ni en forma de fotocopia» (v3 121466, solo en la v3).
+Lo que no está: la carátula enumera reuniones de la Diputación Permanente en México. Avisa de que «no se dispone de los textos ni en forma de fotocopia».
 
 <!-- cortes.mexico.antes.paris -->
-Tampoco están las que celebró en París. Una nota del volumen de la guerra dice que el tomo reunía «las cuatro de la Diputación Permanente, celebradas en París» (V2 107341 · v3 121465).
+Tampoco están las que celebró en París. Una nota del volumen de la guerra dice que el tomo reunía «las cuatro de la Diputación Permanente, celebradas en París».
 
 <!-- ↺ comun.fija.ocr -->
 El texto sale del reconocimiento óptico y no está corregido a mano.
@@ -3268,7 +3577,7 @@ El texto sale del reconocimiento óptico y no está corregido a mano.
 ## Cómo citar
 
 <!-- cortes.mexico.citar.sesion -->
-*Extracto oficial de las sesiones de Cortes celebradas en México*, núm. 71, 17 de agosto de 1945. En Luz y Taquígrafos (V2), filas 107369 a 107373.
+*Extracto oficial de las sesiones de Cortes celebradas en México*, núm. 71, 17 de agosto de 1945. En Luz y Taquígrafos, filas 107369 a 107373.
 
 <!-- ↺ cortes.guerra.citar.sin_paginas -->
 Estos extractos no tienen páginas verificadas: cítelos por su número y su fecha.
@@ -3314,7 +3623,7 @@ Estos extractos no tienen páginas verificadas: cítelos por su número y su fec
 Usar los datos
 
 <!-- datos.meta.descripcion -->
-Por dónde empezar, cómo abrir el CSV, qué significa cada columna y dónde engaña, cómo unirlo con Afinidades Elegidas y cómo citarlo.
+Por dónde empezar, cómo abrir el CSV, qué significa cada columna, cómo unirlo con Afinidades Elegidas y cómo citarlo.
 
 > [nota de diseño] Subnavegación «Usar los datos · Versiones» (`comun.md`). Índice lateral con los nueve apartados
 > (`datos.indice.*`). Sin banda fija (solo Método y Explorador). La página lleva `<NotaBases>`: F33 y la decisión 4
@@ -3337,9 +3646,6 @@ Las columnas
 <!-- datos.indice.decisiones -->
 Antes de contar
 
-<!-- datos.indice.palabra -->
-Contar «palabra»
-
 <!-- datos.indice.unir -->
 Unir con Afinidades
 
@@ -3355,16 +3661,16 @@ Erratas y contacto
 ## Cabecera
 
 <!-- datos.antetitulo -->
-THQCMI V2.0 · 107.551 filas · 14 columnas · 158,1 MB
+CSV · 107.551 filas · 14 columnas · 158,1 MB
 
 <!-- datos.titulo -->
 ¿Cómo lo abro, qué significa cada columna, cómo lo uno y cómo lo cito?
 
 <!-- datos.entrada -->
-Quien descarga quiere contar. Antes conviene saber dónde engañan las columnas: el orden empieza en cero, la sesión se reinicia, la Presidencia tiene partido y la palabra se cuenta de cinco maneras.
+Todo lo necesario para trabajar con la base: cómo se abre, qué dice cada columna, qué decidir antes de contar, cómo se une con Afinidades Elegidas y cómo se cita.
 
 <!-- datos.entrada.2 -->
-Cada trampa va aquí con su cifra y con la línea de código que la resuelve.
+Cada paso lleva su línea de código.
 
 ---
 
@@ -3380,13 +3686,10 @@ Elija por lo que ya sabe hacer.
 Sin programar
 
 <!-- datos.empezar.s1.texto -->
-Llévese los datos de cada figura de este sitio, en CSV y en Excel, con su LÉAME y su cita. Pesan unos KB.
+Cada figura de este sitio lleva sus datos en la pestaña «Datos»: CSV y Excel, con su LÉAME y su cita. Pesan unos KB.
 
 <!-- ↺ comun.fija.sin_formulario -->
 Sin formulario: son datos agregados.
-
-<!-- datos.empezar.s1.accion -->
-[Ver los datos de cada figura]
 
 <!-- datos.empezar.s2.titulo -->
 Sin programar, con el texto
@@ -3398,7 +3701,7 @@ Abra el explorador: trae los Diarios ya cargados. Busque, lea cada sesión como 
 La primera vez descarga unos 106,6 MB comprimidos, sin formulario.
 
 <!-- ↺ comun.fija.explorador -->
-Sirve la edición v3, sin depositar; pide un ordenador.
+Funciona en el navegador de un ordenador.
 
 <!-- ↺ comun.fija.local -->
 Se abre en su navegador; lo que busca y guarda se queda en su equipo.
@@ -3410,7 +3713,7 @@ Se abre en su navegador; lo que busca y guarda se queda en su equipo.
 Con R o Python
 
 <!-- datos.empezar.s3.texto -->
-El CSV depositado, THQCMI V2.0: 107.551 filas y 14 columnas. Los dos fragmentos de esta página lo cargan, lo cuentan y lo unen.
+El CSV depositado: 107.551 filas y 14 columnas. Los dos fragmentos de esta página lo cargan, lo cuentan y lo unen.
 
 <!-- datos.empezar.s3.peso -->
 Un archivo de 158,1 MB.
@@ -3427,14 +3730,20 @@ Afinidades Elegidas: quién firmó con quién cada proposición, enmienda, ruego
 <!-- datos.empezar.s4.accion -->
 [Ver Afinidades Elegidas]
 
+<!-- datos.empezar.s5.titulo -->
+Con un asistente de IA
+
+<!-- datos.empezar.s5.texto -->
+Pregunte con sus palabras a Claude u otro asistente. Un conector abierto busca y cuenta por usted en las dos bases, sin programar.
+
+<!-- datos.empezar.s5.accion -->
+[Ver cómo preguntar con IA]
+
 <!-- datos.empezar.cierre -->
 Dos personas con la misma base pueden llegar a resultados distintos sin que ninguna se haya equivocado. Las decisiones de análisis son suyas, y esta página las enseña.
 
 <!-- ↺ comun.fija.formulario -->
-Antes de descargar, Harvard Dataverse le pedirá nombre, correo e institución.
-
-<!-- ↺ comun.fija.ids -->
-Los identificadores de fila cambian entre la edición depositada (V2) y la del explorador (v3); la sesión —fecha y número— es la misma en las dos.
+Harvard Dataverse no pide registro ni formulario para descargar.
 
 > [nota de diseño] La escalera va en registro de calendario, sin tarjetas: cuatro peldaños a dos columnas desde 64 rem.
 > Peldaño 1: `s1.*` + ↺ 12 (`comun.fija.sin_formulario`); [Ver los datos de cada figura] → `datos/versiones/#bases`
@@ -3457,9 +3766,6 @@ El camino hasta el archivo
 
 <!-- datos.camino.entrada -->
 Tres pasos: la página del DOI, un solo archivo y una lectura con los parámetros correctos.
-
-<!-- ↺ comun.fija.formulario.motivo -->
-Con esos datos queremos saber quién usa la base y con qué fin, para poder mejorarla y comunicar novedades.
 
 > [nota de diseño] Encima de todo, ↺ 3 (`comun.fija.formulario`). Debajo, `comun.fija.formulario.motivo`: el motivo
 > del formulario que dio el investigador (D-20, cerrada el 23-09-2026), en una sola frase. El formulario **no se nombra
@@ -3503,7 +3809,7 @@ Sesiones, filas y palabras de cada legislatura en el CSV depositado
 [Descargar en Dataverse ↗]
 
 <!-- datos.camino.tabla.titulo -->
-Los archivos de la versión V2.0
+Los archivos del depósito
 
 <!-- datos.camino.tabla.col.archivo -->
 Archivo
@@ -3521,16 +3827,13 @@ Qué es
 Los datos: una fila por turno impreso.
 
 <!-- datos.camino.archivo.changelog_es -->
-Qué cambió de la V1 a la V2, en español.
+El registro de cambios, en español.
 
 <!-- datos.camino.archivo.changelog_en -->
 Lo mismo, en inglés.
 
 <!-- datos.camino.archivo.readme -->
-La documentación, en inglés. Describe la primera versión.
-
-<!-- ↺ comun.fija.readme -->
-El README depositado describe la primera versión; las diferencias, aquí.
+La documentación, en inglés.
 
 <!-- datos.camino.integridad -->
 Si quiere comprobar que su copia es la depositada, compare su MD5 con el de la tabla.
@@ -3556,94 +3859,52 @@ Si quiere comprobar que su copia es la depositada, compare su MD5 con el de la t
 Las 14 columnas
 
 <!-- datos.columnas.entrada -->
-Cada columna, con su definición, su valor en dos filas reales y su trampa.
+Cada columna, con su definición y su valor en dos filas reales.
 
 <!-- datos.columnas.texto -->
-Las filas de ejemplo son la 5423 y la 5424, seguidas en la sesión del 1 de octubre de 1931. En la primera, la Presidencia pide silencio; en la segunda, Clara Campoamor empieza a hablar.
+Las dos filas de ejemplo van seguidas en la sesión del 1 de octubre de 1931. En la primera, la Presidencia pide silencio; en la segunda, Clara Campoamor empieza a hablar.
 
 <!-- datos.columnas.id.definicion -->
-Número de la fila en la V2, del uno al 107.551, sin huecos. Sigue el orden de lectura: fecha, sesión y lugar en la sesión.
-
-<!-- datos.columnas.id.trampa -->
-Solo vale dentro de la V2. La v3 renumera: la 5424 es allí la 6079. Para citar, dé también la fecha y el número de sesión.
+Número de la fila, del uno al 107.551, sin huecos. Sigue el orden de lectura: fecha, sesión y lugar en la sesión.
 
 <!-- datos.columnas.num_session.definicion -->
-Número de la sesión dentro de su legislatura, como lo imprime el Diario.
-
-<!-- datos.columnas.num_session.trampa -->
-Vuelve a empezar en cada legislatura: la sesión 1 existe tres veces. Una sesión se identifica por la fecha y el número juntos.
+Número de la sesión dentro de su legislatura, como lo imprime el Diario. Vuelve a empezar en cada legislatura: la sesión se identifica por la fecha y el número juntos.
 
 <!-- datos.columnas.order.definicion -->
-Lugar de la fila en su sesión.
-
-<!-- datos.columnas.order.trampa -->
-Empieza en cero. Campoamor es la 26 en la V2, la 29 en la v3 y «Orden 30» en la pantalla del explorador.
+Lugar de la fila en su sesión, contado desde cero.
 
 <!-- datos.columnas.date.definicion -->
-Fecha de la sesión, en formato AAAA-MM-DD.
-
-<!-- datos.columnas.date.trampa -->
-siete sesiones cambiaron de fecha de la V1 a la V2. Hay tres días con dos sesiones, así que la fecha sola no identifica una sesión.
+Fecha de la sesión, en formato AAAA-MM-DD. Algunos días hubo dos sesiones.
 
 <!-- datos.columnas.speaker.definicion -->
-La fórmula impresa del orador, tal como la leyó el reconocimiento óptico.
-
-<!-- datos.columnas.speaker.trampa -->
-Solo esta columna dice el cargo: «El Sr. PRESIDENTE:», «El Sr. Ministro de HACIENDA:». Conserva las erratas de lectura, como «PERSIDENTE».
+La fórmula impresa del orador, tal como la leyó el reconocimiento óptico: «El Sr. PRESIDENTE:», «La Srta. CAMPOAMOR:». Es la única columna que dice el cargo.
 
 <!-- datos.columnas.speech.definicion -->
-El texto de la fila, sin resumir ni corregir a mano.
-
-<!-- datos.columnas.speech.trampa -->
-Incluye acotaciones, interrupciones, documentos y listas de votación. La lista nominal del 1 de octubre de 1931 va dentro de una fila de la Presidencia, la 5453.
+El texto de la fila, sin resumir ni corregir a mano, con las acotaciones del taquígrafo.
 
 <!-- datos.columnas.rep_id.definicion -->
-El diputado, según la tabla de diputados del proyecto.
-
-<!-- datos.columnas.rep_id.trampa -->
-Es una persona, no un escaño. La Presidencia va al diputado que preside. Hay 147 filas vacías, y el identificador 836 lleva dos nombres distintos, pendiente del autor.
+El diputado, según la tabla de diputados del proyecto. Es una persona, no un escaño; en las filas de la Presidencia, el diputado que presidía.
 
 <!-- datos.columnas.rep_name.definicion -->
-Nombre completo del diputado.
-
-<!-- datos.columnas.rep_name.trampa -->
-Va sin tildes y con mayúscula en cada palabra: «Clara Campoamor Y Rodriguez». No lo copie en un texto; use la grafía del Diario o de la bibliografía.
+Nombre completo del diputado, sin tildes y con mayúscula en cada palabra.
 
 <!-- datos.columnas.district.definicion -->
 Circunscripción por la que salió elegido el diputado.
 
-<!-- datos.columnas.district.trampa -->
-Tiene 54 valores. Uno, «Agrarios», es una errata en ocho filas. Es el distrito electoral, no el lugar de nacimiento.
-
 <!-- datos.columnas.party.definicion -->
 Siglas del partido del diputado en esa legislatura.
-
-<!-- datos.columnas.party.trampa -->
-Va por diputado y legislatura, no por fila. «Indep.» aquí es «Independiente» en Afinidades Elegidas.
 
 <!-- datos.columnas.party_family.definicion -->
 Familia de partidos del diputado.
 
-<!-- datos.columnas.party_family.trampa -->
-Tiene 33 valores escritos a mano, con variantes como «Repubicanos» o «Republicanoses». Faltan en 151 filas. El explorador los reduce a 24 familias.
-
 <!-- datos.columnas.ideology.definicion -->
-Posición del partido, de EI, extrema izquierda, a ED, extrema derecha.
-
-<!-- datos.columnas.ideology.trampa -->
-Es la del partido del diputado, no la de la persona. En cinco partidos conviven códigos distintos. Además, 93 filas llevan «C » con un espacio detrás.
+Posición del partido del diputado, de EI, extrema izquierda, a ED, extrema derecha.
 
 <!-- datos.columnas.nwords.definicion -->
-Palabras del texto.
-
-<!-- datos.columnas.nwords.trampa -->
-Cuenta trozos separados por el carácter espacio: un salto de línea no separa. Con `split()` salen 24.700.474, no 24.335.896.
+Palabras del texto, separadas por el carácter espacio.
 
 <!-- datos.columnas.legislature.definicion -->
-Legislatura: 1931-1933, 1933-1935 o 1936-1939.
-
-<!-- datos.columnas.legislature.trampa -->
-La segunda no se llama igual en Afinidades Elegidas. La tercera incluye las sesiones de la guerra y las de México.
+Legislatura: 1931-1933, 1933-1935 o 1936-1939. La tercera incluye las sesiones de la guerra y las de México.
 
 > [nota de diseño] **F32** es la tabla ARIA `Columnas.astro` **sin tira de llenado**. Filas en el orden del CSV; cada
 > una con ancla `#col-<columna>` (`:target` la resalta), su `.definicion`, sus valores en V2 5423 y 5424 (de
@@ -3660,10 +3921,10 @@ Las palabras que el Diario partía con guion al final de línea están recompues
 El censo y las relaciones de Afinidades Elegidas llaman 1933-1936 a la legislatura que esta base llama 1933-1935; las sesiones del Diario terminan el 10 de diciembre de 1935.
 
 <!-- fig.F32.titulo -->
-Cada columna, con su trampa
+Qué dice cada columna
 
 <!-- fig.F32.pregunta -->
-¿Qué significa cada columna, y dónde engaña?
+¿Qué significa cada columna?
 
 <!-- fig.F32.tabla.col.columna -->
 Columna
@@ -3672,13 +3933,10 @@ Columna
 Qué es
 
 <!-- fig.F32.tabla.col.silencio -->
-Fila 5423
+La Presidencia
 
 <!-- fig.F32.tabla.col.campoamor -->
-Fila 5424
-
-<!-- fig.F32.tabla.col.trampa -->
-Dónde engaña
+Clara Campoamor
 
 <!-- fig.F32.vacio -->
 vacío
@@ -3720,20 +3978,20 @@ Distintos
 Las 14 columnas del CSV depositado: su tipo, sus celdas vacías, sus valores distintos y su valor en dos filas reales.
 
 <!-- fig.F32.denominador -->
-Las 107.551 filas de la V2.
+Las 107.551 filas.
 
 <!-- fig.F32.salvedad -->
-Definiciones del README depositado, que describe la V1, corregidas donde la V2 cambió.
+Definiciones del README depositado.
 
 <!-- fig.F32.alt -->
-Tabla de las columnas del CSV depositado, con su definición, su valor en dos filas de ejemplo y su trampa.
+Tabla de las columnas del CSV depositado, con su definición y su valor en dos filas de ejemplo.
 
 ---
 
 ## 4 · Antes de contar (`#decisiones`)
 
 <!-- datos.decisiones.titulo -->
-Antes de contar: seis decisiones que cambian el resultado
+Antes de contar: cuatro decisiones que cambian el resultado
 
 <!-- datos.decisiones.entrada -->
 Ninguna tiene una respuesta correcta para todos. Cada una lleva su cifra y la línea que la aplica.
@@ -3775,7 +4033,7 @@ largas = d[d.nwords > 300]
 Qué es una palabra
 
 <!-- datos.decisiones.3.texto -->
-Hay otras maneras de contar que `nwords`, y cada una da otra cifra. Se explica justo debajo.
+`nwords` corta el texto por espacios; `split()` corta también por saltos de línea y da más palabras. Diga cuál usa.
 
 <!-- datos.decisiones.3.codigo -->
 ```python
@@ -3783,24 +4041,9 @@ d.speech.str.split().str.len().sum()   # frente a d.nwords.sum()
 ```
 
 <!-- datos.decisiones.4.titulo -->
-El material impreso dentro de las filas
-
-<!-- datos.decisiones.4.texto -->
-En la V2, las listas de votación, las tablas y los documentos van dentro de la fila anterior. La v3 separó 12.654 bloques de ese material.
-
-La fila más larga de la V2, la 55221, es sobre todo tablas. Antes de elegir las filas más largas, léalas.
-
-El explorador separa ese material con la casilla «Solo lo que se habla». El CSV depositado no lo separa.
-
-<!-- datos.decisiones.4.codigo -->
-```python
-print(d.loc[d.id == 5453, "speech"].iloc[0][:600])   # una votación nominal, dentro de la Presidencia
-```
-
-<!-- datos.decisiones.5.titulo -->
 Las legislaturas desiguales
 
-<!-- datos.decisiones.5.texto -->
+<!-- datos.decisiones.4.texto -->
 La primera legislatura reúne el 53,28 % de las palabras. Compare tasas, no volúmenes: palabras por sesión, o la parte de cada grupo dentro de su legislatura.
 
 La tasa puede invertir el orden. Por sesión, la primera legislatura suma 32.016 palabras.
@@ -3811,143 +4054,16 @@ La tercera legislatura, 1936-1939, reúne tres etapas muy distintas. Para separa
 
 Las sesiones 61 a 69 son las Cortes en guerra, de octubre de 1936 a febrero de 1939. Las sesiones 70 a 74 son las de México, en 1945.
 
-<!-- datos.decisiones.5.codigo -->
+<!-- datos.decisiones.4.codigo -->
 ```python
 d.groupby("legislature").nwords.sum() / d.nwords.sum()
 etapa = pd.cut(d.num_session, [0, 60, 69, 74], labels=["1936", "guerra", "México"])
 d[d.legislature == "1936-1939"].groupby(etapa).nwords.sum()
 ```
 
-<!-- datos.decisiones.6.titulo -->
-Los ids entre ediciones
-
-<!-- datos.decisiones.6.texto -->
-Un id de la V2 no sirve en el explorador. Para cruzar ediciones o citar, use la fecha y el número de sesión.
-
-Para llevar al CSV algo que encontró en el explorador, busque la sesión por fecha y número. Dentro de ella, localice el comienzo del texto.
-
-<!-- datos.decisiones.6.codigo -->
-```python
-d.groupby(["date", "num_session"]).ngroups   # una clave por sesión, igual en la v3
-```
-
 > [nota de diseño] Las seis decisiones van como lista numerada de seis bloques cortos (título en mono, texto y código
 > en `<details>` abierto a 1.440 y cerrado en el móvil). Bajo la sexta, ↺ 4 (`comun.fija.ids`). «Seis» es la
 > estructura de la sección, no una cifra del corpus. La decisión 4 cita una cifra v3: la página ya lleva `<NotaBases>`.
-
----
-
-## 5 · Cinco maneras de contar «palabra» (F33, `#palabra`)
-
-<!-- datos.palabra.titulo -->
-Cinco maneras de contar «palabra»
-
-<!-- datos.palabra.entrada -->
-¿Cuántas palabras hay? Depende de qué cuente y en qué edición.
-
-<!-- datos.palabra.texto -->
-`nwords` separa por el carácter espacio. `split()` separa también por saltos de línea, y por eso da más: 24.700.474.
-
-La diferencia se concentra en las listas, con un nombre por línea. En la votación nominal del 1 de octubre de 1931, `nwords` marca 233 palabras.
-
-En esa misma fila, `split()` cuenta 522.
-
-El explorador cuenta sobre la v3, que reparte las palabras de la V2 y añade los sumarios. Su Tendencia divide por otra cifra: los tokens de su índice de búsqueda.
-
-<!-- fig.F33.titulo -->
-La misma base, cinco cifras de palabras
-
-<!-- fig.F33.pregunta -->
-¿Cuántas palabras hay?
-
-<!-- fig.F33.nwords.rotulo -->
-`nwords` · V2
-
-<!-- fig.F33.nwords.valor -->
-24.335.896
-
-<!-- fig.F33.nwords.def -->
-La columna del CSV: trozos separados por el carácter espacio.
-
-<!-- fig.F33.nwords.codigo -->
-d.nwords.sum()
-
-<!-- fig.F33.split.rotulo -->
-`split()` · V2
-
-<!-- fig.F33.split.valor -->
-24.700.474
-
-<!-- fig.F33.split.def -->
-Trozos separados por cualquier espacio en blanco, saltos de línea incluidos.
-
-<!-- fig.F33.split.codigo -->
-d.speech.str.split().str.len().sum()
-
-<!-- fig.F33.total.rotulo -->
-Todas las filas · v3
-
-<!-- fig.F33.total.valor -->
-25.364.144
-
-<!-- fig.F33.total.def -->
-Las palabras de la V2, repartidas entre las piezas de la v3, más las de los sumarios que la V2 no traía.
-
-<!-- fig.F33.habla.rotulo -->
-Solo lo que se habla · v3
-
-<!-- fig.F33.habla.valor -->
-22.096.389
-
-<!-- fig.F33.habla.def -->
-Lo mismo sin sumarios ni comentarios del Diario: lo que cuenta el explorador con la casilla «Solo lo que se habla».
-
-<!-- fig.F33.tendencia.rotulo -->
-Tokens del índice · v3
-
-<!-- fig.F33.tendencia.valor -->
-25.903.736
-
-<!-- fig.F33.tendencia.def -->
-Lo que cuenta el índice de búsqueda del explorador. Es el denominador de su Tendencia.
-
-<!-- fig.F33.eje -->
-Millones de palabras
-
-<!-- fig.F33.nota -->
-⟦rotulo⟧ · ⟦valor⟧ · ⟦def⟧
-
-<!-- fig.F33.tabla.col.recuento -->
-Recuento
-
-<!-- fig.F33.tabla.col.valor -->
-Palabras
-
-<!-- fig.F33.tabla.col.edicion -->
-Edición
-
-<!-- fig.F33.tabla.col.def -->
-Qué cuenta
-
-<!-- fig.F33.tabla.col.diferencia -->
-Frente a `nwords`
-
-<!-- fig.F33.que_mide -->
-Palabras del corpus contadas de cinco maneras: dos sobre la edición depositada y tres sobre la del explorador.
-
-<!-- fig.F33.denominador -->
-Ninguno: son totales. Cada fila del CSV dice su edición y cómo se cuenta.
-
-<!-- fig.F33.salvedad -->
-Cada figura de este sitio dice cuál usa. Una cifra de palabras sin su definición no se compara con otra.
-
-<!-- fig.F33.alt -->
-Cinco barras horizontales con cinco recuentos de palabras: dos sobre la edición depositada y tres sobre la del explorador.
-
-> [nota de diseño] **F33**: cinco barras horizontales con su rótulo y su valor en HTML encima; la nota emergente
-> (`fig.F33.nota`) da la definición y, en las dos de la V2, la línea de código (`fig.F33.<k>.codigo`, en `<code>`).
-> Las barras de la v3 llevan otro trazo y el sello «Edición del explorador» (↺ 2). Pestaña Tabla. Sin JS: la tabla.
-> Una sola base por frase: `datos.palabra.texto` rotula V2 y v3 donde las compara.
 
 ---
 
@@ -3973,7 +4089,7 @@ No siempre coinciden con los de esta base: a veces el partido se escribe distint
 Si usa esos atributos, diga de qué base salen.
 
 <!-- datos.unir.archivo -->
-La tabla de diputados de Afinidades Elegidas se descarga como `representative_metadata.tab`, separada por tabuladores, del depósito CGOCUS V1.1.
+La tabla de diputados de Afinidades Elegidas se descarga como `representative_metadata.tab`, separada por tabuladores, del depósito CGOCUS.
 
 <!-- datos.unir.accion -->
 [Descargar en Dataverse ↗]
@@ -3982,7 +4098,7 @@ La tabla de diputados de Afinidades Elegidas se descarga como `representative_me
 Por diputado y legislatura, nunca solo por el diputado
 
 <!-- fig.F34.pregunta -->
-¿Cómo se une la V2 con Afinidades Elegidas sin multiplicar filas?
+¿Cómo se une la base con Afinidades Elegidas sin multiplicar filas?
 
 <!-- fig.F34.tabla.col.paso -->
 Paso
@@ -4042,16 +4158,16 @@ Unido solo por el diputado
 De ellas, sin ficha en Afinidades
 
 <!-- fig.F34.que_mide -->
-Los pares de diputado y legislatura de la V2 que no tienen ficha en Afinidades Elegidas y los que la tienen con otro rótulo de partido.
+Los pares de diputado y legislatura de la base que no tienen ficha en Afinidades Elegidas y los que la tienen con otro rótulo de partido.
 
 <!-- fig.F34.denominador -->
-Los 1.060 pares de diputado y legislatura de la V2, con la legislatura recodificada como la llama el censo.
+Los 1.060 pares de diputado y legislatura de la base, con la legislatura recodificada como la llama el censo.
 
 <!-- fig.F34.otros.resumen -->
 Los pares con otro rótulo de partido, uno a uno
 
 <!-- fig.F34.otros.col.v2 -->
-Partido en la V2
+Partido en la base
 
 <!-- fig.F34.otros.col.afin -->
 Partido en Afinidades
@@ -4069,7 +4185,7 @@ Legislatura
 Filas
 
 <!-- fig.F34.salvedad -->
-Cifras de la versión depositada de Afinidades Elegidas, CGOCUS V1.1. Cambiarán si se deposita otra.
+Cifras del depósito de Afinidades Elegidas (CGOCUS).
 
 <!-- fig.F34.alt -->
 Tabla con los pasos para unir las dos bases: recodificar la legislatura, unir por diputado y legislatura, y lo que pasa si se une solo por el diputado.
@@ -4098,7 +4214,7 @@ También reproducen febrero de 1933, el mes de Casas Viejas: 16 sesiones. Ese me
 Sus filas reúnen 574.317 palabras.
 
 <!-- datos.codigo.archivos -->
-Necesitan dos archivos en la misma carpeta: `2REP_Diaries.csv`, de THQCMI, y `representative_metadata.tab`, de CGOCUS. Los dos piden el formulario de Dataverse.
+Necesitan dos archivos en la misma carpeta: `2REP_Diaries.csv`, de THQCMI, y `representative_metadata.tab`, de CGOCUS.
 
 <!-- datos.codigo.r.rotulo -->
 R, sin paquetes
@@ -4124,7 +4240,7 @@ feb <- d[mes == "1933-02", ]
 cat("febrero de 1933:", nrow(unique(feb[, c("date", "num_session")])), "sesiones,",
     nrow(feb), "filas,", sum(feb$nwords), "palabras\n")
 
-# Afinidades Elegidas (CGOCUS V1.1): una ficha por diputado Y legislatura.
+# Afinidades Elegidas (CGOCUS): una ficha por diputado Y legislatura.
 a <- read.delim("representative_metadata.tab", fileEncoding = "UTF-8")
 names(a)[names(a) == "id_dip"] <- "rep_id"
 
@@ -4166,7 +4282,7 @@ feb = d[mes == "1933-02"]
 print("febrero de 1933:", len(feb[["date", "num_session"]].drop_duplicates()), "sesiones,",
       len(feb), "filas,", feb["nwords"].sum(), "palabras")
 
-# Afinidades Elegidas (CGOCUS V1.1): una ficha por diputado Y legislatura.
+# Afinidades Elegidas (CGOCUS): una ficha por diputado Y legislatura.
 a = pd.read_csv("representative_metadata.tab", sep="\t").rename(columns={"id_dip": "rep_id"})
 
 # MAL: solo por el diputado. Cada fila se repite una vez por legislatura de su diputado.
@@ -4208,25 +4324,22 @@ El exportador del sitio vuelve a ejecutar los dos fragmentos en cada compilació
 Cómo citar
 
 <!-- datos.citar.entrada -->
-Cite lo que usó y su edición. La cita de una figura lleva, además, su base y su fecha.
+Cite lo que usó. La cita de una figura lleva, además, su fecha.
 
 <!-- datos.citar.thqcmi -->
-**La base.** La cita oficial de Harvard Dataverse, en texto, BibTeX o RIS. Termina en «Harvard Dataverse, V2».
+**La base.** La cita oficial de Harvard Dataverse, en texto, BibTeX o RIS.
 
 <!-- datos.citar.cgocus -->
-**Afinidades Elegidas.** Cópiela tal como la da Dataverse: dice «V1» y lleva un UNF, pero corresponde a la versión depositada, CGOCUS V1.1.
+**Afinidades Elegidas.** Cópiela tal como la da Dataverse, con su UNF.
 
 <!-- datos.citar.figura -->
-**Una figura.** Su título, la dirección de su ancla, la edición de sus datos y la fecha de cálculo. Cada figura trae la suya en la pestaña Datos.
+**Una figura.** Su título, la dirección de su ancla y la fecha de cálculo. Cada figura trae la suya en la pestaña Datos.
 
 <!-- datos.citar.pasaje -->
-**Un pasaje.** La fecha y el número de la sesión, y el id de la fila con su edición. Por ejemplo: Diario de Sesiones, 1 de octubre de 1931, sesión 48; THQCMI V2, fila 5424.
+**Un pasaje.** La fecha y el número de la sesión, y el id de la fila. Por ejemplo: Diario de Sesiones, 1 de octubre de 1931, sesión 48; Luz y Taquígrafos, fila 5424.
 
 <!-- datos.citar.pasaje.2 -->
 Si cita el Diario impreso, añada su número y la página. El explorador no da ni lo uno ni lo otro.
-
-<!-- datos.citar.explorador -->
-**El explorador.** Diga que sirve la edición v3, sin depositar. Su cita automática dice «V2», pero sus identificadores son de la v3.
 
 <!-- datos.citar.pestana.texto -->
 Texto
@@ -4291,38 +4404,23 @@ Valor en la fila 5423: la Presidencia pide silencio (1 de octubre de 1931, sesi�
 <!-- fig.F32.leame.col.fila_5424 -->
 Valor en la fila 5424: Clara Campoamor empieza a hablar, en la misma sesión.
 
-<!-- fig.F33.leame.col.recuento -->
-Manera de contar: nwords, split, total, habla o tendencia.
-
-<!-- fig.F33.leame.col.palabras -->
-Palabras que da ese recuento.
-
-<!-- fig.F33.leame.col.edicion -->
-Edición sobre la que se cuenta: V2 (depositada) o v3 (explorador, sin depositar).
-
-<!-- fig.F33.leame.col.diferencia_con_nwords -->
-Diferencia con la suma de la columna nwords de la V2.
-
-<!-- fig.F33.leame.col.codigo -->
-Línea de pandas que lo reproduce sobre el CSV depositado, cuando la hay.
-
 <!-- fig.F34.leame.col.caso -->
 sin_ficha: el par no tiene ficha en Afinidades Elegidas; otro_partido: la tiene, con otro rótulo de partido.
 
 <!-- fig.F34.leame.col.rep_id -->
-Identificador del diputado (rep_id en la V2, id_dip en Afinidades Elegidas).
+Identificador del diputado (rep_id en la base, id_dip en Afinidades Elegidas).
 
 <!-- fig.F34.leame.col.nombre -->
 Nombre del diputado según la tabla de grafías del sitio.
 
 <!-- fig.F34.leame.col.legislatura_cgocus -->
-Legislatura con el rótulo del censo de Afinidades Elegidas (1933-1936 donde la V2 dice 1933-1935).
+Legislatura con el rótulo del censo de Afinidades Elegidas (1933-1936 donde la base dice 1933-1935).
 
 <!-- fig.F34.leame.col.filas_v2 -->
-Filas de la V2 de ese par que quedan sin atributos de Afinidades.
+Filas de la base de ese par que quedan sin atributos de Afinidades.
 
 <!-- fig.F34.leame.col.party_v2 -->
-Partido más frecuente del diputado en esa legislatura, en la V2.
+Partido más frecuente del diputado en esa legislatura, en la base.
 
 <!-- fig.F34.leame.col.partido_cgocus -->
 Partido del diputado en esa legislatura, en Afinidades Elegidas.
@@ -4335,7 +4433,7 @@ Partido del diputado en esa legislatura, en Afinidades Elegidas.
 Erratas y contacto
 
 <!-- datos.erratas.texto -->
-Si encuentra un error, díganos la fecha, el número de sesión, el id de la fila con su edición y lo que dice el Diario impreso. Si no sabe por dónde empezar, escriba también.
+Si encuentra un error, díganos la fecha, el número de sesión, el id de la fila y lo que dice el Diario impreso. Si no sabe por dónde empezar, escriba también.
 
 <!-- datos.erratas.acciones -->
 [Avisar de una errata] [Escribirnos]
@@ -4438,7 +4536,7 @@ Una acotación: lo que el taquígrafo oye en la sala.
 Las dos filas que salen de ese trozo de papel
 
 <!-- diario.que_es.facsimil.filas.nota -->
-Mismo texto, letra a letra, en la edición depositada y en la del explorador. Método cuenta qué trae cada columna.
+Mismo texto, letra a letra, en la base y en la del explorador. Método cuenta qué trae cada columna.
 
 <!-- diario.que_es.facsimil.col.id -->
 Fila
@@ -4468,7 +4566,7 @@ Si alguien interrumpe, el taquígrafo lo anota entre paréntesis dentro del turn
 «(El Sr. Guerra del Rio: Los cavernicolas hablan de pastel.)»
 
 <!-- diario.que_es.cita.interrupcion.pie -->
-En la fila de Victoria Kent, 1 de octubre de 1931 · V2 5419 · v3 6074
+En la fila de Victoria Kent, 1 de octubre de 1931
 
 <!-- diario.que_es.interrupcion.2 -->
 Por eso una fila puede llevar dentro la voz de otros.
@@ -4480,17 +4578,17 @@ En las votaciones nominales, el Diario imprime la lista de quién dijo sí y qui
 Cada sesión lleva su sumario, y el Diario imprime también documentos leídos o adjuntos: proposiciones, dictámenes, cartas.
 
 <!-- diario.que_es.v3 -->
-La edición del explorador pone ese material en filas propias: 755 sumarios y 12.654 filas de comentarios del Diario (v3).
+El explorador pone ese material en filas propias: 755 sumarios y 12.654 filas de comentarios del Diario.
 
 <!-- diario.que_es.v2 -->
-La edición depositada no tiene filas de sumario; el resto de ese material va dentro de las filas de los oradores, a menudo de la Presidencia.
+La base no tiene filas de sumario; el resto de ese material va dentro de las filas de los oradores, a menudo de la Presidencia.
 
 > [nota de diseño] «Las votaciones nominales» enlaza a `/{lang}/cortes/sesiones/#votaciones` ([Ver las votaciones],
 > `comun.boton.ver_votaciones`). Ejemplo al margen, en mono: «V2 5453 · la lista del 1 de octubre de 1931, dentro de
 > una fila de la Presidencia» (`diario.que_es.ejemplo`).
 
 <!-- diario.que_es.ejemplo -->
-Ejemplo: la lista del 1 de octubre de 1931 va, en la V2, dentro de una fila de la Presidencia (V2 5453). En la v3 tiene fila propia, de comentarios (v3 6110).
+Ejemplo: la lista de la votación del 1 de octubre de 1931 tiene fila propia, de comentarios del Diario.
 
 <!-- ↺ comun.fija.ocr -->
 El texto sale del reconocimiento óptico y no está corregido a mano.
@@ -4560,7 +4658,7 @@ El 8 de junio de 1934 se discute un suplicatorio. La Presidencia recuerda la reg
 «Con arreglo al Reglamento, los suplicatorios han de tratarse en sesión secreta;»
 
 <!-- diario.luz.cita.secreta.pie -->
-La Presidencia (Alba) · V2 71329 · v3 80305
+La Presidencia (Alba)
 
 <!-- diario.luz.escena.2 -->
 Una voz interrumpe con tres palabras, que son una fila entera:
@@ -4569,7 +4667,7 @@ Una voz interrumpe con tres palabras, que son una fila entera:
 «Luz y taquigrafos.»
 
 <!-- diario.luz.cita.grito.pie -->
-El Diario la atribuye a «El Sr. JIMÉNEZ FERNÁNDEZ» · V2 71330 · v3 80306. Sin tilde, como en la fila: así salió del reconocimiento óptico.
+El Diario la atribuye a «El Sr. JIMÉNEZ FERNÁNDEZ». Sin tilde, como en la fila: así salió del reconocimiento óptico.
 
 <!-- diario.luz.escena.3 -->
 La base identifica a ese orador con el diputado de la CEDA por Badajoz Manuel Giménez Fernández. La Presidencia contesta:
@@ -4578,7 +4676,7 @@ La base identifica a ese orador con el diputado de la CEDA por Badajoz Manuel Gi
 «El Reglamento, señores Diputados—no he visto quién ha interrumpido—, ampara principalmente a las minorías…»
 
 <!-- diario.luz.cita.reglamento.pie -->
-La Presidencia (Alba) · V2 71331 · v3 80307
+La Presidencia (Alba)
 
 <!-- diario.luz.escena.4 -->
 Prieto responde por los socialistas:
@@ -4587,7 +4685,7 @@ Prieto responde por los socialistas:
 «La minoría socialista no tiene inconveniente en que esto se discuta públicamente.»
 
 <!-- diario.luz.cita.prieto.pie -->
-Indalecio Prieto · V2 71332 · v3 80308
+Indalecio Prieto
 
 > [nota de diseño] La escena va entera, en cuatro filas seguidas del Diario (V2 71329–71332 · v3 80305–80308), con un
 > filete fino entre ellas. El nombre de `diario.luz.escena.3` sale de la tabla de grafías (`rep_id` 456; D-22, adoptada
@@ -4602,7 +4700,7 @@ En agosto de 1933, Royo Villanova la había atribuido a Maura:
 «…aquí se liquida todo con luz y taquigrafos, como decía Maura…»
 
 <!-- diario.luz.cita.royo.pie -->
-Antonio Royo Villanova, 3 de agosto de 1933 · V2 57506 · v3 64595
+Antonio Royo Villanova, 3 de agosto de 1933
 
 <!-- diario.luz.royo.salvedad -->
 La atribución es suya. De dónde viene la fórmula, este sitio no lo afirma.
@@ -4614,7 +4712,7 @@ La última vez es del 8 de julio de 1936, y la contestan desde los escaños:
 «Hay luz y taquigrafos, los taquigrafos recogeran eso. (El señor Comín: Pobres taquigrafos.)»
 
 <!-- diario.luz.cita.maurin.pie -->
-Joaquín Maurín · V2 106747 · v3 120751
+Joaquín Maurín
 
 <!-- diario.luz.balbontin -->
 Nadie la repite tanto como José Antonio Balbontín: tres de las diez filas son suyas.
@@ -4624,6 +4722,107 @@ Leídas una a una, en las diez la fórmula pide lo mismo: que algo se diga o se 
 
 > [nota de diseño] Aquí va F27 (§ 7 de este archivo). Las citas van sin tildes en «taquigrafos», como en el texto
 > digitalizado; el título y la prosa las llevan.
+
+---
+
+## 3 bis. El aplausómetro (juego)
+
+> [nota de diseño] Juego de la petición del investigador (24-09-2026): `components/diario/Aplausometro.astro`. Las
+> veinte frases y sus acotaciones salen de `src/data/aplausos.json` (exportador/modulos/aplausos.py), letra a letra de
+> su fila; cada partida saca dos de cada acotación. Sin cuentas de acotaciones por clase (D-11). Sin JS, una tabla.
+
+<!-- diario.indice.aplausos -->
+El aplausómetro
+
+<!-- diario.aplausos.titulo -->
+El aplausómetro
+
+<!-- diario.aplausos.entrada -->
+Entre paréntesis, el taquígrafo anota cómo recibe la Cámara lo que oye. Estas frases son reales, cada una con su fila: adivine qué anotó.
+
+<!-- diario.aplausos.juego.pregunta -->
+¿Qué anotó el taquígrafo?
+
+<!-- diario.aplausos.juego.op.aplausos -->
+[Aplausos]
+
+<!-- diario.aplausos.juego.op.muy_bien -->
+[Muy bien]
+
+<!-- diario.aplausos.juego.op.risas -->
+[Risas]
+
+<!-- diario.aplausos.juego.op.rumores -->
+[Rumores]
+
+<!-- diario.aplausos.juego.op.protestas -->
+[Protestas]
+
+<!-- diario.aplausos.juego.cuenta -->
+Frase ⟦i⟧ de ⟦n⟧ · Aciertos: ⟦a⟧
+
+<!-- diario.aplausos.juego.quien -->
+⟦orador⟧ (⟦partido⟧), ⟦fecha⟧
+
+<!-- diario.aplausos.juego.exacto -->
+¡Exacto!
+
+<!-- diario.aplausos.juego.cerca -->
+Casi: el sentido era ese.
+
+<!-- diario.aplausos.juego.fallo -->
+No.
+
+<!-- diario.aplausos.juego.anoto -->
+El taquígrafo anotó:
+
+<!-- diario.aplausos.juego.fila -->
+Fila ⟦id⟧ de la base
+
+<!-- diario.aplausos.juego.siguiente -->
+[Siguiente]
+
+<!-- diario.aplausos.juego.ver -->
+[Ver el resultado]
+
+<!-- diario.aplausos.juego.resumen -->
+Ha acertado ⟦n⟧ de ⟦total⟧.
+
+<!-- diario.aplausos.juego.dedica -->
+La Cámara le dedica:
+
+<!-- diario.aplausos.juego.veredicto.0 -->
+(Protestas.)
+
+<!-- diario.aplausos.juego.veredicto.1 -->
+(Rumores.)
+
+<!-- diario.aplausos.juego.veredicto.2 -->
+(Muy bien.)
+
+<!-- diario.aplausos.juego.veredicto.3 -->
+(Aplausos.)
+
+<!-- diario.aplausos.juego.veredicto.4 -->
+(Grandes y prolongados aplausos.)
+
+<!-- diario.aplausos.juego.otra -->
+[Otra sesión]
+
+<!-- diario.aplausos.juego.tabla -->
+Las frases del juego y lo que anotó el taquígrafo
+
+<!-- diario.aplausos.juego.tabla.col.frase -->
+Frase
+
+<!-- diario.aplausos.juego.tabla.col.quien -->
+Quién y cuándo
+
+<!-- diario.aplausos.juego.tabla.col.acotacion -->
+Acotación
+
+<!-- diario.aplausos.juego.leccion -->
+Ninguna columna de la base guarda estas reacciones: están en el texto, entre paréntesis, tal como las anotó el taquígrafo.
 
 ---
 
@@ -4639,7 +4838,7 @@ Un diputado lo recuerda en 1934, al hablar del Reglamento de la Cámara:
 «…ese Reglamento determina que el Presidente puede incluso mandar callar a un Diputado, puede ordenar que no consten en el Diario de Sesiones sus palabras…»
 
 <!-- diario.calla.cita.sainz.pie -->
-Pedro Sainz Rodríguez, 5 de diciembre de 1934 · V2 77318 · v3 87096
+Pedro Sainz Rodríguez, 5 de diciembre de 1934
 
 <!-- diario.calla.formula -->
 «No constará» o «no constarán», seguidas de «el Diario» en la misma frase, aparecen en diez filas de la base.
@@ -4657,7 +4856,7 @@ El 15 de abril de 1936, tras una protesta de Calvo Sotelo, la Presidencia da la 
 «Eso no basta.»
 
 <!-- diario.calla.cita.abril.pie -->
-Varios diputados · V2 102492, dentro de la fila de la Presidencia · v3 115837
+Varios diputados
 
 <!-- diario.calla.peticion -->
 Otra es la petición de un diputado: Calvo Sotelo, el 3 de junio de 1936, pide que no consten unas palabras contra las «hermanas de la Caridad».
@@ -4678,7 +4877,7 @@ No todos querían ese silencio. El 7 de febrero de 1933, Besteiro ordena que una
 «Por mí, que consten.»
 
 <!-- diario.calla.cita.prieto.pie -->
-Indalecio Prieto · V2 45116 · v3 50467
+Indalecio Prieto
 
 > [nota de diseño] Aquí va F28 (§ 8 de este archivo). «La antesala» enlaza a `/{lang}/cortes/sesiones/antesala-1936/` (sin corchetes: no es un rótulo único).
 
@@ -4689,7 +4888,7 @@ No todo lo que se quita deja rastro. En febrero de 1935, un diputado protesta po
 «…eso se ha tachado en el Diario de Sesiones.»
 
 <!-- diario.calla.cita.tachado.pie -->
-Dionisio Cano López, 19 de febrero de 1935 · V2 82129 · v3 92599
+Dionisio Cano López, 19 de febrero de 1935
 
 <!-- diario.calla.tachado.2 -->
 Es su queja; el Diario no permite comprobarla.
@@ -4704,7 +4903,7 @@ El 6 de mayo de 1936 pasan las dos cosas en un mismo pasaje:
 «(Un Sr. Diputado pronuncia palabras que no se perciben)» … «Un Sr. Diputado pronuncia palabras que producen protestas de las minorías y que no constan por orden del Sr. Presidente.»
 
 <!-- diario.calla.cita.no_oye.pie -->
-Acotaciones en la fila de Calvo Sotelo · V2 103250 · v3 116697
+Acotaciones en la fila de Calvo Sotelo
 
 <!-- diario.calla.ausencias -->
 Lo que el Diario no recoge no existe para ninguna cuenta de la base.
@@ -4740,7 +4939,7 @@ El volumen de la guerra se abre con una nota:
 «EN ESTE VOLUMEN FIGURAN LOS EXTRACTOS DE LAS SESIONES CELEBRADAS POR LAS CORTES DE 1.936, CON POSTERIORIDAD AL 18 DE JULIO.»
 
 <!-- diario.habla.cita.volumen.pie -->
-Nota del volumen, en el sumario del 1 de octubre de 1936 · solo en la edición del explorador, v3 121110
+Nota del volumen, en el sumario del 1 de octubre de 1936
 
 <!-- diario.habla.figueras -->
 Sigue diciendo que de la sesión de Figueras «NO EXISTE DATO ALGUNO». Otra nota, al final del extracto de esa sesión, lo corrige:
@@ -4749,7 +4948,7 @@ Sigue diciendo que de la sesión de Figueras «NO EXISTE DATO ALGUNO». Otra not
 «Después de prolijas y constantes gestiones, se ha podido obtener fotocopia del ejemplar del Extracto de dicha sesión…»
 
 <!-- diario.habla.cita.fotocopia.pie -->
-Nota final del extracto del 1 de febrero de 1939 · V2 107341 · v3 121465
+Nota final del extracto del 1 de febrero de 1939
 
 <!-- diario.habla.liberacion -->
 La primera nota habla además de la «LIBERACION DE BARCELONA» del 26 de enero de 1939. Quién la escribió, y cuándo, está por cotejar en el volumen impreso.
@@ -4758,7 +4957,7 @@ La primera nota habla además de la «LIBERACION DE BARCELONA» del 26 de enero 
 La carátula del volumen de México avisa de lo que falta: de las reuniones de la Diputación Permanente allí, «no se dispone de los textos ni en forma de fotocopia».
 
 <!-- diario.habla.mexico.pie -->
-Carátula del volumen de México · solo en la edición del explorador, v3 121466
+Carátula del volumen de México
 
 <!-- diario.habla.censura -->
 Los diputados también defendían el Diario fuera de la Cámara. En febrero de 1935, Honorio Maura pide por escrito al ministro de la Gobernación que la censura cumpla un acuerdo de las Cortes:
@@ -4767,7 +4966,7 @@ Los diputados también defendían el Diario fuera de la Cámara. En febrero de 1
 «…que los textos integros tomados del Diario de Sesiones no sean tachados ni mutilados por aquélla…»
 
 <!-- diario.habla.cita.censura.pie -->
-Ruego escrito de Honorio Maura, 20 de febrero de 1935 · V2 82369, dentro de una fila de la Presidencia · v3 92880
+Ruego escrito de Honorio Maura, 20 de febrero de 1935
 
 <!-- diario.habla.registro -->
 Los diputados también leen el Diario y lo citan: el «Diario de Sesiones» aparece en 1.508 filas de la base.
@@ -4779,7 +4978,7 @@ Campoamor, el 1 de octubre de 1931, responde a un discurso que no oyó:
 «En ausencia mía y leyendo el Diario de Sesiones, pude ver en él que un doctor hablaba aquí de que no había ecuación posible…»
 
 <!-- diario.habla.cita.campoamor.pie -->
-Clara Campoamor · V2 5424 · v3 6079
+Clara Campoamor
 
 > [nota de diseño] Las dos notas del volumen se pintan una frente a otra, en mayúsculas como en el original. La
 > puerta «Figueres» cuenta la sesión. `diario.habla.registro` cuenta filas V2 con «diario de sesiones» sobre el texto sin
@@ -4793,27 +4992,21 @@ Clara Campoamor · V2 5424 · v3 6079
 Cómo citar un pasaje
 
 <!-- diario.citar.entrada -->
-Cite el Diario, no la base. Dé la serie, el número, la fecha y las páginas. Si ha trabajado con la base, añada el id de la fila y su edición.
+Cite el Diario, no la base. Dé la serie, el número, la fecha y las páginas. Si ha trabajado con la base, añada el id de la fila.
 
 <!-- diario.citar.paginas -->
 Número y páginas salen de los metadatos del proyecto. El explorador no los muestra, y después de julio de 1936 las páginas están sin verificar.
-
-<!-- diario.citar.explorador -->
-Si copia un pasaje desde el explorador, anote que la fila es de la v3: la cita que el explorador añade al copiar no dice la edición.
 
 <!-- diario.citar.ejemplo -->
 Ejemplo, con la fila de Campoamor:
 
 <!-- diario.citar.cita -->
-Diario de Sesiones de las Cortes Constituyentes de la República Española, núm. 48, 1 de octubre de 1931, pp. 1347–1394 (metadatos del proyecto). Luz y Taquígrafos, edición depositada (V2), fila 5424.
+Diario de Sesiones de las Cortes Constituyentes de la República Española, núm. 48, 1 de octubre de 1931, pp. 1347–1394 (metadatos del proyecto). Luz y Taquígrafos, fila 5424.
 
 > [nota de diseño] `diario.citar.cita` se pinta como cita copiable. Es `comun.cita.pasaje` rellenado con: diario = «Diario de Sesiones de
 > las Cortes Constituyentes de la República Española»; numero = `sesion.1931-10-01-48.diario_num`; fecha = «1 de
 > octubre de 1931»; paginas = `sesion.1931-10-01-48.paginas`; edicion = «edición depositada (V2)»; id =
 > `cita.sufragio.campoamor.ciudadana.V2`. Con [Copiar la cita] (`comun.boton.cita`). Debajo, ↺ 4 y ↺ 1.
-
-<!-- ↺ comun.fija.ids -->
-Los identificadores de fila cambian entre la edición depositada (V2) y la del explorador (v3); la sesión —fecha y número— es la misma en las dos.
 
 <!-- ↺ comun.fija.diario -->
 Edición derivada para investigación: ante cualquier discrepancia, vale el Diario de Sesiones.
@@ -4841,9 +5034,6 @@ Una marca por fila del Diario en que aparece «luz y taquígrafos», de 1931 a 1
 
 <!-- fig.F27.nota -->
 ⟦fecha⟧ · ⟦orador⟧
-
-<!-- fig.F27.nota.b -->
-V2 ⟦v2⟧ · v3 ⟦v3⟧
 
 <!-- fig.F27.orador.atribuido -->
 «El Sr. JIMÉNEZ FERNÁNDEZ», según el Diario
@@ -4873,28 +5063,28 @@ Quién, según la base
 Lo que dice
 
 <!-- fig.F27.tabla.col.filas -->
-Filas V2 · v3
+Fila
 
 <!-- fig.F27.cita.1 --> «…fechorias, que no suelen hacerse con luz y taquigrafos…»
-<!-- fig.F27.cita.1.pie --> 20-VII-1931 · Gabriel Franco · V2 420 · v3 472
+<!-- fig.F27.cita.1.pie --> 20-VII-1931 · Gabriel Franco
 <!-- fig.F27.cita.2 --> «…se discutiese ampliamente con luz y taquigrafos y en presencia de todos los Sres. Diputados de las demás minorías…»
-<!-- fig.F27.cita.2.pie --> 9-IV-1932 · José Antonio Balbontín · V2 23898 · v3 26612
+<!-- fig.F27.cita.2.pie --> 9-IV-1932 · José Antonio Balbontín
 <!-- fig.F27.cita.3 --> «…la máxima garantía es la oposición libre, con luz y taquigrafos…»
-<!-- fig.F27.cita.3.pie --> 3-V-1932 · José Antonio Balbontín · V2 24658 · v3 27477
+<!-- fig.F27.cita.3.pie --> 3-V-1932 · José Antonio Balbontín
 <!-- fig.F27.cita.4 --> «…yo aquí he levantado mi voz, con luz y taquigrafos, contra los pistoleros…»
-<!-- fig.F27.cita.4.pie --> 19-VII-1933 · José Antonio Balbontín · V2 55902 · v3 62718
+<!-- fig.F27.cita.4.pie --> 19-VII-1933 · José Antonio Balbontín
 <!-- fig.F27.cita.5 --> «…aquí se liquida todo con luz y taquigrafos, como decía Maura…»
-<!-- fig.F27.cita.5.pie --> 3-VIII-1933 · Antonio Royo Villanova · V2 57506 · v3 64595
+<!-- fig.F27.cita.5.pie --> 3-VIII-1933 · Antonio Royo Villanova
 <!-- fig.F27.cita.6 --> «Luz y taquigrafos.»
-<!-- fig.F27.cita.6.pie --> 8-VI-1934 · el Diario lo atribuye a «El Sr. JIMÉNEZ FERNÁNDEZ» · V2 71330 · v3 80306
+<!-- fig.F27.cita.6.pie --> 8-VI-1934 · el Diario lo atribuye a «El Sr. JIMÉNEZ FERNÁNDEZ»
 <!-- fig.F27.cita.7 --> «…no hay ningún reparo, ningún obstaculo ni ninguna dificultad para que se examine el presupuesto con luz y taquigrafos…»
-<!-- fig.F27.cita.7.pie --> 13-XI-1934 · Abilio Calderón · V2 75263 · v3 84760
+<!-- fig.F27.cita.7.pie --> 13-XI-1934 · Abilio Calderón
 <!-- fig.F27.cita.8 --> «…que realiza el Parlamento suele decir que hacen falta “luz y taquigrafos”…»
-<!-- fig.F27.cita.8.pie --> 29-I-1935 · Santiago Fuentes Pila · V2 79803 · v3 89910
+<!-- fig.F27.cita.8.pie --> 29-I-1935 · Santiago Fuentes Pila
 <!-- fig.F27.cita.9 --> «El que está agazapado en su escaño, con luz y taquigrafos, naturalmente que no quiere valerse de nocturnidad ni de obscuridad de ninguna clase.»
-<!-- fig.F27.cita.9.pie --> 22-XI-1935 · José Calvo Sotelo · V2 99859 · v3 112827
+<!-- fig.F27.cita.9.pie --> 22-XI-1935 · José Calvo Sotelo
 <!-- fig.F27.cita.10 --> «Hay luz y taquigrafos, los taquigrafos recogeran eso.»
-<!-- fig.F27.cita.10.pie --> 8-VII-1936 · Joaquín Maurín · V2 106747 · v3 120751
+<!-- fig.F27.cita.10.pie --> 8-VII-1936 · Joaquín Maurín
 
 <!-- fig.F27.salvedad -->
 Búsqueda de la expresión sobre el texto sin acentos; las variantes mal leídas por el reconocimiento óptico no se cuentan. El origen de la fórmula no se afirma aquí.
@@ -4906,7 +5096,7 @@ Línea de tiempo de 1931 a 1936 con diez marcas, una por cada fila en que un dip
 Las filas de la base en que aparece la expresión «luz y taquígrafos», con su fecha, su orador según la base y el fragmento.
 
 <!-- fig.F27.leame.denominador -->
-No hay denominador: es una lista. Las mismas filas en las dos ediciones, con sus dos ids.
+No hay denominador: es una lista de filas.
 
 <!-- fig.F27.leame.columnas -->
 fecha, num_session, orador_rotulo, rep_id, rep_name, party, fragmento, id_V2, id_v3.
@@ -4952,9 +5142,6 @@ En contorno, un diputado que lo pide.
 <!-- fig.F28.nota.peticion -->
 ⟦fecha⟧ · lo pide ⟦orador⟧
 
-<!-- fig.F28.nota.b -->
-V2 ⟦v2⟧ · v3 ⟦v3⟧
-
 <!-- fig.F28.lupa -->
 Del 16 de marzo al 10 de julio de 1936, día a día
 
@@ -4977,7 +5164,7 @@ Preside · en la fila de
 Lo que dice el Diario
 
 <!-- fig.F28.tabla.col.filas -->
-Filas V2 · v3
+Fila
 
 <!-- fig.F28.tipo.orden -->
 Orden de la Presidencia
@@ -4992,35 +5179,35 @@ Petición de un diputado
 La fórmula en otro sentido; no se dibuja
 
 <!-- fig.F28.cita.orden.1 --> «Que no constaran en el Diario de Sesiones.»
-<!-- fig.F28.cita.orden.1.pie --> 10-XII-1931 · Besteiro · V2 13605 · v3 15129
+<!-- fig.F28.cita.orden.1.pie --> 10-XII-1931 · Besteiro
 <!-- fig.F28.cita.orden.2 --> «Esas palabras, que no constarán en el Diario de Sesiones.»
-<!-- fig.F28.cita.orden.2.pie --> 7-II-1933 · Besteiro · V2 45115 · v3 50466
+<!-- fig.F28.cita.orden.2.pie --> 7-II-1933 · Besteiro
 <!-- fig.F28.cita.orden.3 --> «…le aseguro que las palabras que ha pronunciado no constarán en el Diario de Sesiones.»
-<!-- fig.F28.cita.orden.3.pie --> 9-II-1933 · Besteiro · V2 45440 · v3 50818
+<!-- fig.F28.cita.orden.3.pie --> 9-II-1933 · Besteiro
 <!-- fig.F28.cita.orden.4 --> «Esas palabras no constarán en el Diario de Sesiones.»
-<!-- fig.F28.cita.orden.4.pie --> 15-IV-1936 · Jiménez de Asúa · V2 102484 · v3 115828
+<!-- fig.F28.cita.orden.4.pie --> 15-IV-1936 · Jiménez de Asúa
 <!-- fig.F28.cita.orden.5 --> «Ya se ha dicho que no constarán esas palabras en el Diario de Sesiones.»
-<!-- fig.F28.cita.orden.5.pie --> 15-IV-1936 · Jiménez de Asúa · V2 102486 · v3 115830
+<!-- fig.F28.cita.orden.5.pie --> 15-IV-1936 · Jiménez de Asúa
 <!-- fig.F28.cita.orden.6 --> «Ya ha advertido la Presidencia que no constarán en el Diario de Sesiones esas palabras.»
-<!-- fig.F28.cita.orden.6.pie --> 15-IV-1936 · Jiménez de Asúa · V2 102492 · v3 115836
+<!-- fig.F28.cita.orden.6.pie --> 15-IV-1936 · Jiménez de Asúa
 <!-- fig.F28.cita.orden.7 --> «No constará en el Diario de Sesiones.»
-<!-- fig.F28.cita.orden.7.pie --> 6-V-1936 · Jiménez de Asúa · V2 103251 · v3 116698
+<!-- fig.F28.cita.orden.7.pie --> 6-V-1936 · Jiménez de Asúa
 <!-- fig.F28.cita.orden.8 --> «Las palabras de S. S., en lo que a eso respecta, no constarán en el Diario de Sesiones.»
-<!-- fig.F28.cita.orden.8.pie --> 1-VII-1936 · Martínez Barrio · V2 106290 · v3 120222
+<!-- fig.F28.cita.orden.8.pie --> 1-VII-1936 · Martínez Barrio
 <!-- fig.F28.cita.acotacion.1 --> «(El Sr. Muñoz de Zafra pronuncia palabras que no se consignan por orden del Sr. Presidente…»
-<!-- fig.F28.cita.acotacion.1.pie --> 6-V-1936 · en la fila de Jesús Pabón · V2 103182 · v3 116626
+<!-- fig.F28.cita.acotacion.1.pie --> 6-V-1936 · en la fila de Jesús Pabón
 <!-- fig.F28.cita.acotacion.2 --> «Un Sr. Diputado pronuncia palabras que producen protestas de las minorías y que no constan por orden del Sr. Presidente.»
-<!-- fig.F28.cita.acotacion.2.pie --> 6-V-1936 · en la fila de Calvo Sotelo · V2 103250 · v3 116697
+<!-- fig.F28.cita.acotacion.2.pie --> 6-V-1936 · en la fila de Calvo Sotelo
 <!-- fig.F28.cita.acotacion.3 --> «(El orador pronuncia palabras que no constan por orden del Sr. Presidente…»
-<!-- fig.F28.cita.acotacion.3.pie --> 16-VI-1936 · en la fila de Calvo Sotelo · V2 105310 · v3 119084
+<!-- fig.F28.cita.acotacion.3.pie --> 16-VI-1936 · en la fila de Calvo Sotelo
 <!-- fig.F28.cita.acotacion.4 --> «(El Sr. Carrillo replica con palabras que levantan grandes protestas y que no se consignan por orden de la Presidencia.)»
-<!-- fig.F28.cita.acotacion.4.pie --> 16-VI-1936 · en la fila de Fernando Suárez de Tangil · V2 105324 · v3 119098
+<!-- fig.F28.cita.acotacion.4.pie --> 16-VI-1936 · en la fila de Fernando Suárez de Tangil
 <!-- fig.F28.cita.acotacion.5 --> «(El final de la frase no se consigna por orden del Sr. Presidente.—Aplausos.—Rumores.)»
-<!-- fig.F28.cita.acotacion.5.pie --> 1-VII-1936 · en la fila de Ángel Galarza · V2 106289 · v3 120221
+<!-- fig.F28.cita.acotacion.5.pie --> 1-VII-1936 · en la fila de Ángel Galarza
 <!-- fig.F28.cita.peticion --> «…ciertas palabras insultantes e incalificables con que se ha injuriado a las hermanas de la Caridad no constarán en el Diario de Sesiones.»
-<!-- fig.F28.cita.peticion.pie --> 3-VI-1936 · José Calvo Sotelo · V2 104406 · v3 118058
+<!-- fig.F28.cita.peticion.pie --> 3-VI-1936 · José Calvo Sotelo
 <!-- fig.F28.cita.ajena --> «…por parecerne injusto que no constara en el Diario de Sesión…»
-<!-- fig.F28.cita.ajena.pie --> 21-II-1934 · Luis Rodríguez de Viguri · la fórmula en otro sentido; no se dibuja · V2 64659 · v3 72690
+<!-- fig.F28.cita.ajena.pie --> 21-II-1934 · Luis Rodríguez de Viguri · la fórmula en otro sentido; no se dibuja
 
 <!-- fig.F28.salvedad -->
 Al menos: las variantes del reconocimiento óptico no se detectan. La búsqueda exacta de la frase en plural devuelve siete filas, que no son las mismas ocho.
@@ -5100,7 +5287,7 @@ Busque, lea y cite lo que se dijo en las Cortes de la República, sin programar:
 ## 8.1 Cabecera
 
 <!-- explorador.antetitulo -->
-v3 · 121.700 intervenciones · unos 106,6 MB comprimidos · base construida el 16-IX-2026
+121.700 intervenciones · unos 106,6 MB comprimidos · base construida el 16-IX-2026
 
 <!-- explorador.titulo -->
 ¿Qué hace el explorador, y qué no?
@@ -5114,9 +5301,6 @@ Se abre en su navegador; lo que busca y guarda se queda en su equipo.
 <!-- ↺ comun.boton.explorador -->
 [Abrir el explorador ↗]
 
-<!-- ↺ comun.fija.notabases -->
-Esta cifra sale de la edición del explorador (v3, 121.700 filas, sin depositar); la depositada es la V2 (107.551 filas). Por qué hay dos →
-
 <!-- explorador.idioma -->
 El explorador está solo en español.
 
@@ -5129,6 +5313,9 @@ Encontrar
 
 <!-- explorador.indice.busquedas -->
 Búsquedas de muestra
+
+<!-- explorador.indice.pico -->
+¿Cuándo fue el pico?
 
 <!-- explorador.indice.leer -->
 Leer
@@ -5154,7 +5341,7 @@ Lo que no hace
 ## 8.2 Primero, encontrar
 
 <!-- explorador.encontrar.antetitulo -->
-v3 · 108.291 de las 121.700 intervenciones son de habla
+108.291 de las 121.700 intervenciones son de habla
 
 <!-- explorador.encontrar.titulo -->
 Primero, encontrar
@@ -5198,14 +5385,13 @@ Contar una palabra no dice quién la defiende ni en qué tono.
 
 ## 8.2 bis · Búsquedas de muestra (F29)
 
-<!-- explorador.busquedas.antetitulo -->
-v3 3a0d8b2d · recuentos del 22-IX-2026
+<!-- explorador.busquedas.antetitulo -->recuentos del 22-IX-2026
 
 <!-- explorador.busquedas.titulo -->
 Búsquedas de muestra
 
 <!-- explorador.busquedas.entrada -->
-Son consultas reales, contadas en la edición del explorador. Cópielas, péguelas en el buscador y compare el recuento.
+Son consultas reales, contadas en el explorador. Cópielas, péguelas en el buscador y compare el recuento.
 
 <!-- ↺ comun.fija.enlace -->
 El explorador no abre una búsqueda desde un enlace: cópiela y péguela en su buscador (tecla /).
@@ -5220,7 +5406,7 @@ Consultas y recuentos
 Cuántas intervenciones devuelve cada consulta en el buscador del explorador, con y sin «Solo lo que se habla».
 
 <!-- fig.F29.denominador -->
-Las 121.700 intervenciones de la edición del explorador (v3); con «Solo lo que se habla», 108.291.
+Las 121.700 intervenciones del explorador; con «Solo lo que se habla», 108.291.
 
 <!-- fig.F29.voto_femenino.consulta -->
 "voto femenino"
@@ -5334,6 +5520,87 @@ Primera y última
 > LÉAME (`fig.F29.que_mide`, `.denominador`, `.salvedad`). Si el componente usa `restoDe(lang, 'fig.F29')`, estas
 > claves ya salen en su orden.
 
+## 2 bis. ¿Cuándo fue el pico? (juego)
+
+> [nota de diseño] Juego de la petición del investigador (24-09-2026): `components/explorador/Pico.astro`, con los datos del laboratorio (`public/datos/laboratorio.json`). Diez términos; cinco por partida. Sin JS, una tabla.
+
+<!-- explorador.pico.titulo -->
+¿Cuándo fue el pico?
+
+<!-- explorador.pico.entrada -->
+La Tendencia del explorador cuenta, mes a mes, cuántas veces aparece un término. Adivine en qué mes se habló más de cada uno.
+
+<!-- explorador.pico.juego.reglas -->
+Tres puntos por el mes justo; dos si se queda a dos meses o menos; uno si se queda a seis.
+
+<!-- explorador.pico.juego.cuenta -->
+Término ⟦i⟧ de ⟦n⟧ · Puntos: ⟦p⟧
+
+<!-- explorador.pico.juego.pregunta -->
+¿En qué mes se habló más de «⟦termino⟧»?
+
+<!-- explorador.pico.juego.anio -->
+El año
+
+<!-- explorador.pico.juego.mes -->
+El mes
+
+<!-- explorador.pico.juego.exacto -->
+¡En el mes justo!
+
+<!-- explorador.pico.juego.distancia -->
+Se ha quedado a ⟦n⟧ meses.
+
+<!-- explorador.pico.juego.distancia.uno -->
+Se ha quedado a un mes.
+
+<!-- explorador.pico.juego.pico -->
+El pico: ⟦mes⟧, con ⟦n⟧ apariciones.
+
+<!-- explorador.pico.juego.leyenda -->
+Apariciones por mes. En color, el pico; en negro, su apuesta.
+
+<!-- explorador.pico.juego.siguiente -->
+[Siguiente]
+
+<!-- explorador.pico.juego.ver -->
+[Ver el resultado]
+
+<!-- explorador.pico.juego.resumen -->
+Ha sumado ⟦p⟧ de ⟦max⟧ puntos.
+
+<!-- explorador.pico.juego.nivel.0 -->
+Se enteró por la radio.
+
+<!-- explorador.pico.juego.nivel.1 -->
+Lee el Diario con unos meses de retraso.
+
+<!-- explorador.pico.juego.nivel.2 -->
+Buen olfato para la actualidad parlamentaria.
+
+<!-- explorador.pico.juego.nivel.3 -->
+Hemeroteca andante.
+
+<!-- explorador.pico.juego.otra -->
+[Otra partida]
+
+<!-- explorador.pico.juego.salvedad -->
+Cuenta las apariciones como la Tendencia del explorador: sin tildes ni mayúsculas, y las expresiones como frase exacta.
+
+<!-- explorador.pico.juego.tabla -->
+Los términos del juego y su pico
+
+<!-- explorador.pico.juego.tabla.col.termino -->
+Término
+
+<!-- explorador.pico.juego.tabla.col.pico -->
+Mes con más apariciones
+
+<!-- explorador.pico.juego.tabla.col.n -->
+Apariciones ese mes
+
+---
+
 ## 8.3 Leer como en el Diario
 
 <!-- explorador.leer.antetitulo -->
@@ -5369,7 +5636,7 @@ Son propuestas, no diálogos probados, y el propio explorador lo advierte. A vec
 ## 8.4 Después, enfocar: las bibliotecas
 
 <!-- explorador.bibliotecas.antetitulo -->
-v3 · 31 bibliotecas · 24.029 entradas
+31 bibliotecas · 24.029 entradas
 
 <!-- explorador.bibliotecas.titulo -->
 Después, enfocar: las bibliotecas
@@ -5585,14 +5852,8 @@ Cada archivo lleva la cita del corpus. En el CSV va en las líneas de cabecera y
 <!-- explorador.llevar.copiar_pasaje -->
 Si copia un pasaje con el teclado, el portapapeles se lleva también la fuente.
 
-<!-- explorador.llevar.aviso -->
-La cita que pone el explorador dice «V2», pero sus datos y sus identificadores son de la v3. Para volver al archivo depositado, anote la fecha y el número de sesión.
-
-<!-- ↺ comun.fija.ids -->
-Los identificadores de fila cambian entre la edición depositada (V2) y la del explorador (v3); la sesión —fecha y número— es la misma en las dos.
-
 <!-- explorador.llevar.enlace -->
-[Ver cómo citar cada edición]
+[Ver cómo citar]
 
 > [nota de diseño] `explorador.llevar.aviso` es el aviso de D-18, decidida el 23-09-2026 (opción b): el aviso se queda
 > en esta página, sin marca de pendiente, porque cambiar el explorador está fuera de este trabajo. Se retira solo si el
@@ -5741,63 +6002,22 @@ Exportar una búsqueda: el CSV lleva la cita en sus líneas de cabecera y en cad
 <!-- explorador.img.exportar.alt -->
 El diálogo de exportar del explorador: CSV con el texto completo, y un recuadro que explica que el archivo lleva la cita al principio y en cada fila.
 
-<!-- explorador.img.sobre.pie -->
-El panel «Sobre este corpus»: la cita dice V2, y el archivo que sirve es la v3, sin publicar.
-
-<!-- explorador.img.sobre.alt -->
-El panel «Sobre este corpus» del explorador: la cita termina en «Harvard Dataverse, V2» y, debajo, el archivo servido es la versión v3, resegmentada y sin publicar.
-
 
 <!-- ═══ inicio.md ═══ -->
 
 # Copy ES · Inicio (`/[lang]/`)
 
-> **Estado (22-09-2026).** Borrador para la vista previa (Puerta 4). Dueño: el copy de «comun», «inicio», la raíz y el
-> 404. Sigue la narrativa §6 (beats 0–7) y la plantilla A del plan. Cifras: `docs/marcadores/inicio.md`, recalculadas
-> hoy sobre la V2, la v3, los metadatos del proyecto y la API de Dataverse
-> (`docs/marcadores/comprobar_comun_inicio.py`: 94 de 94 correctas).
+> **Estado (23-09-2026).** Rediseño aprobado por el investigador (`docs/REDISENO_23-09.md`, decisiones 1–5 del
+> § 8: landing y seis páginas · cifras redondas · «Pruebe una palabra» · fichas de etapa en una página · el grito con
+> tilde y sin la nota del OCR) y su petición del mismo día: **gráficos interactivos, atractivos, que se manipulan y se
+> juegan**. Sustituye al Inicio de la vista previa del 22-09 (etiqueta `v0.1-antes-del-rediseno`, commit `240b401`).
 >
-> **Cómo se lee.** Formato de ParlaIbero (véase la cabecera de `comun.md`). Las claves son las que pinta
-> `src/pages/[lang]/index.astro`: `inicio.portada.*`, `inicio.tesis.*` e `inicio.credencial`, y una sección por prefijo
-> (`inicio.calendario`, `.votaciones`, `.fila`, `.puertas`, `.falta`, `.empezar`) que `Seccion` pinta en el orden del
-> copy. `<!-- ↺ clave -->` repite una frase fija o un rótulo de `comun.md` justo donde debe caer; la redacción que manda
-> es la de allí. Los botones finales de cada sección los pone la plantilla (`botones`), tras la figura.
+> **Reglas de este archivo.** Una idea, una figura y una acción por bloque. Ni «V2» ni «v3» ni ids de fila: solo
+> cifras que valen para las dos ediciones (`|redondo` redondea HACIA ABAJO a una cifra significativa, así que «más
+> de…» es cierto en las dos). Las salvedades viven en Método. Presupuesto: 450 palabras visibles.
 >
-> **Tests de rechazo (anexo A):** 700 palabras de copy de 700 (23-09-2026, con la nota al margen del grito; el anexo es del 22-09) · 114 de límites de 120 · la pregunta, en la primera
-> pantalla · ningún límite antes del primer hallazgo · ninguna frase de más de 30 palabras.
->
-> **Lo que cambia respecto a la narrativa y al plan, y por qué** (comprobado hoy sobre la fuente):
-> 1. **El grito va sin tilde: «Luz y taquigrafos.»** Así está en la V2 71330 y en la v3 80306 (`speech` =
->    `Luz y taquigrafos.`). Las citas conservan las erratas del reconocimiento óptico y la tilde no cambia el sentido:
->    no lleva [sic]; para que no parezca errata del sitio, su asiento al margen lo explica (decisión 4 del
->    investigador, 23-09-2026). La marca del sitio, «Luz y Taquígrafos», conserva la suya.
-> 2. **«Seis votaciones nominales» es una selección, no el total.** El texto de la V2 trae al menos 962 listas
->    encabezadas por «Señores que dijeron sí», en 387 sesiones. Inicio dice «cientos» y «aquí van seis».
->    **Fase 2 (corrector):** con la definición común de Sesiones («señores que dijeron / han dicho» + «sí / no», sobre
->    el texto sin acentos), son 1.023 filas en 405 sesiones. Inicio da ese total (`voto.listas.sesiones`) y dice que
->    las seis están «escogidas» (plan, anexo adversarial H3 y R1).
-> 3. **La destitución del 7-IV-1936 sí sale del corpus.** La proposición pide declarar, «para los fines del último
->    párrafo del artículo 81», que no era necesario el decreto de disolución (V2 102304). Tras la votación, el Diario
->    dice que el Presidente de las Cortes «pasa a ser Presidente de la República» (V2 102368). El rótulo es el de
->    Sesiones.
-> 4. **«Todo lo que se dijo en sesión pública quedó impreso» pasa a «se imprimía».** El propio sitio cuenta lo que la
->    Presidencia mandó borrar (F28, El Diario).
-> 5. **«Posición»: la ideología no es siempre la del partido.** En la V2, las filas de la CEDA llevan D (7.656), CD
->    (255) y C (51); en 10 de 81 pares partido y legislatura hay más de un valor. La caja dice lo que sí es cierto: la
->    ideología clasifica al diputado, no lo que dijo.
-> 6. **«Dentro de cada serie del Diario» pasa a «en cada legislatura».** La numeración recomienza por legislatura
->    (1–405, 1–276, 1–74) y una serie del proyecto, la del Diario de las Sesiones de Cortes, abarca dos.
-> 7. **El movimiento 5 se titula «¿Qué sesión leo primero?»**, como la narrativa tras el anexo adversarial (V30): así
->    no casi repite el H1 de Sesiones, «¿Qué se dijo aquel día, y qué se votó?». Su botón es [Ver las sesiones y
->    votaciones]: [Ver las sesiones] llevaba al mismo destino con otro rótulo.
->
-> **Fase 2 (corrector del copy, 22-09-2026).** Tesis como la narrativa §6 mov. 1: «Casi nunca fue secreto: sobre todo,
-> inabarcable», con «salvo lo que la Presidencia mandó borrar» (P1-1), y la fila definida por lo que reconoce el
-> etiquetado, con su fecha y su sesión (P2-3, H21); la puerta del Estatuto, «El discurso de Azaña, a nombre de otro»
-> (P1-2); las votaciones, «escogidas» y con su total al lado (H3); «unos 112 MB comprimidos» en unidad decimal
-> (P1-4, D-26 (a)); «Haga sus preguntas» (P2-2).
-> 8. **Una magnitud por frase.** «Seis votaciones en cinco sesiones» se parte; «siete palabras y 1.460» se queda,
->    porque compara una sola magnitud.
+> Al final, **«Claves que usan otras páginas»**: el calendario, las votaciones, el registro de puertas, Método y la
+> página de componentes leen claves `inicio.*` que Inicio ya no pinta. Se conservan tal cual.
 
 ---
 
@@ -5807,10 +6027,7 @@ El panel «Sobre este corpus» del explorador: la cita termina en «Harvard Data
 Los Diarios de Sesiones de las Cortes, 1931–1945
 
 <!-- inicio.meta.descripcion -->
-Los Diarios de Sesiones de las Cortes de la Segunda República, 1931–1945, en una tabla abierta: 755 sesiones para contar, leer y citar.
-
-> [nota de diseño] `Base.astro` antepone la marca en Inicio: «Luz y Taquígrafos · Los Diarios de Sesiones de las
-> Cortes, 1931–1945». La descripción resuelta mide 135 caracteres (tope, 155).
+Todo lo que se dijo en las Cortes de la Segunda República, de 1931 a 1945: 755 sesiones para buscar, leer, contar y citar.
 
 ## 0 · Portada
 
@@ -5818,146 +6035,217 @@ Los Diarios de Sesiones de las Cortes de la Segunda República, 1931–1945, en 
 ¿Cómo discutía una democracia que se estaba inventando?
 
 <!-- inicio.portada.entrada -->
-Lo que se dijo en las Cortes de la República, sesión a sesión, de 1931 a 1945.
+Todo lo que se dijo en el Congreso de la Segunda República, de 1931 a 1945, listo para buscar, leer, contar y citar.
 
 <!-- inicio.portada.llamada -->
 [Abrir el explorador ↗] [Descargar los datos]
 
-<!-- inicio.portada.asiento -->
-V2 · un CSV de 158,1 MB · CC BY 4.0 · Harvard Dataverse
-
-> [nota de diseño] El H1 va en la primera pantalla, con el hemiciclo sin cambios al lado (textos en `comun.md` § 8:
-> título, descripción, pie, crédito del plano, radios y minorías). Sin antetítulo ni `comun.hemiciclo.rotulo`.
-> NINGUNA cifra sobre la figura. Destinos de la llamada, por orden: el explorador (el primario, en oro: decisión 2 del
-> investigador, 23-09-2026) y `/{lang}/datos/#empezar`. Bajo los botones, el asiento de lo que se descarga con el
-> secundario (pulido de la fase 2, `docs/revision_fase2/PULIDO.md`); 107.551 sigue fuera de la portada. Sin portada rotativa (D-5).
-
-## 1 · Tesis (banda invertida: no hay otra en el sitio)
-
-<!-- inicio.tesis.grito -->
-«Luz y taquigrafos.»
-
-<!-- inicio.tesis.grito.pie -->
-8 de junio de 1934 · V2 71330 · v3 80306. Sin tilde, como en la fila: así salió del reconocimiento óptico.
-
-<!-- inicio.tesis.contexto -->
-tres palabras con que un diputado interrumpió a la Presidencia, que recordaba que los suplicatorios se tratan en sesión secreta.
-
-<!-- inicio.tesis.inabarcable -->
-Lo dicho en sesión pública se imprimía en el Diario, salvo lo que la Presidencia mandó borrar. Casi nunca fue secreto: sobre todo, inabarcable.
-
-<!-- inicio.tesis.resolucion -->
-Ahora el Diario es una tabla: una fila cada vez que el etiquetado reconoce la fórmula impresa de un orador, con su fecha y su sesión para volver al impreso.
-
-<!-- inicio.tesis.remate -->
-La lectura no se elimina: se aplaza.
-
 <!-- inicio.credencial -->
-755 sesiones · 1931–1945 · doi:10.7910/DVN/THQCMI · CC BY 4.0 · Universidad de Salamanca · Harvard Dataverse
+755 sesiones · más de 107.551 intervenciones · 773 diputados · CC BY 4.0 · Harvard Dataverse
 
-> [nota de diseño] El grito, en cursiva grande (es lo que alguien dijo); su pie y la credencial, en mono. El aserto de
-> citas compara el grito letra a letra, sin las comillas angulares, con la V2 71330 y la v3 80306. No se dice quién
-> gritó: el Diario lo atribuye a «JIMÉNEZ FERNÁNDEZ», pero la Presidencia contesta que no ha visto quién interrumpía
-> (V2 71331), y eso se cuenta en El Diario. Tampoco va 107.551 (la escala no es portada) ni «cada turno es una fila»:
-> en la V2 hay turnos dentro de filas ajenas y documentos dentro de filas.
+> [nota de diseño] El hemiciclo de 1936, sin cambios (la Cámara se sienta). La leyenda se pliega en sus cuatro
+> bloques; las dieciocho minorías aparecen al elegir uno.
 
-## 2 · ¿Cuándo se reunieron las Cortes?
+## 1 · El nombre (la única banda invertida)
 
-<!-- inicio.calendario.titulo -->
-¿Cuándo se reunieron las Cortes?
+<!-- inicio.nombre.grito -->
+«Luz y taquígrafos.»
 
-<!-- inicio.calendario.entrada -->
-Hay 755 sesiones, del 14 de julio de 1931 al 9 de noviembre de 1945.
+<!-- inicio.nombre.texto -->
+Lo gritó un diputado el 8 de junio de 1934, cuando la Presidencia recordó que los suplicatorios se tratan en sesión secreta. Casi todo lo demás se imprimía en el Diario de Sesiones: más de 24.335.896 de palabras que nadie podía leer enteras. Ahora se pueden buscar.
 
-<!-- inicio.calendario.como -->
-Cada bloque del calendario es una etapa y abre su página.
+> [nota de diseño] Decisión 5: «taquígrafos» con tilde, como en el Diario impreso; la errata es del reconocimiento
+> óptico, no de la fuente, y no se explica aquí.
 
-<!-- inicio.calendario.numeracion -->
-En cada legislatura, la numeración de las sesiones no se salta ningún número.
+## 2 · Más que una base de datos
 
-<!-- inicio.calendario.cotejo -->
-Que la última sesión del corpus sea la última que se imprimió no lo hemos cotejado.
+<!-- inicio.piezas.titulo -->
+Más que una base de datos
 
-<!-- inicio.calendario.guerra -->
-Después del 18 de julio de 1936 quedan catorce sesiones, y son extractos oficiales, no el Diario íntegro.
+<!-- inicio.piezas.entrada -->
+Una infraestructura para investigar la República desde su Parlamento.
 
-<!-- inicio.calendario.palabras -->
-Suman el 0,83 % de las palabras del corpus.
+<!-- inicio.piezas.diario -->
+**El Diario entero.** Las 755 sesiones, de las Constituyentes al exilio en México.
 
-> [nota de diseño] El texto va antes de la figura (F01c): la frase dice qué buscar antes de que llegue el gráfico. El
-> botón, [Ver las Cortes, etapa a etapa], lo pone la plantilla al final. Lo que la figura enseña sin decirlo: la Cámara
-> constituyente se reunió casi todos los meses, la de 1933 tuvo huecos, tras julio de 1936 quedan marcas sueltas y
-> entre 1939 y 1945 hay un salto rotulado. NO se dicen las causas de un mes vacío (receso, disolución, guerra): no
-> salen del corpus. «Extractos oficiales» es la serie de esas catorce sesiones en los metadatos del proyecto (9 y 5).
+<!-- inicio.piezas.fila -->
+**Cada intervención, una fila.** Quién habla, cuándo y en qué sesión, con su texto.
 
-### F01c · el calendario compacto (rótulos propios de Inicio)
+<!-- inicio.piezas.orador -->
+**Los oradores, identificados.** 773 diputados, con su partido y su ideología.
+
+<!-- inicio.piezas.explorador -->
+**Un explorador en el navegador.** Buscar, reunir, leer y comparar, sin instalar nada.
+
+<!-- inicio.piezas.redes -->
+**Redes de coautoría.** Afinidades Elegidas: quién firmó con quién.
+
+<!-- inicio.piezas.abierto -->
+**Abierto y citable.** Un CSV con DOI y licencia CC BY 4.0, listo para R o Python.
+
+## 3 · El laboratorio de palabras (juego 1)
+
+<!-- inicio.lab.titulo -->
+¿Cuándo se habló de…?
+
+<!-- inicio.lab.entrada -->
+Escriba una palabra o elija una. La curva cuenta cuántas veces se dijo cada mes; el calendario se enciende donde más se habló.
+
+<!-- inicio.lab.etiqueta -->
+Palabra o expresión
+
+<!-- inicio.lab.propuestas -->
+Pruebe con
+
+<!-- inicio.lab.comparar -->
+Comparar
+
+<!-- inicio.lab.quitar -->
+Quitar
+
+<!-- inicio.lab.ninguna -->
+«{palabra}» no está entre las palabras de este laboratorio. El explorador lo busca todo.
+
+<!-- inicio.lab.cargando -->
+Cargando las palabras…
+
+<!-- inicio.lab.mes -->
+{mes}: {n} veces, {d} por cada diez mil palabras
+
+<!-- inicio.lab.nada -->
+{mes}: sin sesiones
+
+<!-- inicio.lab.nota -->
+Apariciones por cada diez mil palabras, contadas como en el explorador; los meses con poco texto, en trazo fino.
+
+<!-- inicio.lab.calendario -->
+Cada casilla es un mes con sesiones. Los anillos abren ocho momentos.
+
+<!-- inicio.lab.alt -->
+Curva de las apariciones mensuales de la palabra elegida, de 1931 a 1945, y calendario de los meses con sesión coloreado según esa frecuencia.
+
+> [nota de diseño] Juego 1. El título es la pregunta y el eco de la palabra elegida. Sin JS: ocho palabras con radios
+> (curva y calendario pre-dibujados). Con JS: cualquier palabra de las más frecuentes o de las expresiones del
+> explorador, hasta tres a la vez, recorrer la curva con el puntero o el teclado. Datos:
+> `public/datos/laboratorio.json` (exportador › laboratorio.py, recontado sobre el índice FTS5 del explorador).
+
+## 4 · ¿Cuántos votaron sí? (juego 2)
+
+<!-- inicio.apuesta.titulo -->
+¿Cuántos votaron sí?
+
+<!-- inicio.apuesta.entrada -->
+Seis votaciones nominales, de 1931 a 1936. Arrastre la barra hasta donde crea que llegó el sí y compruébelo con el Diario.
+
+<!-- inicio.apuesta.su -->
+Su apuesta
+
+<!-- inicio.apuesta.si -->
+sí
+
+<!-- inicio.apuesta.no -->
+no
+
+<!-- inicio.apuesta.comprobar -->
+Comprobar
+
+<!-- inicio.apuesta.todas -->
+Ver todos los resultados
+
+<!-- inicio.apuesta.otra -->
+Volver a jugar
+
+<!-- inicio.apuesta.cerca -->
+Casi exacto: a {d} puntos.
+
+<!-- inicio.apuesta.lejos -->
+A {d} puntos del resultado.
+
+<!-- inicio.apuesta.marcador -->
+{n} de {total} a menos de diez puntos.
+
+<!-- inicio.apuesta.pie -->
+Resultados como los imprime el Diario de Sesiones. [Ver las sesiones y votaciones]
+
+> [nota de diseño] Juego 2. Una fila por votación nominal (rótulos `inicio.f26.v.*`), con un deslizador que llena la
+> barra mientras se arrastra. «Comprobar» revela el reparto real de síes y noes y la distancia en puntos. Sin JS: los
+> resultados, a la vista.
+
+## 5 · La red de las firmas (juego 3)
+
+<!-- inicio.red.titulo -->
+¿Con quién firmaba cada diputado?
+
+<!-- inicio.red.entrada -->
+Cada punto es un diputado; cada línea, una proposición firmada juntos. Cambie de legislatura o busque a un diputado.
+
+<!-- ↺ comun.boton.ver_afinidades --> [Ver Afinidades Elegidas]
+
+> [nota de diseño] Juego 3. F21, la figura de Afinidades que el investigador considera lograda, en su versión de
+> escaparate: sin sellos, sin código de figura y sin salvedad; con el cambio de legislatura, el buscador y la red viva.
+
+## 6 · Empiece hoy
+
+<!-- inicio.empezar.titulo -->
+Empiece hoy
+
+<!-- inicio.empezar.sin_programar -->
+**Sin programar.** El explorador, en su navegador.
+
+<!-- ↺ comun.boton.explorador --> [Abrir el explorador ↗]
+
+<!-- inicio.empezar.programar -->
+**Con R o Python.** El CSV, con su DOI.
+
+<!-- ↺ comun.boton.descargar --> [Descargar los datos]
+
+<!-- inicio.empezar.redes -->
+**Con redes.** Afinidades Elegidas: quién firmó con quién.
+
+<!-- ↺ comun.boton.ver_afinidades --> [Ver Afinidades Elegidas]
+
+<!-- inicio.empezar.remate -->
+Los datos están publicados. Haga sus preguntas.
+
+> [nota de diseño] Tras la escalera, la cita oficial con [Copiar la cita] (la pinta la plantilla) y el remate (D-24).
+
+---
+
+## Claves que usan otras páginas
+
+> Inicio ya no las pinta. Las leen `FigCalendario` (títulos de las puertas), `FigVotaciones` (rótulos cortos),
+> `RegistroPuertas`, Método (las cuatro cajas de lo que la base no trae) y la página de componentes. Se conservan tal
+> cual estaban el 23-09-2026.
 
 <!-- inicio.f01c.titulo --> Las sesiones, mes a mes, por etapa
+
 <!-- inicio.f01c.nota.etapa --> ⟦etapa⟧ · ⟦n⟧ sesiones · abre su página
 
 <!-- inicio.f01c.alt -->
 Calendario en rejilla de año por mes, agrupado por etapas. Cada mes con sesión lleva un tono según las palabras impresas; los meses sin sesión llevan contorno. Los mismos datos están en la pestaña Tabla.
 
 <!-- inicio.f01c.anota.I --> El único mes sin sesión de las Constituyentes: enero de 1933.
+
 <!-- inicio.f01c.anota.II --> El mes con más palabras: junio de 1934, con 870.822 en 19 sesiones.
+
 <!-- inicio.f01c.anota.IV --> De la guerra quedan nueve sesiones en 29 meses, y son extractos oficiales.
 
-> [nota de diseño] Fase 2 (grupo 1): tres anotaciones editoriales como mucho (DESIGN.md § Sistema de figuras), en la
-> columna derecha de la figura en escritorio y entre filas en el móvil, cada una junto a la fila de año de la que habla:
-> la del único mes vacío de la etapa I (1933), la del mes con más palabras (1934) y la de la guerra (1936). Solo dicen lo
-> que el dato sostiene (`meses.json`, V2; `etapa.I.meses.sin_sesion` = 1). No cuentan en el tope de palabras de Inicio.
-
-> [nota de diseño] F01c comparte familia con F01: sus leyendas, su nota de mes, el rótulo del salto y su tabla son los
-> de `cortes.md` (`fig.F01.leyenda.*`, `fig.F01.nota.mes*`, `fig.F01.salto`, `fig.F01.tabla.*`), y la leyenda del tono
-> es ↺ `comun.fija.tono`. Aquí van solo el título de Inicio, la nota del bloque de etapa (variables `⟦etapa⟧` y
-> `⟦n⟧`) y el texto alternativo. Cinco bloques rotulados con `comun.etapa.<id>.corto` y `.anos`, con numeral romano;
-> cada bloque es un enlace a su ficha. Cinco clases por cuantiles sin interpolar, con los cortes impresos. La ausencia
-> nunca es un color. Sin barras por sesión y sin conmutador: eso es F01, en Las Cortes.
-
-## 3 · ¿Qué se decidía allí?
-
-<!-- inicio.votaciones.titulo -->
-¿Qué se decidía allí?
-
-<!-- inicio.votaciones.entrada -->
-En al menos 405 sesiones, el Diario imprime votaciones nominales, con la lista de quien dijo sí y de quien dijo no.
-
-<!-- inicio.votaciones.seleccion -->
-Aquí van seis, escogidas, de 1931 a 1936.
-
-<!-- inicio.votaciones.mujeres -->
-El 1 de octubre de 1931, el artículo 34 del proyecto de Constitución, el del voto de las mujeres, se aprobó por 161 votos contra 121.
-
-<!-- inicio.votaciones.salvedad -->
-La base no trae el voto como variable: las listas están en el texto.
-
-> [nota de diseño] «Al menos 405 sesiones»: las que tienen una fila con «señores que dijeron / han dicho» seguido de
-> «sí» o «no» en el texto sin acentos de la V2 (1.023 filas; la misma definición que Sesiones). Es cota inferior: el
-> reconocimiento óptico rompe algún encabezado, como el de la lista del Estatuto. NO se dice «siete
-> votaciones»: el 141–106 del mismo 1 de octubre fue ordinaria y se cuenta en Sesiones. Tampoco la equivalencia con el
-> art. 36 de la Constitución [EXT], ni quién votó qué (llega en la 0.2). La salvedad va al margen, tras la figura, y
-> hace también de salvedad de F26 en Inicio. Botón final: [Ver las votaciones].
-
-### F26 · las votaciones, en su versión de Inicio (rótulos propios)
-
 <!-- inicio.f26.titulo --> Votaciones nominales, con el resultado que imprime el Diario
+
 <!-- inicio.f26.v.161-121 --> Art. 34: el voto de las mujeres
+
 <!-- inicio.f26.v.178-59 --> Art. 24: la cuestión religiosa
+
 <!-- inicio.f26.v.368-466 --> La Constitución
+
 <!-- inicio.f26.v.318-19 --> La Reforma agraria
+
 <!-- inicio.f26.v.314-24 --> El Estatuto de Cataluña
+
 <!-- inicio.f26.v.238-5 --> Art. 81: la destitución del Presidente de la República
 
 <!-- inicio.f26.alt -->
 Barras horizontales con los síes y los noes de cada votación nominal, por orden de fecha. Los mismos datos, con el texto literal del Diario, están en la pestaña Tabla.
-
-> [nota de diseño] Es F26 sin la votación ordinaria del 141–106 y con rótulos cortos (`inicio.f26.v.<clave>` en lugar
-> de `fig.F26.v.<clave>`); sus notas, su leyenda y su tabla son las de `sesiones.md` (`fig.F26.*`). Seis barras en
-> orden de fecha: 1-X-1931, 13-X-1931, 9-XII-1931, 9-IX-1932 (dos) y 7-IV-1936. Línea de «mitad más uno» donde el
-> Diario la imprime: 234 de 466, 232 de 462 y 209 de 417. Cada barra enlaza a su puerta si la tiene en la 0.1 (161–121
-> → `sufragio-1931`; 178–59 → `cuestion-religiosa-1931`) y, si no, a su fila en la tabla de Sesiones.
-
-## 4 · ¿Qué es una fila?
 
 <!-- inicio.fila.titulo -->
 ¿Qué es una fila?
@@ -5966,33 +6254,22 @@ Barras horizontales con los síes y los noes de cada votación nominal, por orde
 «Ruego a la Cámara que guarde silencio.»
 
 <!-- inicio.fila.presidencia.pie -->
-La Presidencia · V2 5423 · v3 6078
+La Presidencia
 
 <!-- inicio.fila.campoamor -->
 «Yo ruego a la Cámara que me escuche en silencio…»
 
 <!-- inicio.fila.campoamor.pie -->
-Clara Campoamor · V2 5424 · v3 6079
+Clara Campoamor
 
 <!-- inicio.fila.dos -->
-Son dos de las 107.551 filas de la edición depositada, una detrás de otra en la sesión del 1 de octubre de 1931.
+Son dos de las 107.551 filas de la base, una detrás de otra en la sesión del 1 de octubre de 1931.
 
 <!-- inicio.fila.palabras -->
 La de la Presidencia tiene siete palabras; la de Campoamor, 1.460.
 
 <!-- inicio.fila.leccion -->
 Contar filas no es contar discurso.
-
-<!-- ↺ comun.fija.ocr -->
-El texto sale del reconocimiento óptico y no está corregido a mano.
-
-> [nota de diseño] Composición tipográfica, sin figura: arriba, en pequeño, la Presidencia; debajo, en cursiva
-> grande, Campoamor; cada una con su pie en mono (petición a la plantilla: hoy el pintor genérico las deja como
-> párrafos). El aserto de citas compara las dos, sin comillas ni «…», con la V2 5423 y 5424 y la v3 6078 y 6079. NO se
-> dice el orden en la sesión: cambia entre ediciones (V2 `order` 26; v3 `ord` 29; pantalla del explorador, «Orden 30»)
-> y se explica en Datos. Botón final: [Ver qué trae cada columna].
-
-## 5 · ¿Qué sesión leo primero?
 
 <!-- inicio.puertas.titulo -->
 ¿Qué sesión leo primero?
@@ -6001,43 +6278,55 @@ El texto sale del reconocimiento óptico y no está corregido a mano.
 Cada momento tiene su página, con sus citas y cómo leerlo entero en el explorador.
 
 <!-- inicio.puertas.sufragio-1931.fecha --> 1-X-1931
+
 <!-- inicio.puertas.sufragio-1931.que --> El voto de las mujeres
-<!-- inicio.puertas.sufragio-1931.filas --> 395 filas (V2)
+
+<!-- inicio.puertas.sufragio-1931.filas --> 395 filas
+
 <!-- inicio.puertas.cuestion-religiosa-1931.fecha --> 13-X-1931
+
 <!-- inicio.puertas.cuestion-religiosa-1931.que --> «España ha dejado de ser católica»
-<!-- inicio.puertas.cuestion-religiosa-1931.filas --> 378 filas (V2)
+
+<!-- inicio.puertas.cuestion-religiosa-1931.filas --> 378 filas
+
 <!-- inicio.puertas.estatuto-1932.fecha --> 27-V-1932
-<!-- inicio.puertas.estatuto-1932.que --> El discurso de Azaña, a nombre de otro
-<!-- inicio.puertas.estatuto-1932.filas --> 44 filas (V2)
+
+<!-- inicio.puertas.estatuto-1932.que --> El Estatuto de Cataluña
+
+<!-- inicio.puertas.estatuto-1932.filas --> 44 filas
+
 <!-- inicio.puertas.casas-viejas-1933.fecha --> 2-II-1933
+
 <!-- inicio.puertas.casas-viejas-1933.que --> Casas Viejas
-<!-- inicio.puertas.casas-viejas-1933.filas --> 155 filas (V2)
+
+<!-- inicio.puertas.casas-viejas-1933.filas --> 155 filas
+
 <!-- inicio.puertas.pistola-1934.fecha --> 4-VII-1934
+
 <!-- inicio.puertas.pistola-1934.que --> La pistola de Prieto
-<!-- inicio.puertas.pistola-1934.filas --> 255 filas (V2)
+
+<!-- inicio.puertas.pistola-1934.filas --> 255 filas
+
 <!-- inicio.puertas.antesala-1936.fecha --> 16-VI y 1-VII-1936
+
 <!-- inicio.puertas.antesala-1936.que --> La antesala
-<!-- inicio.puertas.antesala-1936.filas --> 159 y 125 filas (V2)
+
+<!-- inicio.puertas.antesala-1936.filas --> 159 y 125 filas
+
 <!-- inicio.puertas.figueres-1939.fecha --> 1-II-1939
+
 <!-- inicio.puertas.figueres-1939.que --> Figueres
-<!-- inicio.puertas.figueres-1939.filas --> 16 filas (V2)
+
+<!-- inicio.puertas.figueres-1939.filas --> 16 filas
+
 <!-- inicio.puertas.mexico-1945.fecha --> 17-VIII y 7–9-XI-1945
+
 <!-- inicio.puertas.mexico-1945.que --> México
-<!-- inicio.puertas.mexico-1945.filas --> 183 filas (V2)
+
+<!-- inicio.puertas.mexico-1945.filas --> 183 filas
 
 <!-- inicio.puertas.salvedad -->
 Que estén no valida su contenido: el acta digitalizada del 1 de octubre de 1931 perdió su final en el reconocimiento óptico.
-
-> [nota de diseño] Registro de calendario (`RegistroPuertas`, familia «inicio»), no tarjetas: fecha en mono · qué
-> pasó · filas en versalitas; cada línea enlaza a su puerta. Títulos y fechas iguales a los de `sesiones.md`
-> (`sesiones.lista.<ruta>.*`), sin la línea de resumen. El título es el de la narrativa §10.3, «El discurso de Azaña, a
-> nombre de otro»: «el discurso más largo» solo vale en la v3 y va, con su base, en el cuerpo de la puerta. La salvedad
-> empieza por ↺ 9 letra a letra y la ata al ejemplo comprobado: filas V2 5788–5792 (cinco «Pido la palabra.»; la
-> última acaba en «El Sr. Ministro de»), incidencia `truncated_end`. Las ocho puertas cubren doce sesiones: nunca
-> «dieciséis sesiones». En México, la línea de filas no dice «en cuatro sesiones»: las cuatro fechas ya lo dicen, y a
-> 375 px la columna de filas, que no se parte, desbordaba la página. Botón final: [Ver las sesiones y votaciones].
-
-## 6 · ¿Qué no trae la base?
 
 <!-- inicio.falta.titulo -->
 ¿Qué no trae la base?
@@ -6062,87 +6351,6 @@ Una base derivada ya existe: Afinidades Elegidas, quién firmó con quién.
 
 <!-- inicio.falta.usted -->
 Aquí entra usted.
-
-> [nota de diseño] Cuatro cajas vacías con filete discontinuo: el vacío es el contenido; el nombre en negrita, en mono
-> (petición a la plantilla: hoy son párrafos). Sin iconos. Las cajas dicen lo que falta, no lo que se hizo con el
-> prototipo de 1931. NINGUNA cifra de Afinidades en Inicio mientras siga abierta la D-3. Botón final: [Ver Afinidades
-> Elegidas].
-
-## 7 · ¿Por dónde empiezo?
-
-<!-- inicio.empezar.titulo -->
-¿Por dónde empiezo?
-
-<!-- inicio.empezar.entrada -->
-Elija por lo que ya sabe hacer.
-
-<!-- ↺ comun.fija.formulario -->
-Antes de descargar, Harvard Dataverse le pedirá nombre, correo e institución.
-
-<!-- ↺ comun.fija.formulario.motivo -->
-Con esos datos queremos saber quién usa la base y con qué fin, para poder mejorarla y comunicar novedades.
-
-<!-- inicio.empezar.sin_programar -->
-**Sin programar.** Los datos de cada figura, en su pestaña Datos, o el explorador: unos 106,6 MB comprimidos la primera vez, sin formulario.
-
-<!-- ↺ comun.fija.explorador -->
-Sirve la edición v3, sin depositar; pide un ordenador.
-
-<!-- ↺ comun.boton.explorador --> [Abrir el explorador ↗]
-
-<!-- inicio.empezar.programar -->
-**Con R o Python.** El CSV depositado: 158,1 MB.
-
-<!-- ↺ comun.boton.descargar --> [Descargar los datos]
-
-<!-- inicio.empezar.redes -->
-**Con métodos de redes.** Afinidades Elegidas: quién firmó con quién.
-
-<!-- ↺ comun.boton.ver_afinidades --> [Ver Afinidades Elegidas]
-
-<!-- inicio.empezar.remate -->
-Los datos están publicados. Haga sus preguntas.
-
-<!-- inicio.empezar.salvedad -->
-Los identificadores de fila cambian entre la edición depositada (V2) y la del explorador (v3); la sesión —fecha y número— es la misma en las dos.
-
-> [nota de diseño] ↺ 3 y el motivo del formulario (D-20) van ENCIMA de la escalera. Tres peldaños, titulados
-> por lo que la persona sabe hacer (`Salidas`: la negrita es el título), cada uno con su botón de rótulo único; el de
-> «Con R o Python» lleva a Usar los datos (`#empezar`), donde se elige el archivo antes del formulario. Tras la
-> escalera, la cita oficial tal como la da Dataverse, con su «V2», y [Copiar la cita] (la pinta la plantilla); luego
-> el remate (D-24) y, al margen, ↺ 4 con la misma redacción: explica el doble id de la tesis y de la fila. «Unos
-> 112 MB comprimidos» es lo que descarga el explorador (111.733.652 B), en unidad decimal: regla de la crítica mientras
-> el investigador decide D-26, opción (a). En la unidad de Dataverse serían 106,6 MB. NO se dicen
-> visitas ni descargas, ni «funciona sin conexión».
-
-## Anexo A · Tests de rechazo (recuento del 22-09-2026)
-
-Recuento con `docs/marcadores/contar_inicio.py` (rehecho por el corrector de la fase 2), sobre el texto resuelto con los valores de
-`docs/marcadores/inicio.md`. Cuenta el copy de `<main>`: títulos, entradas, frases, citas con su pie, credencial,
-registro de puertas, cajas, escalera, frases fijas y remate. No cuenta los rótulos de botón, los rótulos y notas de
-las figuras, los textos alternativos, la cita oficial ni el motivo del formulario (D-20).
-
-| movimiento | palabras | tope del plan | de ellas, límites |
-|---|---:|---:|---:|
-| 0 · Portada (con el pie del hemiciclo) | 61 | 60 | 0 |
-| 1 · Tesis (con su pie y la credencial) | 105 | 90 | 7 |
-| 2 · ¿Cuándo se reunieron las Cortes? | 86 | 100 | 24 |
-| 3 · ¿Qué se decidía allí? | 74 | 90 | 14 |
-| 4 · ¿Qué es una fila? | 85 | 90 | 12 |
-| 5 · ¿Qué sesión leo primero? (con el registro) | 108 | 110 | 22 |
-| 6 · ¿Qué no trae la base? | 72 | 70 | 0 |
-| 7 · ¿Por dónde empiezo? (con la escalera) | 98 | 90 | 35 |
-| **Total** | **689** | **700** | **114 de 120** |
-
-- **Límites contados:** «salvo lo que la Presidencia mandó borrar», en la tesis; el cotejo de la numeración; «y son extractos oficiales, no el Diario íntegro»; la salvedad de
-  las listas; ↺ 7; la salvedad de las puertas (↺ 9 con el acta truncada); ↺ 4 y ↺ «Sirve la edición v3, sin
-  depositar; pide un ordenador». Ninguno va antes del primer hallazgo, que es el grito de la tesis.
-- **Varios movimientos rozan su tope, y la página no lo pasa.** La tesis cuenta su pie (fecha e ids, 9 palabras) y la
-  credencial (13), que son líneas de datos en mono; sin ellas son 83, y su texto es el de la narrativa §6. El 5 cuenta el registro de las ocho puertas y queda en su tope. El
-  7 lleva enteras ↺ 3 y ↺ 4 (38 palabras de frases fijas que la narrativa pone ahí).
-- **La primera pregunta**, el H1, va en la primera pantalla a 1.440 y a 375 px (comprobado con Playwright).
-- **Ninguna frase pasa de 30 palabras.** La más larga es `inicio.tesis.resolucion` (30, con los dos puntos: la frase de la narrativa).
-- **La descripción** resuelta mide 135 caracteres (tope, 155).
 
 
 <!-- ═══ metodo.md ═══ -->
@@ -6230,18 +6438,15 @@ Quién habla
 Habla y no habla
 
 <!-- metodo.indice.06 -->
-Dos ediciones
+Las fechas
 
 <!-- metodo.indice.07 -->
-Fechas corregidas
-
-<!-- metodo.indice.08 -->
 Partido, familia e ideología
 
-<!-- metodo.indice.09 -->
+<!-- metodo.indice.08 -->
 Lo que no afirma
 
-<!-- metodo.indice.10 -->
+<!-- metodo.indice.09 -->
 Documentación
 
 ## Cabecera
@@ -6306,14 +6511,11 @@ Cada fila lleva catorce columnas. Dicen la sesión y el lugar de la fila en ella
 > [nota de diseño] Aquí va **F20** (`fig.F20.*`): V2 5423 y 5424 frente a v3
 > 6078 y 6079. Al pie de la figura, `fig.F20.enlace` → `datos/#columnas`.
 
-<!-- metodo.01.salvedad -->
-Una fila puede llevar dentro más de un turno, o un documento que nadie leyó en voz alta. Lo explica «Dos ediciones», más abajo.
-
 <!-- metodo.01.pruebelo.consulta -->
 "me escuche en silencio"
 
 <!-- metodo.01.pruebelo.explorador -->
-Busque la frase entre comillas y abra el resultado. El lector la numera «Orden 30 de 415»: es la misma fila, contada en la edición del explorador. [Abrir el explorador ↗]
+Busque la frase entre comillas y abra el resultado. El lector la numera «Orden 30 de 415»: es la misma fila, contada en el explorador. [Abrir el explorador ↗]
 
 <!-- metodo.01.pruebelo.codigo -->
 ```python
@@ -6382,28 +6584,139 @@ GLM-OCR recuperó 29 al reintentarlas. Las 124 restantes se leyeron con Tesserac
 
 Esas páginas de Tesseract están en 106 sesiones. Ninguna pasó después por una corrección automática.
 
-<!-- metodo.03.texto.2 -->
-Las erratas de lectura están en el texto y también en las fórmulas de orador: «El Sr. PERSIDENTE:», «El Sr. VICFPRESIDENTE».
-
-Los metadatos de sesión del proyecto declaran dos incidencias. Las dos se ven en el corpus:
-
-- La sesión 9, del 27 de julio de 1931, acaba en un bucle: repite «Sánchez Guerra, Ossorio y Gallardo» seis veces, dentro de la fila 976 de la V2.
-- La sesión 48, del 1 de octubre de 1931, perdió el final. Sus cinco últimas filas repiten «Pido la palabra», y la última se corta en «El Sr. Ministro de».
-
-Esas filas son las 5788–5792 de la V2 y las 6460–6464 de la v3. La resegmentación de la v3 no arregla ese final.
-
-> [nota de diseño] Orden de la plantilla: `metodo.03.texto` · ↺ `comun.fija.ocr` (destacada) · `metodo.03.texto.2`
-> · cita tipográfica con el texto literal de las cinco filas finales (de `citas.json`, leído letra a letra en V2 y
-> v3) · pie ↺ 8 (`comun.fija.sesion48`).
-
 <!-- ↺ comun.fija.ocr -->
 El texto sale del reconocimiento óptico y no está corregido a mano.
+
+<!-- metodo.03.texto.2 -->
+Las erratas de lectura están en el texto y también en las fórmulas de orador, que son las que dicen quién habla. Corrija usted unas cuantas.
+
+> [nota de diseño] Orden de la plantilla (24-09-2026): `metodo.03.texto` · ↺ `comun.fija.ocr` · `metodo.03.texto.2` ·
+> el juego «Corrija al Diario» (`metodo.03.juego.*`, `components/metodo/Erratas.astro`; las lecturas y sus filas salen
+> de `src/data/erratas.json`, exportador/modulos/erratas.py) · `metodo.03.incidencias` · ↺ 8 (`comun.fija.sesion48`) ·
+> las cinco filas finales de la sesión 48, literales. Sin JS, el juego es una tabla con las lecturas y sus filas.
+
+<!-- metodo.03.juego.titulo -->
+Corrija al Diario
+
+<!-- metodo.03.juego.entrada -->
+Así leyó la máquina la fórmula de un orador. Corríjala: cada lectura está, tal cual, en la base.
+
+<!-- metodo.03.juego.leyo -->
+Leyó la máquina
+
+<!-- metodo.03.juego.debe -->
+Debe decir
+
+<!-- metodo.03.juego.campo -->
+Su corrección
+
+<!-- metodo.03.juego.corregir -->
+[Corregir]
+
+<!-- metodo.03.juego.dejar -->
+[Dejarla]
+
+<!-- metodo.03.juego.rendirse -->
+[Me rindo]
+
+<!-- metodo.03.juego.cuenta -->
+Fórmula ⟦i⟧ de ⟦formulas⟧
+
+<!-- metodo.03.juego.filas -->
+Así está en ⟦n⟧ filas de la base.
+
+<!-- metodo.03.juego.filas.una -->
+Así está en una fila de la base.
+
+<!-- metodo.03.juego.casi -->
+Todavía no. Compare letra a letra desde «⟦desde⟧».
+
+<!-- metodo.03.juego.bien -->
+Corregida.
+
+<!-- metodo.03.juego.r.punto -->
+Un punto. Fácil. Pero el Diario tiene más páginas.
+
+<!-- metodo.03.juego.r.coma -->
+Una coma donde iba un punto. La máquina tiene sus manías, y las repite.
+
+<!-- metodo.03.juego.r.ei -->
+En el papel gastado, la ele y la i se parecen demasiado.
+
+<!-- metodo.03.juego.r.persidente -->
+Dos letras que cambian de sitio: le pasa a cualquiera, también a la máquina.
+
+<!-- metodo.03.juego.r.siete -->
+Un siete en mitad de la palabra. Nadie sabe de dónde salió.
+
+<!-- metodo.03.juego.r.articulo -->
+Una sola letra, y el presidente cambia de artículo.
+
+<!-- metodo.03.juego.r.residente -->
+Sin la pe, el presidente se queda en residente.
+
+<!-- metodo.03.juego.r.campoamor -->
+Los nombres tampoco se salvan: Campoamor, con o.
+
+<!-- metodo.03.juego.r.gil_robles -->
+De «GIL», la máquina solo reconoció la ele.
+
+<!-- metodo.03.juego.trampa -->
+¿Y esta? ¿La corrige o la deja como está?
+
+<!-- metodo.03.juego.trampa.cayo -->
+¡Alto! No era una errata: los extractos de 1938 y 1939 y las sesiones de México escriben «señor» con todas sus letras. Acaba de corregir al Diario.
+
+<!-- metodo.03.juego.trampa.bien -->
+Bien visto: no era una errata. Los extractos de 1938 y 1939 y las sesiones de México escriben «señor» con todas sus letras.
+
+<!-- metodo.03.juego.resumen.hechas -->
+Ha corregido ⟦n⟧ fórmulas en ⟦tiempo⟧.
+
+<!-- metodo.03.juego.resumen.una -->
+Ha corregido una fórmula en ⟦tiempo⟧.
+
+<!-- metodo.03.juego.resumen.cero -->
+No ha corregido ninguna. No se lo reprochamos.
+
+<!-- metodo.03.juego.resumen.dimension -->
+Solo la fórmula de la Presidencia sale escrita de ⟦formas⟧ maneras en la base, y hay ⟦formulas⟧ fórmulas de orador distintas.
+
+<!-- metodo.03.juego.resumen.ritmo -->
+A su ritmo, revisarlas todas le llevaría ⟦total⟧.
+
+<!-- metodo.03.juego.leccion -->
+Por eso el texto no se corrige a mano. El etiquetado admite las variantes de lectura, y la vinculación de cada fórmula con su diputado se revisó fila a fila.
+
+<!-- metodo.03.juego.otra -->
+[Volver a empezar]
+
+<!-- metodo.03.juego.tabla -->
+Algunas lecturas de la máquina, tal como están en la base
+
+<!-- metodo.03.juego.tabla.col.leyo -->
+Leyó la máquina
+
+<!-- metodo.03.juego.tabla.col.debe -->
+Debe decir
+
+<!-- metodo.03.juego.tabla.col.filas -->
+Filas
+
+<!-- metodo.03.juego.tabla.no_errata -->
+no es errata
+
+<!-- metodo.03.incidencias -->
+Los metadatos de sesión del proyecto declaran dos incidencias. Las dos se ven en el corpus:
+
+- La sesión 9, del 27 de julio de 1931, acaba en un bucle: repite «Sánchez Guerra, Ossorio y Gallardo» seis veces.
+- La sesión 48, del 1 de octubre de 1931, perdió el final. Sus cinco últimas filas repiten «Pido la palabra», y la última se corta en «El Sr. Ministro de».
 
 <!-- ↺ comun.fija.sesion48 -->
 La sesión 48 tal como está en el corpus: el final del acta digitalizada se perdió en el reconocimiento óptico.
 
 <!-- metodo.03.cola.rotulo -->
-Las cinco últimas filas de la sesión 48, tal como están en las dos ediciones
+Las cinco últimas filas de la sesión 48, tal como están en la base
 
 <!-- metodo.03.salvedad -->
 Estas cifras salen de los archivos de trabajo del proyecto, que no están depositados. Las incidencias constan en sus metadatos de sesión.
@@ -6454,9 +6767,6 @@ Las demás son de secretarios, de la Presidencia sin nombre o de fórmulas que l
 
 Por eso los presidentes de la Cámara encabezan cualquier recuento de palabras sin filtrar.
 
-<!-- metodo.04.enlace -->
-[Ver quién habla más según la edición]
-
 > [nota de diseño] `metodo.04.enlace` → `datos/versiones/#quien-habla` (F07). La cifra de
 > vicepresidentes cuenta sesiones por (fecha, número); son 584 fechas (nota 2 de la cabecera).
 
@@ -6485,7 +6795,7 @@ d[d.rep_id.isna()].speaker.value_counts()   # las filas sin diputado
 Una fila corta suele ser trámite; una fila larga puede no ser habla.
 
 <!-- metodo.05.texto -->
-El 66,53 % de las filas de la V2 tiene 50 palabras o menos. La mediana es de catorce palabras.
+El 66,53 % de las filas tiene 50 palabras o menos. La mediana es de catorce palabras.
 
 Más de la mitad de esas filas breves son de la Presidencia: el 58,17 %.
 
@@ -6495,9 +6805,7 @@ Longitud no es importancia. Una fila breve puede ser una votación o una interru
 
 **Lo que no es habla.** El Diario imprime también lo que nadie dijo en voz alta: listas de votación, dictámenes, ruegos por escrito, tablas y el relato de la sesión.
 
-La V2 deja ese material dentro de la fila anterior. La mayoría de las veces es la fila de quien presidía: el 67 %.
-
-La v3 lo separa en 12.654 filas de «Comentarios del Diario». Añade además al principio de cada sesión su sumario, que la V2 no traía.
+La base lo guarda en 12.654 filas propias, de «Comentarios del Diario». Cada sesión abre, además, con su sumario.
 
 En el explorador, la casilla «Solo lo que se habla» deja fuera sumarios y comentarios. Quedan 108.291 de las 121.700 intervenciones.
 
@@ -6505,9 +6813,6 @@ La separación sigue una auditoría del proyecto. Que una fila quede como habla 
 
 > [nota de diseño] Aquí va **F10/F11** (`fig.F10.*`). Las cifras de este apartado son de la V2 salvo las de la v3,
 > rotuladas en su frase; la página lleva `<NotaBases>`.
-
-<!-- metodo.05.salvedad -->
-Con la v3, la proporción de filas breves cambia: el 69,02 % tiene 50 palabras o menos. Cada figura dice qué edición cuenta.
 
 <!-- metodo.05.pruebelo.consulta -->
 "casas viejas"
@@ -6517,74 +6822,20 @@ Busque la frase dos veces, con la casilla «Solo lo que se habla» y sin ella. L
 
 <!-- metodo.05.pruebelo.codigo -->
 ```python
-(d.nwords <= 50).mean()   # la parte de filas breves en la V2
+(d.nwords <= 50).mean()   # la parte de filas breves
 ```
 
 ---
 
-## 06 · ¿Por qué hay dos ediciones?
+## 06 · ¿Cómo se fechó cada sesión?
 
 <!-- metodo.06.titulo -->
-¿Por qué hay dos ediciones?
+¿Cómo se fechó cada sesión?
 
 <!-- metodo.06.entrada -->
-La V2 depositada tiene dos defectos de segmentación. La v3 del explorador los corrige sin cambiar una letra del texto.
+Cada fecha se comprobó cruzando cuatro fuentes, una sesión tras otra.
 
 <!-- metodo.06.texto -->
-**Turnos enterrados.** Cuando el etiquetador no reconoció una fórmula, el turno siguiente quedó dentro de la fila anterior. La v3 rescata 735 turnos.
-
-La mayoría estaban dentro de una fila de la Presidencia: el 66 %.
-
-**Material impreso dentro de las filas.** Tablas, listas de votación y documentos iban en la fila de quien hablaba antes. La v3 los pasa a filas de comentarios del Diario.
-
-Las tres filas de la figura lo enseñan.
-
-- La fila más larga de la V2, la 55221, suma 25.371 palabras a nombre de Indalecio Prieto, el 12 de julio de 1933.
-- Su discurso son 3.733 palabras. El resto, 21.638, son tablas y «documentos complementarios» que el Diario imprime con él.
-- El discurso de Manuel Azaña sobre el Estatuto de Cataluña, el 27 de mayo de 1932, va en la V2 dentro de una fila de la Presidencia, la 25979.
-- La v3 le da fila propia, la 29042, con 17.142 palabras.
-- El discurso de Azaña del 20 de marzo de 1935 ya estaba bien en la V2: 14.131 palabras en una sola fila, igual en las dos ediciones.
-
-**El texto no cambia.** Cada pieza de la v3 es un tramo literal de una fila de la V2. Juntas, en orden y con las fórmulas que se separaron, reconstruyen las 107.551 filas.
-
-Las palabras de cada fila de la V2 se reparten entre sus piezas y suman lo mismo: 24.335.896. Lo que añade la v3 son los sumarios.
-
-La v3 no está depositada.
-
-<!-- metodo.06.enlace -->
-[Ver adónde va cada fila de la V2]
-
-> [nota de diseño] Aquí va **F12** (`fig.F12.*`). Orden de la plantilla: `metodo.06.texto` · F12 · ↺
-> `comun.fija.ids` · `metodo.06.enlace`, que va a `datos/versiones/#destino-filas` (F18).
-
-<!-- ↺ comun.fija.ids -->
-Los identificadores de fila cambian entre la edición depositada (V2) y la del explorador (v3); la sesión —fecha y número— es la misma en las dos.
-
-<!-- metodo.06.salvedad -->
-La correspondencia fila a fila entre las dos ediciones no está publicada. Las cifras de la v3 de este apartado se leyeron en ella, con su huella.
-
-<!-- metodo.06.pruebelo.consulta -->
-"es preciso reconocer sres diputados que en esta campaña"
-
-<!-- metodo.06.pruebelo.explorador -->
-Busque la frase y abra el resultado: es Azaña, el 27 de mayo de 1932, en fila propia. En la V2, ese texto va a nombre de la Presidencia. [Abrir el explorador ↗]
-
-<!-- metodo.06.pruebelo.codigo -->
-```python
-print(d.loc[d.id == 25979, "speech"].iloc[0][:400])   # Presidencia y, dentro, Azaña
-```
-
----
-
-## 07 · ¿Qué fechas se corrigieron?
-
-<!-- metodo.07.titulo -->
-¿Qué fechas se corrigieron?
-
-<!-- metodo.07.entrada -->
-La primera versión fechaba mal algunas sesiones. La V2 las corrigió después de auditar todas, una a una.
-
-<!-- metodo.07.texto -->
 La auditoría cruzó cuatro fuentes independientes para cada sesión:
 
 - las cabeceras corridas de cada página impresa;
@@ -6592,48 +6843,37 @@ La auditoría cruzó cuatro fuentes independientes para cada sesión:
 - las fechas que cita el propio texto;
 - la secuencia de números del Diario, con el día de la semana.
 
-Para corregir una fecha pidió dos indicios independientes, o una cabecera impresa sin ambigüedad.
+Para fijar una fecha pidió dos indicios independientes, o una cabecera impresa sin ambigüedad.
 
-Cambiaron siete sesiones. Suman 894 filas.
-
-Solo cambian las columnas `date` y `legislature`; el texto y las demás columnas quedan igual.
-
-Una sesión cambió también de legislatura. La sesión 77, que la V1 fechaba el 1 de junio de 1933, es del 4 de mayo de 1934.
-
-La V1 fechaba la sesión 321 el 14 de julio de 1931: tomó la fecha de la portada del Tomo XX, que dice cuándo empezaron esas Cortes. Es del 31 de marzo de 1933.
-
-En varias, el error venía de la cabecera de la sesión: una errata de imprenta o una cifra dañada que la lectura óptica leyó mal.
+El papel también se equivoca. La portada de un tomo puede dar la fecha en que empezaron esas Cortes, no la de la sesión. Y en algunas cabeceras hay una errata de imprenta o una cifra dañada que la lectura óptica leyó mal.
 
 La auditoría tiene un límite: no detecta un error de fecha coherente con la secuencia.
 
-<!-- metodo.07.enlace -->
-[Ver las fechas corregidas]
-
-> [nota de diseño] `metodo.07.enlace` → `datos/versiones/#fechas` (F25). «Cuatro fuentes» es la estructura
+> [nota de diseño] `metodo.06.enlace` → `datos/versiones/#fechas` (F25). «Cuatro fuentes» es la estructura
 > del método de la auditoría (`AUDITORIA_FECHAS.md`, proyecto), no una cifra del corpus.
 
-<!-- metodo.07.salvedad -->
-El changelog depositado da los rangos de filas corregidas. La tabla de pruebas que cita, `erratas_fechas_V1.csv`, no está depositada.
+<!-- metodo.06.salvedad -->
+La tabla de pruebas de la auditoría no está depositada.
 
-<!-- metodo.07.pruebelo.explorador -->
+<!-- metodo.06.pruebelo.explorador -->
 Sin texto de búsqueda, elija la legislatura 1933-1935 y escriba 77 en «Nº de sesión». Todas sus intervenciones son del 4 de mayo de 1934. [Abrir el explorador ↗]
 
-<!-- metodo.07.pruebelo.codigo -->
+<!-- metodo.06.pruebelo.codigo -->
 ```python
 d[(d.legislature == "1933-1935") & (d.num_session == 77)].date.unique()
 ```
 
 ---
 
-## 08 · ¿Qué significan partido, familia e ideología?
+## 07 · ¿Qué significan partido, familia e ideología?
 
-<!-- metodo.08.titulo -->
+<!-- metodo.07.titulo -->
 ¿Qué significan partido, familia e ideología?
 
-<!-- metodo.08.entrada -->
+<!-- metodo.07.entrada -->
 Las tres columnas describen al diputado, no la fila. Vienen de la tabla de diputados del proyecto.
 
-<!-- metodo.08.texto -->
+<!-- metodo.07.texto -->
 **El partido** va por diputado y legislatura. Quien cambió de partido entre legislaturas cambia también en la base.
 
 **La familia** agrupa partidos. En el CSV tiene 33 valores distintos, con variantes de grafía como «Repubicanos» o «Republicanoses».
@@ -6656,112 +6896,158 @@ Quedan etiquetas pendientes de revisión por el autor:
 - la familia «Liberal», con 15.364 filas, que el explorador funde con «Liberales»;
 - la Lliga, que es CD en el CSV y D en el README.
 
-<!-- metodo.08.salvedad -->
+> [nota de diseño] Juego «¿Izquierda o derecha?» (petición del investigador, 24-09-2026): `components/metodo/IzqDer.astro`. Datos: `src/data/izqder.json` (exportador/modulos/izqder.py). Doce palabras; seis por partida. Sin JS, una tabla.
+
+<!-- metodo.07.juego.titulo -->
+¿Izquierda o derecha?
+
+<!-- metodo.07.juego.entrada -->
+Una palabra y siete bancos, de la extrema izquierda a la extrema derecha. ¿En cuál sonó más, por cada diez mil palabras?
+
+<!-- metodo.07.juego.reglas -->
+Tres puntos si acierta el banco; dos si se queda al lado; uno si se queda a dos.
+
+<!-- metodo.07.juego.cuenta -->
+Palabra ⟦i⟧ de ⟦n⟧ · Puntos: ⟦p⟧
+
+<!-- metodo.07.juego.pregunta -->
+¿Dónde sonó más «⟦palabra⟧»?
+
+<!-- metodo.07.juego.exacto -->
+¡En ese banco!
+
+<!-- metodo.07.juego.cerca -->
+A ⟦n⟧ bancos.
+
+<!-- metodo.07.juego.cerca.uno -->
+Al lado: a un banco.
+
+<!-- metodo.07.juego.mas -->
+Donde más: ⟦ideologia⟧, ⟦tasa⟧ por cada diez mil palabras.
+
+<!-- metodo.07.juego.leyenda -->
+Apariciones por cada diez mil palabras, en las filas de cada ideología, sin la Presidencia.
+
+<!-- metodo.07.juego.siguiente -->
+[Siguiente]
+
+<!-- metodo.07.juego.ver -->
+[Ver el resultado]
+
+<!-- metodo.07.juego.resumen -->
+Ha sumado ⟦p⟧ de ⟦max⟧ puntos.
+
+<!-- metodo.07.juego.nivel.0 -->
+Vota en blanco.
+
+<!-- metodo.07.juego.nivel.1 -->
+Se ha sentado en el escaño equivocado.
+
+<!-- metodo.07.juego.nivel.2 -->
+Conoce los bancos de la Cámara.
+
+<!-- metodo.07.juego.nivel.3 -->
+Sabe de qué pie cojea cada bancada.
+
+<!-- metodo.07.juego.otra -->
+[Otra partida]
+
+<!-- metodo.07.juego.salvedad -->
+La ideología es la del partido de cada orador, no la suya. La extrema izquierda habla poco en la base: con pocas apariciones, su tasa se dispara. Y que una palabra suene más en un banco no dice en qué tono ni a favor de qué.
+
+<!-- metodo.07.juego.tabla -->
+Las palabras del juego: apariciones por cada diez mil palabras, por ideología
+
+<!-- metodo.07.juego.tabla.col.palabra -->
+Palabra
+<!-- metodo.07.salvedad -->
 Una categoría gruesa sirve para comparar bloques, no para clasificar a una persona.
 
-<!-- metodo.08.pruebelo.explorador -->
+<!-- metodo.07.pruebelo.explorador -->
 Elija el partido CEDA en los filtros y despliegue la faceta Ideología. Verá más de un código. [Abrir el explorador ↗]
 
-<!-- metodo.08.pruebelo.codigo -->
+<!-- metodo.07.pruebelo.codigo -->
 ```python
 d[d.party == "CEDA"].ideology.value_counts()
 ```
 
 ---
 
-## 09 · ¿Qué no afirma el corpus, y cómo comparar?
+## 08 · ¿Qué no afirma el corpus, y cómo comparar?
 
-<!-- metodo.09.titulo -->
+<!-- metodo.08.titulo -->
 ¿Qué no afirma el corpus, y cómo comparar?
 
-<!-- metodo.09.entrada -->
+<!-- metodo.08.entrada -->
 La base dice quién habló, cuándo y cuánto. No dice de qué, en qué tono, desde qué posición ni qué votó.
 
 > [nota de diseño] Tras el texto, las cuatro cajas vacías de Inicio, en pequeño, con las mismas claves:
 > `inicio.falta.tema` · `.tono` · `.posicion` · `.voto`. Aquí no se redactan.
 
-<!-- metodo.09.texto -->
-**Las legislaturas son desiguales.** La primera reúne el 53,28 % de las palabras de la V2.
+<!-- metodo.08.texto -->
+**Las legislaturas son desiguales.** La primera reúne el 53,28 % de las palabras.
 
 Compare tasas, no volúmenes: palabras por sesión, o la parte de cada grupo dentro de su legislatura.
 
-**El voto no es una columna.** Las votaciones nominales van en el texto, como listas de nombres.
-
-En la V2, la lista del 161 a 121 del 1 de octubre de 1931 va dentro de una fila de la Presidencia, la 5453.
-
-Esa fila marca 233 palabras en `nwords`. Los nombres van en líneas separadas, y `nwords` solo corta por espacios (Datos, «Cinco maneras de contar “palabra”»).
+**El voto no es una columna.** Las votaciones nominales van en el texto, como listas de nombres, en filas de comentarios del Diario.
 
 **El tono no se mide.** Las acotaciones del taquígrafo, «(Rumores.)», «(Aplausos.)», están en el texto. Nadie las ha convertido en una variable de la base.
 
-> [nota de diseño] Tras `metodo.09.texto` va ↺ `comun.fija.contar`, destacada. «Cinco maneras…» enlaza a
+> [nota de diseño] Tras `metodo.08.texto` va ↺ `comun.fija.contar`, destacada. «Cinco maneras…» enlaza a
 > `datos/#palabra`.
 
 <!-- ↺ comun.fija.contar -->
 Contar una palabra no dice quién la defiende ni en qué tono.
 
-<!-- metodo.09.salvedad -->
+<!-- metodo.08.salvedad -->
 Que el Diario lo recoja no lo hace cierto: la base transcribe lo impreso, no lo verifica.
 
-<!-- metodo.09.pruebelo.consulta -->
+<!-- metodo.08.pruebelo.consulta -->
 "total 161"
 
-<!-- metodo.09.pruebelo.explorador -->
-Busque la frase con la casilla «Solo lo que se habla» y sin ella. Con la casilla marcada, la lista desaparece: la v3 la guarda como comentario del Diario. [Abrir el explorador ↗]
+<!-- metodo.08.pruebelo.explorador -->
+Busque la frase con la casilla «Solo lo que se habla» y sin ella. Con la casilla marcada, la lista desaparece: es un comentario del Diario. [Abrir el explorador ↗]
 
-<!-- metodo.09.pruebelo.codigo -->
+<!-- metodo.08.pruebelo.codigo -->
 ```python
 print(d.loc[d.id == 5453, "speech"].iloc[0])   # la lista, dentro de la Presidencia
 ```
 
 ---
 
-## 10 · ¿Dónde está la documentación completa?
+## 09 · ¿Dónde está la documentación completa?
 
-<!-- metodo.10.titulo -->
+<!-- metodo.09.titulo -->
 ¿Dónde está la documentación completa?
 
-<!-- metodo.10.entrada -->
+<!-- metodo.09.entrada -->
 Lo depositado, lo que no lo está y lo que publica este sitio.
 
-<!-- metodo.10.texto -->
-**Depositado en Harvard Dataverse**, con la V2.0: el CSV, los changelogs en español y en inglés, y el README.
+<!-- metodo.09.texto -->
+**Depositado en Harvard Dataverse:** el CSV, el README y los registros de cambios, en español y en inglés.
 
-<!-- metodo.10.texto.2 -->
-Su tabla de cobertura es la de la V1. Llama Jaro-Winkler al parecido entre apellidos, que el código calcula con `difflib`.
+<!-- metodo.09.texto.2 -->
+**Sin depositar.** Los metadatos de sesión (Diario, páginas, presidente titular y Gobierno) y la tabla de diputados con la que se vinculó cada fórmula, que el README ofrece a petición.
 
-Habla de una instrucción estructurada al modelo de lectura, que el código no envía: GLM-OCR usa su propia plantilla.
-
-Y llama exilio a las sesiones de Valencia y Barcelona. En esta base, el exilio son las sesiones de México, en 1945.
-
-**Sin depositar.** Estas piezas del proyecto no están en Dataverse:
-
-- la v3 que sirve el explorador;
-- la correspondencia fila a fila entre la V2 y la v3;
-- los metadatos de sesión: Diario, páginas, presidente titular y Gobierno;
-- la tabla de diputados con la que se vinculó cada fórmula, que el README ofrece a petición.
-
-**En este sitio:** el exportador que calcula cada cifra y un archivo, `procedencia.csv`, con la base, la fórmula y la fecha de todas.
+**En este sitio:** el exportador que calcula cada cifra y un archivo, `procedencia.csv`, con la fórmula y la fecha de todas.
 
 Lo que no tiene dirección pública no se enlaza.
 
-<!-- metodo.10.enlace -->
+<!-- metodo.09.enlace -->
 [De dónde sale cada cifra]
 
-> [nota de diseño] Orden: `metodo.10.texto` · ↺ `comun.fija.readme` · `metodo.10.texto.2` · `metodo.10.enlace` →
+> [nota de diseño] Orden: `metodo.09.texto` · ↺ `comun.fija.readme` · `metodo.09.texto.2` · `metodo.09.enlace` →
 > `datos/procedencia.csv` (el mismo destino que el pie). Sin URL pública, no se pinta nada más.
-
-<!-- ↺ comun.fija.readme -->
-El README depositado describe la primera versión; las diferencias, aquí.
 
 <!-- ↺ comun.fija.diario -->
 Edición derivada para investigación: ante cualquier discrepancia, vale el Diario de Sesiones.
 
 > [nota de diseño] `comun.fija.diario` es la salvedad al margen del apartado 10.
 
-<!-- metodo.10.pruebelo.explorador -->
-Abra «Sobre este corpus», en el panel lateral del explorador. Dice qué edición sirve: la v3, sin publicar. [Abrir el explorador ↗]
+<!-- metodo.09.pruebelo.explorador -->
+Abra «Sobre este corpus», en el panel lateral del explorador: da la cita de la base. [Abrir el explorador ↗]
 
-<!-- metodo.10.pruebelo.codigo -->
+<!-- metodo.09.pruebelo.codigo -->
 ```python
 d.shape   # compárelo con el README: filas y columnas
 ```
@@ -6781,44 +7067,8 @@ Anatomía de una fila
 <!-- fig.F20.que_mide -->
 Dos filas seguidas de la sesión del 1 de octubre de 1931, con sus 14 columnas, tal como están en el CSV depositado.
 
-<!-- fig.F20.conmutador.csv -->
-Como en el CSV
-
-<!-- fig.F20.conmutador.explorador -->
-Como en el explorador
-
-<!-- fig.F20.conmutador.leyenda -->
-Ver la fila
-
 <!-- fig.F20.nota.columna -->
 ⟦columna⟧ · ⟦definicion⟧
-
-<!-- fig.F20.explorador.texto -->
-La edición del explorador guarda las mismas filas con otro número y otro orden. Añade la fórmula y el nombre sin tildes ni mayúsculas, para buscar, y conserva la familia y la ideología tal como venían.
-
-<!-- fig.F20.explorador.ordenes -->
-En la V2, las órdenes son 25 y 26, porque empiezan en cero. En la v3 son 28 y 29: la sesión abre con su sumario y la v3 rescata turnos anteriores.
-
-<!-- fig.F20.explorador.pantalla -->
-La pantalla del explorador cuenta desde uno: «Orden 30».
-
-<!-- fig.F20.campo.ord -->
-Posición en la sesión, en la v3. Cuenta desde cero; la pantalla, desde uno.
-
-<!-- fig.F20.campo.speaker_fold -->
-La fórmula impresa, sin tildes ni mayúsculas, para buscar.
-
-<!-- fig.F20.campo.rep_name_fold -->
-El nombre del diputado, sin tildes ni mayúsculas, para buscar.
-
-<!-- fig.F20.campo.party_family_raw -->
-La familia tal como viene en el CSV, antes de normalizar la grafía.
-
-<!-- fig.F20.campo.ideology_raw -->
-La ideología tal como viene en el CSV, con sus espacios.
-
-<!-- fig.F20.campo.year -->
-El año de la sesión, para filtrar.
 
 <!-- fig.F20.enlace -->
 [Ver qué trae cada columna]
@@ -6827,7 +7077,7 @@ El año de la sesión, para filtrar.
 El texto sigue; aquí va solo su comienzo.
 
 <!-- fig.F20.salvedad -->
-El número de fila cambia entre ediciones; la sesión, no. La ideología de Campoamor es C porque es la de su partido, el radical.
+La ideología de Campoamor es C porque es la de su partido, el radical.
 
 > [nota de diseño] F20 es una tabla ARIA clave–valor, dos columnas de datos (5423 · 5424). La definición de cada
 > columna **no se redacta aquí**: se reutiliza `datos.columnas.<columna>.definicion` (F32), para que las dos figuras
@@ -6847,9 +7097,6 @@ Lo impreso
 
 <!-- fig.F20.grupo.diputado -->
 El diputado, si se identificó
-
-<!-- fig.F20.solo_v3 -->
-solo en la v3
 
 <!-- fig.F20.tabla.col.columna -->
 Columna
@@ -6876,7 +7123,7 @@ Los números del Diario
 755 números, uno por sesión
 
 <!-- fig.F19.paso1.detalle -->
-Escaneados en PDF desde el archivo histórico del Congreso. Son las sesiones de las tres legislaturas y las de México, en 1945. Base: V2.
+Escaneados en PDF desde el archivo histórico del Congreso. Son las sesiones de las tres legislaturas y las de México, en 1945.
 
 <!-- fig.F19.paso2.titulo -->
 Las páginas, leídas
@@ -6933,10 +7180,10 @@ Trámite frente a discurso
 ¿Cuántas filas son breves, y cuánto texto se llevan las largas?
 
 <!-- fig.F10.que_mide -->
-Cuántas filas de la V2 caen en cada tramo de longitud, o cuántas palabras suman, separando las de la Presidencia.
+Cuántas filas caen en cada tramo de longitud, o cuántas palabras suman, separando las de la Presidencia.
 
 <!-- fig.F10.denominador -->
-Las 107.551 filas de la V2, o sus 24.335.896 palabras contadas con `nwords`.
+Las 107.551 filas, o sus 24.335.896 palabras contadas con `nwords`.
 
 <!-- fig.F10.conmutador.leyenda -->
 Contar
@@ -7016,14 +7263,11 @@ Palabras de la Presidencia
 <!-- fig.F10.tabla.col.pal_resto -->
 Palabras del resto
 
-<!-- fig.F10.v3 -->
-En la v3, que separa sumarios y comentarios, el 69,02 % de las filas tiene 50 palabras o menos.
-
 <!-- fig.F10.salvedad -->
 Se mide la longitud; «de trámite» es una interpretación. La Presidencia se reconoce por su fórmula impresa, con el analizador del explorador.
 
 <!-- fig.F10.alt -->
-Histograma de la longitud de las filas de la V2. La mayoría son breves y de la Presidencia; al contar palabras, la masa pasa a las filas largas.
+Histograma de la longitud de las filas. La mayoría son breves y de la Presidencia; al contar palabras, la masa pasa a las filas largas.
 
 > [nota de diseño] Diez tramos (`longitud.json`, del exportador): 0–5 · 6–10 · 11–20 · 21–50 · 51–100 · 101–300 ·
 > 301–1.000 · 1.001–3.000 · 3.001–10.000 · más de 10.000; sus rótulos los escribe el componente con `fmt.n`. La
@@ -7033,72 +7277,6 @@ Histograma de la longitud de las filas de la V2. La mayoría son breves y de la 
 > Pestañas: Gráfico · Tabla · Datos; Datos lleva ↺ 12.
 
 ### F12 · La fila más larga no es un discurso (apartado 06)
-
-<!-- fig.F12.titulo -->
-La fila más larga no es un discurso
-
-<!-- fig.F12.pregunta -->
-¿Por qué hacía falta la v3?
-
-<!-- fig.F12.que_mide -->
-Tres filas de la V2, partidas en las piezas en que las divide la v3, con las palabras de cada pieza.
-
-<!-- fig.F12.denominador -->
-Las palabras de cada fila de la V2, repartidas entre sus piezas de la v3.
-
-<!-- fig.F12.fila.prieto -->
-Prieto, 12 de julio de 1933 · fila 55221 de la V2
-
-<!-- fig.F12.fila.estatuto -->
-Azaña, 27 de mayo de 1932 · fila 25979 de la V2
-
-<!-- fig.F12.fila.azana1935 -->
-Azaña, 20 de marzo de 1935 · fila 85330 de la V2
-
-<!-- fig.F12.leyenda.habla -->
-Habla del orador
-
-<!-- fig.F12.leyenda.documento -->
-Comentario del Diario: tablas, documentos, listas
-
-<!-- fig.F12.leyenda.turno -->
-Turno rescatado
-
-<!-- fig.F12.leyenda.presidencia -->
-Presidencia
-
-<!-- fig.F12.nota -->
-⟦tipo⟧ · fila ⟦id_v3⟧ de la v3 · ⟦n⟧ palabras · «⟦comienzo⟧»
-
-<!-- fig.F12.tabla.col.v2 -->
-Fila de la V2
-
-<!-- fig.F12.tabla.col.v3 -->
-Pieza en la v3
-
-<!-- fig.F12.tabla.col.tipo -->
-Qué es
-
-<!-- fig.F12.tabla.col.orador -->
-A nombre de
-
-<!-- fig.F12.tabla.col.palabras -->
-Palabras
-
-<!-- fig.F12.anota.prieto -->
-De las 25.371 palabras de la fila de Prieto, 21.638 son tablas y documentos que el Diario imprime con su discurso.
-
-<!-- fig.F12.anota.estatuto -->
-El discurso de Azaña iba a nombre de la Presidencia.
-
-<!-- fig.F12.anota.azana1935 -->
-Un discurso largo de verdad: la misma fila en las dos ediciones.
-
-<!-- fig.F12.salvedad -->
-Las palabras de la v3 se reparten en proporción al texto de cada pieza. La correspondencia fila a fila no está publicada.
-
-<!-- fig.F12.alt -->
-Tres barras, una por fila de la V2. La de Prieto se parte en discurso y documentos; la del Estatuto, en Presidencia y el discurso de Azaña; la de 1935 queda entera.
 
 > [nota de diseño] Datos de `ediciones.json › F12` (el exportador lee `mapa_v2_v3.json`, local, y la v3): V2 55221 →
 > v3 61929 habla · 61930 comentario · 61931 habla · 61932 comentario; V2 25979 → v3 29041 Presidencia · 29042
@@ -7144,6 +7322,75 @@ Tres barras, una por fila de la V2. La de Prieto se parte en discurso y document
 
 ---
 
+## 2 bis. ¿Quién lo dijo? (juego)
+
+> [nota de diseño] Juego de la petición del investigador (24-09-2026): `components/sesiones/QuienLoDijo.astro`. Reutiliza las frases ya comprobadas de «El aplausómetro» y «¿Esta o esta?» (solo las de los oradores más conocidos). Ocho citas por partida. Sin JS, una tabla.
+
+<!-- sesiones.quien.titulo -->
+¿Quién lo dijo?
+
+<!-- sesiones.quien.entrada -->
+Cada cita sale, letra a letra, de una fila de la base. Elija a su autor entre cuatro diputados.
+
+<!-- sesiones.quien.juego.pregunta -->
+¿De quién es?
+
+<!-- sesiones.quien.juego.cuenta -->
+Cita ⟦i⟧ de ⟦n⟧ · Aciertos: ⟦a⟧
+
+<!-- sesiones.quien.juego.bien -->
+¡Exacto!
+
+<!-- sesiones.quien.juego.mal -->
+No: es de ⟦orador⟧.
+
+<!-- sesiones.quien.juego.quien -->
+⟦orador⟧ · ⟦partido⟧ · ⟦fecha⟧
+
+<!-- sesiones.quien.juego.fila -->
+Fila ⟦id⟧
+
+<!-- sesiones.quien.juego.siguiente -->
+[Siguiente]
+
+<!-- sesiones.quien.juego.ver -->
+[Ver el resultado]
+
+<!-- sesiones.quien.juego.resumen -->
+Ha acertado ⟦n⟧ de ⟦total⟧.
+
+<!-- sesiones.quien.juego.puesto -->
+Su puesto en la Cámara:
+
+<!-- sesiones.quien.juego.nivel.0 -->
+público de la tribuna, que aplaude cuando no toca.
+
+<!-- sesiones.quien.juego.nivel.1 -->
+ujier: conoce las caras, no siempre las voces.
+
+<!-- sesiones.quien.juego.nivel.2 -->
+cronista de la tribuna de prensa.
+
+<!-- sesiones.quien.juego.nivel.3 -->
+taquígrafo: lo ha oído todo.
+
+<!-- sesiones.quien.juego.nivel.4 -->
+presidente de la Cámara: sabe quién habla sin mirar.
+
+<!-- sesiones.quien.juego.otra -->
+[Otra ronda]
+
+<!-- sesiones.quien.juego.tabla -->
+Las citas del juego y su autor
+
+<!-- sesiones.quien.juego.tabla.col.cita -->
+Cita
+
+<!-- sesiones.quien.juego.tabla.col.quien -->
+Quién y cuándo
+
+---
+
 ## 1. Sesiones y votaciones · índice (`/es/cortes/sesiones/`)
 
 > [nota de diseño] Unas 700 palabras de copy en `<main>`, con el registro de puertas (tope de la plantilla D: 500–700;
@@ -7184,7 +7431,7 @@ Lo que se votó en voz alta
 En una votación nominal, el Diario imprime dos listas, «Señores que dijeron sí» y «Señores que dijeron no», cada una con su total.
 
 <!-- sesiones.votos.cuantas -->
-Hay listas así en al menos 405 de las 755 sesiones de la edición depositada.
+Hay listas así en al menos 405 de las 755 sesiones de la base.
 
 <!-- sesiones.votos.seleccion -->
 Aquí van seis, en cinco sesiones, escogidas porque cierran debates que este sitio cuenta.
@@ -7228,9 +7475,6 @@ El artículo del Reglamento que se lee en la sesión la trata como destitución 
 <!-- sesiones.votos.destitucion.no -->
 Votan no cinco diputados, y la lista los nombra: Becerra, Portela, Benítez de Lugo, Canals y Rosado.
 
-<!-- sesiones.votos.destitucion.pie -->
-Proposición: V2 102304 · v3 115618. Reglamento: V2 102309 · v3 115623. Lista: V2 102358 · v3 115675.
-
 <!-- sesiones.votos.mas -->
 Las listas completas llegarán a esta misma figura en la edición 0.2, con un punto por nombre impreso.
 
@@ -7263,42 +7507,42 @@ Que estén no valida su contenido.
 <!-- sesiones.lista.sufragio-1931.fecha --> 1-X-1931
 <!-- sesiones.lista.sufragio-1931.titulo --> El voto de las mujeres
 <!-- sesiones.lista.sufragio-1931.linea --> Kent pide aplazarlo; Campoamor, que se reconozca ya. La votación nominal lo aprueba.
-<!-- sesiones.lista.sufragio-1931.filas --> 395 filas (V2)
+<!-- sesiones.lista.sufragio-1931.filas --> 395 filas
 
 <!-- sesiones.lista.cuestion-religiosa-1931.fecha --> 13-X-1931
 <!-- sesiones.lista.cuestion-religiosa-1931.titulo --> «España ha dejado de ser católica»
 <!-- sesiones.lista.cuestion-religiosa-1931.linea --> Azaña habla del artículo religioso. La sesión acaba a la mañana siguiente.
-<!-- sesiones.lista.cuestion-religiosa-1931.filas --> 378 filas (V2)
+<!-- sesiones.lista.cuestion-religiosa-1931.filas --> 378 filas
 
 <!-- sesiones.lista.estatuto-1932.fecha --> 27-V-1932
-<!-- sesiones.lista.estatuto-1932.titulo --> El discurso de Azaña, a nombre de otro
-<!-- sesiones.lista.estatuto-1932.linea --> Azaña defiende el Estatuto de Cataluña. En la V2, su discurso va dentro de una fila de la Presidencia.
-<!-- sesiones.lista.estatuto-1932.filas --> 44 filas (V2)
+<!-- sesiones.lista.estatuto-1932.titulo --> El Estatuto de Cataluña
+<!-- sesiones.lista.estatuto-1932.linea --> Azaña lo defiende en la intervención de habla más larga del corpus.
+<!-- sesiones.lista.estatuto-1932.filas --> 44 filas
 
 <!-- sesiones.lista.casas-viejas-1933.fecha --> 2-II-1933
 <!-- sesiones.lista.casas-viejas-1933.titulo --> Casas Viejas
 <!-- sesiones.lista.casas-viejas-1933.linea --> Azaña responde en la Cámara por los sucesos. Las minorías protestan.
-<!-- sesiones.lista.casas-viejas-1933.filas --> 155 filas (V2)
+<!-- sesiones.lista.casas-viejas-1933.filas --> 155 filas
 
 <!-- sesiones.lista.pistola-1934.fecha --> 4-VII-1934
 <!-- sesiones.lista.pistola-1934.titulo --> La pistola de Prieto
 <!-- sesiones.lista.pistola-1934.linea --> Un incidente acaba en golpes, y Prieto admite que sacó su pistola. Es la última sesión antes del verano.
-<!-- sesiones.lista.pistola-1934.filas --> 255 filas (V2)
+<!-- sesiones.lista.pistola-1934.filas --> 255 filas
 
 <!-- sesiones.lista.antesala-1936.fecha --> 16-VI y 1-VII-1936
 <!-- sesiones.lista.antesala-1936.titulo --> La antesala
 <!-- sesiones.lista.antesala-1936.linea --> Dos debates sobre el orden público, semanas antes de la guerra. Hay palabras que no constan en el Diario.
-<!-- sesiones.lista.antesala-1936.filas --> 159 y 125 filas (V2)
+<!-- sesiones.lista.antesala-1936.filas --> 159 y 125 filas
 
 <!-- sesiones.lista.figueres-1939.fecha --> 1-II-1939
 <!-- sesiones.lista.figueres-1939.titulo --> Figueres
 <!-- sesiones.lista.figueres-1939.linea --> La última sesión de las Cortes en España, en el castillo de Figueras. Solo queda el extracto oficial.
-<!-- sesiones.lista.figueres-1939.filas --> 16 filas (V2)
+<!-- sesiones.lista.figueres-1939.filas --> 16 filas
 
 <!-- sesiones.lista.mexico-1945.fecha --> 17-VIII y 7–9-XI-1945
 <!-- sesiones.lista.mexico-1945.titulo --> México
 <!-- sesiones.lista.mexico-1945.linea --> En cuatro sesiones, Martínez Barrio promete como Presidente interino de la República y Giral presenta su Gobierno.
-<!-- sesiones.lista.mexico-1945.filas --> 183 filas (V2)
+<!-- sesiones.lista.mexico-1945.filas --> 183 filas
 
 > [nota de diseño] Las fechas del registro son de sesión y van tecleadas, como las de ParlaIbero; los números de fila
 > salen de marcadores. Los títulos van sin corchetes: toda la fila es el enlace (`RegistroPuertas`).
@@ -7321,10 +7565,7 @@ Abra Filtros › Fecha y sesión y ponga la misma fecha en Desde y en Hasta. La 
 Algunos días hubo dos sesiones; pasa en tres fechas. Para separarlas, escriba además el número en Nº de sesión.
 
 <!-- sesiones.otra.habla -->
-Si marca «Solo lo que se habla», desaparecen el sumario y los comentarios del Diario, que en esa edición van en filas propias.
-
-<!-- ↺ comun.fija.ids -->
-Los identificadores de fila cambian entre la edición depositada (V2) y la del explorador (v3); la sesión —fecha y número— es la misma en las dos.
+Si marca «Solo lo que se habla», desaparecen el sumario y los comentarios del Diario, que van en filas propias.
 
 <!-- sesiones.otra.citar -->
 Para citar una sesión, basta con su fecha y su número. Para citar un pasaje, añada el Diario, sus páginas y la fila.
@@ -7347,14 +7588,8 @@ Cada sesión está en la base tal como salió del reconocimiento óptico. Tres c
 <!-- sesiones.entera.s48 -->
 El acta del 1 de octubre de 1931 perdió su final: las últimas cinco filas repiten «Pido la palabra.», y la última termina en «El Sr. Ministro de».
 
-<!-- sesiones.entera.s48.pie -->
-V2 5788–5792 · v3 6460–6464
-
 <!-- sesiones.entera.s9 -->
 En la sesión del 27 de julio de 1931, una misma fila repite seis veces seguidas «Sánchez Guerra, Ossorio y Gallardo».
-
-<!-- sesiones.entera.s9.pie -->
-V2 976 · v3 1081
 
 <!-- sesiones.entera.paginas -->
 En las catorce sesiones posteriores a julio de 1936, las páginas del Diario están sin verificar.
@@ -7424,12 +7659,10 @@ Cómo citar un pasaje
 ### 2.1 Las cifras al margen de F30
 
 <!-- sesiones.puerta.cifras.titulo --> La sesión en cifras
-<!-- sesiones.puerta.cifras.filas --> filas (V2)
-<!-- sesiones.puerta.cifras.palabras --> palabras (V2)
-<!-- sesiones.puerta.cifras.diputados --> diputados que hablan fuera de la Presidencia (V2)
-<!-- sesiones.puerta.cifras.largas --> filas de más de 300 palabras (V2)
-<!-- sesiones.puerta.cifras.v3 --> filas en la edición del explorador (v3)
-
+<!-- sesiones.puerta.cifras.filas --> filas
+<!-- sesiones.puerta.cifras.palabras --> palabras
+<!-- sesiones.puerta.cifras.diputados --> diputados que hablan fuera de la Presidencia
+<!-- sesiones.puerta.cifras.largas --> filas de más de 300 palabras
 > [nota de diseño] Cinco cifras en columna, cada una con su marcador de la sesión: `sesion.<fecha>-<num>.filas`,
 > `.palabras`, `.diputados_sp`, `.largas` y `.filas_v3`. La última lleva el sello v3. «Diputados» cuenta `rep_id`
 > distintos fuera de la Presidencia, con el analizador de rótulos del explorador.
@@ -7437,13 +7670,13 @@ Cómo citar un pasaje
 ### 2.2 El pie de cada cita
 
 <!-- sesiones.puerta.cita.pie -->
-⟦orador⟧ · V2 ⟦V2⟧ · v3 ⟦v3⟧
+⟦orador⟧
 
 <!-- sesiones.puerta.cita.pie.palabras -->
-⟦orador⟧ · V2 ⟦V2⟧ · v3 ⟦v3⟧ · ⟦palabras⟧ palabras (V2)
+⟦orador⟧ · ⟦palabras⟧ palabras
 
 <!-- sesiones.puerta.cita.pie.solo_v3 -->
-⟦orador⟧ · solo en la edición del explorador, v3 ⟦v3⟧
+⟦orador⟧
 
 <!-- sesiones.puerta.cita.sic -->
 [sic]: así en el texto digitalizado.
@@ -7462,13 +7695,13 @@ Cómo citar un pasaje
 En el explorador: Filtros › Fecha y sesión, Desde y Hasta ⟦fecha⟧.
 
 <!-- sesiones.puerta.fecha.recuento -->
-Salen ⟦n⟧ intervenciones en la edición del explorador (v3); con «Solo lo que se habla», ⟦habla⟧.
+Salen ⟦n⟧ intervenciones en el explorador; con «Solo lo que se habla», ⟦habla⟧.
 
 <!-- sesiones.puerta.biblioteca -->
 El debate preparado «⟦nombre⟧» está en Mis bibliotecas › Añadir bibliotecas del proyecto…
 
 <!-- sesiones.puerta.biblioteca.recuento -->
-Reúne ⟦n⟧ intervenciones de 755 sesiones (v3).
+Reúne ⟦n⟧ intervenciones de 755 sesiones.
 
 <!-- sesiones.puerta.biblioteca.donde -->
 Los debates preparados están en el explorador, en Mis bibliotecas › Añadir bibliotecas del proyecto…, con su nombre precedido de «Debate · ».
@@ -7476,7 +7709,7 @@ Los debates preparados están en el explorador, en Mis bibliotecas › Añadir b
 ### 2.4 Cómo citar un pasaje
 
 <!-- sesiones.puerta.citar.entrada -->
-Dé el Diario, su número, la fecha y las páginas. Si trabaja con la base, añada el id de la fila y su edición.
+Dé el Diario, su número, la fecha y las páginas. Si trabaja con la base, añada el id de la fila.
 
 <!-- sesiones.puerta.citar.sinpaginas -->
 ⟦diario⟧, ⟦fecha⟧. Luz y Taquígrafos, ⟦edicion⟧, fila ⟦id⟧.
@@ -7509,7 +7742,7 @@ Lo que se votó en voz alta
 ¿Qué se votó con nombre y apellido, y por cuánto?
 
 <!-- fig.F26.asiento -->
-6 votaciones escogidas · listas nominales en al menos 405 de las 755 sesiones (V2)
+6 votaciones escogidas · listas nominales en al menos 405 de las 755 sesiones
 
 <!-- fig.F26.leyenda.aria --> Cómo se lee cada fila
 
@@ -7558,7 +7791,7 @@ mitad más uno: ⟦mitad⟧
 votación ordinaria, sin lista · ⟦si⟧ a ⟦no⟧ · ⟦fecha⟧
 
 <!-- fig.F26.nota.b -->
-«⟦literal⟧» · V2 ⟦v2⟧ · v3 ⟦v3⟧
+«⟦literal⟧»
 
 > [nota de diseño] `⟦literal⟧` es el texto del resultado tal como está en la fila, de `citas.json`
 > (`voto.<clave>`, en `docs/marcadores/citas.md`); no se reescribe. La fila entera es la marca: clic o segundo
@@ -7572,15 +7805,14 @@ votación ordinaria, sin lista · ⟦si⟧ a ⟦no⟧ · ⟦fecha⟧
 <!-- fig.F26.tabla.si --> Sí
 <!-- fig.F26.tabla.no --> No
 <!-- fig.F26.tabla.mitad --> Mitad más uno
-<!-- fig.F26.tabla.V2 --> Fila V2
-<!-- fig.F26.tabla.v3 --> Fila v3
+<!-- fig.F26.tabla.V2 --> Fila
 <!-- fig.F26.tabla.literal --> Texto del resultado en el Diario
 <!-- fig.F26.tabla.ordinaria --> ordinaria
 
 <!-- fig.F26.minima.tabla --> La tabla, con el texto del resultado en el Diario
 
 <!-- fig.F26.salvedad -->
-Son seis votaciones escogidas, no todas: el Diario imprime listas nominales en al menos 405 sesiones. Las listas están en el texto de las filas, no en una columna: la base no trae el voto como variable. En la V2, las de estas seis van dentro de filas de la Presidencia.
+Son seis votaciones escogidas, no todas: el Diario imprime listas nominales en al menos 405 sesiones. Las listas están en el texto, no en una columna: la base no trae el voto como variable.
 
 <!-- fig.F26.alt -->
 Barras de seis votaciones nominales y una ordinaria, de 1931 a 1936, con los votos a favor y en contra de cada una. Los valores están en la pestaña «Tabla».
@@ -7589,7 +7821,7 @@ Barras de seis votaciones nominales y una ordinaria, de 1931 a 1936, con los vot
 Las votaciones de la figura, con sus totales y el texto del resultado.
 
 <!-- fig.F26.datos.listas -->
-Todas las sesiones con listas nominales: fecha, número, filas con lista y sus ids en la V2.
+Todas las sesiones con listas nominales: fecha, número, filas con lista y sus ids.
 
 <!-- fig.F26.leame.que_mide -->
 Los votos a favor y en contra de seis votaciones nominales y una ordinaria, tal como los imprime el Diario de Sesiones.
@@ -7601,7 +7833,7 @@ No hay denominador común. Donde el Diario imprime el número de diputados y la 
 votacion, fecha, num_session, legislatura, si, no, total, mitad_mas_uno, nominal (sí/no), id_V2, id_v3, literal.
 
 <!-- fig.F26.leame.salvedad -->
-Selección editorial de seis votaciones escogidas: el Diario imprime listas nominales en al menos 405 sesiones. Los totales se leen en el texto de la fila; la base no trae el voto como columna. Los ids V2 y v3 no son intercambiables.
+Selección editorial de seis votaciones escogidas: el Diario imprime listas nominales en al menos 405 sesiones. Los totales se leen en el texto de la fila; la base no trae el voto como columna.
 
 ---
 
@@ -7636,8 +7868,6 @@ Las filas de la sesión: quien habla, encima; la Presidencia, debajo
 
 <!-- fig.F30.rotulo.truncada --> final repetido
 
-<!-- fig.F30.rotulo.estatuto --> Presidencia en la V2: el discurso de Azaña
-
 <!-- fig.F30.cifras.aria --> La sesión en cifras
 
 <!-- fig.F30.panel -->
@@ -7657,9 +7887,6 @@ Sesión núm. ⟦num⟧
 <!-- fig.F30.nota -->
 orden ⟦orden⟧ · ⟦palabras⟧ palabras
 
-<!-- fig.F30.nota.b -->
-V2 ⟦fila⟧
-
 <!-- fig.F30.nota.truncada -->
 Final repetido del acta: «Pido la palabra.»
 
@@ -7667,14 +7894,14 @@ Final repetido del acta: «Pido la palabra.»
 A nombre de «El Sr. PRESIDENTE»: dentro va el discurso de Azaña
 
 <!-- fig.F30.tabla.caption --> Las filas de la sesión, en su orden
-<!-- fig.F30.tabla.orden --> Orden (V2)
+<!-- fig.F30.tabla.orden --> Orden
 <!-- fig.F30.tabla.orador --> Quién habla
 <!-- fig.F30.tabla.palabras --> Palabras
-<!-- fig.F30.tabla.V2 --> Fila V2
+<!-- fig.F30.tabla.V2 --> Fila
 <!-- fig.F30.tabla.rotulo --> Sin diputado: rótulo del Diario
 
 <!-- fig.F30.salvedad -->
-Una fila cada vez que el etiquetado reconoce la fórmula impresa de un orador. En la V2, algunas filas contienen documentos o turnos de otros; el orden cambia entre ediciones.
+Una fila cada vez que el etiquetado reconoce la fórmula impresa de un orador.
 
 <!-- fig.F30.alt -->
 Barras de las ⟦n⟧ filas de la sesión del ⟦fecha⟧, en su orden, con la altura según sus palabras. Los valores están en la pestaña «Tabla».
@@ -7683,16 +7910,16 @@ Barras de las ⟦n⟧ filas de la sesión del ⟦fecha⟧, en su orden, con la a
 Esta figura no tiene descarga propia: serían las filas de una sesión, no datos agregados.
 
 <!-- fig.F30.datos.explorador -->
-La sesión entera, con su texto, está en el explorador: Filtros › Fecha y sesión, con la misma fecha en Desde y en Hasta. Desde esa lista, Exportar la descarga con su cita; sus ids son los de la edición del explorador (v3).
+La sesión entera, con su texto, está en el explorador: Filtros › Fecha y sesión, con la misma fecha en Desde y en Hasta. Desde esa lista, Exportar la descarga con su cita; sus ids son los del explorador.
 
 <!-- fig.F30.leame.que_mide -->
-Las palabras de cada fila de una sesión, en el orden del Diario, según la edición depositada (V2).
+Las palabras de cada fila de una sesión, en el orden del Diario, según la base.
 
 <!-- fig.F30.leame.denominador -->
-Las filas V2 de la sesión. El papel de la Presidencia sale del mismo analizador de rótulos que usa el explorador.
+Las filas de la sesión. El papel de la Presidencia sale del mismo analizador de rótulos que usa el explorador.
 
 <!-- fig.F30.leame.salvedad -->
-Orden y id son los de la V2; en el explorador (v3) cambian. Una fila larga puede llevar dentro un documento leído o la réplica de otro orador.
+Orden e id de cada fila, tal como están en la base.
 
 > [nota de diseño] La tabla lleva cuatro columnas (plan, anexo V3): orden, quién habla, palabras y fila V2. Quién
 > habla: el nombre con su grafía; si la fila es de la Presidencia, «Presidencia · <apellido>»; si no tiene diputado,
@@ -7753,7 +7980,7 @@ El 16 de junio se enfrentan Calvo Sotelo y el Presidente del Consejo de Ministro
 El 1 de julio, la Presidencia corta a Galarza a media frase y ordena que sus palabras no consten.
 
 <!-- sesiones.antesala-1936.que_paso.4 -->
-Es la sesión con más palabras de todo el corpus: 97.055 en la edición depositada.
+Es la sesión con más palabras de todo el corpus: 97.055 en la base.
 
 > [nota de diseño] «Pocas semanas antes de la guerra»: la nota que abre el volumen de la guerra fecha el corte en el
 > 18 de julio (v3 121110). «Con más palabras»: lo es en la V2 y en la v3 (comprobado). Martínez Barrio preside según
@@ -7765,31 +7992,31 @@ Es la sesión con más palabras de todo el corpus: 97.055 en la edición deposit
 «Yo digo lo que Santo Domingo de Silos contestó a un rey castellano: “Señor, la vida podéis quitarme, pero más no podéis.”»
 
 <!-- sesiones.antesala-1936.diario.cita.calvo.pie -->
-José Calvo Sotelo, 16 de junio · V2 105356 · v3 119131 · 1.718 palabras (V2)
+José Calvo Sotelo, 16 de junio · 1.718 palabras
 
 <!-- sesiones.antesala-1936.diario.cita.casares -->
 «…haré responsable ante el país a S. S.»
 
 <!-- sesiones.antesala-1936.diario.cita.casares.pie -->
-Santiago Casares Quiroga, 16 de junio · V2 105330 · v3 119104
+Santiago Casares Quiroga, 16 de junio
 
 <!-- sesiones.antesala-1936.diario.cita.galarza -->
 «¡Ah!, pero yo proclamo una cosa: la violencia... (El final de la frase no se consigna por orden del Sr. Presidente.—Aplausos.—Rumores.)»
 
 <!-- sesiones.antesala-1936.diario.cita.galarza.pie -->
-Ángel Galarza, 1 de julio · V2 106289 · v3 120221
+Ángel Galarza, 1 de julio
 
 <!-- sesiones.antesala-1936.diario.cita.presidencia -->
 «Las palabras de S. S., en lo que a eso respecta, no constarán en el Diario de Sesiones.»
 
 <!-- sesiones.antesala-1936.diario.cita.presidencia.pie -->
-La Presidencia (Martínez Barrio), en la fila siguiente · V2 106290 · v3 120222
+La Presidencia (Martínez Barrio), en la fila siguiente
 
 <!-- sesiones.antesala-1936.diario.cita.galarza2 -->
 «…esas palabras, que en el Diario de Sesiones no figurarán, el país las conocerá…»
 
 <!-- sesiones.antesala-1936.diario.cita.galarza2.pie -->
-Ángel Galarza, en la fila siguiente · V2 106291 · v3 120223
+Ángel Galarza, en la fila siguiente
 
 > [nota de diseño] Los tres «...» de la cita de Galarza son del texto, no un corte nuestro. Las tres filas del
 > 1 de julio van seguidas, como en el Diario, con un filete fino entre ellas.
@@ -7797,12 +8024,12 @@ La Presidencia (Martínez Barrio), en la fila siguiente · V2 106290 · v3 12022
 ## La sesión, turno a turno
 
 <!-- sesiones.antesala-1936.turnos.texto -->
-Dos figuras, una por sesión. Entre las dos suman 284 filas de la edición depositada.
+Dos figuras, una por sesión. Entre las dos suman 284 filas de la base.
 
 ## Cómo encontrarla en el explorador
 
 <!-- sesiones.antesala-1936.explorador.fecha.1 -->
-Filtros › Fecha y sesión: Desde y Hasta 16/06/1936. Salen 172 intervenciones en la edición del explorador (v3); con «Solo lo que se habla», 159.
+Filtros › Fecha y sesión: Desde y Hasta 16/06/1936. Salen 172 intervenciones en el explorador; con «Solo lo que se habla», 159.
 
 <!-- sesiones.antesala-1936.explorador.fecha.2 -->
 Para la segunda, Desde y Hasta 01/07/1936: 137 intervenciones; con «Solo lo que se habla», 125.
@@ -7811,7 +8038,7 @@ Para la segunda, Desde y Hasta 01/07/1936: 137 intervenciones; con «Solo lo que
 "no constan por orden" | "no se consigna por orden" | "no se consignan por orden"
 
 <!-- sesiones.antesala-1936.explorador.recuento -->
-Recuento del 22 de septiembre de 2026: 5 intervenciones en la edición del explorador (v3).
+Recuento del 22 de septiembre de 2026: 5 intervenciones en el explorador.
 
 <!-- sesiones.antesala-1936.explorador.consulta.nota -->
 Busca las acotaciones de palabras suprimidas por la Presidencia. En todo el corpus salen cinco, y tres son de estas dos sesiones.
@@ -7832,7 +8059,7 @@ La frase que a veces se atribuye a Dolores Ibárruri el 16 de junio no aparece e
 > hablado por última vez” no aparece en ninguna fila».
 
 <!-- sesiones.antesala-1936.no_esta.pie -->
-Dolores Ibárruri, 16 de junio · V2 105336
+Dolores Ibárruri, 16 de junio
 
 <!-- sesiones.antesala-1936.no_esta.2 -->
 Lo que la Presidencia mandó quitar tampoco está: el Diario solo deja constancia de que se quitó.
@@ -7840,18 +8067,15 @@ Lo que la Presidencia mandó quitar tampoco está: el Diario solo deja constanci
 ## Fuentes
 
 <!-- sesiones.antesala-1936.fuentes.texto -->
-Todo lo que dice esta página sale del Diario de Sesiones, leído en las dos ediciones de la base. No se afirma aquí ningún hecho que el Diario no recoja.
+Todo lo que dice esta página sale del Diario de Sesiones, leído en la base. No se afirma aquí ningún hecho que el Diario no recoja.
 
 ## Cómo citar un pasaje
 
 <!-- sesiones.antesala-1936.citar.texto -->
-Dé el Diario, su número, la fecha y las páginas. Si trabaja con la base, añada el id de la fila y su edición.
+Dé el Diario, su número, la fecha y las páginas. Si trabaja con la base, añada el id de la fila.
 
 <!-- sesiones.antesala-1936.citar.cita -->
-Diario de las Sesiones de Cortes. Congreso de los Diputados, núm. 54, 1 de julio de 1936, pp. 1721–1821 (metadatos del proyecto). Luz y Taquígrafos, edición depositada (V2), fila 106289.
-
-<!-- ↺ comun.fija.ids -->
-Los identificadores de fila cambian entre la edición depositada (V2) y la del explorador (v3); la sesión —fecha y número— es la misma en las dos.
+Diario de las Sesiones de Cortes. Congreso de los Diputados, núm. 54, 1 de julio de 1936, pp. 1721–1821 (metadatos del proyecto). Luz y Taquígrafos, fila 106289.
 
 <!-- ↺ comun.fija.diario -->
 Edición derivada para investigación: ante cualquier discrepancia, vale el Diario de Sesiones.
@@ -7914,7 +8138,7 @@ El nombre del pueblo vuelve una y otra vez: la búsqueda lo encuentra desde febr
 «…por mucho que se hurgue no se encontrará un atisbo de responsabilidad para el Gobierno.»
 
 <!-- sesiones.casas-viejas-1933.diario.cita.hurgue.pie -->
-Manuel Azaña · V2 44922 · v3 50255 · 528 palabras (V2)
+Manuel Azaña · 528 palabras
 
 <!-- sesiones.casas-viejas-1933.diario.cita.azana -->
 «En Casas Viejas no ha ocurrido sino lo que tenía que ocurrir. (Fuertes rumores y protestas en los bancos de las minorías; contraprotestas en la mayoría.)»
@@ -7926,7 +8150,7 @@ Manuel Azaña, en la misma fila, con la acotación del taquígrafo
 «…nos dijo: “En los sucesos de Casas Viejas, Sres. Diputados, por mucho que se hurgue…”»
 
 <!-- sesiones.casas-viejas-1933.diario.cita.martinezbarrio.pie -->
-Diego Martínez Barrio, 23 de febrero de 1933 · V2 46426 · v3 51919
+Diego Martínez Barrio, 23 de febrero de 1933
 
 ## La sesión, turno a turno
 
@@ -7936,13 +8160,13 @@ La fila más alta es de Azaña, que interviene varias veces en la sesión.
 ## Cómo encontrarla en el explorador
 
 <!-- sesiones.casas-viejas-1933.explorador.fecha -->
-Filtros › Fecha y sesión: Desde y Hasta 02/02/1933. Salen 166 intervenciones en la edición del explorador (v3); con «Solo lo que se habla», 156.
+Filtros › Fecha y sesión: Desde y Hasta 02/02/1933. Salen 166 intervenciones en el explorador; con «Solo lo que se habla», 156.
 
 <!-- sesiones.casas-viejas-1933.explorador.consulta -->
 "casas viejas"
 
 <!-- sesiones.casas-viejas-1933.explorador.recuento -->
-Recuento del 22 de septiembre de 2026: 375 intervenciones en la edición del explorador (v3).
+Recuento del 22 de septiembre de 2026: 375 intervenciones en el explorador.
 
 <!-- sesiones.casas-viejas-1933.explorador.consulta.meses -->
 Contando todas las filas, salen 114 intervenciones en febrero de 1933 y 126 en marzo.
@@ -7957,7 +8181,7 @@ La frase de Azaña, entre comillas, sale en dos intervenciones: la suya y la de 
 "no ha ocurrido sino lo que tenía que ocurrir"
 
 <!-- sesiones.casas-viejas-1933.explorador.frase.recuento -->
-Recuento del 22 de septiembre de 2026: dos intervenciones en la edición del explorador (v3).
+Recuento del 22 de septiembre de 2026: dos intervenciones en el explorador.
 
 <!-- sesiones.casas-viejas-1933.explorador.biblioteca -->
 El debate preparado «Casas Viejas» reúne 943 intervenciones de nueve sesiones, de febrero y marzo de 1933.
@@ -7976,7 +8200,7 @@ Buscada en el corpus, «tiros a la barriga» no sale en 1933. La primera fila qu
 «Casas Viejas! Casas Viejas! Tiros a la barriga, a la barriga!»
 
 <!-- sesiones.casas-viejas-1933.no_esta.cita.barriga.pie -->
-Varios diputados, en una acotación de la fila de José Tomás y Piera · V2 70714 · v3 79606
+Varios diputados, en una acotación de la fila de José Tomás y Piera
 
 <!-- ↺ comun.fija.contar -->
 Contar una palabra no dice quién la defiende ni en qué tono.
@@ -7984,18 +8208,15 @@ Contar una palabra no dice quién la defiende ni en qué tono.
 ## Fuentes
 
 <!-- sesiones.casas-viejas-1933.fuentes.texto -->
-Todo lo que dice esta página sale del Diario de Sesiones, leído en las dos ediciones de la base. No se afirma aquí ningún hecho que el Diario no recoja.
+Todo lo que dice esta página sale del Diario de Sesiones, leído en la base. No se afirma aquí ningún hecho que el Diario no recoja.
 
 ## Cómo citar un pasaje
 
 <!-- sesiones.casas-viejas-1933.citar.texto -->
-Dé el Diario, su número, la fecha y las páginas. Si trabaja con la base, añada el id de la fila y su edición.
+Dé el Diario, su número, la fecha y las páginas. Si trabaja con la base, añada el id de la fila.
 
 <!-- sesiones.casas-viejas-1933.citar.cita -->
-Diario de Sesiones de las Cortes Constituyentes de la República Española, núm. 288, 2 de febrero de 1933, pp. 10883–10916 (metadatos del proyecto). Luz y Taquígrafos, edición depositada (V2), fila 44922.
-
-<!-- ↺ comun.fija.ids -->
-Los identificadores de fila cambian entre la edición depositada (V2) y la del explorador (v3); la sesión —fecha y número— es la misma en las dos.
+Diario de Sesiones de las Cortes Constituyentes de la República Española, núm. 288, 2 de febrero de 1933, pp. 10883–10916 (metadatos del proyecto). Luz y Taquígrafos, fila 44922.
 
 <!-- ↺ comun.fija.diario -->
 Edición derivada para investigación: ante cualquier discrepancia, vale el Diario de Sesiones.
@@ -8041,7 +8262,7 @@ Las Constituyentes debaten el artículo 24 del proyecto de Constitución. El Sec
 «Art. 24. Todas las confesiones religiosas serán consideradas como Asociaciones sometidas a una ley especial.»
 
 <!-- sesiones.cuestion-religiosa-1931.que_paso.cita.articulo.pie -->
-El Secretario (Ramos) · V2 6628 · v3 7398
+El Secretario (Ramos)
 
 <!-- sesiones.cuestion-religiosa-1931.que_paso.2 -->
 La sesión empieza por la tarde y dura toda la noche. Habla Manuel Azaña, entonces ministro de la Guerra.
@@ -8063,25 +8284,25 @@ Al día siguiente, el Diario ya rotula a Azaña como «Presidente del Gobierno»
 «España ha dejado de ser católica: el problema político consiguiente es organizar el Estado en forma tal que puede adecuado a esta fase nueva e histórica del pueblo español.»
 
 <!-- sesiones.cuestion-religiosa-1931.diario.cita.azana.pie -->
-Manuel Azaña, ministro de la Guerra · V2 6748 · v3 7531 · 6.009 palabras (V2)
+Manuel Azaña, ministro de la Guerra · 6.009 palabras
 
 <!-- sesiones.cuestion-religiosa-1931.diario.cita.resultado -->
 «…quedó aprobado el artículo 24 por 178 votos contra 59…»
 
 <!-- sesiones.cuestion-religiosa-1931.diario.cita.resultado.pie -->
-Diario · V2 6994 · v3 7800
+Diario
 
 <!-- sesiones.cuestion-religiosa-1931.diario.cita.apertura -->
 «Abierta la sesión a las cuatro y treinta minutos de la tarde…»
 
 <!-- sesiones.cuestion-religiosa-1931.diario.cita.apertura.pie -->
-Sumario de la sesión · solo en la edición del explorador, v3 7387
+Sumario de la sesión
 
 <!-- sesiones.cuestion-religiosa-1931.diario.cita.cierre -->
 «Eran las siete y treinta y cinco minutos de la mañana del día 14.»
 
 <!-- sesiones.cuestion-religiosa-1931.diario.cita.cierre.pie -->
-Diario, al final de la sesión · V2 6999 · v3 7807
+Diario, al final de la sesión
 
 > [nota de diseño] El [sic] marca «puede» donde el sentido pide otra palabra; la nota emergente es
 > `sesiones.puerta.cita.sic`. La apertura solo está en el sumario, que la V2 no trae como fila.
@@ -8102,13 +8323,13 @@ Una sola barra: el artículo 24, aprobado por 178 votos contra 59.
 ## Cómo encontrarla en el explorador
 
 <!-- sesiones.cuestion-religiosa-1931.explorador.fecha -->
-Filtros › Fecha y sesión: Desde y Hasta 13/10/1931. Salen 421 intervenciones en la edición del explorador (v3); con «Solo lo que se habla», 380.
+Filtros › Fecha y sesión: Desde y Hasta 13/10/1931. Salen 421 intervenciones en el explorador; con «Solo lo que se habla», 380.
 
 <!-- sesiones.cuestion-religiosa-1931.explorador.consulta -->
 "España ha dejado de ser católica"
 
 <!-- sesiones.cuestion-religiosa-1931.explorador.recuento -->
-Recuento del 22 de septiembre de 2026: 6 intervenciones en la edición del explorador (v3).
+Recuento del 22 de septiembre de 2026: 6 intervenciones en el explorador.
 
 <!-- sesiones.cuestion-religiosa-1931.explorador.consulta.nota -->
 La de Azaña sale en el puesto 4 por relevancia. Las demás son de diputados que repiten la frase después, entre 1931 y 1934.
@@ -8128,18 +8349,15 @@ Por qué Azaña pasa a presidir el Gobierno no lo cuenta esta sesión. El Diario
 ## Fuentes
 
 <!-- sesiones.cuestion-religiosa-1931.fuentes.texto -->
-Todo lo que dice esta página sale del Diario de Sesiones, leído en las dos ediciones de la base. No se afirma aquí ningún hecho que el Diario no recoja.
+Todo lo que dice esta página sale del Diario de Sesiones, leído en la base. No se afirma aquí ningún hecho que el Diario no recoja.
 
 ## Cómo citar un pasaje
 
 <!-- sesiones.cuestion-religiosa-1931.citar.texto -->
-Dé el Diario, su número, la fecha y las páginas. Si trabaja con la base, añada el id de la fila y su edición.
+Dé el Diario, su número, la fecha y las páginas. Si trabaja con la base, añada el id de la fila.
 
 <!-- sesiones.cuestion-religiosa-1931.citar.cita -->
-Diario de Sesiones de las Cortes Constituyentes de la República Española, núm. 55, 13 de octubre de 1931, pp. 1641–1721 (metadatos del proyecto). Luz y Taquígrafos, edición depositada (V2), fila 6748.
-
-<!-- ↺ comun.fija.ids -->
-Los identificadores de fila cambian entre la edición depositada (V2) y la del explorador (v3); la sesión —fecha y número— es la misma en las dos.
+Diario de Sesiones de las Cortes Constituyentes de la República Española, núm. 55, 13 de octubre de 1931, pp. 1641–1721 (metadatos del proyecto). Luz y Taquígrafos, fila 6748.
 
 <!-- ↺ comun.fija.diario -->
 Edición derivada para investigación: ante cualquier discrepancia, vale el Diario de Sesiones.
@@ -8170,16 +8388,16 @@ Edición derivada para investigación: ante cualquier discrepancia, vale el Diar
 > calcula como el millar entero por debajo de la menor de las dos filas (V2 25979 y v3 29042): si una bajara, falla.
 
 <!-- sesiones.estatuto-1932.meta.titulo -->
-El discurso de Azaña, a nombre de otro · 27 de mayo de 1932
+Azaña y el Estatuto de Cataluña · 27 de mayo de 1932
 
 <!-- sesiones.estatuto-1932.meta.descripcion -->
-Azaña defiende el Estatuto de Cataluña en las Constituyentes, y cada edición de la base pone su discurso a nombre de un orador distinto.
+Azaña defiende el Estatuto de Cataluña en las Constituyentes, en la intervención de habla más larga del corpus.
 
 <!-- sesiones.estatuto-1932.antetitulo -->
 27 de mayo de 1932 · Sesión núm. 173 · Constituyentes · DSCCRE núm. 173, pp. 5835–5877 (metadatos del proyecto)
 
 <!-- sesiones.estatuto-1932.titulo -->
-El discurso de Azaña, a nombre de otro
+Azaña y el Estatuto de Cataluña
 
 <!-- sesiones.estatuto-1932.entrada -->
 ¿Qué pasó en esta sesión, y cómo la leo entera?
@@ -8190,10 +8408,7 @@ El discurso de Azaña, a nombre de otro
 Manuel Azaña, Presidente del Consejo de Ministros, defiende en la Cámara el proyecto de Estatuto de Cataluña, en un discurso de más de 17.000 palabras.
 
 <!-- sesiones.estatuto-1932.que_paso.2 -->
-En la edición del explorador (v3) es la intervención de habla más larga del corpus.
-
-<!-- sesiones.estatuto-1932.que_paso.3 -->
-La edición depositada la cuenta de otra manera, y esta puerta enseña por qué.
+Es la intervención de habla más larga del corpus.
 
 ## Lo que dice el Diario
 
@@ -8201,59 +8416,18 @@ La edición depositada la cuenta de otra manera, y esta puerta enseña por qué.
 «Cataluña dice, los catalanes dicen: “quieremos vivir de otra manera dentro del Estado español”. La pretensión es legítima; es legítima porque la autoriza la ley, nada menos que la ley constitucional.»
 
 <!-- sesiones.estatuto-1932.diario.cita.azana.pie -->
-Manuel Azaña · V2 25979 · v3 29042
-
-## Dos ediciones, dos oradores
-
-> [nota de diseño] Sustituye aquí a «La sesión, turno a turno» como entrada de F30: es la razón de ser de la puerta.
-> Su título propio, `sesiones.estatuto-1932.turnos.titulo`, sustituye al común de la plantilla; luego va F30.
-
-<!-- sesiones.estatuto-1932.turnos.titulo -->
-Dos ediciones, dos oradores
-
-<!-- sesiones.estatuto-1932.turnos.v2 -->
-En la V2, el discurso va dentro de una fila de más de 17.000 palabras a nombre de «El Sr. PRESIDENTE».
-
-<!-- sesiones.estatuto-1932.turnos.v2.2 -->
-La fila empieza con la Presidencia dando la palabra y sigue con un rótulo cortado a media palabra:
-
-<!-- sesiones.estatuto-1932.turnos.cita.rotulo -->
-«El Sr. Presidente del Consejo de Ministros tiene la palabra.» … «El Sr. Presidente del CONSEJO DE MINIS»
-
-<!-- sesiones.estatuto-1932.turnos.cita.rotulo.pie -->
-V2 25979, a nombre de Julián Besteiro, que presidía
-
-<!-- sesiones.estatuto-1932.turnos.v3 -->
-En la v3 son dos filas: diez palabras de la Presidencia y el discurso, a nombre de Azaña.
-
-<!-- sesiones.estatuto-1932.turnos.v3.pie -->
-v3 29041 y 29042
-
-<!-- sesiones.estatuto-1932.turnos.efecto -->
-Por eso, quien cuente palabras por orador en la V2 le da este discurso a Besteiro.
-
-<!-- sesiones.estatuto-1932.turnos.rango -->
-En la V2 es la segunda fila más larga. La primera, de Prieto, lleva dentro los «DOCUMENTOS COMPLEMENTARIOS» de su discurso, que la v3 pasa a una fila aparte.
-
-<!-- sesiones.estatuto-1932.turnos.rango.pie -->
-Prieto, 12 de julio de 1933 · V2 55221 · documentos en v3 61932
-
-<!-- sesiones.estatuto-1932.turnos.texto -->
-En la figura, la barra del discurso sale como Presidencia, porque así la trae la V2.
-
-> [nota de diseño] F30 con la barra de V2 25979 en el trazo de la Presidencia y su nota propia
-> (`fig.F30.nota.estatuto`). Debajo, [Ver por qué hay dos ediciones] (`comun.boton.ver_versiones`).
+Manuel Azaña
 
 ## Cómo encontrarla en el explorador
 
 <!-- sesiones.estatuto-1932.explorador.fecha -->
-Filtros › Fecha y sesión: Desde y Hasta 27/05/1932. Salen 49 intervenciones en la edición del explorador (v3); con «Solo lo que se habla», 45.
+Filtros › Fecha y sesión: Desde y Hasta 27/05/1932. Salen 49 intervenciones en el explorador; con «Solo lo que se habla», 45.
 
 <!-- sesiones.estatuto-1932.explorador.consulta -->
 "vivir de otra manera"
 
 <!-- sesiones.estatuto-1932.explorador.recuento -->
-Recuento del 22 de septiembre de 2026: 2 intervenciones en la edición del explorador (v3).
+Recuento del 22 de septiembre de 2026: 2 intervenciones en el explorador.
 
 <!-- sesiones.estatuto-1932.explorador.consulta.nota -->
 La otra intervención que la trae es de Pedro Martín y Martín, el 27 de julio de 1933.
@@ -8274,24 +8448,18 @@ La votación del Estatuto no es de este día: llega el 9 de septiembre de 1932, 
 ## Fuentes
 
 <!-- sesiones.estatuto-1932.fuentes.texto -->
-Todo lo que dice esta página sale del Diario de Sesiones, leído en las dos ediciones de la base. No se afirma aquí ningún hecho que el Diario no recoja.
+Todo lo que dice esta página sale del Diario de Sesiones, leído en la base. No se afirma aquí ningún hecho que el Diario no recoja.
 
 ## Cómo citar un pasaje
 
 <!-- sesiones.estatuto-1932.citar.texto -->
-Dé el Diario, su número, la fecha y las páginas. Si trabaja con la base, añada el id de la fila y su edición.
+Dé el Diario, su número, la fecha y las páginas. Si trabaja con la base, añada el id de la fila.
 
 <!-- sesiones.estatuto-1932.citar.cita -->
-Diario de Sesiones de las Cortes Constituyentes de la República Española, núm. 173, 27 de mayo de 1932, pp. 5835–5877 (metadatos del proyecto). Luz y Taquígrafos, edición del explorador (v3, sin depositar), fila 29042.
-
-<!-- ↺ comun.fija.ids -->
-Los identificadores de fila cambian entre la edición depositada (V2) y la del explorador (v3); la sesión —fecha y número— es la misma en las dos.
+Diario de Sesiones de las Cortes Constituyentes de la República Española, núm. 173, 27 de mayo de 1932, pp. 5835–5877 (metadatos del proyecto). Luz y Taquígrafos, fila 29042.
 
 <!-- ↺ comun.fija.diario -->
 Edición derivada para investigación: ante cualquier discrepancia, vale el Diario de Sesiones.
-
-<!-- sesiones.estatuto-1932.citar.nota -->
-Si cita el discurso por su fila, diga la edición: en la V2 está a nombre de la Presidencia.
 
 > [nota de diseño] `comun.cita.pasaje` con: diario = «Diario de Sesiones de las Cortes Constituyentes de la República
 > Española»; numero = `sesion.1932-05-27-173.diario_num`; fecha = «27 de mayo de 1932»; paginas =
@@ -8341,13 +8509,13 @@ El corpus no tiene el Diario de esa noche, sino un extracto oficial. La proposic
 Preside Diego Martínez Barrio. Juan Negrín, Presidente del Consejo de Ministros, hace su declaración ante la Cámara.
 
 <!-- sesiones.figueres-1939.que_paso.4 -->
-La proposición se aprueba en votación nominal. El extracto imprime la lista de los que dijeron sí (V2 107340 · v3 121463) y, después, el resultado:
+La proposición se aprueba en votación nominal. El extracto imprime la lista de los que dijeron sí y, después, el resultado:
 
 <!-- sesiones.figueres-1939.que_paso.cita.votacion -->
 «Han votado afirmativamente los sesenta y dos señores Diputados.»
 
 <!-- sesiones.figueres-1939.que_paso.cita.votacion.pie -->
-La Presidencia (Martínez Barrio) · V2 107341 · v3 121464
+La Presidencia (Martínez Barrio)
 
 > [nota de diseño] «La siguiente será en México»: la sesión 70, del 10-I-1945 (V2). Esta votación no entra en F26,
 > que es una selección de 1931 a 1936. **Fase 2 (corrector del copy):** la fase 1 decía que el extracto no imprime la
@@ -8360,19 +8528,19 @@ La Presidencia (Martínez Barrio) · V2 107341 · v3 121464
 «Señores Diputados, se reúne hoy la Cámara en un severo ambiente de guerra.»
 
 <!-- sesiones.figueres-1939.diario.cita.negrin.pie -->
-Juan Negrín · V2 107326 · v3 121447 · 5.291 palabras (V2)
+Juan Negrín · 5.291 palabras
 
 <!-- sesiones.figueres-1939.diario.cita.martinezbarrio -->
 «Lo hacemos en un trozo de la tierra catalana que, como otras distintas de España, se encuentra actualmente nuancilada [sic] y hollada por la planta de los invasores extranjeros…»
 
 <!-- sesiones.figueres-1939.diario.cita.martinezbarrio.pie -->
-Diego Martínez Barrio, dentro de la fila del sumario · solo en la edición del explorador, v3 121446
+Diego Martínez Barrio, dentro de la fila del sumario
 
 <!-- sesiones.figueres-1939.diario.cita.castillo -->
 «Castillo de Figueras, a primero de Febrero, de mil novceientos treinta y nueve.»
 
 <!-- sesiones.figueres-1939.diario.cita.castillo.pie -->
-Al pie de la proposición · V2 107337 · v3 121459
+Al pie de la proposición
 
 <!-- sesiones.figueres-1939.diario.cita.horas -->
 El extracto no coincide consigo mismo en la hora: el sumario abre la sesión «a las veintidos horas treinta minutos», y el texto, «a las 22 horas 39».
@@ -8383,18 +8551,18 @@ El extracto no coincide consigo mismo en la hora: el sumario abre la sesión «a
 ## La sesión, turno a turno
 
 <!-- sesiones.figueres-1939.turnos.texto -->
-En la V2 son dieciséis filas. La más alta es la de Negrín; la de Martínez Barrio no está, porque va dentro del sumario, que la V2 no trae.
+La barra más alta es la de Negrín. Las palabras de Martínez Barrio van dentro del sumario del extracto.
 
 ## Cómo encontrarla en el explorador
 
 <!-- sesiones.figueres-1939.explorador.fecha -->
-Filtros › Fecha y sesión: Desde y Hasta 01/02/1939, sin «Solo lo que se habla». Salen veinte intervenciones en la edición del explorador (v3); con el filtro, dieciséis, y el discurso de Martínez Barrio desaparece.
+Filtros › Fecha y sesión: Desde y Hasta 01/02/1939, sin «Solo lo que se habla». Salen veinte intervenciones en el explorador; con el filtro, dieciséis, y el discurso de Martínez Barrio desaparece.
 
 <!-- sesiones.figueres-1939.explorador.consulta -->
 "trozo de la tierra catalana"
 
 <!-- sesiones.figueres-1939.explorador.recuento -->
-Recuento del 22 de septiembre de 2026: una intervención en la edición del explorador (v3).
+Recuento del 22 de septiembre de 2026: una intervención en el explorador.
 
 <!-- sesiones.figueres-1939.explorador.consulta.nota -->
 Sin filtros sale una intervención: el sumario. Con «Solo lo que se habla», ninguna.
@@ -8414,7 +8582,7 @@ La nota que abre el volumen de la guerra dice de esta sesión:
 «DE LA ULTILLA SESION QUE TUVO LUGAR EN LA CIUDAD DE FIGUERAS A RAIZ DE LA LIBERACION DE BARCELONA EL 26 DE ENERO DE 1.939, NO EXISTE DATO ALGUNO.»
 
 <!-- sesiones.figueres-1939.no_esta.cita.nota.pie -->
-Nota del volumen, en el sumario del 1 de octubre de 1936 · solo en la edición del explorador, v3 121110
+Nota del volumen, en el sumario del 1 de octubre de 1936
 
 <!-- sesiones.figueres-1939.no_esta.2 -->
 Otra nota, al final del extracto, lo explica: el número no se había podido obtener, y apareció después.
@@ -8423,7 +8591,7 @@ Otra nota, al final del extracto, lo explica: el número no se había podido obt
 «Después de prolijas y constantes gestiones, se ha podido obtener fotocopia del ejemplar del Extracto de dicha sesión…»
 
 <!-- sesiones.figueres-1939.no_esta.cita.fotocopia.pie -->
-Nota final · V2 107341, dentro de la última fila de la Presidencia · v3 121465
+Nota final, dentro de la última fila de la Presidencia
 
 <!-- sesiones.figueres-1939.no_esta.3 -->
 Quién escribió cada nota, y cuándo, no lo dice el corpus.
@@ -8431,18 +8599,15 @@ Quién escribió cada nota, y cuándo, no lo dice el corpus.
 ## Fuentes
 
 <!-- sesiones.figueres-1939.fuentes.texto -->
-Todo lo que dice esta página sale del extracto oficial y de las notas del volumen, leídos en las dos ediciones de la base. No se afirma aquí ningún hecho que no recojan.
+Todo lo que dice esta página sale del extracto oficial y de las notas del volumen, leídos en la base. No se afirma aquí ningún hecho que no recojan.
 
 ## Cómo citar un pasaje
 
 <!-- sesiones.figueres-1939.citar.texto -->
-Dé el Diario, su número, la fecha y las páginas. Si trabaja con la base, añada el id de la fila y su edición.
+Dé el Diario, su número, la fecha y las páginas. Si trabaja con la base, añada el id de la fila.
 
 <!-- sesiones.figueres-1939.citar.cita -->
-Extracto oficial de las sesiones. Congreso de los Diputados, núm. 69, 1 de febrero de 1939, páginas sin verificar (metadatos del proyecto). Luz y Taquígrafos, edición depositada (V2), fila 107326.
-
-<!-- ↺ comun.fija.ids -->
-Los identificadores de fila cambian entre la edición depositada (V2) y la del explorador (v3); la sesión —fecha y número— es la misma en las dos.
+Extracto oficial de las sesiones. Congreso de los Diputados, núm. 69, 1 de febrero de 1939, páginas sin verificar (metadatos del proyecto). Luz y Taquígrafos, fila 107326.
 
 <!-- ↺ comun.fija.diario -->
 Edición derivada para investigación: ante cualquier discrepancia, vale el Diario de Sesiones.
@@ -8504,25 +8669,25 @@ La primera de las sesiones de México, la del 10 de enero de 1945, está en la f
 «…de la sesión extraordinaria celebrada en la Ciudad de México el viernes 17 de agosto de 1945»
 
 <!-- sesiones.mexico-1945.diario.cita.lugar.pie -->
-Carátula del extracto · solo en la edición del explorador, v3 121495
+Carátula del extracto
 
 <!-- sesiones.mexico-1945.diario.cita.orden -->
 «Promesa del Excmo. señor don Diego Martínez Barrio, Presidente de las Cortes, como Presidente interino de la República Española.»
 
 <!-- sesiones.mexico-1945.diario.cita.orden.pie -->
-La Presidencia lee el orden del día · V2 107371 · v3 121500
+La Presidencia lee el orden del día
 
 <!-- sesiones.mexico-1945.diario.cita.promesa -->
 «¿Prometéis solemnemente fidelidad a la República y a la Constitución?» … «Si, prometo.»
 
 <!-- sesiones.mexico-1945.diario.cita.promesa.pie -->
-La Presidencia y Martínez Barrio, en la misma fila · V2 107372 · v3 121502
+La Presidencia y Martínez Barrio, en la misma fila
 
 <!-- sesiones.mexico-1945.diario.cita.giral -->
 «…al presentarse ante las Cortes españolas el primer Gobierno de la República que ha sido posible instrumentar constitucionalmente desde el día en que el infortunio nos hizo cruzar la frontera…»
 
 <!-- sesiones.mexico-1945.diario.cita.giral.pie -->
-José Giral, 7 de noviembre · V2 107375 · v3 121507 · 7.446 palabras (V2)
+José Giral, 7 de noviembre · 7.446 palabras
 
 > [nota de diseño] «Si, prometo.» va sin tilde, como en el texto digitalizado; no lleva [sic] porque el sentido no
 > cambia. La promesa y la pregunta están en la misma fila V2, a nombre de la Presidencia.
@@ -8533,12 +8698,12 @@ José Giral, 7 de noviembre · V2 107375 · v3 121507 · 7.446 palabras (V2)
 Cuatro figuras, una por sesión. La del 17 de agosto tiene cinco filas, todas de la Presidencia.
 
 <!-- sesiones.mexico-1945.turnos.total -->
-Entre las cuatro suman 183 filas de la edición depositada.
+Entre las cuatro suman 183 filas de la base.
 
 ## Cómo encontrarla en el explorador
 
 <!-- sesiones.mexico-1945.explorador.fecha -->
-Filtros › Fecha y sesión: Desde 17/08/1945, sin Hasta. Salen 206 intervenciones en la edición del explorador (v3); con «Solo lo que se habla», 184.
+Filtros › Fecha y sesión: Desde 17/08/1945, sin Hasta. Salen 206 intervenciones en el explorador; con «Solo lo que se habla», 184.
 
 <!-- sesiones.mexico-1945.explorador.consulta -->
 "presidente interino de la república"
@@ -8547,7 +8712,7 @@ Filtros › Fecha y sesión: Desde 17/08/1945, sin Hasta. Salen 206 intervencion
 Desde 01/01/1945
 
 <!-- sesiones.mexico-1945.explorador.recuento -->
-Recuento del 22 de septiembre de 2026: 6 intervenciones en la edición del explorador (v3).
+Recuento del 22 de septiembre de 2026: 6 intervenciones en el explorador.
 
 <!-- sesiones.mexico-1945.explorador.consulta.nota -->
 Con Desde 01/01/1945, salen seis intervenciones, de agosto y noviembre de 1945.
@@ -8567,23 +8732,20 @@ Entre Figueres y México también se reunió la Diputación Permanente. Sus reun
 «…sólo tenemos noticia de ellas por citas bibliográficas pero no se dispone de los textos ni en forma de fotocopia.»
 
 <!-- sesiones.mexico-1945.no_esta.cita.permanente.pie -->
-Carátula del volumen, en el sumario del 10 de enero de 1945 · solo en la edición del explorador, v3 121466
+Carátula del volumen, en el sumario del 10 de enero de 1945
 
 ## Fuentes
 
 <!-- sesiones.mexico-1945.fuentes.texto -->
-Todo lo que dice esta página sale del extracto oficial de las sesiones celebradas en México, editado en la Ciudad de México por B. Costa i Amic, leído en las dos ediciones de la base.
+Todo lo que dice esta página sale del extracto oficial de las sesiones celebradas en México, editado en la Ciudad de México por B. Costa i Amic, leído en la base.
 
 ## Cómo citar un pasaje
 
 <!-- sesiones.mexico-1945.citar.texto -->
-Dé el Diario, su número, la fecha y las páginas. Si trabaja con la base, añada el id de la fila y su edición.
+Dé el Diario, su número, la fecha y las páginas. Si trabaja con la base, añada el id de la fila.
 
 <!-- sesiones.mexico-1945.citar.cita -->
-Extracto oficial de las sesiones de Cortes celebradas en México, núm. 71, 17 de agosto de 1945, páginas sin verificar (metadatos del proyecto). Luz y Taquígrafos, edición depositada (V2), fila 107372.
-
-<!-- ↺ comun.fija.ids -->
-Los identificadores de fila cambian entre la edición depositada (V2) y la del explorador (v3); la sesión —fecha y número— es la misma en las dos.
+Extracto oficial de las sesiones de Cortes celebradas en México, núm. 71, 17 de agosto de 1945, páginas sin verificar (metadatos del proyecto). Luz y Taquígrafos, fila 107372.
 
 <!-- ↺ comun.fija.diario -->
 Edición derivada para investigación: ante cualquier discrepancia, vale el Diario de Sesiones.
@@ -8643,13 +8805,13 @@ Es la última sesión antes del verano: la siguiente es la del 1 de octubre de 1
 «Entre los Sres. Tirado y Oriol de la Puerta se produjo un violento altercado, llegando a agredirse dichos Sres. Diputados.—Esto determinó un verdadero tumulto en la Cámara.»
 
 <!-- sesiones.pistola-1934.diario.cita.tumulto.pie -->
-Acotación del taquígrafo, dentro de la fila de Gil Robles · V2 74608 · v3 84026
+Acotación del taquígrafo, dentro de la fila de Gil Robles
 
 <!-- sesiones.pistola-1934.diario.cita.golpes -->
 «Estos incidentes limitados a palabras son corrientes; el de hoy se ha convertido en golpes.»
 
 <!-- sesiones.pistola-1934.diario.cita.golpes.pie -->
-Indalecio Prieto · V2 74619 · v3 84039 · 293 palabras (V2)
+Indalecio Prieto · 293 palabras
 
 <!-- sesiones.pistola-1934.diario.cita.pistola -->
 «…es exacto, Sr. Presidente, que ha salido a luz alguna pistola, por lo menos la mía…»
@@ -8661,7 +8823,7 @@ Indalecio Prieto, en la misma fila
 «Invito al Sr. Prieto a que diga quien ha sacado la pistola; lo que es un hecho completamente cierto, que saben todos los presentes, es que el Sr. Prieto la tenía.»
 
 <!-- sesiones.pistola-1934.diario.cita.oriol.pie -->
-Jaime Oriol de la Puerta · V2 74621 · v3 84041
+Jaime Oriol de la Puerta
 
 ## La sesión, turno a turno
 
@@ -8671,7 +8833,7 @@ Tras la suspensión, la figura enseña los turnos seguidos de la Presidencia, Pr
 ## Cómo encontrarla en el explorador
 
 <!-- sesiones.pistola-1934.explorador.fecha -->
-Filtros › Fecha y sesión: Desde y Hasta 04/07/1934. Salen 282 intervenciones en la edición del explorador (v3); con «Solo lo que se habla», 255.
+Filtros › Fecha y sesión: Desde y Hasta 04/07/1934. Salen 282 intervenciones en el explorador; con «Solo lo que se habla», 255.
 
 <!-- sesiones.pistola-1934.explorador.consulta -->
 pistola
@@ -8680,7 +8842,7 @@ pistola
 Desde 04/07/1934 · Hasta 04/07/1934
 
 <!-- sesiones.pistola-1934.explorador.recuento -->
-Recuento del 22 de septiembre de 2026: 3 intervenciones en la edición del explorador (v3).
+Recuento del 22 de septiembre de 2026: 3 intervenciones en el explorador.
 
 <!-- sesiones.pistola-1934.explorador.consulta.nota -->
 Con Desde y Hasta 04/07/1934, salen tres intervenciones: Prieto, Oriol de la Puerta y Muñoz Martínez. Sin fechas, 164 en todo el corpus.
@@ -8697,18 +8859,15 @@ El Diario no dice quién sacó primero una pistola. Da dos versiones: la de Prie
 ## Fuentes
 
 <!-- sesiones.pistola-1934.fuentes.texto -->
-Todo lo que dice esta página sale del Diario de Sesiones, leído en las dos ediciones de la base. No se afirma aquí ningún hecho que el Diario no recoja.
+Todo lo que dice esta página sale del Diario de Sesiones, leído en la base. No se afirma aquí ningún hecho que el Diario no recoja.
 
 ## Cómo citar un pasaje
 
 <!-- sesiones.pistola-1934.citar.texto -->
-Dé el Diario, su número, la fecha y las páginas. Si trabaja con la base, añada el id de la fila y su edición.
+Dé el Diario, su número, la fecha y las páginas. Si trabaja con la base, añada el id de la fila.
 
 <!-- sesiones.pistola-1934.citar.cita -->
-Diario de las Sesiones de Cortes. Congreso de los Diputados, núm. 112, 4 de julio de 1934, pp. 4405–4468 (metadatos del proyecto). Luz y Taquígrafos, edición depositada (V2), fila 74619.
-
-<!-- ↺ comun.fija.ids -->
-Los identificadores de fila cambian entre la edición depositada (V2) y la del explorador (v3); la sesión —fecha y número— es la misma en las dos.
+Diario de las Sesiones de Cortes. Congreso de los Diputados, núm. 112, 4 de julio de 1934, pp. 4405–4468 (metadatos del proyecto). Luz y Taquígrafos, fila 74619.
 
 <!-- ↺ comun.fija.diario -->
 Edición derivada para investigación: ante cualquier discrepancia, vale el Diario de Sesiones.
@@ -8761,7 +8920,7 @@ Kent vota no; Campoamor, sí. Dos meses después, Campoamor lee en la Cámara el
 «Los ciudadanos de uno y otro sexo, mayores de veintitrés años, tendrán los mismos derechos electorales…»
 
 <!-- sesiones.sufragio-1931.que_paso.cita.articulo.pie -->
-Clara Campoamor, 1 de diciembre de 1931 · V2 12785 · v3 14216
+Clara Campoamor, 1 de diciembre de 1931
 
 ## Lo que dice el Diario
 
@@ -8769,19 +8928,19 @@ Clara Campoamor, 1 de diciembre de 1931 · V2 12785 · v3 14216
 «…que creo que el voto femenino debe aplazarse.»
 
 <!-- sesiones.sufragio-1931.diario.cita.kent.pie -->
-Victoria Kent · V2 5419 · v3 6074 · 1.053 palabras (V2)
+Victoria Kent · 1.053 palabras
 
 <!-- sesiones.sufragio-1931.diario.cita.presidencia -->
 «Ruego a la Cámara que guarde silencio.»
 
 <!-- sesiones.sufragio-1931.diario.cita.presidencia.pie -->
-La Presidencia (Besteiro) · V2 5423 · v3 6078
+La Presidencia (Besteiro)
 
 <!-- sesiones.sufragio-1931.diario.cita.silencio -->
 «Yo ruego a la Cámara que me escuche en silencio…»
 
 <!-- sesiones.sufragio-1931.diario.cita.silencio.pie -->
-Clara Campoamor · V2 5424 · v3 6079 · 1.460 palabras (V2)
+Clara Campoamor · 1.460 palabras
 
 <!-- sesiones.sufragio-1931.diario.cita.ciudadana -->
 «Yo, Sres. Diputados, me siento ciudadana antes que mujer, y considero que sería un profundo error político dejar a la mujer al margen de ese derecho…»
@@ -8793,14 +8952,14 @@ Clara Campoamor, en la misma fila
 «Total, 161.» … «Total, 121.»
 
 <!-- sesiones.sufragio-1931.diario.cita.resultado.pie -->
-Los totales de las dos listas · V2 5453 · v3 6110
+Los totales de las dos listas
 
 > [nota de diseño] Las dos primeras de Campoamor van seguidas de la de la Presidencia, como en el Diario: son dos
 > filas consecutivas (V2 5423 y 5424), la misma pareja que abre la fila en Inicio. Campoamor ya había contestado a
 > Kent unos turnos antes (`sesiones.sufragio-1931.diario.nota`).
 
 <!-- sesiones.sufragio-1931.diario.nota -->
-Campoamor ya había contestado a Kent unos turnos antes, en la fila V2 5422 · v3 6077.
+Campoamor ya había contestado a Kent unos turnos antes.
 
 ## La sesión, turno a turno
 
@@ -8816,7 +8975,7 @@ El mismo día hubo dos votaciones: la ordinaria, que el Diario da sin nombres, y
 «En votación ordinaria fue desechada la proposición del grupo socialista por 141 votos contra 106.»
 
 <!-- sesiones.sufragio-1931.votacion.cita.ordinaria.pie -->
-Diario · V2 5453 · v3 6110
+Diario
 
 > [nota de diseño] F26 mínima: la barra del 161–121 y, con otro trazo, la ordinaria. En la V2 las dos van dentro de
 > una fila de la Presidencia; en la v3, en una fila de comentarios del Diario.
@@ -8824,13 +8983,13 @@ Diario · V2 5453 · v3 6110
 ## Cómo encontrarla en el explorador
 
 <!-- sesiones.sufragio-1931.explorador.fecha -->
-Filtros › Fecha y sesión: Desde y Hasta 01/10/1931. Salen 415 intervenciones en la edición del explorador (v3); con «Solo lo que se habla», 395.
+Filtros › Fecha y sesión: Desde y Hasta 01/10/1931. Salen 415 intervenciones en el explorador; con «Solo lo que se habla», 395.
 
 <!-- sesiones.sufragio-1931.explorador.consulta -->
 "voto femenino" | "voto de la mujer"
 
 <!-- sesiones.sufragio-1931.explorador.recuento -->
-Recuento del 22 de septiembre de 2026: 40 intervenciones en la edición del explorador (v3).
+Recuento del 22 de septiembre de 2026: 40 intervenciones en el explorador.
 
 <!-- sesiones.sufragio-1931.explorador.consulta.nota -->
 Busca en todo el corpus. De esas intervenciones, seis son de Campoamor.
@@ -8847,17 +9006,13 @@ El debate preparado «Sufragio femenino» reúne 770 intervenciones: todo lo que
 <!-- sesiones.sufragio-1931.no_esta.texto -->
 Las últimas cinco filas repiten «Pido la palabra.», y la última termina en «El Sr. Ministro de».
 
-<!-- sesiones.sufragio-1931.no_esta.pie -->
-V2 5788–5792 · v3 6460–6464
-
 <!-- ↺ comun.fija.sesion48 -->
 La sesión 48 tal como está en el corpus: el final del acta digitalizada se perdió en el reconocimiento óptico.
-
 
 ## Fuentes
 
 <!-- sesiones.sufragio-1931.fuentes.texto -->
-Todo lo que dice esta página sale del Diario de Sesiones, leído en las dos ediciones de la base. No se afirma aquí ningún hecho que el Diario no recoja.
+Todo lo que dice esta página sale del Diario de Sesiones, leído en la base. No se afirma aquí ningún hecho que el Diario no recoja.
 
 > [nota de diseño] Lo externo que pedía la narrativa (el número definitivo del artículo en la Constitución y las
 > primeras elecciones con voto femenino) queda fuera hasta que la puerta de bibliografía dé su referencia [A] o [I]
@@ -8866,13 +9021,10 @@ Todo lo que dice esta página sale del Diario de Sesiones, leído en las dos edi
 ## Cómo citar un pasaje
 
 <!-- sesiones.sufragio-1931.citar.texto -->
-Dé el Diario, su número, la fecha y las páginas. Si trabaja con la base, añada el id de la fila y su edición.
+Dé el Diario, su número, la fecha y las páginas. Si trabaja con la base, añada el id de la fila.
 
 <!-- sesiones.sufragio-1931.citar.cita -->
-Diario de Sesiones de las Cortes Constituyentes de la República Española, núm. 48, 1 de octubre de 1931, pp. 1347–1394 (metadatos del proyecto). Luz y Taquígrafos, edición depositada (V2), fila 5424.
-
-<!-- ↺ comun.fija.ids -->
-Los identificadores de fila cambian entre la edición depositada (V2) y la del explorador (v3); la sesión —fecha y número— es la misma en las dos.
+Diario de Sesiones de las Cortes Constituyentes de la República Española, núm. 48, 1 de octubre de 1931, pp. 1347–1394 (metadatos del proyecto). Luz y Taquígrafos, fila 5424.
 
 <!-- ↺ comun.fija.diario -->
 Edición derivada para investigación: ante cualquier discrepancia, vale el Diario de Sesiones.
@@ -8881,704 +9033,3 @@ Edición derivada para investigación: ante cualquier discrepancia, vale el Diar
 > de las Cortes Constituyentes de la República Española»; numero = `sesion.1931-10-01-48.diario_num`; fecha = «1 de
 > octubre de 1931»; paginas = `sesion.1931-10-01-48.paginas`; edicion = «edición depositada (V2)»; id =
 > `cita.sufragio.campoamor.ciudadana.V2`. Debajo, ↺ 4 (`comun.fija.ids`) y ↺ 1 (`comun.fija.diario`).
-
-
-<!-- ═══ versiones.md ═══ -->
-
-# Copy ES · Versiones (`/[lang]/datos/versiones/`)
-
-> **Estado (22-09-2026).** Borrador para la vista previa (Puerta 4). Dueño: copy de «Método», «Usar los datos» y
-> «Versiones». Sigue la narrativa §14 y la plantilla I del plan. Marcadores: `docs/marcadores/versiones.md` (los
-> implementa `exportador/modulos/datos.py`, dueño de F25, F18 y F07).
->
-> **Cómo se lee.** Formato de ParlaIbero: `<!-- clave -->` abre cada texto; `↺` marca una frase fija de `comun.md`,
-> repetida aquí solo para leerla en su sitio; `> [nota de diseño]` no es texto para el lector. Ninguna cifra va
-> tecleada: todas son `⟦marcador⟧`.
->
-> **Lo que cambia respecto a la narrativa y al plan, y por qué** (recalculado hoy sobre las fuentes):
-> 1. **F25** se comprobó comparando el CSV de la V1 depositada (MD5 `0a9adafe…`, copia local idéntica) con el de la
->    V2: solo cambian `date` (894 filas) y `legislature` (91 filas), en las siete sesiones del changelog. El texto no
->    cambia. La V1.1 no tocó el CSV (el mismo MD5 que la V1.0): solo la licencia.
-> 2. **F18**: 121.700 = 107.556 piezas de habla + 735 turnos rescatados + 12.654 comentarios + 755 sumarios, leído en
->    `mapa_v2_v3.json` y en la v3 servida. Las 107.556 piezas salen de 107.282 filas de la V2 (269 filas eran solo
->    comentario) más 274 continuaciones. Se da la cifra exacta de turnos (ver `metodo.md`, nota 5).
-> 3. **F07**, recalculado en la v3 servida: Besteiro −55,4 %, Alba −67,0 %, Negrín +26,5 %. El documento del proyecto
->    (`RESEGMENTACION.md`) da otros valores para Besteiro y Alba (−55 % y −66 %, sobre una versión anterior de la v3);
->    manda la v3 que sirve el explorador. Lo de Negrín se comprobó: sus cinco turnos rescatados salen de filas de la
->    Presidencia del 1-X-1937 y del 1-II-1938.
-> 4. **«Hemos pedido al autor que corrija la cita del explorador»** no se escribe: D-18 se decidió (23-09-2026) como
->    aviso en la página, sin tocar el explorador. La página dice el hecho y qué hacer.
-
----
-
-## Metadatos
-
-<!-- versiones.meta.titulo -->
-Versiones
-
-<!-- versiones.meta.descripcion -->
-Qué cambió en cada versión depositada, qué es la edición del explorador, adónde va cada fila y qué base usa cada figura del sitio.
-
-> [nota de diseño] Subnavegación «Usar los datos · Versiones». Índice lateral con los seis apartados
-> (`versiones.indice.*`). La página lleva `<NotaBases>`: F18 y F07 citan la v3. Los cuatro sellos (↺ 2) son los de
-> `comun.md` (`comun.sello.<base>`); aquí se repiten para leerlos en su sitio. Bajo la entrada, `versiones.donde.*`: una lista corta, sin tarjetas, que cada
-> sello de base ilustra en pequeño.
-
-## Sellos de base (↺ 2)
-
-<!-- ↺ comun.sello.V2 -->
-Edición depositada (V2)
-
-<!-- ↺ comun.sello.v3 -->
-Edición del explorador (v3, sin depositar)
-
-<!-- ↺ comun.sello.proyecto -->
-Metadatos del proyecto (no depositados; el explorador no los muestra)
-
-<!-- ↺ comun.sello.afin -->
-Afinidades Elegidas (CGOCUS V1.1, depositada)
-
-## Índice lateral
-
-<!-- versiones.indice.titulo -->
-En esta página
-
-<!-- versiones.indice.depositadas -->
-Versiones depositadas
-
-<!-- versiones.indice.v3 -->
-La edición del explorador
-
-<!-- versiones.indice.resultado -->
-Qué cambia en un resultado
-
-<!-- versiones.indice.ids -->
-Identificadores
-
-<!-- versiones.indice.bases -->
-Qué base usa cada figura
-
-<!-- versiones.indice.citar -->
-Cómo citar cada edición
-
-## Cabecera
-
-<!-- versiones.antetitulo -->
-Depositada: THQCMI V2.0 · explorador: v3, sin depositar
-
-<!-- versiones.titulo -->
-¿Qué edición cito, y por qué hay dos cifras?
-
-<!-- versiones.entrada -->
-El CSV que usted descarga y la base que sirve el explorador no son la misma edición. Esta página dice qué cambió, adónde va cada fila y qué base usa cada figura.
-
-<!-- versiones.entrada.2 -->
-Ninguna de las dos es «la buena». Una está depositada y se cita con su DOI; la otra corrige defectos de la primera y todavía no lo está.
-
-<!-- versiones.donde.titulo -->
-Qué edición ve usted en cada sitio
-
-<!-- versiones.donde.texto -->
-- **Harvard Dataverse** entrega la edición depositada, la V2.0.
-- **El explorador** sirve la v3, sin depositar.
-- **Este sitio** usa la V2 por defecto. Donde usa la v3, lo dice junto a la cifra.
-- **La aplicación de Afinidades Elegidas** usa los archivos de CGOCUS V1.1, la versión depositada.
-- **Los metadatos de sesión** del proyecto (Diario, páginas, presidente titular y Gobierno) no están depositados ni se ven en el explorador.
-
----
-
-## 1 · Tres versiones depositadas (F25, `#fechas`)
-
-<!-- versiones.depositadas.titulo -->
-tres versiones depositadas
-
-<!-- versiones.depositadas.entrada -->
-La base tiene tres versiones en Harvard Dataverse. La vigente es la V2.0.
-
-<!-- versiones.depositadas.tabla.col.version -->
-Versión
-
-<!-- versiones.depositadas.tabla.col.fecha -->
-Publicada
-
-<!-- versiones.depositadas.tabla.col.licencia -->
-Licencia
-
-<!-- versiones.depositadas.tabla.col.cambio -->
-Qué cambió
-
-<!-- versiones.depositadas.v10 -->
-Primera publicación.
-
-<!-- versiones.depositadas.v11 -->
-Cambio de licencia. El CSV es el mismo.
-
-<!-- versiones.depositadas.v20 -->
-Fechas corregidas. Añade los changelogs en español y en inglés.
-
-<!-- versiones.depositadas.texto -->
-De la V1 a la V2 solo cambian dos columnas, `date` y `legislature`. El texto, los identificadores y las demás columnas quedan igual.
-
-Cambiaron siete sesiones, que suman 894 filas. En una, la sesión 77, cambió también la legislatura.
-
-**Si trabajó con la V1.** Sus recuentos de filas y de palabras no cambian. Cambian los que dependen de la fecha o de la legislatura.
-
-Por legislatura, 91 filas pasan de la primera a la segunda: son las de la sesión 77. Por mes, cambian los meses de las siete fechas corregidas.
-
-El README es el mismo desde la primera versión, y describe aquella.
-
-**Lo que la V2 trae sin corregir.** El sitio lo declara y no lo cambia: corregir el depósito es tarea de su autor.
-
-- Diego Martínez Barrio figura en el partido AR en 1931-1933, en 111 filas.
-- La familia «Liberal», con 15.364 filas, va aparte de «Liberales»; el explorador las funde.
-- La Lliga es CD en 1.841 filas del CSV, y D en el README.
-- El identificador 836 lleva dos nombres distintos.
-- El README cuenta cinco etiquetas más que filas tiene el CSV, sin explicar la diferencia.
-- 735 turnos quedaron dentro de la fila anterior; la v3 los separa.
-
-> [nota de diseño] D-25 (decisión del director, 23-09-2026): los pendientes de datos se declaran aquí, con su cifra,
-> y no se corrigen en origen. Método (08, 06) y Usar los datos (`rep_id`) dicen lo mismo en su sitio. Si el autor
-> corrige uno en un depósito nuevo, se quita su línea.
-
-<!-- ↺ comun.fija.readme -->
-El README depositado describe la primera versión; las diferencias, aquí.
-
-<!-- versiones.depositadas.metodo -->
-[Ver cómo se auditaron las fechas]
-
-> [nota de diseño] La tabla de versiones se genera de la instantánea `dv_thqcmi_versiones.json` (versión, fecha de
-> publicación con `|fecha_larga`, licencia tal como la da Dataverse) con los textos `versiones.depositadas.v10`, `v11`
-> y `v20`. Bajo la tabla va F25. [Ver cómo se auditaron las fechas] → `metodo/#metodo-07`.
-
-<!-- fig.F25.titulo -->
-siete fechas corregidas
-
-<!-- fig.F25.pregunta -->
-¿Qué cambió de la V1 a la V2?
-
-<!-- fig.F25.que_mide -->
-Cada sesión que la V1 fechaba mal, con su fecha en la V1 y su fecha corregida en la V2.
-
-<!-- fig.F25.denominador -->
-Las 755 sesiones, auditadas una a una.
-
-<!-- fig.F25.eje -->
-Fecha de la sesión
-
-<!-- fig.F25.leyenda.v1 -->
-Fecha en la V1
-
-<!-- fig.F25.leyenda.v2 -->
-Fecha en la V2
-
-<!-- fig.F25.nota -->
-Sesión ⟦num⟧ · ⟦fecha_v1⟧ → ⟦fecha_v2⟧
-
-<!-- fig.F25.nota.cifras -->
-⟦filas⟧ filas · V2 ⟦ids⟧
-
-<!-- fig.F25.nota.legislatura -->
-También cambia de legislatura: ⟦leg_v1⟧ → ⟦leg_v2⟧.
-
-<!-- fig.F25.prueba.cabeceras -->
-Las cabeceras corridas de sus páginas dicen la fecha corregida.
-
-<!-- fig.F25.prueba.errata -->
-La cabecera de la sesión tiene una errata de imprenta.
-
-<!-- fig.F25.prueba.danada -->
-La cifra del día está dañada en la cabecera de la sesión, y la lectura óptica la leyó mal.
-
-<!-- fig.F25.prueba.portada -->
-La fecha de la V1 salía de la portada del tomo, que dice cuándo empezaron esas Cortes.
-
-<!-- fig.F25.prueba.serie -->
-El número pertenece a la serie del Diario de 1933-1935, no a la de las Constituyentes.
-
-<!-- fig.F25.dias -->
-⟦dias⟧ días
-
-<!-- fig.F25.tabla.col.sesion -->
-Sesión
-
-<!-- fig.F25.tabla.col.v1 -->
-Fecha en la V1
-
-<!-- fig.F25.tabla.col.v2 -->
-Fecha en la V2
-
-<!-- fig.F25.tabla.col.filas -->
-Filas
-
-<!-- fig.F25.tabla.col.ids -->
-Identificadores
-
-<!-- fig.F25.tabla.col.prueba -->
-Por qué
-
-<!-- fig.F25.salvedad -->
-La auditoría no detecta un error de fecha coherente con la secuencia. El changelog depositado da los rangos de filas; su tabla de pruebas no está depositada.
-
-<!-- fig.F25.alt -->
-Flechas sobre una línea de tiempo, de la fecha que daba la V1 a la fecha corregida en la V2, una por sesión.
-
-> [nota de diseño] **F25**: flechas sobre la línea de tiempo 1931–1934, de la fecha V1 a la V2 (`fechas_corregidas`,
-> del exportador: sesión, legislatura V1 y V2, fecha V1 y V2, ids, filas y prueba). Una parada de teclado por sesión.
-> Cada sesión lleva una o dos pruebas (`fig.F25.prueba.*`), según `AUDITORIA_FECHAS.md`: s52 y s78, `cabeceras` +
-> `danada`; s293, s295 y s311, `cabeceras` + `errata`; s321, `cabeceras` + `portada`; s77, `cabeceras` + `serie`. En
-> la tabla, la columna Identificadores va con `|id`, sin agrupar. Pestañas Tabla · Datos (↺ 12).
-
----
-
-## 2 · La edición del explorador (F18, `#destino-filas`)
-
-<!-- versiones.v3.titulo -->
-La edición del explorador
-
-<!-- versiones.v3.entrada -->
-El explorador no sirve el CSV depositado. Sirve la v3: la misma fuente, partida de otra manera.
-
-<!-- versiones.v3.texto -->
-La v3 parte de la V2 y corrige su segmentación: rescata turnos enterrados y separa lo que no es habla (Método, «Dos ediciones»).
-
-No cambia el texto. Cada pieza de la v3 es un tramo literal de una fila de la V2.
-
-Tiene las mismas 755 sesiones, con la misma fecha y el mismo número. Añade el sumario de cada sesión, que la V2 no traía.
-
-Tiene 121.700 filas. No está depositada, y sus identificadores no son los de la V2.
-
-**Cómo se hizo.** La v3 sale de dos auditorías del proyecto. Una buscó turnos que la V2 no separó; otra, material impreso dentro de las filas.
-
-Las correcciones se aplicaron sobre el texto original, en este orden: las fechas, los cortes de turno y los bloques impresos.
-
-Las palabras de cada fila de la V2 se reparten entre sus piezas en proporción a su texto. Por eso suman lo mismo en las dos ediciones.
-
-<!-- ↺ comun.fija.ids -->
-Los identificadores de fila cambian entre la edición depositada (V2) y la del explorador (v3); la sesión —fecha y número— es la misma en las dos.
-
-<!-- fig.F18.titulo -->
-Adónde van las filas de la V2
-
-<!-- fig.F18.pregunta -->
-¿Qué diferencia hay entre lo depositado y lo que sirve el explorador?
-
-<!-- fig.F18.tabla.col.que -->
-Qué es
-
-<!-- fig.F18.tabla.col.filas -->
-Filas de la v3
-
-<!-- fig.F18.tabla.col.origen -->
-De dónde sale
-
-<!-- fig.F18.fila.habla -->
-Piezas de habla
-
-<!-- fig.F18.fila.habla.origen -->
-De las filas de la V2, partidas donde empieza otro turno o un bloque impreso
-
-<!-- fig.F18.fila.turnos -->
-Turnos rescatados
-
-<!-- fig.F18.fila.turnos.origen -->
-Turnos que la V2 dejaba dentro de la fila anterior
-
-<!-- fig.F18.fila.comentarios -->
-Comentarios del Diario
-
-<!-- fig.F18.fila.comentarios.origen -->
-Tablas, listas, documentos y relato impresos dentro de las filas de la V2
-
-<!-- fig.F18.fila.sumarios -->
-Sumarios
-
-<!-- fig.F18.fila.sumarios.origen -->
-Lo que el Diario imprime antes del primer orador, uno por sesión; la V2 no lo traía
-
-<!-- fig.F18.fila.total -->
-Total
-
-<!-- fig.F18.nota.piezas -->
-Las piezas de habla salen de 107.282 filas de la V2. Las demás, 269, eran solo comentario.
-
-<!-- fig.F18.nota.continuaciones -->
-Otras 274 piezas continúan el habla de su orador después de un bloque impreso.
-
-<!-- fig.F18.nota.habla -->
-Con «Solo lo que se habla», el explorador deja 108.291 filas: las piezas de habla y los turnos rescatados.
-
-<!-- fig.F18.nota.palabras -->
-Las palabras de la V2 se reparten entre las piezas y suman lo mismo. Los sumarios añaden 1.028.248.
-
-<!-- fig.F18.que_mide -->
-Las filas de la edición del explorador, repartidas por lo que son: habla, turnos rescatados, comentarios del Diario y sumarios.
-
-<!-- fig.F18.denominador -->
-Las 121.700 filas de la v3.
-
-<!-- fig.F18.tabla.col.parte -->
-Parte
-
-<!-- fig.F18.tabla.col.palabras -->
-Palabras
-
-<!-- fig.F18.salvedad -->
-Los documentos del proyecto no dan el mismo recuento de turnos rescatados; aquí va el de la v3 que sirve el explorador. La correspondencia fila a fila no está publicada.
-
-<!-- fig.F18.alt -->
-Tabla que reparte las filas de la edición del explorador en piezas de habla, turnos rescatados, comentarios del Diario y sumarios.
-
-> [nota de diseño] **F18 va como tabla con nota, no como diagrama de flujo** (plan: C5 y C6 siguen abiertos). Filas y
-> valores: `fig.F18.fila.habla` 107.556 · `turnos` 735 · `comentarios` 12.654 ·
-> `sumarios` 755 · `total` 121.700; la compilación falla si los cuatro no suman el total. Debajo, las
-> notas `fig.F18.nota.*`. Sin pestañas; [Descargar los datos de la figura] con ↺ 12. Sello ↺ 2 v3.
-
----
-
-## 3 · Qué cambia en un resultado (F07, `#quien-habla`)
-
-<!-- versiones.resultado.titulo -->
-¿Qué cambia en un resultado?
-
-<!-- versiones.resultado.entrada -->
-La misma pregunta da otra respuesta en cada edición. Es la mejor prueba de que importa cuál se usa.
-
-<!-- versiones.resultado.texto -->
-En la V2, Julián Besteiro suma 1.028.999 palabras. De ellas, 995.577 están en filas de la Presidencia.
-
-Santiago Alba, Presidente de la Cámara en la segunda legislatura, suma 1.024.975.
-
-En la v3, Besteiro pierde el 55,4 % de sus palabras. Alba pierde el 67,0 %.
-
-Eran turnos de otros oradores y material impreso que la V2 dejaba en las filas de quien presidía.
-
-Sin la Presidencia, en la V2 encabeza Indalecio Prieto, con 554.773 palabras. Pero su fila más larga es, sobre todo, tablas impresas.
-
-En la v3, sin la Presidencia, encabeza Antonio Royo Villanova, con 534.408.
-
-Juan Negrín gana en la v3 el 26,5 %. La v3 le devuelve discursos de la guerra que la V2 ponía a nombre de la Presidencia.
-
-**Qué hacer con la V2.** Cualquier recuento de oradores sobre la V2 debe quitar antes la Presidencia. Y conviene leer sus filas más largas antes de sumarlas.
-
-<!-- fig.F07.titulo -->
-¿Quién habla más? Depende de la edición
-
-<!-- fig.F07.pregunta -->
-¿Por qué Besteiro y Alba «hablan» más que nadie en la V2?
-
-<!-- fig.F07.que_mide -->
-Filas o palabras a nombre de cada diputado en la V2 y en la v3, para los diez que más suman en la V2.
-
-<!-- fig.F07.denominador -->
-Todas las filas de cada edición, con la Presidencia incluida.
-
-<!-- fig.F07.conmutador.leyenda -->
-Contar
-
-<!-- fig.F07.conmutador.filas -->
-Filas
-
-<!-- fig.F07.conmutador.palabras -->
-Palabras
-
-<!-- fig.F07.leyenda.v2 -->
-Edición depositada (V2)
-
-<!-- fig.F07.leyenda.v3 -->
-Edición del explorador (v3)
-
-<!-- fig.F07.leyenda.presidencia -->
-De ellas, en filas de la Presidencia
-
-<!-- fig.F07.nota -->
-⟦nombre⟧ · V2: ⟦v2⟧ · v3: ⟦v3⟧ · ⟦cambio⟧
-
-<!-- fig.F07.nota.presidencia -->
-En la V2, «El Sr. PRESIDENTE:» va a nombre de quien preside: así empieza, por ejemplo, la fila 5423, de Besteiro.
-
-<!-- fig.F07.tabla.col.nombre -->
-Diputado
-
-<!-- fig.F07.tabla.col.v2 -->
-V2
-
-<!-- fig.F07.tabla.col.v2_presidencia -->
-V2, en la Presidencia
-
-<!-- fig.F07.tabla.col.v3 -->
-v3
-
-<!-- fig.F07.tabla.col.cambio -->
-Cambio
-
-<!-- fig.F07.salvedad -->
-Es la figura de por qué importan las ediciones, no una medida de importancia.
-
-<!-- fig.F07.alt -->
-Barras dobles para diez diputados, V2 y v3 lado a lado. Besteiro y Alba encabezan la V2 y caen en la v3; los demás apenas cambian.
-
-> [nota de diseño] **F07**: barras dobles por persona, **en orden fijo por las palabras de la V2** (los diez primeros:
-> Besteiro, Alba, Prieto, Royo Villanova, Azaña, Guerra del Río, Balbontín, Lamamié de Clairac, Casanueva y Jiménez
-> Fernández, con la grafía de `grafias.json`; nunca el `rep_name` crudo). Conmutación Filas · Palabras (radios). La
-> parte en la Presidencia va rayada dentro de la barra V2 (otro trazo, no solo otro color). Nota emergente
-> `fig.F07.nota` (`⟦cambio⟧` con signo y `pct1`); en Besteiro y Alba, además, `fig.F07.nota.presidencia`. Pestañas:
-> Tabla · Datos (los 773 diputados, en la V2 y en la v3). Negrín no está entre los diez: su caso va en
-> el texto. Sello doble (↺ 2 v2 y v3); la página lleva `<NotaBases>`. Ningún ranking de este tipo sale de esta página
-> ni de las fichas; en Inicio, nunca.
-
----
-
-## 4 · Identificadores (`#identificadores`)
-
-<!-- versiones.ids.titulo -->
-Identificadores
-
-<!-- versiones.ids.entrada -->
-La sesión es la clave común de las dos ediciones. La fila, no.
-
-<!-- versiones.ids.texto -->
-Las dos ediciones tienen las mismas 755 sesiones, con la misma fecha y el mismo número. Cruzarlas por sesión es seguro.
-
-Las filas no coinciden: la v3 las renumera todas. La correspondencia fila a fila existe en el proyecto, pero no está publicada.
-
-Un ejemplo: Campoamor es la fila 5424 de la V2 y la 6079 de la v3.
-
-Para citar, dé la fecha y el número de sesión, y el id con su edición: «V2, fila…» o «v3, fila…».
-
-Para llevar al CSV una intervención del explorador, busque la sesión por fecha y número. Dentro de ella, localice el comienzo del texto.
-
-<!-- versiones.ids.tabla.titulo -->
-Una sesión, dos ediciones
-
-<!-- versiones.ids.tabla.col.que -->
-Qué
-
-<!-- versiones.ids.tabla.fila.sesion -->
-La sesión, por su fecha y su número
-
-<!-- versiones.ids.tabla.fila.presidencia -->
-La Presidencia pide silencio
-
-<!-- versiones.ids.tabla.fila.campoamor -->
-Campoamor empieza a hablar
-
-<!-- versiones.ids.tabla.fila.orden -->
-Lugar de Campoamor en la sesión
-
-<!-- versiones.ids.tabla.sesion -->
-1 de octubre de 1931, sesión 48, en las dos
-
-<!-- versiones.ids.tabla.igual -->
-la misma
-
-<!-- versiones.ids.tabla.pantalla -->
-«Orden 30» en la pantalla
-
-<!-- versiones.depositadas.vigente -->
-vigente
-
----
-
-## 5 · Qué base usa cada figura (F35, `#bases`)
-
-<!-- versiones.bases.titulo -->
-¿De qué base sale cada figura?
-
-<!-- versiones.bases.entrada -->
-Cada figura dice su base junto a su título. Esta tabla las reúne, con la huella de cada base y la fecha de cálculo. Tres conservan su número sin llevar las pestañas Gráfico, Tabla y Datos. F18 y F19 son su propia tabla; F26, en Inicio y en las puertas, es una versión reducida de la de Sesiones.
-
-<!-- fig.F35.titulo -->
-Qué base usa cada figura
-
-<!-- fig.F35.tabla.col.figura -->
-Figura
-
-<!-- fig.F35.tabla.col.pagina -->
-Página
-
-<!-- fig.F35.tabla.col.base -->
-Base
-
-<!-- fig.F35.tabla.col.archivo -->
-Datos
-
-<!-- fig.F35.tabla.col.huella -->
-Huella de la base
-
-<!-- fig.F35.tabla.col.fecha -->
-Calculada
-
-<!-- fig.F35.huella.V2 -->
-MD5 del CSV depositado
-
-<!-- fig.F35.huella.v3 -->
-sha256 de la base del explorador
-
-<!-- fig.F35.huella.proyecto -->
-sha256 de los metadatos de sesión
-
-<!-- fig.F35.huella.afin -->
-Versión depositada de CGOCUS
-
-<!-- fig.F35.huella.croquis -->
-sha256 del croquis
-
-<!-- fig.F35.sin_datos -->
-Sin datos descargables
-
-<!-- fig.F35.pagina.inicio -->
-Inicio
-
-<!-- fig.F35.pagina.cortes -->
-Las Cortes
-
-<!-- fig.F35.pagina.etapa -->
-Fichas de etapa
-
-<!-- fig.F35.pagina.sesiones -->
-Sesiones y votaciones
-
-<!-- fig.F35.pagina.puerta -->
-Puertas de sesión
-
-<!-- fig.F35.pagina.diario -->
-El Diario
-
-<!-- fig.F35.pagina.metodo -->
-Método
-
-<!-- fig.F35.pagina.datos -->
-Usar los datos
-
-<!-- fig.F35.pagina.versiones -->
-Versiones
-
-<!-- fig.F35.pagina.explorador -->
-El explorador
-
-<!-- fig.F35.pagina.afinidades -->
-Afinidades Elegidas
-
-<!-- fig.F35.base.V2 -->
-V2
-
-<!-- fig.F35.base.v3 -->
-v3
-
-<!-- fig.F35.base.proyecto -->
-Proyecto
-
-<!-- fig.F35.base.afin -->
-CGOCUS V1.1
-
-<!-- fig.F35.base.croquis -->
-Croquis
-
-<!-- fig.F35.huellas.titulo -->
-Las huellas de cada base
-
-<!-- fig.F35.alt -->
-Tabla con cada figura del sitio, su página, la base de la que sale, sus datos, la huella de esa base y la fecha de cálculo.
-
-> [nota de diseño] Figuras sin pestañas (decisión del director, 23-09-2026): F18, F19 y las variantes ligera y mínima
-> de F26 conservan su número F, porque F35 y el LÉAME lo usan; `versiones.bases.entrada` dice cuáles son.
->
-> [nota de diseño] **F35** se genera de `lib/figuras.ts` (id, ruta, ancla, base, archivos) y de `src/data/sello.json`
-> (huella y fecha). La columna Base usa los sellos ↺ 2 (`comun.sello.*`, más «Croquis» para el hemiciclo). No
-> lleva salvedad: es la salvedad de todas. El título de cada figura sale de su `fig.<id>.titulo`, con enlace a su
-> ancla.
-
----
-
-## 6 · Cómo citar cada edición (`#citar`)
-
-<!-- versiones.citar.titulo -->
-Cómo citar cada edición
-
-<!-- versiones.citar.texto -->
-**La V2.** Con su DOI y su versión, tal como la da Harvard Dataverse. Es la que se debe citar para cualquier cifra calculada sobre el CSV.
-
-**La v3.** No tiene DOI. Cite el explorador con su dirección y la fecha de consulta, y diga que sirve la v3, sin depositar.
-
-La cita que el explorador añade a lo que exporta dice «Harvard Dataverse, V2», pero sus identificadores son de la v3. Corríjala antes de publicar.
-
-**Los metadatos de sesión** (Diario, páginas, presidente titular y Gobierno) no están depositados. Cítelos como metadatos del proyecto.
-
-<!-- versiones.citar.enlace -->
-[Ver cómo citar]
-
-> [nota de diseño] [Ver cómo citar] → `datos/#citar`, donde están las citas completas en texto, BibTeX y RIS. D-18
-> (la cita del explorador) se resuelve con el aviso: el texto dice el hecho y qué hacer, y no promete un cambio.
-
----
-
-## LÉAME de las figuras de Versiones (columnas de cada CSV)
-
-<!-- fig.F25.leame.col.num_session -->
-Número de la sesión en su legislatura.
-
-<!-- fig.F25.leame.col.legislatura_v1 -->
-Legislatura que daba la V1.
-
-<!-- fig.F25.leame.col.legislatura_v2 -->
-Legislatura en la V2.
-
-<!-- fig.F25.leame.col.fecha_v1 -->
-Fecha que daba la V1 (AAAA-MM-DD).
-
-<!-- fig.F25.leame.col.fecha_v2 -->
-Fecha corregida en la V2 (AAAA-MM-DD).
-
-<!-- fig.F25.leame.col.dias -->
-Días entre las dos fechas, con signo.
-
-<!-- fig.F25.leame.col.id_min -->
-Primer id de la sesión en la V2.
-
-<!-- fig.F25.leame.col.id_max -->
-Último id de la sesión en la V2.
-
-<!-- fig.F25.leame.col.filas -->
-Filas de la sesión.
-
-<!-- fig.F25.leame.col.prueba -->
-Las pruebas de la corrección. `cabeceras`: las cabeceras corridas dicen la fecha corregida. `danada`: la cifra del día está dañada en la cabecera de la sesión. `errata`: esa cabecera trae una errata de imprenta. `portada`: la V1 tomó la fecha de la portada del tomo. `serie`: el número es de la serie de 1933-1935.
-
-<!-- fig.F18.leame.col.clase -->
-habla, turnos (turnos rescatados), comentarios (material impreso del Diario), sumarios, o el total.
-
-<!-- fig.F18.leame.col.filas_v3 -->
-Filas de la v3 de esa clase.
-
-<!-- fig.F18.leame.col.palabras_v3 -->
-Palabras (nwords) de esas filas en la v3.
-
-<!-- fig.F18.leame.col.base -->
-Edición de la que sale la cifra.
-
-<!-- fig.F07.leame.col.rep_id -->
-Identificador del diputado en la V2 y en la v3.
-
-<!-- fig.F07.leame.col.nombre -->
-Nombre del diputado según la tabla de grafías del sitio.
-
-<!-- fig.F07.leame.col.filas_v2 -->
-Filas a su nombre en la V2, con la Presidencia incluida.
-
-<!-- fig.F07.leame.col.palabras_v2 -->
-Palabras (nwords) de esas filas en la V2.
-
-<!-- fig.F07.leame.col.filas_v2_presidencia -->
-De ellas, filas de la Presidencia (según el analizador de fórmulas del explorador).
-
-<!-- fig.F07.leame.col.palabras_v2_presidencia -->
-Palabras de esas filas de la Presidencia.
-
-<!-- fig.F07.leame.col.filas_v3 -->
-Filas a su nombre en la v3, todas las piezas.
-
-<!-- fig.F07.leame.col.palabras_v3 -->
-Palabras de esas filas en la v3.
-
-<!-- fig.F07.leame.col.cambio_palabras -->
-`palabras_v3 / palabras_v2 − 1`, como proporción.

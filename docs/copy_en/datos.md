@@ -115,11 +115,20 @@ Afinidades Elegidas: who signed each motion, amendment, request or interpellatio
 <!-- datos.empezar.s4.accion -->
 [See Afinidades Elegidas]
 
+<!-- datos.empezar.s5.titulo -->
+With an AI assistant
+
+<!-- datos.empezar.s5.texto -->
+Ask Claude or another assistant in your own words. An open connector searches and counts in both datasets for you, without programming.
+
+<!-- datos.empezar.s5.accion -->
+[See how to ask with AI]
+
 <!-- datos.empezar.cierre -->
 Two people with the same dataset can reach different results without either being wrong. The analytical decisions are yours, and this page shows them.
 
 <!-- ↺ comun.fija.formulario -->
-Before you download, Harvard Dataverse will ask for your name, email address and institution.
+Harvard Dataverse asks for no registration or form before you download.
 
 ---
 
@@ -130,9 +139,6 @@ The route to the file
 
 <!-- datos.camino.entrada -->
 Three steps: the DOI page, a single file and a reading with the right parameters.
-
-<!-- ↺ comun.fija.formulario.motivo -->
-We use these details to learn who uses the dataset and for what, so that we can improve it and announce updates.
 
 <!-- datos.camino.texto -->
 **Go to the DOI page.** The buttons on this site take you there, not to a loose file.
@@ -551,7 +557,7 @@ They also reproduce February 1933, the month of Casas Viejas: {{mes.1933-02.sesi
 Its rows hold {{mes.1933-02.palabras}} words.
 
 <!-- datos.codigo.archivos -->
-They need two files in the same folder: `2REP_Diaries.csv`, from THQCMI, and `representative_metadata.tab`, from CGOCUS. Both require the Dataverse form.
+They need two files in the same folder: `2REP_Diaries.csv`, from THQCMI, and `representative_metadata.tab`, from CGOCUS.
 
 <!-- datos.codigo.r.rotulo -->
 R, no packages

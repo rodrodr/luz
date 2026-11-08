@@ -52,6 +52,7 @@ PREFIJOS = {
     'datos': ('datos.', 'versiones.'),
     'explorador': ('explorador.',),
     'afinidades': ('afinidades.',),
+    'asistente': ('asistente.',),
     'figuras': ('fig.',),
 }
 
@@ -62,7 +63,7 @@ FIJAS = [
     'Edición derivada para investigación: ante cualquier discrepancia, vale el Diario de Sesiones.',
     'Metadatos del proyecto (no depositados; el explorador no los muestra)',
     'Afinidades Elegidas (CGOCUS)',
-    'Antes de descargar, Harvard Dataverse le pedirá nombre, correo e institución.',
+    'Harvard Dataverse no pide registro ni formulario para descargar.',
     'El explorador no abre una búsqueda desde un enlace: cópiela y péguela en su buscador (tecla /).',
     'Contar una palabra no dice quién la defiende ni en qué tono.',
     'El texto sale del reconocimiento óptico y no está corregido a mano.',

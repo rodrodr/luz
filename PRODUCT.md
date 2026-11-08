@@ -30,7 +30,7 @@ Los Diarios de Sesiones se imprimieron enteros, con luz y taquígrafos, y por es
 
 ## Operating Context
 
-- Flujo real: sitio → Harvard Dataverse (formulario obligatorio: nombre, correo e institución) → CSV de 158,1 MB → R o Python; y sitio → explorador en el navegador (descarga única de unos 112 MB; sin enlaces profundos: una URL no abre una búsqueda).
+- Flujo real: sitio → Harvard Dataverse (sin formulario desde el 08-11-2026, para que funcione el conector `luz-mcp`) → CSV de 158,1 MB → R o Python; y sitio → explorador en el navegador (descarga única de unos 112 MB; sin enlaces profundos: una URL no abre una búsqueda).
 - Dos ediciones conviven: la depositada (V2, 107.551 filas) y la del explorador (v3, 121.700 filas, sin depositar, ids renumerados). Toda cifra lleva su base **en el HTML** (`data-k`, `data-base`, `procedencia.csv`), no en la frase: Inicio no nombra ninguna edición y usa solo cifras que valen en las dos (formato `|redondo`: «más de 100.000 intervenciones»); el detalle, en Datos y Método (rediseño del 23-09-2026).
 - Base derivada: Afinidades Elegidas (coautorías, doi:10.7910/DVN/CGOCUS V1.1) y su aplicación.
 - Proyecto hermano y distinto: ParlaIbero.
@@ -41,7 +41,7 @@ Los Diarios de Sesiones se imprimieron enteros, con luz y taquígrafos, y por es
 - Ninguna cifra tecleada: todas salen del exportador con su base y su fuente. Ninguna promesa que el explorador no cumpla (enlaces profundos, cabecera de sesión, búsqueda semántica, comodín, NOT, proximidad).
 - Excluido por decisión del investigador: todo el prototipo de 1931 (grafo anotado, libro de códigos, actos afectivos).
 - Sin mención de financiación. Se nombra a los diputados (figuras históricas), con su grafía correcta.
-- Pendientes del investigador: URL definitiva, motivo del formulario de Dataverse, depósito de la corrección v2 de Afinidades, manejador `#q=` en el explorador, revisión de la tabla de grafías.
+- Pendientes del investigador: URL definitiva, depósito de la corrección v2 de Afinidades, manejador `#q=` en el explorador, revisión de la tabla de grafías.
 
 ## Brand Commitments
 
